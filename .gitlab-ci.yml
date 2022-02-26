@@ -19,8 +19,9 @@ test:
 
 build_apk_debug:
   stage: coverage
-  script:
+  before_script:
     - flutter pub get
+  script:
     - flutter build apk
   artifacts:
     when: on_success
@@ -32,8 +33,16 @@ build_apk_debug:
 
 build_apk:
   stage: coverage
-  script:
+  before_script:
+    - cd android
+    - echo $FDROID_KEY | base64 --decode --ignore-garbage > key.jks
+    - echo "storePassword=${FDROID_KEY_PASS}" >> key.properties
+    - echo "keyPassword=${FDROID_KEY_PASS}" >> key.properties
+    - echo "keyAlias=key" >> key.properties
+    - echo "storeFile=../key.jks" >> key.properties
+    - cd ..
     - flutter pub get
+  script:
     - flutter build apk --release
   artifacts:
     when: on_success
