@@ -1,0 +1,45 @@
+image:
+  name: cirrusci/flutter
+
+stages:
+- coverage
+- release
+- deploy
+
+code_analyze:
+  stage: coverage
+  script:
+    - flutter pub get
+    - flutter format lib/ test/ --set-exit-if-changed
+    - flutter analyze
+
+test:
+  stage: coverage
+  script: [flutter test]
+
+build_apk_debug:
+  stage: coverage
+  script:
+    - flutter pub get
+    - flutter build apk
+  artifacts:
+    when: on_success
+    paths:
+      - build/app/outputs/apk/debug/app-release.apk
+  except:
+    - main
+    - tags
+
+build_apk:
+  stage: coverage
+  script:
+    - flutter pub get
+    - flutter build apk --release
+  artifacts:
+    when: on_success
+    paths:
+      - build/app/outputs/apk/release/app-release.apk
+  only:
+    - main
+    - tags
+
