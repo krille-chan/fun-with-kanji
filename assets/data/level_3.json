@@ -1,0 +1,1602 @@
+[
+    {
+        "id": 6,
+        "kanji": ["悪"],
+        "level": "3",
+        "meaning": "bad",
+        "readings": ["アク", "オ", "わる-い"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 12,
+        "kanji": ["安"],
+        "level": "3",
+        "meaning": "cheap",
+        "readings": ["アン", "やす-い"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 14,
+        "kanji": ["暗"],
+        "level": "3",
+        "meaning": "dark",
+        "readings": ["アン", "くら-い"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 19,
+        "kanji": ["医"],
+        "level": "3",
+        "meaning": "medicine",
+        "readings": ["イ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 21,
+        "kanji": ["委"],
+        "level": "3",
+        "meaning": "committee",
+        "readings": ["イ", "ゆだ-ねる"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 33,
+        "kanji": ["意"],
+        "level": "3",
+        "meaning": "idea",
+        "readings": ["イ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 40,
+        "kanji": ["育"],
+        "level": "3",
+        "meaning": "nurture",
+        "readings": ["イク", "そだ-つ", "そだ-てる", "はぐく-む"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 51,
+        "kanji": ["員"],
+        "level": "3",
+        "meaning": "member",
+        "readings": ["イン"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 52,
+        "kanji": ["院"],
+        "level": "3",
+        "meaning": "institution",
+        "readings": ["イン"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 55,
+        "kanji": ["飲"],
+        "level": "3",
+        "meaning": "drink",
+        "readings": ["イン", "の-む"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 66,
+        "kanji": ["運"],
+        "level": "3",
+        "meaning": "carry",
+        "readings": ["ウン", "はこ-ぶ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 69,
+        "kanji": ["泳"],
+        "level": "3",
+        "meaning": "swim",
+        "readings": ["エイ", "およ-ぐ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 82,
+        "kanji": ["駅"],
+        "level": "3",
+        "meaning": "station",
+        "readings": ["エキ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 107,
+        "kanji": ["央"],
+        "level": "3",
+        "meaning": "center",
+        "readings": ["オウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 117,
+        "kanji": ["横"],
+        "level": "3",
+        "meaning": "side",
+        "readings": ["オウ", "よこ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 119,
+        "kanji": ["屋"],
+        "level": "3",
+        "meaning": "roof",
+        "readings": ["オク", "や"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 129,
+        "kanji": ["温"],
+        "level": "3",
+        "meaning": "warm",
+        "readings": ["オン", "あたた-か", "あたた-かい", "あたた-まる", "あたた-める"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 132,
+        "kanji": ["化"],
+        "level": "3",
+        "meaning": "change",
+        "readings": ["カ", "ケ", "ば-ける", "ば-かす"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 148,
+        "kanji": ["荷"],
+        "level": "3",
+        "meaning": "luggage",
+        "readings": ["カ", "に"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 183,
+        "kanji": ["界"],
+        "level": "3",
+        "meaning": "world",
+        "readings": ["カイ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 187,
+        "kanji": ["開"],
+        "level": "3",
+        "meaning": "open",
+        "readings": ["カイ", "ひら-く", "ひら-ける", "あ-く", "あ-ける"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 188,
+        "kanji": ["階"],
+        "level": "3",
+        "meaning": "floor of a building",
+        "readings": ["カイ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 263,
+        "kanji": ["寒"],
+        "level": "3",
+        "meaning": "cold",
+        "readings": ["カン", "さむ-い"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 275,
+        "kanji": ["感"],
+        "level": "3",
+        "meaning": "feeling",
+        "readings": ["カン"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 276,
+        "kanji": ["漢"],
+        "level": "3",
+        "meaning": "China",
+        "readings": ["カン"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 285,
+        "kanji": ["館"],
+        "level": "3",
+        "meaning": "public building",
+        "readings": ["カン", "やかた"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 294,
+        "kanji": ["岸"],
+        "level": "3",
+        "meaning": "beach",
+        "readings": ["ガン", "きし"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 317,
+        "kanji": ["起"],
+        "level": "3",
+        "meaning": "wake up",
+        "readings": ["キ", "お-きる", "お-こる", "お-こす"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 328,
+        "kanji": ["期"],
+        "level": "3",
+        "meaning": "period of time",
+        "readings": ["キ", "（ゴ）"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 355,
+        "kanji": ["客"],
+        "level": "3",
+        "meaning": "guest",
+        "readings": ["キャク", "カク"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 370,
+        "kanji": ["究"],
+        "level": "3",
+        "meaning": "research",
+        "readings": ["キュウ", "きわ-める"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 372,
+        "kanji": ["急"],
+        "level": "3",
+        "meaning": "hurry",
+        "readings": ["キュウ", "いそ-ぐ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 373,
+        "kanji": ["級"],
+        "level": "3",
+        "meaning": "rank",
+        "readings": ["キュウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 375,
+        "kanji": ["宮"],
+        "level": "3",
+        "meaning": "Shinto shrine",
+        "readings": ["キュウ", "グウ", "（ク）", "みや"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 377,
+        "kanji": ["球"],
+        "level": "3",
+        "meaning": "sphere",
+        "readings": ["キュウ", "たま"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 382,
+        "kanji": ["去"],
+        "level": "3",
+        "meaning": "leave",
+        "readings": ["キョ", "コ", "さ-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 414,
+        "kanji": ["橋"],
+        "level": "3",
+        "meaning": "bridge",
+        "readings": ["キョウ", "はし"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 422,
+        "kanji": ["業"],
+        "level": "3",
+        "meaning": "business",
+        "readings": ["ギョウ", "ゴウ", "わざ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 424,
+        "kanji": ["曲"],
+        "level": "3",
+        "meaning": "musical composition",
+        "readings": ["キョク", "ま-がる", "ま-げる"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 425,
+        "kanji": ["局"],
+        "level": "3",
+        "meaning": "office",
+        "readings": ["キョク"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 444,
+        "kanji": ["銀"],
+        "level": "3",
+        "meaning": "silver",
+        "readings": ["ギン"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 445,
+        "kanji": ["区"],
+        "level": "3",
+        "meaning": "ward",
+        "readings": ["ク"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 447,
+        "kanji": ["苦"],
+        "level": "3",
+        "meaning": "suffer",
+        "readings": ["ク", "くる-しい", "くる-しむ", "くる-しめる", "にが-い", "にが-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 449,
+        "kanji": ["具"],
+        "level": "3",
+        "meaning": "tool",
+        "readings": ["グ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 462,
+        "kanji": ["君"],
+        "level": "3",
+        "meaning": "you",
+        "readings": ["クン", "きみ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 475,
+        "kanji": ["係"],
+        "level": "3",
+        "meaning": "person in charge",
+        "readings": ["ケイ", "かか-る", "かかり"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 487,
+        "kanji": ["軽"],
+        "level": "3",
+        "meaning": "light",
+        "readings": ["ケイ", "かる-い", "かろ-やか"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 508,
+        "kanji": ["血"],
+        "level": "3",
+        "meaning": "blood",
+        "readings": ["ケツ", "ち"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 509,
+        "kanji": ["決"],
+        "level": "3",
+        "meaning": "decide",
+        "readings": ["ケツ", "き-める", "き-まる"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 520,
+        "kanji": ["研"],
+        "level": "3",
+        "meaning": "sharpen",
+        "readings": ["ケン", "と-ぐ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 521,
+        "kanji": ["県"],
+        "level": "3",
+        "meaning": "prefecture",
+        "readings": ["ケン"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 569,
+        "kanji": ["庫"],
+        "level": "3",
+        "meaning": "warehouse",
+        "readings": ["コ", "（ク）"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 570,
+        "kanji": ["湖"],
+        "level": "3",
+        "meaning": "lake",
+        "readings": ["コ", "みずうみ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 598,
+        "kanji": ["向"],
+        "level": "3",
+        "meaning": "over there",
+        "readings": ["コウ", "む-く", "む-ける", "む-かう", "む-こう"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 610,
+        "kanji": ["幸"],
+        "level": "3",
+        "meaning": "happiness",
+        "readings": ["コウ", "さいわ-い", "さち", "しあわ-せ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 635,
+        "kanji": ["港"],
+        "level": "3",
+        "meaning": "harbor",
+        "readings": ["コウ", "みなと"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 651,
+        "kanji": ["号"],
+        "level": "3",
+        "meaning": "number",
+        "readings": ["ゴウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 674,
+        "kanji": ["根"],
+        "level": "3",
+        "meaning": "root",
+        "readings": ["コン", "ね"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 704,
+        "kanji": ["祭"],
+        "level": "3",
+        "meaning": "festival",
+        "readings": ["サイ", "まつ-る", "まつ-り"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 743,
+        "kanji": ["皿"],
+        "level": "3",
+        "meaning": "dish",
+        "readings": ["さら"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 764,
+        "kanji": ["仕"],
+        "level": "3",
+        "meaning": "do",
+        "readings": ["シ", "（ジ）", "つか-える"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 771,
+        "kanji": ["死"],
+        "level": "3",
+        "meaning": "death",
+        "readings": ["シ", "し-ぬ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 777,
+        "kanji": ["使"],
+        "level": "3",
+        "meaning": "use",
+        "readings": ["シ", "つか-う"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 779,
+        "kanji": ["始"],
+        "level": "3",
+        "meaning": "begin",
+        "readings": ["シ", "はじ-める", "はじ-まる"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 786,
+        "kanji": ["指"],
+        "level": "3",
+        "meaning": "finger",
+        "readings": ["シ", "ゆび", "さ-す"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 795,
+        "kanji": ["歯"],
+        "level": "3",
+        "meaning": "tooth",
+        "readings": ["シ", "は"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 798,
+        "kanji": ["詩"],
+        "level": "3",
+        "meaning": "poem",
+        "readings": ["シ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 809,
+        "kanji": ["次"],
+        "level": "3",
+        "meaning": "next",
+        "readings": ["ジ", "シ", "つ-ぐ", "つぎ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 814,
+        "kanji": ["事"],
+        "level": "3",
+        "meaning": "abstract thing",
+        "readings": ["ジ", "（ズ）", "こと"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 817,
+        "kanji": ["持"],
+        "level": "3",
+        "meaning": "hold",
+        "readings": ["ジ", "も-つ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 826,
+        "kanji": ["式"],
+        "level": "3",
+        "meaning": "style",
+        "readings": ["シキ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 839,
+        "kanji": ["実"],
+        "level": "3",
+        "meaning": "truth",
+        "readings": ["ジツ", "み", "みの-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 841,
+        "kanji": ["写"],
+        "level": "3",
+        "meaning": "copy",
+        "readings": ["シャ", "うつ-す", "うつ-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 845,
+        "kanji": ["者"],
+        "level": "3",
+        "meaning": "someone",
+        "readings": ["シャ", "もの"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 864,
+        "kanji": ["主"],
+        "level": "3",
+        "meaning": "master",
+        "readings": ["シュ", "（ス）", "ぬし", "おも"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 865,
+        "kanji": ["守"],
+        "level": "3",
+        "meaning": "protect",
+        "readings": ["シュ", "（ス）", "まも-る", "も-り"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 867,
+        "kanji": ["取"],
+        "level": "3",
+        "meaning": "take",
+        "readings": ["シュ", "と-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 872,
+        "kanji": ["酒"],
+        "level": "3",
+        "meaning": "alcoholic drink",
+        "readings": ["シュ", "さけ", "（さか）"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 877,
+        "kanji": ["受"],
+        "level": "3",
+        "meaning": "accept",
+        "readings": ["ジュ", "う-ける", "う-かる"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 885,
+        "kanji": ["州"],
+        "level": "3",
+        "meaning": "state",
+        "readings": ["シュウ", "す"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 890,
+        "kanji": ["拾"],
+        "level": "3",
+        "meaning": "pick up",
+        "readings": ["シュウ", "ジュウ", "ひろ-う"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 895,
+        "kanji": ["終"],
+        "level": "3",
+        "meaning": "end",
+        "readings": ["シュウ", "お-わる", "お-える"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 897,
+        "kanji": ["習"],
+        "level": "3",
+        "meaning": "learn",
+        "readings": ["シュウ", "なら-う"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 901,
+        "kanji": ["集"],
+        "level": "3",
+        "meaning": "collect",
+        "readings": ["シュウ", "あつ-まる", "あつ-める", "つど-う"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 910,
+        "kanji": ["住"],
+        "level": "3",
+        "meaning": "dwelling",
+        "readings": ["ジュウ", "す-む", "す-まう"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 912,
+        "kanji": ["重"],
+        "level": "3",
+        "meaning": "heavy",
+        "readings": ["ジュウ", "チョウ", "え", "おも-い", "かさ-ねる", "かさ-なる"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 920,
+        "kanji": ["宿"],
+        "level": "3",
+        "meaning": "inn",
+        "readings": ["シュク", "やど", "やど-る", "やど-す"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 945,
+        "kanji": ["所"],
+        "level": "3",
+        "meaning": "place",
+        "readings": ["ショ", "ところ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 948,
+        "kanji": ["暑"],
+        "level": "3",
+        "meaning": "hot",
+        "readings": ["ショ", "あつ-い"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 954,
+        "kanji": ["助"],
+        "level": "3",
+        "meaning": "help",
+        "readings": ["ジョ", "たす-ける", "たす-かる", "すけ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 973,
+        "kanji": ["昭"],
+        "level": "3",
+        "meaning": "shining",
+        "readings": ["ショウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 976,
+        "kanji": ["消"],
+        "level": "3",
+        "meaning": "extinguish",
+        "readings": ["ショウ", "き-える", "け-す"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 982,
+        "kanji": ["商"],
+        "level": "3",
+        "meaning": "sell",
+        "readings": ["ショウ", "あきな-う"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 984,
+        "kanji": ["章"],
+        "level": "3",
+        "meaning": "chapter",
+        "readings": ["ショウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 987,
+        "kanji": ["勝"],
+        "level": "3",
+        "meaning": "win",
+        "readings": ["ショウ", "か-つ", "まさ-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1014,
+        "kanji": ["乗"],
+        "level": "3",
+        "meaning": "ride",
+        "readings": ["ジョウ", "の-る", "の-せる"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1032,
+        "kanji": ["植"],
+        "level": "3",
+        "meaning": "plant",
+        "readings": ["ショク", "う-える", "う-わる"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1042,
+        "kanji": ["申"],
+        "level": "3",
+        "meaning": "say",
+        "readings": ["シン", "もう-す"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1046,
+        "kanji": ["身"],
+        "level": "3",
+        "meaning": "body",
+        "readings": ["シン", "み"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1051,
+        "kanji": ["神"],
+        "level": "3",
+        "meaning": "god",
+        "readings": ["シン", "ジン", "かみ", "（かん）", "（こう）"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1056,
+        "kanji": ["真"],
+        "level": "3",
+        "meaning": "true",
+        "readings": ["シン", "ま"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1058,
+        "kanji": ["深"],
+        "level": "3",
+        "meaning": "deep",
+        "readings": ["シン", "ふか-い", "ふか-まる", "ふか-める"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1060,
+        "kanji": ["進"],
+        "level": "3",
+        "meaning": "advance",
+        "readings": ["シン", "すす-む", "すす-める"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1105,
+        "kanji": ["世"],
+        "level": "3",
+        "meaning": "world",
+        "readings": ["セイ", "セ", "よ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1135,
+        "kanji": ["整"],
+        "level": "3",
+        "meaning": "put in order",
+        "readings": ["セイ", "ととの-える", "ととの-う"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1142,
+        "kanji": ["昔"],
+        "level": "3",
+        "meaning": "long ago",
+        "readings": ["セキ", "（シャク）", "むかし"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1196,
+        "kanji": ["全"],
+        "level": "3",
+        "meaning": "whole",
+        "readings": ["ゼン", "まった-く", "すべ-て"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1223,
+        "kanji": ["相"],
+        "level": "3",
+        "meaning": "mutual",
+        "readings": ["ソウ", "ショウ", "あい"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1226,
+        "kanji": ["送"],
+        "level": "3",
+        "meaning": "send",
+        "readings": ["ソウ", "おく-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1243,
+        "kanji": ["想"],
+        "level": "3",
+        "meaning": "concept",
+        "readings": ["ソウ", "（ソ）"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1266,
+        "kanji": ["息"],
+        "level": "3",
+        "meaning": "breath",
+        "readings": ["ソク", "いき"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1268,
+        "kanji": ["速"],
+        "level": "3",
+        "meaning": "fast",
+        "readings": ["ソク", "はや-い", "はや-める", "はや-まる", "すみ-やか"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1272,
+        "kanji": ["族"],
+        "level": "3",
+        "meaning": "tribe",
+        "readings": ["ゾク"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1284,
+        "kanji": ["他"],
+        "level": "3",
+        "meaning": "other",
+        "readings": ["タ", "ほか"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1287,
+        "kanji": ["打"],
+        "level": "3",
+        "meaning": "hit",
+        "readings": ["ダ", "う-つ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1294,
+        "kanji": ["対"],
+        "level": "3",
+        "meaning": "opposite",
+        "readings": ["タイ", "ツイ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1297,
+        "kanji": ["待"],
+        "level": "3",
+        "meaning": "wait",
+        "readings": ["タイ", "ま-つ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1313,
+        "kanji": ["代"],
+        "level": "3",
+        "meaning": "substitute",
+        "readings": ["ダイ", "タイ", "か-わる", "か-える", "よ", "しろ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1315,
+        "kanji": ["第"],
+        "level": "3",
+        "meaning": "ordinal number prefix",
+        "readings": ["ダイ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1316,
+        "kanji": ["題"],
+        "level": "3",
+        "meaning": "topic",
+        "readings": ["ダイ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1337,
+        "kanji": ["炭"],
+        "level": "3",
+        "meaning": "charcoal",
+        "readings": ["タン", "すみ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1341,
+        "kanji": ["短"],
+        "level": "3",
+        "meaning": "short",
+        "readings": ["タン", "みじか-い"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1353,
+        "kanji": ["談"],
+        "level": "3",
+        "meaning": "discuss",
+        "readings": ["ダン"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1374,
+        "kanji": ["着"],
+        "level": "3",
+        "meaning": "wear",
+        "readings": ["チャク", "（ジャク）", "き-る", "き-せる", "つ-く", "つ-ける"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1383,
+        "kanji": ["注"],
+        "level": "3",
+        "meaning": "pour",
+        "readings": ["チュウ", "そそ-ぐ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1385,
+        "kanji": ["柱"],
+        "level": "3",
+        "meaning": "pillar",
+        "readings": ["チュウ", "はしら"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1392,
+        "kanji": ["丁"],
+        "level": "3",
+        "meaning": "ward",
+        "readings": ["チョウ", "テイ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1399,
+        "kanji": ["帳"],
+        "level": "3",
+        "meaning": "account book",
+        "readings": ["チョウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1415,
+        "kanji": ["調"],
+        "level": "3",
+        "meaning": "investigate",
+        "readings": ["チョウ", "しら-べる", "ととの-う", "ととの-える"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1427,
+        "kanji": ["追"],
+        "level": "3",
+        "meaning": "follow",
+        "readings": ["ツイ", "お-う"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1441,
+        "kanji": ["定"],
+        "level": "3",
+        "meaning": "decide",
+        "readings": ["テイ", "ジョウ", "さだ-める", "さだ-まる", "さだ-か"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1449,
+        "kanji": ["庭"],
+        "level": "3",
+        "meaning": "garden",
+        "readings": ["テイ", "にわ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1461,
+        "kanji": ["笛"],
+        "level": "3",
+        "meaning": "flute",
+        "readings": ["テキ", "ふえ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1469,
+        "kanji": ["鉄"],
+        "level": "3",
+        "meaning": "iron",
+        "readings": ["テツ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1478,
+        "kanji": ["転"],
+        "level": "3",
+        "meaning": "revolve",
+        "readings": ["テン", "ころ-がる", "ころ-げる", "ころ-がす", "ころ-ぶ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1489,
+        "kanji": ["都"],
+        "level": "3",
+        "meaning": "metropolis",
+        "readings": ["ト", "ツ", "みやこ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1496,
+        "kanji": ["度"],
+        "level": "3",
+        "meaning": "degrees",
+        "readings": ["ド", "（ト）", "（タク）", "たび"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1502,
+        "kanji": ["投"],
+        "level": "3",
+        "meaning": "throw",
+        "readings": ["トウ", "な-げる"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1503,
+        "kanji": ["豆"],
+        "level": "3",
+        "meaning": "beans",
+        "readings": ["トウ", "（ズ）", "まめ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1510,
+        "kanji": ["島"],
+        "level": "3",
+        "meaning": "island",
+        "readings": ["トウ", "しま"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1521,
+        "kanji": ["湯"],
+        "level": "3",
+        "meaning": "hot water",
+        "readings": ["トウ", "ゆ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1523,
+        "kanji": ["登"],
+        "level": "3",
+        "meaning": "climb",
+        "readings": ["トウ", "ト", "のぼ-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1525,
+        "kanji": ["等"],
+        "level": "3",
+        "meaning": "class",
+        "readings": ["トウ", "ひと-しい"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1539,
+        "kanji": ["動"],
+        "level": "3",
+        "meaning": "move",
+        "readings": ["ドウ", "うご-く", "うご-かす"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1541,
+        "kanji": ["童"],
+        "level": "3",
+        "meaning": "juvenile",
+        "readings": ["ドウ", "わらべ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1602,
+        "kanji": ["農"],
+        "level": "3",
+        "meaning": "farming",
+        "readings": ["ノウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1605,
+        "kanji": ["波"],
+        "level": "3",
+        "meaning": "wave",
+        "readings": ["ハ", "なみ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1617,
+        "kanji": ["配"],
+        "level": "3",
+        "meaning": "distribute",
+        "readings": ["ハイ", "くば-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1623,
+        "kanji": ["倍"],
+        "level": "3",
+        "meaning": "double",
+        "readings": ["バイ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1643,
+        "kanji": ["箱"],
+        "level": "3",
+        "meaning": "box",
+        "readings": ["はこ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1645,
+        "kanji": ["畑"],
+        "level": "3",
+        "meaning": "farm",
+        "readings": ["はた", "はたけ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1649,
+        "kanji": ["発"],
+        "level": "3",
+        "meaning": "departure",
+        "readings": ["ハツ", "ホツ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1655,
+        "kanji": ["反"],
+        "level": "3",
+        "meaning": "anti-",
+        "readings": ["ハン", "（ホン）", "（タン）", "そ-る", "そ-らす"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1663,
+        "kanji": ["坂"],
+        "level": "3",
+        "meaning": "slope",
+        "readings": ["ハン", "さか"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1665,
+        "kanji": ["板"],
+        "level": "3",
+        "meaning": "board",
+        "readings": ["ハン", "バン", "いた"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1684,
+        "kanji": ["皮"],
+        "level": "3",
+        "meaning": "skin",
+        "readings": ["ヒ", "かわ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1697,
+        "kanji": ["悲"],
+        "level": "3",
+        "meaning": "sad",
+        "readings": ["ヒ", "かな-しい", "かな-しむ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1705,
+        "kanji": ["美"],
+        "level": "3",
+        "meaning": "beauty",
+        "readings": ["ビ", "うつく-しい"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1708,
+        "kanji": ["鼻"],
+        "level": "3",
+        "meaning": "nose",
+        "readings": ["ビ", "はな"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1714,
+        "kanji": ["筆"],
+        "level": "3",
+        "meaning": "writing brush",
+        "readings": ["ヒツ", "ふで"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1717,
+        "kanji": ["氷"],
+        "level": "3",
+        "meaning": "ice",
+        "readings": ["ヒョウ", "こおり", "ひ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1718,
+        "kanji": ["表"],
+        "level": "3",
+        "meaning": "express",
+        "readings": ["ヒョウ", "おもて", "あらわ-す", "あらわ-れる"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1725,
+        "kanji": ["秒"],
+        "level": "3",
+        "meaning": "second (part of time)",
+        "readings": ["ビョウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1726,
+        "kanji": ["病"],
+        "level": "3",
+        "meaning": "sick",
+        "readings": ["ビョウ", "（ヘイ）", "や-む", "やまい"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1729,
+        "kanji": ["品"],
+        "level": "3",
+        "meaning": "article",
+        "readings": ["ヒン", "しな"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1747,
+        "kanji": ["負"],
+        "level": "3",
+        "meaning": "lose",
+        "readings": ["フ", "ま-ける", "ま-かす", "お-う"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1761,
+        "kanji": ["部"],
+        "level": "3",
+        "meaning": "part",
+        "readings": ["ブ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1766,
+        "kanji": ["服"],
+        "level": "3",
+        "meaning": "clothes",
+        "readings": ["フク"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1770,
+        "kanji": ["福"],
+        "level": "3",
+        "meaning": "luck",
+        "readings": ["フク"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1777,
+        "kanji": ["物"],
+        "level": "3",
+        "meaning": "thing",
+        "readings": ["ブツ", "モツ", "もの"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1789,
+        "kanji": ["平"],
+        "level": "3",
+        "meaning": "flat",
+        "readings": ["ヘイ", "ビョウ", "たい-ら", "ひら"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1809,
+        "kanji": ["返"],
+        "level": "3",
+        "meaning": "return",
+        "readings": ["ヘン", "かえ-す", "かえ-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1816,
+        "kanji": ["勉"],
+        "level": "3",
+        "meaning": "exertion",
+        "readings": ["ベン"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1836,
+        "kanji": ["放"],
+        "level": "3",
+        "meaning": "release",
+        "readings": ["ホウ", "はな-す", "はな-つ", "はな-れる", "ほう-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1911,
+        "kanji": ["味"],
+        "level": "3",
+        "meaning": "flavor",
+        "readings": ["ミ", "あじ", "あじ-わう"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1927,
+        "kanji": ["命"],
+        "level": "3",
+        "meaning": "fate",
+        "readings": ["メイ", "ミョウ", "いのち"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1936,
+        "kanji": ["面"],
+        "level": "3",
+        "meaning": "face",
+        "readings": ["メン", "おも", "おもて", "つら"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1951,
+        "kanji": ["問"],
+        "level": "3",
+        "meaning": "question",
+        "readings": ["モン", "と-う", "と-い", "（とん）"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1957,
+        "kanji": ["役"],
+        "level": "3",
+        "meaning": "service",
+        "readings": ["ヤク", "エキ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1960,
+        "kanji": ["薬"],
+        "level": "3",
+        "meaning": "medicine",
+        "readings": ["ヤク", "くすり"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1963,
+        "kanji": ["由"],
+        "level": "3",
+        "meaning": "reason",
+        "readings": ["ユ", "ユウ", "（ユイ）", "よし"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1964,
+        "kanji": ["油"],
+        "level": "3",
+        "meaning": "oil",
+        "readings": ["ユ", "あぶら"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1972,
+        "kanji": ["有"],
+        "level": "3",
+        "meaning": "have",
+        "readings": ["ユウ", "ウ", "あ-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1980,
+        "kanji": ["遊"],
+        "level": "3",
+        "meaning": "play",
+        "readings": ["ユウ", "（ユ）", "あそ-ぶ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1987,
+        "kanji": ["予"],
+        "level": "3",
+        "meaning": "in advance",
+        "readings": ["ヨ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1993,
+        "kanji": ["羊"],
+        "level": "3",
+        "meaning": "sheep",
+        "readings": ["ヨウ", "ひつじ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 1995,
+        "kanji": ["洋"],
+        "level": "3",
+        "meaning": "ocean",
+        "readings": ["ヨウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2001,
+        "kanji": ["葉"],
+        "level": "3",
+        "meaning": "leaf",
+        "readings": ["ヨウ", "は"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2002,
+        "kanji": ["陽"],
+        "level": "3",
+        "meaning": "sunshine",
+        "readings": ["ヨウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2005,
+        "kanji": ["様"],
+        "level": "3",
+        "meaning": "formal title",
+        "readings": ["ヨウ", "さま"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2026,
+        "kanji": ["落"],
+        "level": "3",
+        "meaning": "fall",
+        "readings": ["ラク", "お-ちる", "お-とす"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2050,
+        "kanji": ["流"],
+        "level": "3",
+        "meaning": "stream",
+        "readings": ["リュウ", "（ル）", "なが-れる", "なが-す"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2057,
+        "kanji": ["旅"],
+        "level": "3",
+        "meaning": "trip",
+        "readings": ["リョ", "たび"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2061,
+        "kanji": ["両"],
+        "level": "3",
+        "meaning": "both",
+        "readings": ["リョウ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2075,
+        "kanji": ["緑"],
+        "level": "3",
+        "meaning": "green",
+        "readings": ["リョク", "（ロク）", "みどり"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2088,
+        "kanji": ["礼"],
+        "level": "3",
+        "meaning": "thanks",
+        "readings": ["レイ", "ライ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2101,
+        "kanji": ["列"],
+        "level": "3",
+        "meaning": "row",
+        "readings": ["レツ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2108,
+        "kanji": ["練"],
+        "level": "3",
+        "meaning": "practice",
+        "readings": ["レン", "ね-る"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2113,
+        "kanji": ["路"],
+        "level": "3",
+        "meaning": "road",
+        "readings": ["ロ", "じ"],
+        "compounds": [["", "", ""]]
+    },
+    {
+        "id": 2129,
+        "kanji": ["和"],
+        "level": "3",
+        "meaning": "peace",
+        "readings": ["ワ", "（オ）", "やわ-らぐ", "やわ-らげる", "なご-む", "なご-やか"],
+        "compounds": [["", "", ""]]
+    }
+]
