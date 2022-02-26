@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:funny_kanji/config/app_constants.dart';
-import 'package:funny_kanji/pages/home/home.dart';
+import 'package:funny_kanji/pages/home/home_layout.dart';
 import 'package:yaru/yaru.dart';
 
 class FunnyKanjiApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class FunnyKanjiApp extends StatelessWidget {
       theme: yaruLight,
       darkTheme: yaruDark,
       title: AppConstants.appName,
-      home: const HomePage(),
+      home: const HomeLayout(),
     );
   }
 }
