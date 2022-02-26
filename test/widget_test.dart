@@ -6,12 +6,14 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:funny_kanji/models/funny_kanji.dart';
 
 import 'package:funny_kanji/widgets/funny_kanji_app.dart';
+import 'package:isar/isar.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const FunnyKanjiApp());
+    final isar = await Isar.open(schemas: FunnyKanji.isarSchemas);
+    await tester.pumpWidget(FunnyKanjiApp(isar: isar));
   });
 }

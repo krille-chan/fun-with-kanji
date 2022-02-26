@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+import 'package:funny_kanji/utils/writing_system.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:yaru_icons/yaru_icons.dart';
+
+class OverviewListTile extends StatelessWidget {
+  final void Function() onTap;
+  final WritingSystem writingSystem;
+  final String title;
+
+  const OverviewListTile({
+    required this.title,
+    required this.onTap,
+    required this.writingSystem,
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: CircleAvatar(child: Text(writingSystem.symbol)),
+      title: Text(title),
+      subtitle: Text(
+          L10n.of(context)!.countEntries(writingSystem.entries.toString())),
+      onTap: onTap,
+      trailing: const Icon(YaruIcons.go_next),
+    );
+  }
+}

@@ -18,6 +18,7 @@ dependencies:
   yaru: ^0.2.2
   yaru_icons: ^0.1.2
   assets_audio_player: ^3.0.4+1
+  path_provider: ^2.0.9
 
 dev_dependencies:
   flutter_test:
