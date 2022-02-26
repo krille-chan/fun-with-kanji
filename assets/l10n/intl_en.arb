@@ -22,5 +22,11 @@
     "meanings": "Meanings:",
     "onReadings": "On readings:",
     "kunReadings": "Kun readings:",
-    "moreInfo": "More info"
+    "moreInfo": "More info",
+    "learnJapaneseLetteringSystems": "Learn Japanese Lettering Systems",
+    "learnJapaneseLetteringSystemsDesc": "There are three lettering systems used in the Japanese language:\n\n- Hiragana\n- Katakana\n- Kanji",
+    "hiraganaDesc": "All starts with the 46 characters of Hiragana (gojūon) and their diagrephics and digraphs. It is a phonetic lettering system which can be used to write all words in the Japanese language.",
+    "katakanaDesc": "This is the other phonetic lettering system and is mostly used to write foreign-language words. For each Hiragana there is also a Katakana character.",
+    "radicalsDesc": "Kanji Radical are graphemes, or graphical parts, that are used in organizing Japanese kanji in dictionaries. They are derived from the 214 Chinese Kangxi radicals.",
+    "kanjiDesc": "Japanese also uses Chinese characters which are called Kanji. This app lists the 2136 Jōyō-Kanji which are taught in Japanese schools. Kanji are not a phonetic lettering system. Each Kanji represents one or multiple words and has a go- and a kun-reading."
 }
