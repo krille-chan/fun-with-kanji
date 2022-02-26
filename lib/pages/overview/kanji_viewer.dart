@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:funny_kanji/models/kanji.dart';
 import 'package:funny_kanji/models/script_loader.dart';
 import 'package:yaru_icons/yaru_icons.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class KanjiViewer extends StatelessWidget {
   final int level;
@@ -15,7 +16,7 @@ class KanjiViewer extends StatelessWidget {
                   radius: 50,
                   child: Text(
                     kanji.kanji,
-                    style: TextStyle(fontSize: 60),
+                    style: const TextStyle(fontSize: 60),
                   ))),
           content: SizedBox(
             width: double.maxFinite,
@@ -23,19 +24,19 @@ class KanjiViewer extends StatelessWidget {
               shrinkWrap: true,
               children: [
                 ListTile(
-                  title: Text('Meanings:'),
+                  title: Text(L10n.of(context)!.meanings),
                   subtitle: Text(kanji.meanings.join(', ')),
                 ),
                 ListTile(
-                  title: Text('On readings:'),
+                  title: Text(L10n.of(context)!.onReadings),
                   subtitle: Text(kanji.readingsOn.join(', ')),
                 ),
                 ListTile(
-                  title: Text('Kun readings:'),
+                  title: Text(L10n.of(context)!.kunReadings),
                   subtitle: Text(kanji.readingsKun.join(', ')),
                 ),
                 ListTile(
-                  title: Text('Radicals:'),
+                  title: Text('${L10n.of(context)!.radicals}:'),
                   subtitle: Text(kanji.radicals.join(', ')),
                 ),
               ],
@@ -75,7 +76,7 @@ class KanjiViewer extends StatelessWidget {
                 backgroundColor: Theme.of(context).secondaryHeaderColor,
               ),
               title: Text(kanji[i].meanings.join(', ')),
-              subtitle: Text('More info'),
+              subtitle: Text(L10n.of(context)!.moreInfo),
               trailing: const Icon(YaruIcons.go_next),
               onTap: () => showInfo(kanji[i], context),
             ),

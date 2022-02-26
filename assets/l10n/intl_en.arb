@@ -1,0 +1,26 @@
+{
+    "learn": "Learn",
+    "overview": "Overview",
+    "info": "Info",
+    "settings": "Settings",
+    "hiragana": "Hiragana",
+    "katakana": "Katakana",
+    "radicals": "Radicals",
+    "kanji": "Kanji",
+    "kanjiLevel": "Kanji level {level}",
+    "@kanjiLevel": {
+        "placeholders": {
+            "level": {}
+        }
+    },
+    "countEntries": "{count} entries",
+    "@countEntries": {
+        "placeholders": {
+            "count": {}
+        }
+    },
+    "meanings": "Meanings:",
+    "onReadings": "On readings:",
+    "kunReadings": "Kun readings:",
+    "moreInfo": "More info"
+}

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:funny_kanji/models/kana.dart';
 import 'package:funny_kanji/models/script_loader.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class HiraganaViewer extends StatelessWidget {
   const HiraganaViewer({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class HiraganaViewer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Hiragana'),
+        title: Text(L10n.of(context)!.hiragana),
       ),
       body: FutureBuilder<List<Kana>>(
         future: ScriptLoader.loadHiragana(),

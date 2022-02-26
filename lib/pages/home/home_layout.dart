@@ -4,6 +4,7 @@ import 'package:funny_kanji/pages/info/info.dart';
 import 'package:funny_kanji/pages/overview/overview.dart';
 import 'package:funny_kanji/pages/settings/settings.dart';
 import 'package:yaru_icons/yaru_icons.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class HomeLayout extends StatefulWidget {
   const HomeLayout({Key? key}) : super(key: key);
@@ -37,22 +38,22 @@ class _HomeLayoutState extends State<HomeLayout> {
         onTap: (i) => setState(() {
           currentIndex = i;
         }),
-        items: const [
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(YaruIcons.checkbox_button_checked),
-            label: 'Learn',
+            icon: const Icon(YaruIcons.checkbox_button_checked),
+            label: L10n.of(context)!.learn,
           ),
           BottomNavigationBarItem(
-            icon: Icon(YaruIcons.search),
-            label: 'Overview',
+            icon: const Icon(YaruIcons.search),
+            label: L10n.of(context)!.overview,
           ),
           BottomNavigationBarItem(
-            icon: Icon(YaruIcons.information),
-            label: 'Info',
+            icon: const Icon(YaruIcons.information),
+            label: L10n.of(context)!.info,
           ),
           BottomNavigationBarItem(
-            icon: Icon(YaruIcons.settings),
-            label: 'Settings',
+            icon: const Icon(YaruIcons.settings),
+            label: L10n.of(context)!.settings,
           ),
         ],
       ),
