@@ -1,4 +1,6 @@
-class Kanji {
+import 'package:funny_kanji/models/jp_character.dart';
+
+class Kanji extends JpCharacter {
   final int id;
   final String kanji;
   final List<String> meanings;
@@ -13,7 +15,7 @@ class Kanji {
     required this.readingsOn,
     required this.readingsKun,
     required this.radicals,
-  });
+  }) : super();
 
   factory Kanji.fromJson(Map<String, dynamic> json) => Kanji(
         id: json['id'],

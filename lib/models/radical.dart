@@ -1,4 +1,6 @@
-class Radical {
+import 'package:funny_kanji/models/jp_character.dart';
+
+class Radical extends JpCharacter {
   final int id;
   final String radical;
   final String name;
@@ -9,7 +11,7 @@ class Radical {
     required this.radical,
     required this.name,
     required this.reading,
-  });
+  }) : super();
 
   factory Radical.fromJson(Map<String, dynamic> json) => Radical(
         id: json['id'],

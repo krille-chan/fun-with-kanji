@@ -1,4 +1,6 @@
-class Kana {
+import 'package:funny_kanji/models/jp_character.dart';
+
+class Kana extends JpCharacter {
   final String kana;
   final String roumaji;
   final String type;
@@ -7,7 +9,7 @@ class Kana {
     required this.kana,
     required this.roumaji,
     required this.type,
-  });
+  }) : super();
 
   factory Kana.fromJson(Map<String, dynamic> json) => Kana(
         kana: json['kana'],

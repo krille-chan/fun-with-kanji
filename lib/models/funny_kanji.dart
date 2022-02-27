@@ -40,4 +40,33 @@ class FunnyKanji {
                   .sum()) /
               hiraganaMax)
           .round();
+
+  Future<LearningProgress> getLearningProgress(
+          WritingSystem system, int id) async =>
+      (await isar.learningProgresss
+              .filter()
+              .writingSystemEqualTo(system.name)
+              .characterIdEqualTo(id)
+              .findFirst()) ??
+          LearningProgress()
+        ..characterId = id
+        ..writingSystem = system.name;
+
+  Future<void> setLearningProgress(
+    WritingSystem system,
+    int id,
+    int stars,
+  ) =>
+      isar.writeTxn((_) async {
+        final progress = await isar.learningProgresss
+                .filter()
+                .writingSystemEqualTo(system.name)
+                .characterIdEqualTo(id)
+                .findFirst() ??
+            LearningProgress()
+          ..characterId = id
+          ..writingSystem = system.name;
+        progress.stars = stars;
+        await isar.learningProgresss.put(progress);
+      });
 }
