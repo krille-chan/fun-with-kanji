@@ -13,22 +13,24 @@ class HomePageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(L10n.of(context)!.learn)),
-      body: ListView(
-        padding: const EdgeInsets.all(32),
-        children: WritingSystem.values
-            .map((writingSystem) => FutureBuilder<int>(
-                  future: FunnyKanji.of(context).loadProgressPercent(
-                    writingSystem,
-                  ),
-                  builder: (context, snapshot) => LeanUnitListTile(
-                    progress: snapshot.data,
-                    title: writingSystem.getTitle(context),
-                    symbol: writingSystem.symbol,
-                    onTap: () => controller.learnSystem(writingSystem),
-                  ),
-                ))
-            .toList(),
-      ),
+      body: StreamBuilder<void>(
+          stream: FunnyKanji.of(context).onChanges,
+          builder: (context, snapshot) => ListView(
+                padding: const EdgeInsets.all(32),
+                children: WritingSystem.values
+                    .map((writingSystem) => FutureBuilder<int>(
+                          future: FunnyKanji.of(context).loadProgressPercent(
+                            writingSystem,
+                          ),
+                          builder: (context, snapshot) => LeanUnitListTile(
+                            progress: snapshot.data,
+                            title: writingSystem.getTitle(context),
+                            symbol: writingSystem.symbol,
+                            onTap: () => controller.learnSystem(writingSystem),
+                          ),
+                        ))
+                    .toList(),
+              )),
     );
   }
 }

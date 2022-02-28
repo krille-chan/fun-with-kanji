@@ -19,12 +19,11 @@ class FunnyKanji {
         LearningProgressSchema,
       ];
 
+  Stream<void> get onChanges => isar.learningProgresss.watchLazy();
+
   Widget builder(BuildContext context, Widget? child) => Provider<FunnyKanji>(
         create: (_) => this,
-        child: StreamBuilder<void>(
-          stream: isar.learningProgresss.watchLazy(),
-          builder: (context, snapshot) => child ?? Container(),
-        ),
+        child: child,
       );
 
   static FunnyKanji of(BuildContext context) => Provider.of<FunnyKanji>(
