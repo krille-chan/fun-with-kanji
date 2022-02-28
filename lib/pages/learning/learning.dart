@@ -13,6 +13,7 @@ import 'package:funny_kanji/models/script_loader.dart';
 import 'package:funny_kanji/pages/learning/learning_view.dart';
 import 'package:funny_kanji/utils/writing_system.dart';
 import 'package:yaru_icons/yaru_icons.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class LearningPage extends StatefulWidget {
   final WritingSystem writingSystem;
@@ -176,7 +177,11 @@ class LearningController extends State<LearningPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            isCorrect ? '+1' : '-1',
+            isCorrect
+                ? learningProgress!.stars == 9
+                    ? L10n.of(context)!.allStarsWon
+                    : '+1'
+                : '-1',
             style: TextStyle(
               color: isCorrect ? Colors.green : Colors.red,
               fontWeight: FontWeight.bold,
@@ -197,7 +202,8 @@ class LearningController extends State<LearningPage> {
     // Play sound:
     if (!Platform.isLinux) {
       AssetsAudioPlayer.newPlayer().open(
-        Audio("assets/sounds/${isCorrect ? 'correct' : 'wrong'}.mp3"),
+        Audio(
+            "assets/sounds/${isCorrect ? learningProgress!.stars == 9 ? 'tenstars' : 'correct' : 'wrong'}.mp3"),
         autoStart: true,
         showNotification: true,
       );

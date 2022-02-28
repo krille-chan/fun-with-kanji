@@ -34,5 +34,6 @@
     "cancel": "Cancel",
     "reset": "Reset",
     "check": "Check",
-    "enterRomaji": "Enter Romaji"
+    "enterRomaji": "Enter Romaji",
+    "allStarsWon": "All stars won"
 }
