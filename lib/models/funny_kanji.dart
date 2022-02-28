@@ -33,12 +33,13 @@ class FunnyKanji {
       );
 
   Future<int> loadProgressPercent(WritingSystem system) async =>
-      ((await isar.learningProgresss
-                  .filter()
-                  .writingSystemEqualTo(system.name)
-                  .starsProperty()
-                  .sum()) /
-              hiraganaMax)
+      (((await isar.learningProgresss
+                      .filter()
+                      .writingSystemEqualTo(system.name)
+                      .starsProperty()
+                      .sum()) /
+                  hiraganaMax) *
+              100)
           .round();
 
   Future<LearningProgress> getLearningProgress(
@@ -52,6 +53,53 @@ class FunnyKanji {
           LearningProgress()
         ..characterId = id
         ..writingSystem = system.name;
+
+  Future<Set<LearningProgress>> getChoices(
+    WritingSystem system,
+    int stars,
+    int characterId,
+  ) async {
+    var available = await isar.learningProgresss
+        .filter()
+        .writingSystemEqualTo(system.name)
+        .and()
+        .not()
+        .characterIdEqualTo(characterId)
+        .sortByStars()
+        .findAll();
+    available = available.take(10).toList()..shuffle();
+    return available.take(2).toSet();
+  }
+
+  Future<List<LearningProgress>> getLearnInProgressCharacters(
+    WritingSystem system,
+  ) =>
+      isar.learningProgresss
+          .filter()
+          .writingSystemEqualTo(system.name)
+          .and()
+          .starsLessThan(10)
+          .findAll();
+
+  Future<int> getNextLearnCharacter(WritingSystem system) async {
+    final nextId = (await isar.learningProgresss
+            .where()
+            .sortByCharacterIdDesc()
+            .findFirst())
+        ?.characterId;
+    if (nextId == null) return 0;
+    return nextId + 1;
+  }
+
+  Future<List<LearningProgress>> getLearnedCharacters(
+    WritingSystem system,
+  ) =>
+      isar.learningProgresss
+          .filter()
+          .writingSystemEqualTo(system.name)
+          .and()
+          .starsEqualTo(10)
+          .findAll();
 
   Future<void> setLearningProgress(
     WritingSystem system,

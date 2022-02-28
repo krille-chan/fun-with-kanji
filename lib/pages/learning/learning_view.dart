@@ -3,6 +3,7 @@ import 'package:funny_kanji/models/kana.dart';
 import 'package:funny_kanji/pages/learning/learning.dart';
 import 'package:funny_kanji/utils/writing_system.dart';
 import 'package:yaru_icons/yaru_icons.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class LearningView extends StatelessWidget {
   final LearningController controller;
@@ -43,12 +44,31 @@ class LearningView extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 16),
-          Center(
-            child: CircleAvatar(
-              radius: 94,
-              child: Text(
-                currentCharacter.toString(),
-                style: const TextStyle(fontSize: 94),
+          SizedBox(
+            height: 188,
+            child: Center(
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 500),
+                width: controller.answerCorrect == null ? 188 : 0,
+                height: controller.answerCorrect == null ? 188 : 0,
+                curve: Curves.easeInOut,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(256),
+                  color: controller.answerCorrect == null
+                      ? Colors.purple.shade700
+                      : controller.answerCorrect!
+                          ? Colors.green.shade700
+                          : Colors.red.shade700,
+                ),
+                child: Center(
+                  child: controller.answerCorrect != null
+                      ? null
+                      : Text(
+                          currentCharacter.toString(),
+                          style: const TextStyle(
+                              fontSize: 94, color: Colors.white),
+                        ),
+                ),
               ),
             ),
           ),
@@ -66,9 +86,12 @@ class LearningView extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () => controller.checkChoice(choice),
                   style: ElevatedButton.styleFrom(
-                    primary: controller.answerCorrect == true &&
-                            choice == currentCharacter
-                        ? Colors.green.shade700
+                    primary: controller.answerCorrect != null
+                        ? choice == currentCharacter
+                            ? Colors.green.shade700
+                            : controller.answerCorrect == false
+                                ? Colors.red.shade700
+                                : Colors.blueGrey
                         : Colors.blueGrey,
                     elevation: 7,
                     padding: const EdgeInsets.all(8),
@@ -79,7 +102,37 @@ class LearningView extends StatelessWidget {
                   ),
                 ),
               ),
+            )
+          else ...[
+            TextField(
+              readOnly: controller.answerCorrect != null,
+              controller: controller.responseController,
+              focusNode: controller.replyFocus,
+              autofocus: true,
+              autocorrect: false,
+              textInputAction: TextInputAction.done,
+              onSubmitted: (_) => controller.checkStringChoice(),
+              decoration:
+                  InputDecoration(hintText: L10n.of(context)!.enterRomaji),
             ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: controller.checkStringChoice,
+              style: ElevatedButton.styleFrom(
+                primary: controller.answerCorrect != null
+                    ? controller.answerCorrect!
+                        ? Colors.green.shade700
+                        : Colors.red.shade700
+                    : Colors.blueGrey,
+                elevation: 7,
+                padding: const EdgeInsets.all(8),
+              ),
+              child: Text(
+                L10n.of(context)!.check,
+                style: const TextStyle(fontSize: 24),
+              ),
+            )
+          ],
         ]);
       }),
     );

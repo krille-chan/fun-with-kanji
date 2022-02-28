@@ -32,5 +32,7 @@
     "areYouSure": "Are you sure?",
     "resetLearningProgress": "Reset learning progress",
     "cancel": "Cancel",
-    "reset": "Reset"
+    "reset": "Reset",
+    "check": "Check",
+    "enterRomaji": "Enter Romaji"
 }
