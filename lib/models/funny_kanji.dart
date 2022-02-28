@@ -82,7 +82,8 @@ class FunnyKanji {
 
   Future<int> getNextLearnCharacter(WritingSystem system) async {
     final nextId = (await isar.learningProgresss
-            .where()
+            .filter()
+            .writingSystemEqualTo(system.name)
             .sortByCharacterIdDesc()
             .findFirst())
         ?.characterId;
