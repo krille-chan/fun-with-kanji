@@ -36,5 +36,7 @@
     "check": "Check",
     "enterRomaji": "Enter Romaji",
     "allStarsWon": "All stars won",
-    "welcomeText": "Welcome to Funny Kanji. Together we will learn all Japanese characters you need to read texts in Japanese. It will be a long journey but we will do this step by step."
+    "welcomeText": "Welcome to Funny Kanji. Together we will learn all Japanese characters you need to read texts in Japanese. It will be a long journey but we will do this step by step.",
+    "about": "About",
+    "website": "Website"
 }

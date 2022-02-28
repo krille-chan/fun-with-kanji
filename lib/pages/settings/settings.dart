@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:funny_kanji/config/app_constants.dart';
 import 'package:funny_kanji/models/funny_kanji.dart';
 import 'package:funny_kanji/pages/settings/settings_view.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -40,6 +42,13 @@ class SettingsController extends State<SettingsPage> {
     if (result != true) return;
     await FunnyKanji.of(context).resetLearningProgress();
   }
+
+  void openWebsite() => launch(AppConstants.website);
+
+  void displayAboutDialog() => showAboutDialog(
+        context: context,
+        applicationName: AppConstants.appName,
+      );
 
   @override
   Widget build(BuildContext context) => SettingsView(this);
