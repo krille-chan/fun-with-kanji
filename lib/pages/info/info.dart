@@ -12,12 +12,44 @@ class InfoPage extends StatelessWidget {
       appBar:
           AppBar(title: Text(L10n.of(context)!.learnJapaneseLetteringSystems)),
       body: ListView(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(16),
         children: [
+          Row(
+            children: [
+              Expanded(
+                  child: Center(
+                child: Image.asset(
+                  'assets/images/anime-155465_1280.png',
+                  width: 128,
+                ),
+              )),
+              const Expanded(
+                child: Center(
+                  child: Text(
+                    '漢字',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          SelectableText(
+            L10n.of(context)!.welcomeText,
+            style: textStyle,
+          ),
+          const SizedBox(height: 12),
+          SelectableText(
+            L10n.of(context)!.learnJapaneseLetteringSystems,
+            style: headerStyle,
+          ),
+          const SizedBox(height: 12),
           SelectableText(
             L10n.of(context)!.learnJapaneseLetteringSystemsDesc,
             style: textStyle,
           ),
+          const SizedBox(height: 12),
+          Image.asset('assets/images/book-2943383_1280.png'),
           const SizedBox(height: 12),
           SelectableText(
             L10n.of(context)!.hiragana,
@@ -39,15 +71,7 @@ class InfoPage extends StatelessWidget {
             style: textStyle,
           ),
           const SizedBox(height: 12),
-          SelectableText(
-            L10n.of(context)!.radicals,
-            style: headerStyle,
-          ),
-          const SizedBox(height: 12),
-          SelectableText(
-            L10n.of(context)!.radicalsDesc,
-            style: textStyle,
-          ),
+          Image.asset('assets/images/asia-161552_1280.png'),
           const SizedBox(height: 12),
           SelectableText(
             L10n.of(context)!.kanji,
@@ -56,6 +80,16 @@ class InfoPage extends StatelessWidget {
           const SizedBox(height: 12),
           SelectableText(
             L10n.of(context)!.kanjiDesc,
+            style: textStyle,
+          ),
+          const SizedBox(height: 12),
+          SelectableText(
+            L10n.of(context)!.radicals,
+            style: headerStyle,
+          ),
+          const SizedBox(height: 12),
+          SelectableText(
+            L10n.of(context)!.radicalsDesc,
             style: textStyle,
           ),
         ],

@@ -26,14 +26,15 @@
     "learnJapaneseLetteringSystems": "Learn Japanese Lettering Systems",
     "learnJapaneseLetteringSystemsDesc": "There are three lettering systems used in the Japanese language:\n\n- Hiragana\n- Katakana\n- Kanji",
     "hiraganaDesc": "All starts with the 46 characters of Hiragana (gojūon) and their diagrephics and digraphs. It is a phonetic lettering system which can be used to write all words in the Japanese language.",
-    "katakanaDesc": "This is the other phonetic lettering system and is mostly used to write foreign-language words. For each Hiragana there is also a Katakana character.",
-    "radicalsDesc": "Kanji Radical are graphemes, or graphical parts, that are used in organizing Japanese kanji in dictionaries. They are derived from the 214 Chinese Kangxi radicals.",
-    "kanjiDesc": "Japanese also uses Chinese characters which are called Kanji. This app lists the 2136 Jōyō-Kanji which are taught in Japanese schools. Kanji are not a phonetic lettering system. Each Kanji represents one or multiple words and has a go- and a kun-reading.",
+    "katakanaDesc": "This is the other phonetic lettering system and is mostly used to write foreign-language words. For each Hiragana there is a Katakana counter part.",
+    "radicalsDesc": "Kanji Radical are graphemes, or graphical parts, that are used in organizing Japanese kanji in dictionaries. They are derived from the 214 Chinese Kangxi radicals. We learn them before we start with Kanji, because radicals will make it much easier to remember them.\n\nEach Kanji is made of one or more Radicals. Just divide a Kanji into it Radicals and try to create a little story with. This is the key to bring them into your long-term memory.",
+    "kanjiDesc": "Japanese also uses Chinese characters which are called Kanji. This app lists the 2136 Jōyō-Kanji which are taught in Japanese schools. Kanji are not a phonetic lettering system. Each Kanji represents one or multiple words and has a On- and a Kun-reading.\n\nBut how should it be possible to learn so many characters? Don't worry! For this we have the Kanji Radicals.",
     "areYouSure": "Are you sure?",
     "resetLearningProgress": "Reset learning progress",
     "cancel": "Cancel",
     "reset": "Reset",
     "check": "Check",
     "enterRomaji": "Enter Romaji",
-    "allStarsWon": "All stars won"
+    "allStarsWon": "All stars won",
+    "welcomeText": "Welcome to Funny Kanji. Together we will learn all Japanese characters you need to read texts in Japanese. It will be a long journey but we will do this step by step."
 }
