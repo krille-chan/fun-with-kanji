@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:funny_kanji/config/app_constants.dart';
 import 'package:funny_kanji/models/funny_kanji.dart';
 import 'package:funny_kanji/pages/home/home_layout.dart';
@@ -14,7 +15,10 @@ class FunnyKanjiApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: yaruLight,
-      darkTheme: yaruDark,
+      darkTheme: yaruDark.copyWith(
+          appBarTheme: yaruDark.appBarTheme.copyWith(
+        systemOverlayStyle: SystemUiOverlayStyle.light,
+      )),
       title: AppConstants.appName,
       home: const HomeLayout(),
       localizationsDelegates: L10n.localizationsDelegates,
