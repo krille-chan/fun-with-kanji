@@ -159,6 +159,7 @@ class LearningController extends State<LearningPage> {
           .split(', ')
           .toSet()
           .contains(responseController.text));
+      return;
     }
     _check(responseController.text.toLowerCase().trim() ==
         currentCharacter!.description.toLowerCase().trim());
