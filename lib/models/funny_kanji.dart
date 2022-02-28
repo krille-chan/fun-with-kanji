@@ -46,6 +46,7 @@ class FunnyKanji {
       (await isar.learningProgresss
               .filter()
               .writingSystemEqualTo(system.name)
+              .and()
               .characterIdEqualTo(id)
               .findFirst()) ??
           LearningProgress()
@@ -61,6 +62,7 @@ class FunnyKanji {
         final progress = await isar.learningProgresss
                 .filter()
                 .writingSystemEqualTo(system.name)
+                .and()
                 .characterIdEqualTo(id)
                 .findFirst() ??
             LearningProgress()
@@ -69,4 +71,6 @@ class FunnyKanji {
         progress.stars = stars;
         await isar.learningProgresss.put(progress);
       });
+
+  Future<void> resetLearningProgress() => isar.writeTxn((_) => isar.clear());
 }
