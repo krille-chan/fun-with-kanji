@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:funny_kanji/models/kana.dart';
+import 'package:funny_kanji/models/kanji.dart';
 import 'package:funny_kanji/pages/learning/learning.dart';
 import 'package:funny_kanji/utils/writing_system.dart';
 import 'package:yaru_icons/yaru_icons.dart';
@@ -74,9 +75,18 @@ class LearningView extends StatelessWidget {
           ),
           if (currentCharacter is Kana) ...[
             const SizedBox(height: 16),
-            Center(
-              child: Text(currentCharacter.type),
-            )
+            Text(
+              currentCharacter.type,
+              textAlign: TextAlign.center,
+            ),
+          ],
+          if (currentCharacter is Kanji &&
+              controller.learningProgress!.stars < 8) ...[
+            const SizedBox(height: 16),
+            Text(
+              '${L10n.of(context)!.radicals}: ${currentCharacter.radicals.join(', ')}',
+              textAlign: TextAlign.center,
+            ),
           ],
           const SizedBox(height: 16),
           if (choices != null)
@@ -133,6 +143,21 @@ class LearningView extends StatelessWidget {
               ),
             )
           ],
+          if (currentCharacter is Kanji &&
+              (controller.learningProgress!.stars < 8 ||
+                  controller.answerCorrect != null)) ...[
+            const Divider(),
+            Text(
+              '${L10n.of(context)!.onReadings}\n${currentCharacter.readingsOn.join('\n')}',
+              style: const TextStyle(fontSize: 16),
+            ),
+            const Divider(),
+            Text(
+              '${L10n.of(context)!.kunReadings}\n${currentCharacter.readingsKun.join('\n')}',
+              style: const TextStyle(fontSize: 16),
+            ),
+            const Divider(),
+          ]
         ]);
       }),
     );

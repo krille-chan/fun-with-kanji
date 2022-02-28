@@ -154,11 +154,11 @@ class LearningController extends State<LearningPage> {
     responseController.text = responseController.text.toLowerCase().trim();
     if (currentCharacter!.description.contains(', ')) {
       _check(currentCharacter!.description
-              .toLowerCase()
-              .trim()
-              .split(', ')
-              .toSet() ==
-          responseController.text.split(', ').toSet());
+          .toLowerCase()
+          .trim()
+          .split(', ')
+          .toSet()
+          .contains(responseController.text));
     }
     _check(responseController.text.toLowerCase().trim() ==
         currentCharacter!.description.toLowerCase().trim());
@@ -171,6 +171,9 @@ class LearningController extends State<LearningPage> {
   }
 
   void _check(bool isCorrect) async {
+    // Display correct in text field:
+    responseController.text = currentCharacter!.description;
+
     // Display feedback:
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       content: Row(
