@@ -150,6 +150,15 @@ class LearningController extends State<LearningPage> {
   }
 
   void checkStringChoice() {
+    responseController.text = responseController.text.toLowerCase().trim();
+    if (currentCharacter!.description.contains(', ')) {
+      _check(currentCharacter!.description
+              .toLowerCase()
+              .trim()
+              .split(', ')
+              .toSet() ==
+          responseController.text.split(', ').toSet());
+    }
     _check(responseController.text.toLowerCase().trim() ==
         currentCharacter!.description.toLowerCase().trim());
   }
