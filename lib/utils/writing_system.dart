@@ -73,7 +73,7 @@ extension WritingSystemSymbol on WritingSystem {
   int get entries {
     switch (this) {
       case WritingSystem.hiragana:
-        return 199;
+        return 105;
       case WritingSystem.katakana:
         return 105;
       case WritingSystem.radicals:
