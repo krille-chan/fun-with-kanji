@@ -15,7 +15,11 @@ class FunnyKanjiApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: yaruLight,
+      theme: yaruLight.copyWith(
+        appBarTheme: yaruLight.appBarTheme.copyWith(
+          systemOverlayStyle: SystemUiOverlayStyle.dark,
+        ),
+      ),
       darkTheme: yaruDark.copyWith(
         appBarTheme: yaruDark.appBarTheme.copyWith(
           systemOverlayStyle: SystemUiOverlayStyle.light,
