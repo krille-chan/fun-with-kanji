@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:funny_kanji/pages/overview/hiragana_viewer.dart';
-import 'package:funny_kanji/pages/overview/kanji_viewer.dart';
-import 'package:funny_kanji/pages/overview/katakana_viewer.dart';
-import 'package:funny_kanji/pages/overview/overview_view.dart';
-import 'package:funny_kanji/pages/overview/radicals_viewer.dart';
-import 'package:funny_kanji/utils/writing_system.dart';
+import 'package:fun_with_kanji/pages/overview/hiragana_viewer.dart';
+import 'package:fun_with_kanji/pages/overview/kanji_viewer.dart';
+import 'package:fun_with_kanji/pages/overview/katakana_viewer.dart';
+import 'package:fun_with_kanji/pages/overview/overview_view.dart';
+import 'package:fun_with_kanji/pages/overview/radicals_viewer.dart';
+import 'package:fun_with_kanji/utils/writing_system.dart';
 
 class OverviewPage extends StatefulWidget {
   const OverviewPage({Key? key}) : super(key: key);

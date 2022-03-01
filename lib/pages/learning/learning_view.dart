@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:funny_kanji/models/kana.dart';
-import 'package:funny_kanji/models/kanji.dart';
-import 'package:funny_kanji/pages/learning/learning.dart';
-import 'package:funny_kanji/utils/writing_system.dart';
+import 'package:fun_with_kanji/models/kana.dart';
+import 'package:fun_with_kanji/models/kanji.dart';
+import 'package:fun_with_kanji/pages/learning/learning.dart';
+import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:yaru_icons/yaru_icons.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 

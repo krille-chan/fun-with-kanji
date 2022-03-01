@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
-import 'package:funny_kanji/models/kana.dart';
-import 'package:funny_kanji/models/kanji.dart';
-import 'package:funny_kanji/models/radical.dart';
+import 'package:fun_with_kanji/models/kana.dart';
+import 'package:fun_with_kanji/models/kanji.dart';
+import 'package:fun_with_kanji/models/radical.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 abstract class ScriptLoader {

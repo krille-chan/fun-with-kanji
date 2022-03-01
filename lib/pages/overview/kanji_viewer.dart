@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:funny_kanji/models/kanji.dart';
-import 'package:funny_kanji/models/script_loader.dart';
+import 'package:fun_with_kanji/models/kanji.dart';
+import 'package:fun_with_kanji/models/script_loader.dart';
 import 'package:yaru_icons/yaru_icons.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 

@@ -6,12 +6,12 @@ import 'dart:math';
 
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
-import 'package:funny_kanji/models/funny_kanji.dart';
-import 'package:funny_kanji/models/jp_character.dart';
-import 'package:funny_kanji/models/learning_progress.dart';
-import 'package:funny_kanji/models/script_loader.dart';
-import 'package:funny_kanji/pages/learning/learning_view.dart';
-import 'package:funny_kanji/utils/writing_system.dart';
+import 'package:fun_with_kanji/models/fun_with_kanji.dart';
+import 'package:fun_with_kanji/models/jp_character.dart';
+import 'package:fun_with_kanji/models/learning_progress.dart';
+import 'package:fun_with_kanji/models/script_loader.dart';
+import 'package:fun_with_kanji/pages/learning/learning_view.dart';
+import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:yaru_icons/yaru_icons.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 
@@ -75,11 +75,11 @@ class LearningController extends State<LearningPage> {
 
     // Update finished counter
     finished =
-        await FunnyKanji.of(context).getFinishedCount(widget.writingSystem);
+        await FunWithKanji.of(context).getFinishedCount(widget.writingSystem);
 
     _currentId = await _loadNextCharacterId();
     final learningProgress = this.learningProgress =
-        await FunnyKanji.of(context).getLearningProgress(
+        await FunWithKanji.of(context).getLearningProgress(
       widget.writingSystem,
       _currentId,
     );
@@ -87,7 +87,7 @@ class LearningController extends State<LearningPage> {
       choices = [currentCharacter!];
       if (learningProgress.stars > 0) {
         // Add more choices
-        final possibleChoices = await FunnyKanji.of(context).getChoices(
+        final possibleChoices = await FunWithKanji.of(context).getChoices(
           widget.writingSystem,
           learningProgress.stars - 1,
           learningProgress.characterId,
@@ -115,12 +115,12 @@ class LearningController extends State<LearningPage> {
   }
 
   Future<int> _loadNextCharacterId() async {
-    final learnInProgressChars = await FunnyKanji.of(context)
+    final learnInProgressChars = await FunWithKanji.of(context)
         .getLearnInProgressCharacters(widget.writingSystem);
 
     // Add new learn in progress character
     if (learnInProgressChars.length < 4) {
-      final nextId = await FunnyKanji.of(context).getNextLearnCharacter(
+      final nextId = await FunWithKanji.of(context).getNextLearnCharacter(
         widget.writingSystem,
       );
       if (nextId == characterSet!.length - 1) {
@@ -135,7 +135,7 @@ class LearningController extends State<LearningPage> {
     final repeatOldCharacter = Random().nextInt(7) == 0;
 
     if (repeatOldCharacter) {
-      final learnedChars = await FunnyKanji.of(context).getLearnedCharacters(
+      final learnedChars = await FunWithKanji.of(context).getLearnedCharacters(
         widget.writingSystem,
       );
       if (learnedChars.isNotEmpty &&
@@ -224,7 +224,7 @@ class LearningController extends State<LearningPage> {
       }
       answerCorrect = isCorrect;
     });
-    await FunnyKanji.of(context).setLearningProgress(
+    await FunWithKanji.of(context).setLearningProgress(
       widget.writingSystem,
       _currentId,
       learningProgress!.stars,

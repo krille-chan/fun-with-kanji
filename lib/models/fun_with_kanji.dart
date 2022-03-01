@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:funny_kanji/models/learning_progress.dart';
-import 'package:funny_kanji/utils/writing_system.dart';
+import 'package:fun_with_kanji/models/learning_progress.dart';
+import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:isar/isar.dart';
 import 'package:provider/provider.dart';
 
-class FunnyKanji {
+class FunWithKanji {
   final Isar isar;
 
-  FunnyKanji(this.isar);
+  FunWithKanji(this.isar);
 
   static const int maxStars = 10;
   static const int hiraganaMax = 199 * maxStars;
@@ -21,12 +21,12 @@ class FunnyKanji {
 
   Stream<void> get onChanges => isar.learningProgresss.watchLazy();
 
-  Widget builder(BuildContext context, Widget? child) => Provider<FunnyKanji>(
+  Widget builder(BuildContext context, Widget? child) => Provider<FunWithKanji>(
         create: (_) => this,
         child: child,
       );
 
-  static FunnyKanji of(BuildContext context) => Provider.of<FunnyKanji>(
+  static FunWithKanji of(BuildContext context) => Provider.of<FunWithKanji>(
         context,
         listen: false,
       );

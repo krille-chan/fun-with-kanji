@@ -1,4 +1,4 @@
-# funny_kanji
+# fun_with_kanji
 
 A new Flutter project.
 

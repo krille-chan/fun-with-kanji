@@ -1,4 +1,4 @@
-import 'package:funny_kanji/models/jp_character.dart';
+import 'package:fun_with_kanji/models/jp_character.dart';
 
 class Kanji extends JpCharacter {
   final int id;

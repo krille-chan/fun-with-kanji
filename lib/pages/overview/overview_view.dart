@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:funny_kanji/pages/overview/overview.dart';
+import 'package:fun_with_kanji/pages/overview/overview.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
-import 'package:funny_kanji/pages/overview/overview_list_tile.dart';
-import 'package:funny_kanji/utils/writing_system.dart';
+import 'package:fun_with_kanji/pages/overview/overview_list_tile.dart';
+import 'package:fun_with_kanji/utils/writing_system.dart';
 
 class OverviewPageView extends StatelessWidget {
   final OverviewController controller;

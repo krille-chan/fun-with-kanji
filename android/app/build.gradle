@@ -48,7 +48,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "krillefear.funny_kanji"
+        applicationId "krillefear.fun-with-kanji"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(funny_kanji LANGUAGES CXX)
+project(fun_with_kanji LANGUAGES CXX)
 
-set(BINARY_NAME "funny_kanji")
+set(BINARY_NAME "fun_with_kanji")
 
 cmake_policy(SET CMP0063 NEW)
 

@@ -4,9 +4,9 @@ import 'dart:io';
 import 'package:file_picker_cross/file_picker_cross.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:funny_kanji/config/app_constants.dart';
-import 'package:funny_kanji/models/funny_kanji.dart';
-import 'package:funny_kanji/pages/settings/settings_view.dart';
+import 'package:fun_with_kanji/config/app_constants.dart';
+import 'package:fun_with_kanji/models/fun_with_kanji.dart';
+import 'package:fun_with_kanji/pages/settings/settings_view.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -46,7 +46,7 @@ class SettingsController extends State<SettingsPage> {
       ),
     );
     if (result != true) return;
-    await FunnyKanji.of(context).resetLearningProgress();
+    await FunWithKanji.of(context).resetLearningProgress();
   }
 
   void openWebsite() => launch(AppConstants.website);
@@ -57,7 +57,7 @@ class SettingsController extends State<SettingsPage> {
       );
 
   void exportAction() async {
-    final export = await FunnyKanji.of(context).export();
+    final export = await FunWithKanji.of(context).export();
     final exportStr = await compute(jsonEncode, export);
     final tmpDir = Platform.isLinux
         ? await (getDownloadsDirectory()) ??
@@ -67,7 +67,7 @@ class SettingsController extends State<SettingsPage> {
                 (await getApplicationDocumentsDirectory())
             : await getApplicationDocumentsDirectory();
     final tmpFile = File(
-        '${tmpDir.path}/funny_kanji_export_${DateTime.now().toIso8601String()}.json');
+        '${tmpDir.path}/fun_with_kanji_export_${DateTime.now().toIso8601String()}.json');
     await tmpFile.writeAsString(exportStr);
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       content: Text(L10n.of(context)!.savedAt(tmpFile.path)),
@@ -85,7 +85,7 @@ class SettingsController extends State<SettingsPage> {
       final bytes = picked.toUint8List();
       final jsonStr = await compute(String.fromCharCodes, bytes);
       final json = await compute(jsonDecode, jsonStr);
-      await FunnyKanji.of(context).import(json);
+      await FunWithKanji.of(context).import(json);
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text(L10n.of(context)!.importFinished),
       ));

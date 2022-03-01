@@ -1,6 +1,6 @@
 {
-    "name": "funny_kanji",
-    "short_name": "funny_kanji",
+    "name": "fun_with_kanji",
+    "short_name": "fun_with_kanji",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

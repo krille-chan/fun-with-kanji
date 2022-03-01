@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:funny_kanji/models/radical.dart';
-import 'package:funny_kanji/models/script_loader.dart';
+import 'package:fun_with_kanji/models/radical.dart';
+import 'package:fun_with_kanji/models/script_loader.dart';
 
 class RadicalsViewer extends StatelessWidget {
   const RadicalsViewer({Key? key}) : super(key: key);

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "funny_kanji")
-set(APPLICATION_ID "com.example.funny_kanji")
+set(BINARY_NAME "fun_with_kanji")
+set(APPLICATION_ID "krillefear.fun-with-kanji")
 
 cmake_policy(SET CMP0063 NEW)
 
