@@ -73,6 +73,10 @@ class LearningController extends State<LearningPage> {
       }
     }
 
+    // Update finished counter
+    finished =
+        await FunnyKanji.of(context).getFinishedCount(widget.writingSystem);
+
     _currentId = await _loadNextCharacterId();
     final learningProgress = this.learningProgress =
         await FunnyKanji.of(context).getLearningProgress(
@@ -215,7 +219,7 @@ class LearningController extends State<LearningPage> {
     setState(() {
       if (isCorrect && learningProgress!.stars < 10) {
         learningProgress!.stars++;
-      } else if (learningProgress!.stars > 0) {
+      } else if (!isCorrect && learningProgress!.stars > 0) {
         learningProgress!.stars--;
       }
       answerCorrect = isCorrect;
@@ -229,6 +233,8 @@ class LearningController extends State<LearningPage> {
     await Future.delayed(const Duration(milliseconds: 500));
     _loadNextCharacter();
   }
+
+  int finished = 0;
 
   @override
   void initState() {

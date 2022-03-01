@@ -15,6 +15,16 @@ class LearningView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(controller.widget.writingSystem.getTitle(context)),
+        actions: [
+          Center(
+            child: Text(
+              L10n.of(context)!.countFinished(controller.finished),
+            ),
+          ),
+          const SizedBox(width: 4),
+          const Icon(YaruIcons.checkmark),
+          const SizedBox(width: 4),
+        ],
       ),
       body: Builder(builder: (context) {
         final currentCharacter = controller.currentCharacter;
@@ -64,10 +74,17 @@ class LearningView extends StatelessWidget {
                 child: Center(
                   child: controller.answerCorrect != null
                       ? null
-                      : Text(
-                          currentCharacter.toString(),
-                          style: const TextStyle(
-                              fontSize: 94, color: Colors.white),
+                      : SizedBox(
+                          width: 156,
+                          height: 156,
+                          child: FittedBox(
+                            fit: BoxFit.contain,
+                            child: Text(
+                              currentCharacter.toString(),
+                              style: const TextStyle(
+                                  fontSize: 94, color: Colors.white),
+                            ),
+                          ),
                         ),
                 ),
               ),
@@ -120,6 +137,7 @@ class LearningView extends StatelessWidget {
               focusNode: controller.replyFocus,
               autofocus: true,
               autocorrect: false,
+              enableSuggestions: false,
               textInputAction: TextInputAction.done,
               onSubmitted: (_) => controller.checkStringChoice(),
               decoration:

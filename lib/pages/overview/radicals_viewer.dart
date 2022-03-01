@@ -22,7 +22,9 @@ class RadicalsViewer extends StatelessWidget {
             itemCount: radicals.length,
             itemBuilder: (context, i) => ListTile(
               leading: CircleAvatar(
-                child: Center(
+                child: SizedBox(
+                  width: 32,
+                  height: 32,
                   child: FittedBox(
                     fit: BoxFit.contain,
                     child: Text(radicals[i].radical),

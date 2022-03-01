@@ -53,6 +53,13 @@ class FunnyKanji {
         ..characterId = id
         ..writingSystem = system.name;
 
+  Future<int> getFinishedCount(WritingSystem system) => isar.learningProgresss
+      .filter()
+      .writingSystemEqualTo(system.name)
+      .and()
+      .starsEqualTo(10)
+      .count();
+
   Future<Set<LearningProgress>> getChoices(
     WritingSystem system,
     int stars,

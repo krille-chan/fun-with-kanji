@@ -68,9 +68,13 @@ class KanjiViewer extends StatelessWidget {
             itemCount: kanji.length,
             itemBuilder: (_, i) => ListTile(
               leading: CircleAvatar(
-                child: FittedBox(
-                  fit: BoxFit.contain,
-                  child: Text(kanji[i].kanji),
+                child: SizedBox(
+                  width: 32,
+                  height: 32,
+                  child: FittedBox(
+                    fit: BoxFit.contain,
+                    child: Text(kanji[i].kanji),
+                  ),
                 ),
                 foregroundColor: Theme.of(context).textTheme.bodyText1?.color,
                 backgroundColor: Theme.of(context).secondaryHeaderColor,

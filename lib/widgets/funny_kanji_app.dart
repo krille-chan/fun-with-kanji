@@ -14,6 +14,7 @@ class FunnyKanjiApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: yaruLight,
       darkTheme: yaruDark.copyWith(
           appBarTheme: yaruDark.appBarTheme.copyWith(

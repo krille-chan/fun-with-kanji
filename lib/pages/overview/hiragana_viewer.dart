@@ -23,9 +23,13 @@ class HiraganaViewer extends StatelessWidget {
             itemCount: hiragana.length,
             itemBuilder: (context, i) => ListTile(
               leading: CircleAvatar(
-                child: FittedBox(
-                  fit: BoxFit.contain,
-                  child: Text(hiragana[i].kana),
+                child: SizedBox(
+                  width: 32,
+                  height: 32,
+                  child: FittedBox(
+                    fit: BoxFit.contain,
+                    child: Text(hiragana[i].kana),
+                  ),
                 ),
                 foregroundColor: Theme.of(context).textTheme.bodyText1?.color,
                 backgroundColor: Theme.of(context).secondaryHeaderColor,

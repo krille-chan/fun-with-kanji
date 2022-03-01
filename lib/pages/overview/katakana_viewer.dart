@@ -23,9 +23,13 @@ class KatakanaViewer extends StatelessWidget {
             itemCount: katakana.length,
             itemBuilder: (context, i) => ListTile(
               leading: CircleAvatar(
-                child: FittedBox(
-                  fit: BoxFit.contain,
-                  child: Text(katakana[i].kana),
+                child: SizedBox(
+                  width: 32,
+                  height: 32,
+                  child: FittedBox(
+                    fit: BoxFit.contain,
+                    child: Text(katakana[i].kana),
+                  ),
                 ),
                 foregroundColor: Theme.of(context).textTheme.bodyText1?.color,
                 backgroundColor: Theme.of(context).secondaryHeaderColor,

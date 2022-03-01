@@ -26,7 +26,7 @@ class InfoPage extends StatelessWidget {
               const Expanded(
                 child: Center(
                   child: Text(
-                    '漢字',
+                    '日本語',
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
                   ),
                 ),
@@ -40,11 +40,6 @@ class InfoPage extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           SelectableText(
-            L10n.of(context)!.learnJapaneseLetteringSystems,
-            style: headerStyle,
-          ),
-          const SizedBox(height: 12),
-          SelectableText(
             L10n.of(context)!.learnJapaneseLetteringSystemsDesc,
             style: textStyle,
           ),
@@ -55,6 +50,7 @@ class InfoPage extends StatelessWidget {
             L10n.of(context)!.hiragana,
             style: headerStyle,
           ),
+          const SelectableText('ひらがな'),
           const SizedBox(height: 12),
           SelectableText(
             L10n.of(context)!.hiraganaDesc,
@@ -65,6 +61,7 @@ class InfoPage extends StatelessWidget {
             L10n.of(context)!.katakana,
             style: headerStyle,
           ),
+          const SelectableText('カタカナ '),
           const SizedBox(height: 12),
           SelectableText(
             L10n.of(context)!.katakanaDesc,
@@ -77,6 +74,7 @@ class InfoPage extends StatelessWidget {
             L10n.of(context)!.kanji,
             style: headerStyle,
           ),
+          const SelectableText('漢字  '),
           const SizedBox(height: 12),
           SelectableText(
             L10n.of(context)!.kanjiDesc,

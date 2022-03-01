@@ -22,11 +22,22 @@ class HomePageView extends StatelessWidget {
                           future: FunnyKanji.of(context).loadProgressPercent(
                             writingSystem,
                           ),
-                          builder: (context, snapshot) => LeanUnitListTile(
-                            progress: snapshot.data,
-                            title: writingSystem.getTitle(context),
-                            symbol: writingSystem.symbol,
-                            onTap: () => controller.learnSystem(writingSystem),
+                          builder: (context, snapshot) => AnimatedScale(
+                            scale: snapshot.connectionState ==
+                                    ConnectionState.waiting
+                                ? 0
+                                : 1,
+                            curve: Curves.bounceInOut,
+                            duration: Duration(
+                                milliseconds:
+                                    300 + (100 * writingSystem.index)),
+                            child: LeanUnitListTile(
+                              progress: snapshot.data,
+                              title: writingSystem.getTitle(context),
+                              symbol: writingSystem.symbol,
+                              onTap: () =>
+                                  controller.learnSystem(writingSystem),
+                            ),
                           ),
                         ))
                     .toList(),
