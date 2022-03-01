@@ -15,11 +15,16 @@ class FunnyKanjiApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: yaruLight,
+      theme: yaruLight.copyWith(
+        appBarTheme: yaruDark.appBarTheme.copyWith(
+          systemOverlayStyle: SystemUiOverlayStyle.dark,
+        ),
+      ),
       darkTheme: yaruDark.copyWith(
-          appBarTheme: yaruDark.appBarTheme.copyWith(
-        systemOverlayStyle: SystemUiOverlayStyle.light,
-      )),
+        appBarTheme: yaruDark.appBarTheme.copyWith(
+          systemOverlayStyle: SystemUiOverlayStyle.light,
+        ),
+      ),
       title: AppConstants.appName,
       home: const HomeLayout(),
       localizationsDelegates: L10n.localizationsDelegates,
