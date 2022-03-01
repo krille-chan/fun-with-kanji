@@ -1,16 +1,19 @@
-# fun_with_kanji
+# Fun With Kanji
 
-A new Flutter project.
+Simple Flutter app to learn Japanese writing systems Hiragana, Katakana and Kanji.
 
-## Getting Started
+## Screenshots:
 
-This project is a starting point for a Flutter application.
+Not yet there.
 
-A few resources to get you started if this is your first Flutter project:
+## Install:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [Latest APK from CI](https://gitlab.com/krillefear/funny-kanji/-/jobs/artifacts/main/browse?job=build_apk)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Build:
+
+Install [Flutter](https://flutter.dev) and run with:
+
+```sh
+flutter run
+```
