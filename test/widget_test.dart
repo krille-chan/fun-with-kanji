@@ -13,7 +13,10 @@ import 'package:isar/isar.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    final isar = await Isar.open(schemas: FunWithKanji.isarSchemas);
+    final isar = await Isar.open(
+      schemas: FunWithKanji.isarSchemas,
+      directory: './',
+    );
     await tester.pumpWidget(FunWithKanjiApp(isar: isar));
   });
 }
