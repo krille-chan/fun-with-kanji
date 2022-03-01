@@ -77,7 +77,7 @@ class SettingsController extends State<SettingsPage> {
 
   void importAction() async {
     final picked = await FilePickerCross.importFromStorage(
-      type: FileTypeCross.any,
+      type: FileTypeCross.custom,
       fileExtension: 'json',
     );
     if (picked.fileName == null) return;
