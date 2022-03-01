@@ -44,5 +44,15 @@
         "placeholders": {
             "count": {}
         }
-    }
+    },
+    "importLearningProgress": "Import learning progress",
+    "exportLearningProgress": "Export learning progress",
+    "savedAt": "Saved at {path}",
+    "@savedAt": {
+        "placeholders": {
+            "path": {}
+        }
+    },
+    "importFinished": "Import finished",
+    "importFailed": "Sorry... Import failed."
 }

@@ -128,4 +128,12 @@ class FunnyKanji {
       });
 
   Future<void> resetLearningProgress() => isar.writeTxn((_) => isar.clear());
+
+  Future<List<Map<String, dynamic>>> export() =>
+      isar.learningProgresss.filter().starsGreaterThan(0).exportJson();
+
+  Future<void> import(List<Map<String, dynamic>> json) async {
+    await isar.learningProgresss.clear();
+    await isar.learningProgresss.importJson(json);
+  }
 }

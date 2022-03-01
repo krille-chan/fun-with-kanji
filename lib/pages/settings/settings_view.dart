@@ -19,6 +19,17 @@ class SettingsView extends StatelessWidget {
             onTap: controller.resetLearningProgressAction,
           ),
           ListTile(
+            leading: const Icon(YaruIcons.save),
+            title: Text(L10n.of(context)!.exportLearningProgress),
+            onTap: controller.exportAction,
+          ),
+          ListTile(
+            leading: const Icon(YaruIcons.document_open),
+            title: Text(L10n.of(context)!.importLearningProgress),
+            onTap: controller.importAction,
+          ),
+          const Divider(),
+          ListTile(
             leading: const Icon(YaruIcons.desktop_online_accounts),
             title: Text(L10n.of(context)!.website),
             onTap: controller.openWebsite,
