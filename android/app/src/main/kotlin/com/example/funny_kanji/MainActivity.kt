@@ -1,4 +1,4 @@
-package krillefear.fun-with-kanji
+package krillefear.funwithkanji
 
 import io.flutter.embedding.android.FlutterActivity
 
