@@ -1,0 +1,34 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+void showOpenIssueDialog(
+  BuildContext context,
+  Object error,
+  StackTrace stackTrace,
+) =>
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(L10n.of(context)!.oopsSomethignWentWrong),
+        content: Text(L10n.of(context)!.errorDesc),
+        actions: [
+          TextButton(
+            onPressed: Navigator.of(context).pop,
+            child: Text(L10n.of(context)!.cancel),
+          ),
+          TextButton(
+            onPressed: () => launch(Uri(
+              scheme: 'https',
+              host: 'gitlab.com',
+              path: '/KrilleFear/funny-kanji/-/issues/new',
+              queryParameters: {
+                'issue[title]': 'Bugreport: ${error.toString()}',
+                'issue[description]': stackTrace.toString(),
+              },
+            ).toString()),
+            child: Text(L10n.of(context)!.report),
+          ),
+        ],
+      ),
+    );

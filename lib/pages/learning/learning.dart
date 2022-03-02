@@ -11,6 +11,7 @@ import 'package:fun_with_kanji/models/jp_character.dart';
 import 'package:fun_with_kanji/models/learning_progress.dart';
 import 'package:fun_with_kanji/models/script_loader.dart';
 import 'package:fun_with_kanji/pages/learning/learning_view.dart';
+import 'package:fun_with_kanji/utils/open_issue_dialog.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:yaru_icons/yaru_icons.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
@@ -34,125 +35,137 @@ class LearningController extends State<LearningPage> {
   bool? answerCorrect;
 
   void _loadNextCharacter() async {
-    if (characterSet == null) {
-      dev.log('Load writing system ${widget.writingSystem.name}...');
-      switch (widget.writingSystem) {
-        case WritingSystem.hiragana:
-          characterSet = await ScriptLoader.loadHiragana();
-          break;
-        case WritingSystem.katakana:
-          characterSet = await ScriptLoader.loadKatakana();
-          break;
-        case WritingSystem.radicals:
-          characterSet = await ScriptLoader.loadRadicals();
-          break;
-        case WritingSystem.kanji1:
-          characterSet = await ScriptLoader.loadKanji(1);
-          break;
-        case WritingSystem.kanji2:
-          characterSet = await ScriptLoader.loadKanji(2);
-          break;
-        case WritingSystem.kanji3:
-          characterSet = await ScriptLoader.loadKanji(3);
-          break;
-        case WritingSystem.kanji4:
-          characterSet = await ScriptLoader.loadKanji(4);
-          break;
-        case WritingSystem.kanji5:
-          characterSet = await ScriptLoader.loadKanji(5);
-          break;
-        case WritingSystem.kanji6:
-          characterSet = await ScriptLoader.loadKanji(6);
-          break;
-        case WritingSystem.kanji7:
-          characterSet = await ScriptLoader.loadKanji(7);
-          break;
-        case WritingSystem.kanji8:
-          characterSet = await ScriptLoader.loadKanji(8);
-          break;
-      }
-    }
-
-    // Update finished counter
-    finished =
-        await FunWithKanji.of(context).getFinishedCount(widget.writingSystem);
-
-    _currentId = await _loadNextCharacterId();
-    final learningProgress = this.learningProgress =
-        await FunWithKanji.of(context).getLearningProgress(
-      widget.writingSystem,
-      _currentId,
-    );
-    if (learningProgress.stars <= 5) {
-      choices = [currentCharacter!];
-      if (learningProgress.stars > 0) {
-        // Add more choices
-        final possibleChoices = await FunWithKanji.of(context).getChoices(
-          widget.writingSystem,
-          learningProgress.stars - 1,
-          learningProgress.characterId,
-        );
-        choices?.addAll(
-          possibleChoices.map(
-            (learningProgress) => characterSet![learningProgress.characterId],
-          ),
-        );
-        if (choices!.length < 3) {
-          throw ('No choices found. This should not happen!');
+    try {
+      if (characterSet == null) {
+        dev.log('Load writing system ${widget.writingSystem.name}...');
+        switch (widget.writingSystem) {
+          case WritingSystem.hiragana:
+            characterSet = await ScriptLoader.loadHiragana();
+            break;
+          case WritingSystem.katakana:
+            characterSet = await ScriptLoader.loadKatakana();
+            break;
+          case WritingSystem.radicals:
+            characterSet = await ScriptLoader.loadRadicals();
+            break;
+          case WritingSystem.kanji1:
+            characterSet = await ScriptLoader.loadKanji(1);
+            break;
+          case WritingSystem.kanji2:
+            characterSet = await ScriptLoader.loadKanji(2);
+            break;
+          case WritingSystem.kanji3:
+            characterSet = await ScriptLoader.loadKanji(3);
+            break;
+          case WritingSystem.kanji4:
+            characterSet = await ScriptLoader.loadKanji(4);
+            break;
+          case WritingSystem.kanji5:
+            characterSet = await ScriptLoader.loadKanji(5);
+            break;
+          case WritingSystem.kanji6:
+            characterSet = await ScriptLoader.loadKanji(6);
+            break;
+          case WritingSystem.kanji7:
+            characterSet = await ScriptLoader.loadKanji(7);
+            break;
+          case WritingSystem.kanji8:
+            characterSet = await ScriptLoader.loadKanji(8);
+            break;
         }
-        choices?.shuffle();
       }
-    } else {
-      choices = null;
-    }
-    responseController.clear();
-    setState(() {
-      answerCorrect = null;
-    });
-    if (choices == null) {
-      replyFocus.requestFocus();
+
+      // Update finished counter
+      finished =
+          await FunWithKanji.of(context).getFinishedCount(widget.writingSystem);
+
+      _currentId = await _loadNextCharacterId();
+      final learningProgress = this.learningProgress =
+          await FunWithKanji.of(context).getLearningProgress(
+        widget.writingSystem,
+        _currentId,
+      );
+      if (learningProgress.stars <= 5) {
+        choices = [currentCharacter!];
+        if (learningProgress.stars > 0) {
+          // Add more choices
+          final possibleChoices = await FunWithKanji.of(context).getChoices(
+            widget.writingSystem,
+            learningProgress.stars - 1,
+            learningProgress.characterId,
+          );
+          choices?.addAll(
+            possibleChoices.map(
+              (learningProgress) => characterSet![learningProgress.characterId],
+            ),
+          );
+          if (choices!.length < 3) {
+            throw ('No choices found. This should not happen!');
+          }
+          choices?.shuffle();
+        }
+      } else {
+        choices = null;
+      }
+      responseController.clear();
+      setState(() {
+        answerCorrect = null;
+      });
+      if (choices == null) {
+        replyFocus.requestFocus();
+      }
+    } catch (e, s) {
+      showOpenIssueDialog(context, e, s);
+      rethrow;
     }
   }
 
   Future<int> _loadNextCharacterId() async {
-    final learnInProgressChars = await FunWithKanji.of(context)
-        .getLearnInProgressCharacters(widget.writingSystem);
+    try {
+      final learnInProgressChars = await FunWithKanji.of(context)
+          .getLearnInProgressCharacters(widget.writingSystem);
 
-    // Add new learn in progress character
-    if (learnInProgressChars.length < 4) {
-      final nextId = await FunWithKanji.of(context).getNextLearnCharacter(
-        widget.writingSystem,
-      );
-      if (nextId == characterSet!.length - 1 && learnInProgressChars.isEmpty) {
-        dev.log('All characters at 10 stars. Pick random one!');
-        return Random().nextInt(characterSet!.length);
-      } else {
-        dev.log('Add new character with ID $nextId...');
-        return nextId;
+      // Add new learn in progress character
+      if (learnInProgressChars.length < 4) {
+        final nextId = await FunWithKanji.of(context).getNextLearnCharacter(
+          widget.writingSystem,
+        );
+        if (nextId == characterSet!.length - 1 &&
+            learnInProgressChars.isEmpty) {
+          dev.log('All characters at 10 stars. Pick random one!');
+          return Random().nextInt(characterSet!.length);
+        } else {
+          dev.log('Add new character with ID $nextId...');
+          return nextId;
+        }
       }
-    }
 
-    // Every 7th character should be repeating an old one:
-    final repeatOldCharacter = Random().nextInt(7) == 0;
+      // Every 7th character should be repeating an old one:
+      final repeatOldCharacter = Random().nextInt(7) == 0;
 
-    if (repeatOldCharacter) {
-      final learnedChars = await FunWithKanji.of(context).getLearnedCharacters(
-        widget.writingSystem,
-      );
-      if (learnedChars.isNotEmpty &&
-          !(learnedChars.length == 1 &&
-              learnedChars.single.characterId == _currentId)) {
-        dev.log('Repeat one of the 10 stars characters...');
-        learnedChars.shuffle();
-        return learnedChars.first.characterId;
+      if (repeatOldCharacter) {
+        final learnedChars =
+            await FunWithKanji.of(context).getLearnedCharacters(
+          widget.writingSystem,
+        );
+        if (learnedChars.isNotEmpty &&
+            !(learnedChars.length == 1 &&
+                learnedChars.single.characterId == _currentId)) {
+          dev.log('Repeat one of the 10 stars characters...');
+          learnedChars.shuffle();
+          return learnedChars.first.characterId;
+        }
       }
-    }
 
-    dev.log(
-        'Continue with one of ${learnInProgressChars.length} learn-in-progress characters...');
-    learnInProgressChars.removeWhere((p) => p.characterId == _currentId);
-    learnInProgressChars.shuffle();
-    return learnInProgressChars.first.characterId;
+      dev.log(
+          'Continue with one of ${learnInProgressChars.length} learn-in-progress characters...');
+      learnInProgressChars.removeWhere((p) => p.characterId == _currentId);
+      learnInProgressChars.shuffle();
+      return learnInProgressChars.first.characterId;
+    } catch (e, s) {
+      showOpenIssueDialog(context, e, s);
+      rethrow;
+    }
   }
 
   void checkStringChoice() {

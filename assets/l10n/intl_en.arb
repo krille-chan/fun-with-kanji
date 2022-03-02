@@ -55,5 +55,8 @@
     },
     "importFinished": "Import finished",
     "importFailed": "Sorry... Import failed.",
-    "search": "Search"
+    "search": "Search",
+    "oopsSomethignWentWrong": "Oops... something went wrong!",
+    "errorDesc": "An error has occurred. You can help fix it by reporting it.",
+    "report": "Report"
 }

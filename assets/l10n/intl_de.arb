@@ -55,5 +55,8 @@
     },
     "importFinished": "Import abgeschlossen",
     "importFailed": "Entschuldigung... Import fehlgeschlagen.",
-    "search": "Suchen"
+    "search": "Suchen",
+    "oopsSomethignWentWrong": "Hoppla... Da ist etwas schief gelaufen!",
+    "errorDesc": "Ein Fehler ist aufgetreten. Du kannst bei der Behebung helfen, indem du diesen meldest.",
+    "report": "Melden"
 }

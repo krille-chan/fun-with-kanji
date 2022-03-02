@@ -8,6 +8,7 @@ import 'package:fun_with_kanji/config/app_constants.dart';
 import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/pages/settings/settings_view.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:fun_with_kanji/utils/open_issue_dialog.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -57,22 +58,27 @@ class SettingsController extends State<SettingsPage> {
       );
 
   void exportAction() async {
-    final export = await FunWithKanji.of(context).export();
-    final exportStr = await compute(jsonEncode, export);
-    final tmpDir = Platform.isLinux
-        ? await (getDownloadsDirectory()) ??
-            (await getApplicationDocumentsDirectory())
-        : Platform.isAndroid
-            ? (await getExternalStorageDirectory()) ??
-                (await getApplicationDocumentsDirectory())
-            : await getApplicationDocumentsDirectory();
-    final tmpFile = File(
-        '${tmpDir.path}/fun_with_kanji_export_${DateTime.now().toIso8601String()}.json');
-    await tmpFile.writeAsString(exportStr);
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      content: Text(L10n.of(context)!.savedAt(tmpFile.path)),
-      duration: const Duration(seconds: 10),
-    ));
+    try {
+      final export = await FunWithKanji.of(context).export();
+      final exportStr = await compute(jsonEncode, export);
+      final tmpDir = Platform.isLinux
+          ? await (getDownloadsDirectory()) ??
+              (await getApplicationDocumentsDirectory())
+          : Platform.isAndroid
+              ? (await getExternalStorageDirectory()) ??
+                  (await getApplicationDocumentsDirectory())
+              : await getApplicationDocumentsDirectory();
+      final tmpFile = File(
+          '${tmpDir.path}/fun_with_kanji_export_${DateTime.now().toIso8601String()}.json');
+      await tmpFile.writeAsString(exportStr);
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(L10n.of(context)!.savedAt(tmpFile.path)),
+        duration: const Duration(seconds: 10),
+      ));
+    } catch (e, s) {
+      showOpenIssueDialog(context, e, s);
+      rethrow;
+    }
   }
 
   void importAction() async {
@@ -91,10 +97,8 @@ class SettingsController extends State<SettingsPage> {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text(L10n.of(context)!.importFinished),
       ));
-    } catch (_) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        content: Text(L10n.of(context)!.importFailed),
-      ));
+    } catch (e, s) {
+      showOpenIssueDialog(context, e, s);
       rethrow;
     }
   }
