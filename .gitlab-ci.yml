@@ -13,10 +13,6 @@ code_analyze:
     - flutter format lib/ test/ --set-exit-if-changed
     - flutter analyze
 
-test:
-  stage: coverage
-  script: [flutter test]
-
 build_apk_debug:
   stage: coverage
   before_script:
