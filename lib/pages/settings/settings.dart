@@ -93,7 +93,9 @@ class SettingsController extends State<SettingsPage> {
       final bytes = picked.files.single.bytes!;
       final jsonStr = await compute(String.fromCharCodes, bytes);
       final json = await compute(jsonDecode, jsonStr);
-      await FunWithKanji.of(context).import(json);
+      await FunWithKanji.of(context).import(
+        List<Map<String, dynamic>>.from(json),
+      );
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text(L10n.of(context)!.importFinished),
       ));
