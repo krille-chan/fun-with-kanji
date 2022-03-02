@@ -123,12 +123,13 @@ class LearningController extends State<LearningPage> {
       final nextId = await FunWithKanji.of(context).getNextLearnCharacter(
         widget.writingSystem,
       );
-      if (nextId == characterSet!.length - 1) {
+      if (nextId == characterSet!.length - 1 && learnInProgressChars.isEmpty) {
         dev.log('All characters at 10 stars. Pick random one!');
         return Random().nextInt(characterSet!.length);
+      } else {
+        dev.log('Add new character with ID $nextId...');
+        return nextId;
       }
-      dev.log('Add new character with ID $nextId...');
-      return nextId;
     }
 
     // Every 7th character should be repeating an old one:
