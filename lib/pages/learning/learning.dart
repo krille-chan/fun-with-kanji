@@ -130,8 +130,7 @@ class LearningController extends State<LearningPage> {
         final nextId = await FunWithKanji.of(context).getNextLearnCharacter(
           widget.writingSystem,
         );
-        if (nextId == characterSet!.length - 1 &&
-            learnInProgressChars.isEmpty) {
+        if (nextId == characterSet!.length && learnInProgressChars.isEmpty) {
           dev.log('All characters at 10 stars. Pick random one!');
           return Random().nextInt(characterSet!.length);
         } else {
