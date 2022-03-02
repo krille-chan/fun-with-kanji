@@ -54,5 +54,6 @@
         }
     },
     "importFinished": "Import abgeschlossen",
-    "importFailed": "Entschuldigung... Import fehlgeschlagen."
+    "importFailed": "Entschuldigung... Import fehlgeschlagen.",
+    "search": "Suchen"
 }

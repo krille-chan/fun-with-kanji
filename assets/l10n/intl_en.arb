@@ -54,5 +54,6 @@
         }
     },
     "importFinished": "Import finished",
-    "importFailed": "Sorry... Import failed."
+    "importFailed": "Sorry... Import failed.",
+    "search": "Search"
 }
