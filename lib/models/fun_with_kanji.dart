@@ -72,9 +72,8 @@ class FunWithKanji {
         .and()
         .not()
         .characterIdEqualTo(characterId)
-        .sortByStars()
         .findAll();
-    available = available.take(10).toList()..shuffle();
+    available.shuffle();
     return available.take(2).toSet();
   }
 
