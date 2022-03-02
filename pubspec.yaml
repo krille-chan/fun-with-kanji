@@ -20,7 +20,7 @@ dependencies:
   assets_audio_player: ^3.0.4+1
   path_provider: ^2.0.9
   url_launcher: ^6.0.20
-  file_picker_cross: ^4.5.0
+  file_picker: ^4.5.0
 
 dev_dependencies:
   flutter_test:

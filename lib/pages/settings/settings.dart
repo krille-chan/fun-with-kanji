@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:file_picker_cross/file_picker_cross.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:fun_with_kanji/config/app_constants.dart';
@@ -76,13 +76,15 @@ class SettingsController extends State<SettingsPage> {
   }
 
   void importAction() async {
-    final picked = await FilePickerCross.importFromStorage(
-      type: FileTypeCross.custom,
-      fileExtension: 'json',
+    final picked = await FilePicker.platform.pickFiles(
+      type: FileType.custom,
+      allowedExtensions: ['json'],
+      withData: true,
+      allowMultiple: false,
     );
-    if (picked.fileName == null) return;
+    if (picked == null || picked.files.length != 1) return;
     try {
-      final bytes = picked.toUint8List();
+      final bytes = picked.files.single.bytes!;
       final jsonStr = await compute(String.fromCharCodes, bytes);
       final json = await compute(jsonDecode, jsonStr);
       await FunWithKanji.of(context).import(json);
