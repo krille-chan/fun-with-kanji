@@ -37,7 +37,8 @@ class FunWithKanji {
                       .writingSystemEqualTo(system.name)
                       .starsProperty()
                       .sum()) /
-                  hiraganaMax) *
+                  10) /
+              system.entries *
               100)
           .round();
 
