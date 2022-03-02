@@ -37,6 +37,10 @@ class OverviewController extends State<OverviewPage> {
   }
 
   void _search(text) async {
+    if (text.isEmpty) {
+      cancelSearch();
+      return;
+    }
     setState(() {
       searchLoading = true;
     });
