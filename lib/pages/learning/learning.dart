@@ -124,9 +124,11 @@ class LearningController extends State<LearningPage> {
     try {
       final learnInProgressChars = await FunWithKanji.of(context)
           .getLearnInProgressCharacters(widget.writingSystem);
+      final learnInProgressCharsLength = learnInProgressChars.length;
+      learnInProgressChars.removeWhere((p) => p.characterId == _currentId);
 
       // Add new learn in progress character
-      if (learnInProgressChars.length < 4) {
+      if (learnInProgressCharsLength < 4) {
         final nextId = await FunWithKanji.of(context).getNextLearnCharacter(
           widget.writingSystem,
         );
@@ -158,7 +160,6 @@ class LearningController extends State<LearningPage> {
 
       dev.log(
           'Continue with one of ${learnInProgressChars.length} learn-in-progress characters...');
-      learnInProgressChars.removeWhere((p) => p.characterId == _currentId);
       learnInProgressChars.shuffle();
       return learnInProgressChars.first.characterId;
     } catch (e, s) {
