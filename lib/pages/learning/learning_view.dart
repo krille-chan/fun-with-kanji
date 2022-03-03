@@ -111,7 +111,9 @@ class LearningView extends StatelessWidget {
               (choice) => Padding(
                 padding: const EdgeInsets.only(bottom: 16.0),
                 child: ElevatedButton(
-                  onPressed: () => controller.checkChoice(choice),
+                  onPressed: controller.answerCorrect != null
+                      ? null
+                      : () => controller.checkChoice(choice),
                   style: ElevatedButton.styleFrom(
                     primary: controller.answerCorrect != null
                         ? choice == currentCharacter
@@ -145,7 +147,9 @@ class LearningView extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             ElevatedButton(
-              onPressed: controller.checkStringChoice,
+              onPressed: controller.answerCorrect != null
+                  ? null
+                  : controller.checkStringChoice,
               style: ElevatedButton.styleFrom(
                 primary: controller.answerCorrect != null
                     ? controller.answerCorrect!
