@@ -133,7 +133,7 @@ class LearningController extends State<LearningPage> {
         if (nextId == characterSet!.length && learnInProgressChars.isEmpty) {
           dev.log('All characters at 10 stars. Pick random one!');
           return Random().nextInt(characterSet!.length);
-        } else {
+        } else if (nextId < characterSet!.length) {
           dev.log('Add new character with ID $nextId...');
           return nextId;
         }
