@@ -27,7 +27,7 @@ class HomePageView extends StatelessWidget {
                                     ConnectionState.waiting
                                 ? 0
                                 : 1,
-                            curve: Curves.bounceInOut,
+                            curve: Curves.easeInOut,
                             duration: Duration(
                                 milliseconds:
                                     300 + (100 * writingSystem.index)),
