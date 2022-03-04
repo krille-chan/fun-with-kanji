@@ -16,19 +16,21 @@ class OverviewPageView extends StatelessWidget {
     final searchResult = controller.searchResult;
     return Scaffold(
       appBar: AppBar(
+        titleSpacing: 0,
         title: SafeArea(
           child: TextField(
             onChanged: controller.search,
             controller: controller.searchController,
             decoration: InputDecoration(
               border: InputBorder.none,
+              contentPadding: const EdgeInsets.all(14),
               hintText: L10n.of(context)!.search,
               suffixIcon: controller.searchLoading
                   ? const CircularProgressIndicator.adaptive()
                   : searchResult == null
-                      ? const Icon(YaruIcons.search)
+                      ? const Icon(YaruIcons.search, size: 26)
                       : IconButton(
-                          icon: const Icon(YaruIcons.window_close),
+                          icon: const Icon(YaruIcons.window_close, size: 26),
                           onPressed: controller.cancelSearch,
                         ),
             ),

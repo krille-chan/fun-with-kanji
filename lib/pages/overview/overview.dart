@@ -41,6 +41,7 @@ class OverviewController extends State<OverviewPage> {
       cancelSearch();
       return;
     }
+    text = text.toLowerCase().trim();
     setState(() {
       searchLoading = true;
     });
