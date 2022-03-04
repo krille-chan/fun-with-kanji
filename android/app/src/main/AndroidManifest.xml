@@ -5,10 +5,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
    <application
-        android:label="Funny Kanji"
+        android:label="Fun With Kanji"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher_background"
-        android:roundIcon="@mipmap/ic_launcher_round">
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"
