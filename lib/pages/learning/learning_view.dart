@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fun_with_kanji/models/kana.dart';
 import 'package:fun_with_kanji/models/kanji.dart';
+import 'package:fun_with_kanji/models/radical.dart';
 import 'package:fun_with_kanji/pages/learning/learning.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:yaru_icons/yaru_icons.dart';
@@ -164,6 +165,15 @@ class LearningView extends StatelessWidget {
                 style: const TextStyle(fontSize: 24),
               ),
             )
+          ],
+          if (currentCharacter is Radical &&
+              (controller.learningProgress!.stars < 8 ||
+                  controller.answerCorrect != null)) ...[
+            const Divider(),
+            Text(
+              currentCharacter.reading,
+              style: const TextStyle(fontSize: 16),
+            ),
           ],
           if (currentCharacter is Kanji &&
               (controller.learningProgress!.stars < 8 ||

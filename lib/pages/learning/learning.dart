@@ -184,9 +184,7 @@ class LearningController extends State<LearningPage> {
   }
 
   void checkChoice(JpCharacter answer) {
-    final isCorrect = answer.toString() == currentCharacter.toString() &&
-        answer.description == currentCharacter!.description;
-    _check(isCorrect);
+    _check(answer.description == currentCharacter!.description);
   }
 
   void _check(bool isCorrect) async {
