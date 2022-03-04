@@ -133,7 +133,8 @@ class FunWithKanji {
       isar.learningProgresss.filter().starsGreaterThan(0).exportJson();
 
   Future<void> import(List<Map<String, dynamic>> json) async {
-    await isar.learningProgresss.clear();
-    await isar.learningProgresss.importJson(json);
+    isar.writeTxn((_) async {
+      await isar.learningProgresss.importJson(json);
+    });
   }
 }
