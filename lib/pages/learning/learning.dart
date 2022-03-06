@@ -141,8 +141,8 @@ class LearningController extends State<LearningPage> {
         }
       }
 
-      // Every 7th character should be repeating an old one:
-      final repeatOldCharacter = Random().nextInt(7) == 0;
+      // Every 5th character should be repeating an old one:
+      final repeatOldCharacter = Random().nextInt(5) == 0;
 
       if (repeatOldCharacter) {
         final learnedChars =
@@ -216,7 +216,7 @@ class LearningController extends State<LearningPage> {
         ],
       ),
       behavior: SnackBarBehavior.floating,
-      duration: const Duration(milliseconds: 750),
+      duration: Duration(milliseconds: isCorrect ? 750 : 2250),
     ));
 
     // Play sound:
@@ -242,7 +242,7 @@ class LearningController extends State<LearningPage> {
       learningProgress!.stars,
     );
 
-    await Future.delayed(const Duration(milliseconds: 500));
+    await Future.delayed(Duration(milliseconds: isCorrect ? 500 : 2000));
     _loadNextCharacter();
   }
 
