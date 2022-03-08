@@ -7,7 +7,7 @@
    <application
         android:label="Fun With Kanji"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher_round">
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"
