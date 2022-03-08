@@ -17,12 +17,24 @@ class FunWithKanjiApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: yaruLight.copyWith(
         appBarTheme: yaruLight.appBarTheme.copyWith(
-          systemOverlayStyle: SystemUiOverlayStyle.dark,
+          systemOverlayStyle: const SystemUiOverlayStyle(
+            statusBarColor: Colors.white,
+            systemNavigationBarColor: Colors.white,
+            statusBarBrightness: Brightness.dark,
+            statusBarIconBrightness: Brightness.dark,
+            systemNavigationBarIconBrightness: Brightness.dark,
+          ),
         ),
       ),
       darkTheme: yaruDark.copyWith(
         appBarTheme: yaruDark.appBarTheme.copyWith(
-          systemOverlayStyle: SystemUiOverlayStyle.light,
+          systemOverlayStyle: const SystemUiOverlayStyle(
+            statusBarColor: Colors.black,
+            systemNavigationBarColor: Colors.black,
+            statusBarBrightness: Brightness.light,
+            statusBarIconBrightness: Brightness.light,
+            systemNavigationBarIconBrightness: Brightness.light,
+          ),
         ),
       ),
       title: AppConstants.appName,

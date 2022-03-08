@@ -14,25 +14,35 @@ class OverviewPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final searchResult = controller.searchResult;
+    const inputBorder = OutlineInputBorder(
+      borderSide: BorderSide(
+        color: Colors.transparent,
+      ),
+    );
     return Scaffold(
       appBar: AppBar(
         titleSpacing: 0,
-        title: SafeArea(
-          child: TextField(
-            onChanged: controller.search,
-            controller: controller.searchController,
-            decoration: InputDecoration(
-              border: InputBorder.none,
-              contentPadding: const EdgeInsets.all(14),
-              hintText: L10n.of(context)!.search,
-              suffixIcon: controller.searchLoading
-                  ? const CircularProgressIndicator.adaptive()
-                  : searchResult == null
-                      ? const Icon(YaruIcons.search, size: 26)
-                      : IconButton(
-                          icon: const Icon(YaruIcons.window_close, size: 26),
-                          onPressed: controller.cancelSearch,
-                        ),
+        title: SizedBox(
+          width: double.infinity,
+          height: 48,
+          child: Center(
+            child: TextField(
+              onChanged: controller.search,
+              controller: controller.searchController,
+              decoration: InputDecoration(
+                border: inputBorder,
+                focusedBorder: inputBorder,
+                enabledBorder: inputBorder,
+                hintText: L10n.of(context)!.search,
+                suffixIcon: controller.searchLoading
+                    ? const CircularProgressIndicator.adaptive()
+                    : searchResult == null
+                        ? const Icon(YaruIcons.search, size: 26)
+                        : IconButton(
+                            icon: const Icon(YaruIcons.window_close, size: 26),
+                            onPressed: controller.cancelSearch,
+                          ),
+              ),
             ),
           ),
         ),
