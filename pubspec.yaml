@@ -28,6 +28,7 @@ dev_dependencies:
   flutter_lints: ^1.0.0
   isar_generator: ^2.2.1
   build_runner: any
+  flutter_launcher_icons: "^0.9.2"
 
 flutter:
   generate: true
@@ -36,3 +37,12 @@ flutter:
     - assets/data/
     - assets/images/
     - assets/sounds/
+
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/icon.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/icon.png"
