@@ -37,6 +37,8 @@ class HomePageView extends StatelessWidget {
                               symbol: writingSystem.symbol,
                               onTap: () =>
                                   controller.learnSystem(writingSystem),
+                              onSettings: () => controller
+                                  .writingSystemSettings(writingSystem),
                             ),
                           ),
                         ))

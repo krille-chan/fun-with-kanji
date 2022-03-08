@@ -5,6 +5,7 @@ class LeanUnitListTile extends StatelessWidget {
   final int? progress;
   final String title;
   final void Function() onTap;
+  final void Function() onSettings;
   final String symbol;
 
   const LeanUnitListTile({
@@ -12,6 +13,7 @@ class LeanUnitListTile extends StatelessWidget {
     required this.title,
     required this.symbol,
     required this.onTap,
+    required this.onSettings,
     Key? key,
   }) : super(key: key);
 
@@ -75,6 +77,18 @@ class LeanUnitListTile extends StatelessWidget {
                           if (progress != null)
                             Center(child: Text('$progress%')),
                         ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  SizedBox(
+                    width: 64,
+                    height: 64,
+                    child: Material(
+                      borderRadius: BorderRadius.circular(64),
+                      child: IconButton(
+                        icon: const Icon(YaruIcons.settings),
+                        onPressed: onSettings,
                       ),
                     ),
                   ),

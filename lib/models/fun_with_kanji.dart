@@ -129,6 +129,14 @@ class FunWithKanji {
 
   Future<void> resetLearningProgress() => isar.writeTxn((_) => isar.clear());
 
+  Future<void> resetLearningProgressForSystem(WritingSystem system) =>
+      isar.writeTxn(
+        (_) => isar.learningProgresss
+            .filter()
+            .writingSystemEqualTo(system.name)
+            .deleteAll(),
+      );
+
   Future<List<Map<String, dynamic>>> export() =>
       isar.learningProgresss.filter().starsGreaterThan(0).exportJson();
 
