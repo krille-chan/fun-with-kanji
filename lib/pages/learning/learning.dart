@@ -169,18 +169,31 @@ class LearningController extends State<LearningPage> {
   }
 
   void checkStringChoice() {
-    responseController.text = responseController.text.toLowerCase().trim();
-    if (currentCharacter!.description.contains(', ')) {
-      _check(currentCharacter!.description
-          .toLowerCase()
-          .trim()
-          .split(', ')
-          .toSet()
-          .contains(responseController.text));
+    final response = responseController.text.toLowerCase().trim();
+    final correctAnswer = currentCharacter!.description.toLowerCase().trim();
+
+    // Only one of the comma separated values needs to be the response
+    if (correctAnswer.contains(', ') &&
+        correctAnswer.split(', ').toSet().contains(response)) {
+      _check(true);
       return;
     }
-    _check(responseController.text.toLowerCase().trim() ==
-        currentCharacter!.description.toLowerCase().trim());
+
+    // For verbs just entering the verb without "to" is enough
+    if (correctAnswer.startsWith('to ') &&
+        correctAnswer.replaceFirst('to ', '') == response) {
+      _check(true);
+      return;
+    }
+
+    // Additional info in brackets don't need to be in the response
+    if (correctAnswer.split('(').first.trim() == response) {
+      _check(true);
+      return;
+    }
+
+    // Just compare
+    _check(response == correctAnswer);
   }
 
   void checkChoice(JpCharacter answer) {
