@@ -6,6 +6,18 @@ stages:
 - release
 - deploy
 
+
+
+.prepare_android: &prepare_android |-
+  cd android
+  echo $FDROID_KEY | base64 --decode --ignore-garbage > key.jks
+  echo "storePassword=${FDROID_KEY_PASS}" >> key.properties
+  echo "keyPassword=${FDROID_KEY_PASS}" >> key.properties
+  echo "keyAlias=key" >> key.properties
+  echo "storeFile=../key.jks" >> key.properties
+  cd ..
+
+
 code_analyze:
   stage: coverage
   script:
@@ -30,13 +42,7 @@ build_apk_debug:
 build_apk:
   stage: coverage
   before_script:
-    - cd android
-    - echo $FDROID_KEY | base64 --decode --ignore-garbage > key.jks
-    - echo "storePassword=${FDROID_KEY_PASS}" >> key.properties
-    - echo "keyPassword=${FDROID_KEY_PASS}" >> key.properties
-    - echo "keyAlias=key" >> key.properties
-    - echo "storeFile=../key.jks" >> key.properties
-    - cd ..
+    - *prepare_android
     - flutter pub get
   script:
     - flutter build apk --release
@@ -44,6 +50,21 @@ build_apk:
     when: on_success
     paths:
       - build/app/outputs/apk/release/app-release.apk
+  only:
+    - main
+    - tags
+
+build_appbundle:
+  stage: coverage
+  before_script:
+    - *prepare_android
+    - flutter pub get
+  script:
+    - flutter build appbundle --target-platform android-arm,android-arm64
+  artifacts:
+    when: on_success
+    paths:
+      - build/app/outputs/bundle/release/app-release.aab
   only:
     - main
     - tags
