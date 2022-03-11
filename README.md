@@ -2,6 +2,12 @@
 
 Simple Flutter app to learn Japanese writing systems Hiragana, Katakana and Kanji.
 
+With Fun With Kanji you are able to learn **all** common used Japanese characters. All starts with Hiragana, Katakana and their special cases and combinations. After this you learn the Kanji Radicals and then you are ready to start with the 2136 Jōyō-Kanji. You no longer need 4 different apps to learn them!
+
+The app also contains a dictionary and a full-text search over all characters.
+
+Fun With Kanji is open source under Mozilla Public License 2.0. Contributions and new translations are always welcome <3.
+
 ## Screenshots:
 
 <p float="left">
