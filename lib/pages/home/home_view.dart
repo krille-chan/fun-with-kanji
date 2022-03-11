@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fun_with_kanji/config/app_constants.dart';
 import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/pages/home/home.dart';
-import 'package:flutter_gen/gen_l10n/l10n.dart';
 import 'package:fun_with_kanji/pages/home/learn_unit_list_tile.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
 
@@ -12,7 +12,7 @@ class HomePageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(L10n.of(context)!.learn)),
+      appBar: AppBar(title: const Text(AppConstants.appName)),
       body: StreamBuilder<void>(
           stream: FunWithKanji.of(context).onChanges,
           builder: (context, snapshot) => ListView(
