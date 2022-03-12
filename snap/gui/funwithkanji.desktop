@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Fun With Kanji
+GenericName=Learn Hiragana, Katakana and Kanji
+Comment=Simple Flutter app to learn Japanese writing systems Hiragana, Katakana and Kanji.
+Exec=fun-with-kanji
+Icon=${SNAP}/meta/gui/funwithkanji.png
+Terminal=false
+Type=Application
+Categories=Education;
