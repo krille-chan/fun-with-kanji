@@ -390,16 +390,10 @@
       "reading": "しんにょう／しんにゅう"
     },
     {
-      "id": 65,
-      "radical": "阝",
-      "name": "village, country, city",
-      "reading": "おおざと"
-    },
-    {
       "id": 66,
       "radical": "阝",
-      "name": "hill, mound",
-      "reading": "こざとへん"
+      "name": "village, country, city, hill, mound",
+      "reading": "おおざと／こざとへん"
     },
     {
       "id": 67,
