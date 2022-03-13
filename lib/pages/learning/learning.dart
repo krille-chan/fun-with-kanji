@@ -4,7 +4,6 @@ import 'dart:developer' as dev;
 import 'dart:io';
 import 'dart:math';
 
-import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/models/jp_character.dart';
@@ -13,6 +12,7 @@ import 'package:fun_with_kanji/models/script_loader.dart';
 import 'package:fun_with_kanji/pages/learning/learning_view.dart';
 import 'package:fun_with_kanji/utils/open_issue_dialog.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
+import 'package:just_audio/just_audio.dart';
 import 'package:yaru_icons/yaru_icons.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 
@@ -200,6 +200,8 @@ class LearningController extends State<LearningPage> {
     _check(answer.description == currentCharacter!.description);
   }
 
+  final AudioPlayer _audioPlayer = AudioPlayer();
+
   void _check(bool isCorrect) async {
     // Display correct in text field:
     responseController.text = currentCharacter!.description;
@@ -234,12 +236,9 @@ class LearningController extends State<LearningPage> {
 
     // Play sound:
     if (!Platform.isLinux) {
-      AssetsAudioPlayer.newPlayer().open(
-        Audio(
-            "assets/sounds/${isCorrect ? learningProgress!.stars == 9 ? 'tenstars' : 'correct' : 'wrong'}.mp3"),
-        autoStart: true,
-        showNotification: true,
-      );
+      await _audioPlayer.setAsset(
+          "assets/sounds/${isCorrect ? learningProgress!.stars == 9 ? 'tenstars' : 'correct' : 'wrong'}.mp3");
+      _audioPlayer.play();
     }
     setState(() {
       if (isCorrect && learningProgress!.stars < 10) {
@@ -256,7 +255,7 @@ class LearningController extends State<LearningPage> {
     );
 
     await Future.delayed(Duration(milliseconds: isCorrect ? 500 : 2000));
-    _loadNextCharacter();
+    if (mounted) _loadNextCharacter();
   }
 
   int finished = 0;
