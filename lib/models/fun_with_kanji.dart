@@ -10,9 +10,9 @@ class FunWithKanji {
   FunWithKanji(this.isar);
 
   static const int maxStars = 10;
-  static const int hiraganaMax = 199 * maxStars;
+  static const int hiraganaMax = 105 * maxStars;
   static const int katakanaMax = 105 * maxStars;
-  static const int radicalsMax = 232 * maxStars;
+  static const int radicalsMax = 229 * maxStars;
   static const int kanjiMax = 267 * maxStars;
 
   static List<CollectionSchema<dynamic>> get isarSchemas => [
