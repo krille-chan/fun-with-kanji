@@ -58,5 +58,9 @@
     "search": "Suchen",
     "oopsSomethignWentWrong": "Hoppla... Da ist etwas schief gelaufen!",
     "errorDesc": "Ein Fehler ist aufgetreten. Du kannst bei der Behebung helfen, indem du diesen meldest.",
-    "report": "Melden"
+    "report": "Melden",
+    "save": "Speichern",
+    "addHint": "Merkhilfe hinzufügen",
+    "looksLikeAManWithAHat": "Sieht aus wie ein Mann mit einem Hut",
+    "showHint": "Merkhilfe anzeigen"
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fun_with_kanji/models/kanji_hint.dart';
 import 'package:fun_with_kanji/models/learning_progress.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:isar/isar.dart';
@@ -17,6 +18,7 @@ class FunWithKanji {
 
   static List<CollectionSchema<dynamic>> get isarSchemas => [
         LearningProgressSchema,
+        KanjiHintSchema,
       ];
 
   Stream<void> get onChanges => isar.learningProgresss.watchLazy();
@@ -136,6 +138,33 @@ class FunWithKanji {
             .writingSystemEqualTo(system.name)
             .deleteAll(),
       );
+
+  Future<String?> loadHint(WritingSystem system, int id) => isar.kanjiHints
+      .filter()
+      .writingSystemEqualTo(system.name)
+      .and()
+      .characterIdEqualTo(id)
+      .findFirst()
+      .then((hint) => hint?.hint);
+
+  Future<void> setHint(
+    WritingSystem system,
+    int id,
+    String hintText,
+  ) =>
+      isar.writeTxn((_) async {
+        final hint = await isar.kanjiHints
+                .filter()
+                .writingSystemEqualTo(system.name)
+                .and()
+                .characterIdEqualTo(id)
+                .findFirst() ??
+            KanjiHint()
+          ..characterId = id
+          ..writingSystem = system.name;
+        hint.hint = hintText;
+        await isar.kanjiHints.put(hint);
+      });
 
   Future<List<Map<String, dynamic>>> export() =>
       isar.learningProgresss.filter().starsGreaterThan(0).exportJson();

@@ -33,6 +33,8 @@ class LearningController extends State<LearningPage> {
   List<JpCharacter>? characterSet;
   List<JpCharacter>? choices;
   bool? answerCorrect;
+  String? hint;
+  bool showHint = false;
 
   void _loadNextCharacter() async {
     try {
@@ -108,8 +110,14 @@ class LearningController extends State<LearningPage> {
         choices = null;
       }
       responseController.clear();
+      final hint = await FunWithKanji.of(context).loadHint(
+        widget.writingSystem,
+        learningProgress.characterId,
+      );
       setState(() {
         answerCorrect = null;
+        this.hint = hint;
+        showHint = learningProgress.stars < 8;
       });
       if (choices == null) {
         replyFocus.requestFocus();
@@ -118,6 +126,52 @@ class LearningController extends State<LearningPage> {
       showOpenIssueDialog(context, e, s);
       rethrow;
     }
+  }
+
+  void editHint() async {
+    if (showHint == false) {
+      setState(() {
+        showHint = true;
+      });
+      return;
+    }
+    final newHint = await showDialog<String>(
+      context: context,
+      builder: (context) {
+        final textController = TextEditingController(text: hint);
+        return AlertDialog(
+          title: Text(L10n.of(context)!.addHint),
+          content: TextField(
+            controller: textController,
+            maxLength: 200,
+            minLines: 2,
+            maxLines: 4,
+            decoration: InputDecoration(
+                hintText: L10n.of(context)!.looksLikeAManWithAHat),
+          ),
+          actions: [
+            TextButton(
+              onPressed: Navigator.of(context).pop,
+              child: Text(L10n.of(context)!.cancel),
+            ),
+            TextButton(
+              onPressed: () =>
+                  Navigator.of(context).pop<String>(textController.text),
+              child: Text(L10n.of(context)!.save),
+            ),
+          ],
+        );
+      },
+    );
+    if (newHint == null) return;
+    setState(() {
+      hint = newHint;
+    });
+    await FunWithKanji.of(context).setHint(
+      widget.writingSystem,
+      learningProgress!.characterId,
+      newHint,
+    );
   }
 
   Future<int> _loadNextCharacterId() async {

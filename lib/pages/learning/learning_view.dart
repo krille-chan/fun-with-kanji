@@ -107,6 +107,20 @@ class LearningView extends StatelessWidget {
             ),
           ],
           const SizedBox(height: 16),
+          if (controller.showHint || controller.hint == null)
+            OutlinedButton(
+              onPressed: controller.editHint,
+              child: Padding(
+                  padding: const EdgeInsets.all(4.0),
+                  child: Text(controller.hint ?? L10n.of(context)!.addHint)),
+            )
+          else
+            OutlinedButton.icon(
+              onPressed: controller.editHint,
+              icon: const Icon(Icons.visibility_outlined),
+              label: Text(L10n.of(context)!.showHint),
+            ),
+          const SizedBox(height: 16),
           if (choices != null)
             ...choices.map(
               (choice) => Padding(

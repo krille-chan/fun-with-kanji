@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/widgets/fun_with_kanji_app.dart';
@@ -10,13 +11,14 @@ import 'dart:developer';
 void main() async {
   log('Welcome to Funny Kanji');
   WidgetsFlutterBinding.ensureInitialized();
-  final directory = Platform.isLinux
-      ? await getApplicationSupportDirectory()
-      : await getApplicationDocumentsDirectory();
-  log('Open Isar in Directory ${directory.path}');
+  final directory = kIsWeb
+      ? null
+      : Platform.isLinux
+          ? await getApplicationSupportDirectory()
+          : await getApplicationDocumentsDirectory();
   final isar = await Isar.open(
     schemas: FunWithKanji.isarSchemas,
-    directory: directory.path,
+    directory: directory?.path,
   );
   runApp(FunWithKanjiApp(isar: isar));
 }
