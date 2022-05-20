@@ -177,10 +177,12 @@ class FunWithKanji {
 
   Future<void> import(Map<String, dynamic> json) async {
     isar.writeTxn((_) async {
-      await isar.learningProgresss.importJson(json['learningProgress']);
+      await isar.learningProgresss.importJson(
+          List<Map<String, dynamic>>.from(json['learningProgress']));
     });
     isar.writeTxn((_) async {
-      await isar.kanjiHints.importJson(json['hints']);
+      await isar.kanjiHints
+          .importJson(List<Map<String, dynamic>>.from(json['hints']));
     });
   }
 }

@@ -63,7 +63,7 @@ class SettingsController extends State<SettingsPage> {
       final file = FilePickerCross(Uint8List.fromList(exportStr.codeUnits));
       await file.exportToStorage(
         fileName:
-            'fun_with_kanji_export_${DateTime.now().toIso8601String()}.jsons',
+            'fun_with_kanji_export_${DateTime.now().toIso8601String()}.json',
         share: false,
       );
     } catch (e, s) {
@@ -74,11 +74,13 @@ class SettingsController extends State<SettingsPage> {
 
   void importAction() async {
     final picked = await FilePickerCross.importFromStorage(
-        type: FileTypeCross.any, fileExtension: 'json');
+      type: FileTypeCross.custom,
+      fileExtension: 'json',
+    );
     final path = picked.path;
     if (path == null) return;
     try {
-      final jsonStr = picked.toBase64();
+      final jsonStr = picked.toString();
       final json = await compute(jsonDecode, jsonStr);
       await FunWithKanji.of(context).import(Map<String, dynamic>.from(json));
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
