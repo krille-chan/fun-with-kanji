@@ -54,5 +54,7 @@
 	<false/>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Backup your learning progress as a backup file or QR code</string>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
 </dict>
 </plist>
