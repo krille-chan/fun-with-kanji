@@ -11,7 +11,7 @@ Fun With Kanji is open source under Mozilla Public License 2.0. Contributions an
 ## Screenshots:
 
 <p float="left">
-  <img src="assets/Simulator Screen Shot - iPhone 13 Pro - 2022-05-20 at 10.39.58.png" width="128" />
+  <img src="assets/screenshots/Simulator Screen Shot - iPhone 13 Pro - 2022-05-20 at 10.39.58.png" width="128" />
   <img src="assets/screenshots/Simulator Screen Shot - iPhone 13 Pro - 2022-05-20 at 10.40.09.png" width="128" /> 
   <img src="assets/screenshots/Simulator Screen Shot - iPhone 13 Pro - 2022-05-20 at 10.39.35.png" width="128" />
   <img src="assets/screenshots/Simulator Screen Shot - iPhone 13 Pro - 2022-05-20 at 10.40.18.png" width="128" />
