@@ -61,33 +61,30 @@ class LearningView extends StatelessWidget {
             child: Center(
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 500),
-                width: controller.answerCorrect == null ? 188 : 0,
+                width: controller.answerCorrect == null ? 512 : 0,
                 height: controller.answerCorrect == null ? 188 : 0,
                 curve: Curves.easeInOut,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(256),
+                  borderRadius: BorderRadius.circular(12),
+                  image: const DecorationImage(
+                    image: AssetImage('assets/images/moe-3793863_1280.png'),
+                  ),
                   color: controller.answerCorrect == null
-                      ? Colors.purple.shade700
+                      ? Colors.purple.shade50
                       : controller.answerCorrect!
                           ? Colors.green.shade700
                           : Colors.red.shade700,
                 ),
-                child: Center(
-                  child: controller.answerCorrect != null
-                      ? null
-                      : SizedBox(
-                          width: 156,
-                          height: 156,
-                          child: FittedBox(
-                            fit: BoxFit.contain,
-                            child: Text(
-                              currentCharacter.toString(),
-                              style: const TextStyle(
-                                  fontSize: 94, color: Colors.white),
-                            ),
-                          ),
+                alignment: Alignment.bottomCenter,
+                child: controller.answerCorrect != null
+                    ? null
+                    : Text(
+                        currentCharacter.toString(),
+                        style: const TextStyle(
+                          fontSize: 86,
+                          color: Colors.black,
                         ),
-                ),
+                      ),
               ),
             ),
           ),

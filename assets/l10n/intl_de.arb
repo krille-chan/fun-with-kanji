@@ -62,5 +62,6 @@
     "save": "Speichern",
     "addHint": "Merkhilfe hinzufügen",
     "looksLikeAManWithAHat": "Sieht aus wie ein Mann mit einem Hut",
-    "showHint": "Merkhilfe anzeigen"
+    "showHint": "Merkhilfe anzeigen",
+    "langPrefix": "_de"
 }

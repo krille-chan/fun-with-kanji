@@ -72,13 +72,13 @@ class OverviewController extends State<OverviewPage> {
     result.addAll(katakana.where(kanaTest));
     katakana.clear();
 
-    final radicals = await ScriptLoader.loadRadicals();
+    final radicals = await ScriptLoader.loadRadicals(context);
     if (!searchLoading) return;
     result.addAll(radicals.where(radicalTest));
     radicals.clear();
 
     for (var i = 1; i <= 8; i++) {
-      final kanji = await ScriptLoader.loadKanji(i);
+      final kanji = await ScriptLoader.loadKanji(i, context);
       if (!searchLoading) return;
       result.addAll(kanji.where(kanjiTest));
       kanji.clear();

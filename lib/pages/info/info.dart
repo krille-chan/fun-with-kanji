@@ -19,7 +19,7 @@ class InfoPage extends StatelessWidget {
               Expanded(
                   child: Center(
                 child: Image.asset(
-                  'assets/images/anime-155465_1280.png',
+                  'assets/images/girl-160326_640.png',
                   width: 128,
                 ),
               )),
@@ -44,7 +44,7 @@ class InfoPage extends StatelessWidget {
             style: textStyle,
           ),
           const SizedBox(height: 12),
-          Image.asset('assets/images/book-2943383_1280.png'),
+          Image.asset('assets/images/spin-pen-976930_1280.jpg'),
           const SizedBox(height: 12),
           SelectableText(
             L10n.of(context)!.hiragana,

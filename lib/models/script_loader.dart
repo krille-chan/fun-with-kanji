@@ -1,10 +1,12 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:fun_with_kanji/models/kana.dart';
 import 'package:fun_with_kanji/models/kanji.dart';
 import 'package:fun_with_kanji/models/radical.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 abstract class ScriptLoader {
   static Future<List<Kana>> loadHiragana() async {
@@ -17,15 +19,18 @@ abstract class ScriptLoader {
     return await compute(_convertToKana, jsonString);
   }
 
-  static Future<List<Radical>> loadRadicals() async {
-    final jsonString = await rootBundle.loadString('assets/data/radicals.json');
+  static Future<List<Radical>> loadRadicals(BuildContext context) async {
+    final language = L10n.of(context)!.langPrefix;
+    final jsonString =
+        await rootBundle.loadString('assets/data/radicals$language.json');
     return await compute(_convertToRadicals, jsonString);
   }
 
-  static Future<List<Kanji>> loadKanji(int level) async {
+  static Future<List<Kanji>> loadKanji(int level, BuildContext context) async {
+    final language = L10n.of(context)!.langPrefix;
     if (level < 1 || level > 9) throw ('Level must be one of 1-8');
-    final jsonString =
-        await rootBundle.loadString('assets/data/kanji_level_$level.json');
+    final jsonString = await rootBundle
+        .loadString('assets/data/kanji_level_$level$language.json');
     return await compute(_convertToKanji, jsonString);
   }
 

@@ -12,7 +12,7 @@ class RadicalsViewer extends StatelessWidget {
         title: const Text('Radicals'),
       ),
       body: FutureBuilder<List<Radical>>(
-        future: ScriptLoader.loadRadicals(),
+        future: ScriptLoader.loadRadicals(context),
         builder: (context, snapshot) {
           final radicals = snapshot.data;
           if (radicals == null) {

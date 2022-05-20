@@ -31,3 +31,43 @@ Install [Flutter](https://flutter.dev) and run with:
 ```sh
 flutter run
 ```
+
+## Translate Kanji into more languages:
+
+Import `translator` package and run this script:
+
+```dart
+import 'dart:io';
+
+import 'package:translator/translator.dart';
+
+void main() async {
+  const language = 'de';
+  for (var i = 1; i <= 8; i++) {
+    print('Load Kanji Level $i');
+    final radicalsFile = File('assets/data/kanji_level_$i.json');
+    final radicals = jsonDecode(radicalsFile.readAsStringSync()) as List;
+
+    final translator = GoogleTranslator();
+    for (final radical in radicals) {
+      final input = radical['meanings'].join(', ');
+      print('Translate: ${radical['kanji']} (ID: ${radical['id']}) $input ...');
+      try {
+        final translated =
+            await translator.translate(input, from: 'en', to: language);
+        radical['meanings'] = translated.text.split(', ');
+      } catch (e, s) {
+        print('Translation failed! Stop here!');
+        print(e);
+        print(s);
+        break;
+      }
+    }
+
+    print('Write to output file...');
+    final outputFile = File('assets/data/kanji_level_${i}_${language}.json');
+    await outputFile.writeAsString(jsonEncode(radicals));
+    print('Finished!');
+  }
+}
+```

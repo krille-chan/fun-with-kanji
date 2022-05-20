@@ -14,7 +14,7 @@ class KanjiViewer extends StatelessWidget {
         title: Text('Kanji Level $level'),
       ),
       body: FutureBuilder<List<Kanji>>(
-        future: ScriptLoader.loadKanji(level),
+        future: ScriptLoader.loadKanji(level, context),
         builder: (context, snapshot) {
           final kanji = snapshot.data;
           if (kanji == null) {

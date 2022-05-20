@@ -62,5 +62,6 @@
     "save": "Save",
     "addHint": "Add hint",
     "looksLikeAManWithAHat": "Looks like a man with a hat",
-    "showHint": "Show hint"
+    "showHint": "Show hint",
+    "langPrefix": ""
 }

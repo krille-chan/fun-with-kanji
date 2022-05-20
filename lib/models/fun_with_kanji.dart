@@ -166,12 +166,21 @@ class FunWithKanji {
         await isar.kanjiHints.put(hint);
       });
 
-  Future<List<Map<String, dynamic>>> export() =>
-      isar.learningProgresss.filter().starsGreaterThan(0).exportJson();
+  Future<Map<String, dynamic>> export() async => {
+        'learningProgress': await isar.learningProgresss
+            .filter()
+            .starsGreaterThan(0)
+            .exportJson(),
+        'hints':
+            await isar.kanjiHints.filter().not().hintEqualTo('').exportJson(),
+      };
 
-  Future<void> import(List<Map<String, dynamic>> json) async {
+  Future<void> import(Map<String, dynamic> json) async {
     isar.writeTxn((_) async {
-      await isar.learningProgresss.importJson(json);
+      await isar.learningProgresss.importJson(json['learningProgress']);
+    });
+    isar.writeTxn((_) async {
+      await isar.kanjiHints.importJson(json['hints']);
     });
   }
 }

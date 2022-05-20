@@ -48,31 +48,31 @@ class LearningController extends State<LearningPage> {
             characterSet = await ScriptLoader.loadKatakana();
             break;
           case WritingSystem.radicals:
-            characterSet = await ScriptLoader.loadRadicals();
+            characterSet = await ScriptLoader.loadRadicals(context);
             break;
           case WritingSystem.kanji1:
-            characterSet = await ScriptLoader.loadKanji(1);
+            characterSet = await ScriptLoader.loadKanji(1, context);
             break;
           case WritingSystem.kanji2:
-            characterSet = await ScriptLoader.loadKanji(2);
+            characterSet = await ScriptLoader.loadKanji(2, context);
             break;
           case WritingSystem.kanji3:
-            characterSet = await ScriptLoader.loadKanji(3);
+            characterSet = await ScriptLoader.loadKanji(3, context);
             break;
           case WritingSystem.kanji4:
-            characterSet = await ScriptLoader.loadKanji(4);
+            characterSet = await ScriptLoader.loadKanji(4, context);
             break;
           case WritingSystem.kanji5:
-            characterSet = await ScriptLoader.loadKanji(5);
+            characterSet = await ScriptLoader.loadKanji(5, context);
             break;
           case WritingSystem.kanji6:
-            characterSet = await ScriptLoader.loadKanji(6);
+            characterSet = await ScriptLoader.loadKanji(6, context);
             break;
           case WritingSystem.kanji7:
-            characterSet = await ScriptLoader.loadKanji(7);
+            characterSet = await ScriptLoader.loadKanji(7, context);
             break;
           case WritingSystem.kanji8:
-            characterSet = await ScriptLoader.loadKanji(8);
+            characterSet = await ScriptLoader.loadKanji(8, context);
             break;
         }
       }
@@ -316,7 +316,9 @@ class LearningController extends State<LearningPage> {
 
   @override
   void initState() {
-    _loadNextCharacter();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _loadNextCharacter();
+    });
     super.initState();
   }
 
