@@ -291,7 +291,7 @@ class LearningController extends State<LearningPage> {
     // Play sound:
     if (!Platform.isLinux) {
       await _audioPlayer.setAsset(
-          "assets/sounds/${isCorrect ? learningProgress!.stars == 9 ? 'tenstars' : 'correct' : 'wrong'}.mp3");
+          "assets/sounds/${isCorrect ? learningProgress!.stars == 9 ? 'finished' : 'correct' : 'wrong'}.mp3");
       _audioPlayer.play();
     }
     setState(() {
