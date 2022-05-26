@@ -1,7 +1,7 @@
 name: fun_with_kanji
 description: Simple Flutter app to learn Japanese writing systems Hiragana, Katakana and Kanji.
 publish_to: "none"
-version: 0.3.0+3
+version: 0.3.1+4
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
