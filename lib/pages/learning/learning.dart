@@ -182,7 +182,7 @@ class LearningController extends State<LearningPage> {
       learnInProgressChars.removeWhere((p) => p.characterId == _currentId);
 
       // Add new learn in progress character
-      if (learnInProgressCharsLength < 4) {
+      if (learnInProgressCharsLength < 5) {
         final nextId = await FunWithKanji.of(context).getNextLearnCharacter(
           widget.writingSystem,
         );
@@ -196,7 +196,7 @@ class LearningController extends State<LearningPage> {
       }
 
       // Every 5th character should be repeating an old one:
-      final repeatOldCharacter = Random().nextInt(5) == 0;
+      final repeatOldCharacter = Random().nextInt(4) == 0;
 
       if (repeatOldCharacter) {
         final learnedChars =
