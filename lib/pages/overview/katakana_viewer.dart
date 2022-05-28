@@ -23,6 +23,8 @@ class KatakanaViewer extends StatelessWidget {
             itemCount: katakana.length,
             itemBuilder: (context, i) => ListTile(
               leading: CircleAvatar(
+                foregroundColor: Theme.of(context).textTheme.bodyText1?.color,
+                backgroundColor: Theme.of(context).secondaryHeaderColor,
                 child: SizedBox(
                   width: 32,
                   height: 32,
@@ -31,8 +33,6 @@ class KatakanaViewer extends StatelessWidget {
                     child: Text(katakana[i].kana),
                   ),
                 ),
-                foregroundColor: Theme.of(context).textTheme.bodyText1?.color,
-                backgroundColor: Theme.of(context).secondaryHeaderColor,
               ),
               title: Text(katakana[i].roumaji),
               subtitle: Text(katakana[i].type),

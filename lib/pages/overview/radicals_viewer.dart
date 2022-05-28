@@ -22,6 +22,8 @@ class RadicalsViewer extends StatelessWidget {
             itemCount: radicals.length,
             itemBuilder: (context, i) => ListTile(
               leading: CircleAvatar(
+                foregroundColor: Theme.of(context).textTheme.bodyText1?.color,
+                backgroundColor: Theme.of(context).secondaryHeaderColor,
                 child: SizedBox(
                   width: 32,
                   height: 32,
@@ -30,8 +32,6 @@ class RadicalsViewer extends StatelessWidget {
                     child: Text(radicals[i].radical),
                   ),
                 ),
-                foregroundColor: Theme.of(context).textTheme.bodyText1?.color,
-                backgroundColor: Theme.of(context).secondaryHeaderColor,
               ),
               title: Text(radicals[i].name),
               subtitle: Text(radicals[i].reading),

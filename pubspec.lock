@@ -190,6 +190,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  dbus:
+    dependency: transitive
+    description:
+      name: dbus
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.7.3"
   disk_space:
     dependency: transitive
     description:
@@ -306,7 +313,7 @@ packages:
       name: flutter_lints
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.4"
+    version: "2.0.1"
   flutter_localizations:
     dependency: "direct main"
     description: flutter
@@ -357,6 +364,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  gsettings:
+    dependency: transitive
+    description:
+      name: gsettings
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.5"
   http:
     dependency: transitive
     description:
@@ -461,7 +475,7 @@ packages:
       name: lints
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.1"
+    version: "2.0.0"
   logging:
     dependency: transitive
     description:
@@ -561,12 +575,12 @@ packages:
     source: hosted
     version: "1.8.1"
   path_provider:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: path_provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.9"
+    version: "2.0.10"
   path_provider_android:
     dependency: transitive
     description:
@@ -928,14 +942,28 @@ packages:
       name: yaru
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.2"
+    version: "0.3.2"
+  yaru_color_generator:
+    dependency: transitive
+    description:
+      name: yaru_color_generator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.0"
+  yaru_colors:
+    dependency: transitive
+    description:
+      name: yaru_colors
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.0"
   yaru_icons:
     dependency: "direct main"
     description:
       name: yaru_icons
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.2"
+    version: "0.2.1"
 sdks:
-  dart: ">=2.17.0-0 <3.0.0"
-  flutter: ">=2.10.0"
+  dart: ">=2.17.0 <3.0.0"
+  flutter: ">=3.0.0"

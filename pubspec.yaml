@@ -15,16 +15,17 @@ dependencies:
   provider: ^6.0.2
   isar: ^2.2.1
   isar_flutter_libs: ^2.2.1
-  yaru: ^0.2.2
-  yaru_icons: ^0.1.2
+  yaru: ^0.3.2
+  yaru_icons: ^0.2.1
   just_audio: ^0.9.20
   url_launcher: ^6.0.20
   file_picker_cross: ^4.6.0
+  path_provider: ^2.0.10
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints: ^2.0.1
   isar_generator: ^2.2.1
   build_runner: any
   flutter_launcher_icons: "^0.9.2"

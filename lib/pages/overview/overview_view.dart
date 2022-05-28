@@ -58,6 +58,9 @@ class OverviewPageView extends StatelessWidget {
                     )
                   : ListTile(
                       leading: CircleAvatar(
+                        foregroundColor:
+                            Theme.of(context).textTheme.bodyText1?.color,
+                        backgroundColor: Theme.of(context).secondaryHeaderColor,
                         child: SizedBox(
                           width: 32,
                           height: 32,
@@ -66,9 +69,6 @@ class OverviewPageView extends StatelessWidget {
                             child: Text(searchResult[i].toString()),
                           ),
                         ),
-                        foregroundColor:
-                            Theme.of(context).textTheme.bodyText1?.color,
-                        backgroundColor: Theme.of(context).secondaryHeaderColor,
                       ),
                       title: Text(searchResult[i].description),
                       subtitle: Text(searchResult[i].runtimeType.toString()),

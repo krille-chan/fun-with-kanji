@@ -10,10 +10,10 @@ class HomeLayout extends StatefulWidget {
   const HomeLayout({Key? key}) : super(key: key);
 
   @override
-  _HomeLayoutState createState() => _HomeLayoutState();
+  HomeLayoutState createState() => HomeLayoutState();
 }
 
-class _HomeLayoutState extends State<HomeLayout> {
+class HomeLayoutState extends State<HomeLayout> {
   int currentIndex = 0;
 
   @override
