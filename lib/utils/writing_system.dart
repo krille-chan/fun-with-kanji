@@ -77,7 +77,7 @@ extension WritingSystemSymbol on WritingSystem {
       case WritingSystem.katakana:
         return 105;
       case WritingSystem.radicals:
-        return 232;
+        return 228;
       case WritingSystem.kanji1:
         return 267;
       case WritingSystem.kanji2:

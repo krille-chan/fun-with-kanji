@@ -254,7 +254,7 @@
     {
         "id": 42,
         "radical": "寸",
-        "name": "2,25 cm (Zoll)",
+        "name": "Zoll",
         "reading": "すん／すんづくり"
     },
     {
@@ -866,7 +866,7 @@
     {
         "id": 146,
         "radical": "肉",
-        "name": "Fleisch Fleisch",
+        "name": "Fleisch",
         "reading": "にく"
     },
     {
@@ -1058,7 +1058,7 @@
     {
         "id": 178,
         "radical": "辰",
-        "name": "(fünfter Zodiac -Zeichen), 7 - 9 Uhr morgens.",
+        "name": "Drachen",
         "reading": "しんのたつ"
     },
     {
