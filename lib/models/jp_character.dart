@@ -27,7 +27,7 @@ abstract class JpCharacter {
       return (this as Radical).name;
     }
     if (this is Kanji) {
-      return (this as Kanji).meanings.join(', ');
+      return (this as Kanji).meanings.first;
     }
     return super.toString();
   }
