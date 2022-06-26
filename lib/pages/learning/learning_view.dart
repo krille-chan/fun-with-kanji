@@ -99,7 +99,7 @@ class LearningView extends StatelessWidget {
               controller.learningProgress!.stars < 8) ...[
             const SizedBox(height: 16),
             Text(
-              '${L10n.of(context)!.radicals}: ${currentCharacter.radicals.join(', ')}',
+              '${L10n.of(context)!.radicalsName}: ${currentCharacter.radicals.join(', ')}',
               textAlign: TextAlign.center,
             ),
           ],
