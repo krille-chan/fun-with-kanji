@@ -4,7 +4,8 @@ import 'package:flutter_gen/gen_l10n/l10n.dart';
 enum WritingSystem {
   hiragana,
   katakana,
-  radicals,
+  radicals1,
+  radicals2,
   kanji1,
   kanji2,
   kanji3,
@@ -22,8 +23,10 @@ extension WritingSystemSymbol on WritingSystem {
         return 'ひ';
       case WritingSystem.katakana:
         return 'カ';
-      case WritingSystem.radicals:
-        return 'ら';
+      case WritingSystem.radicals1:
+        return '丶';
+      case WritingSystem.radicals2:
+        return '田';
       case WritingSystem.kanji1:
         return '一';
       case WritingSystem.kanji2:
@@ -49,8 +52,10 @@ extension WritingSystemSymbol on WritingSystem {
         return L10n.of(context)!.hiragana;
       case WritingSystem.katakana:
         return L10n.of(context)!.katakana;
-      case WritingSystem.radicals:
-        return L10n.of(context)!.radicals;
+      case WritingSystem.radicals1:
+        return L10n.of(context)!.radicals(1);
+      case WritingSystem.radicals2:
+        return L10n.of(context)!.radicals(2);
       case WritingSystem.kanji1:
         return L10n.of(context)!.kanjiLevel(1);
       case WritingSystem.kanji2:
@@ -76,8 +81,10 @@ extension WritingSystemSymbol on WritingSystem {
         return 105;
       case WritingSystem.katakana:
         return 105;
-      case WritingSystem.radicals:
-        return 228;
+      case WritingSystem.radicals1:
+        return 114;
+      case WritingSystem.radicals2:
+        return 114;
       case WritingSystem.kanji1:
         return 267;
       case WritingSystem.kanji2:

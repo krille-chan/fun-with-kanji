@@ -19,10 +19,11 @@ abstract class ScriptLoader {
     return await compute(_convertToKana, jsonString);
   }
 
-  static Future<List<Radical>> loadRadicals(BuildContext context) async {
+  static Future<List<Radical>> loadRadicals(
+      BuildContext context, int level) async {
     final language = L10n.of(context)!.langPrefix;
-    final jsonString =
-        await rootBundle.loadString('assets/data/radicals$language.json');
+    final jsonString = await rootBundle
+        .loadString('assets/data/radicals${language}_$level.json');
     return await compute(_convertToRadicals, jsonString);
   }
 

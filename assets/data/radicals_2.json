@@ -1,0 +1,686 @@
+[
+    {
+        "id": 117,
+        "radical": "田",
+        "name": "rice paddy",
+        "reading": "た／たへん"
+    },
+    {
+        "id": 118,
+        "radical": "疋",
+        "name": "roll of cloth",
+        "reading": "ひき"
+    },
+    {
+        "id": 119,
+        "radical": "疒",
+        "name": "sickness",
+        "reading": "やまいだれ"
+    },
+    {
+        "id": 120,
+        "radical": "癶",
+        "name": "outspread legs, departure",
+        "reading": "はつがしら"
+    },
+    {
+        "id": 121,
+        "radical": "白",
+        "name": "white",
+        "reading": "しろ／はくへん"
+    },
+    {
+        "id": 122,
+        "radical": "皮",
+        "name": "skin, hide",
+        "reading": "けがわ／ひのかわ"
+    },
+    {
+        "id": 123,
+        "radical": "皿",
+        "name": "plate, bowl",
+        "reading": "さら"
+    },
+    {
+        "id": 124,
+        "radical": "目",
+        "name": "eye",
+        "reading": "め／めへん"
+    },
+    {
+        "id": 125,
+        "radical": "罒",
+        "name": "eye",
+        "reading": "よこめ"
+    },
+    {
+        "id": 126,
+        "radical": "矛",
+        "name": "halberd",
+        "reading": "ほこ／ほこへん"
+    },
+    {
+        "id": 127,
+        "radical": "矢",
+        "name": "arrow",
+        "reading": "や／やへん"
+    },
+    {
+        "id": 128,
+        "radical": "石",
+        "name": "stone",
+        "reading": "いし／いしへん"
+    },
+    {
+        "id": 129,
+        "radical": "示 礻",
+        "name": "altar, festival , religious service",
+        "reading": "しめす／しめすへん"
+    },
+    {
+        "id": 130,
+        "radical": "禸",
+        "name": "footprint",
+        "reading": "じゅうのあし"
+    },
+    {
+        "id": 131,
+        "radical": "禾",
+        "name": "grain",
+        "reading": "のぎへん"
+    },
+    {
+        "id": 132,
+        "radical": "穴",
+        "name": "hole, cave",
+        "reading": "あな／あなかんむり"
+    },
+    {
+        "id": 133,
+        "radical": "立",
+        "name": "to stand",
+        "reading": "たつ／たつへん"
+    },
+    {
+        "id": 134,
+        "radical": "竹",
+        "name": "bamboo",
+        "reading": "たけ／たけかんむり"
+    },
+    {
+        "id": 135,
+        "radical": "米",
+        "name": "rice",
+        "reading": "こめ／こめへん"
+    },
+    {
+        "id": 136,
+        "radical": "糸",
+        "name": "thread",
+        "reading": "いと／いとへん"
+    },
+    {
+        "id": 137,
+        "radical": "缶",
+        "name": "earthen jar",
+        "reading": "みずがめ／ほとぎ"
+    },
+    {
+        "id": 138,
+        "radical": "罒 𦉰 㓁",
+        "name": "net",
+        "reading": "あみがしら／あみめ"
+    },
+    {
+        "id": 139,
+        "radical": "羊 𦍌",
+        "name": "sheep",
+        "reading": "ひつじ／ひつじへん"
+    },
+    {
+        "id": 140,
+        "radical": "羽",
+        "name": "feather, wing",
+        "reading": "はね"
+    },
+    {
+        "id": 141,
+        "radical": "老 耂",
+        "name": "old, old-age",
+        "reading": "おいかんむり／おいがしら"
+    },
+    {
+        "id": 142,
+        "radical": "而",
+        "name": "and also",
+        "reading": "しこうして"
+    },
+    {
+        "id": 143,
+        "radical": "耒",
+        "name": "plow",
+        "reading": "らいすき／すきへん"
+    },
+    {
+        "id": 144,
+        "radical": "耳",
+        "name": "ear",
+        "reading": "みみ／みみへん"
+    },
+    {
+        "id": 145,
+        "radical": "聿",
+        "name": "writing brush",
+        "reading": "ふでづくり／いつ"
+    },
+    {
+        "id": 146,
+        "radical": "肉",
+        "name": "flesh, meat",
+        "reading": "にく"
+    },
+    {
+        "id": 147,
+        "radical": "臣",
+        "name": "retainer, minister",
+        "reading": "しん／おみ"
+    },
+    {
+        "id": 148,
+        "radical": "自",
+        "name": "self",
+        "reading": "みずから"
+    },
+    {
+        "id": 149,
+        "radical": "至",
+        "name": "to arrive, reach",
+        "reading": "いたる／いたるへん"
+    },
+    {
+        "id": 150,
+        "radical": "臼",
+        "name": "mortar, quern",
+        "reading": "うす"
+    },
+    {
+        "id": 151,
+        "radical": "舌",
+        "name": "tongue",
+        "reading": "した"
+    },
+    {
+        "id": 152,
+        "radical": "舛",
+        "name": "contrary, to err",
+        "reading": "まいあし"
+    },
+    {
+        "id": 153,
+        "radical": "舟",
+        "name": "ship, boat",
+        "reading": "ふね／ふねへん"
+    },
+    {
+        "id": 154,
+        "radical": "艮",
+        "name": "boundary",
+        "reading": "こん／こんづくり"
+    },
+    {
+        "id": 155,
+        "radical": "色",
+        "name": "color",
+        "reading": "いろ"
+    },
+    {
+        "id": 156,
+        "radical": "艸",
+        "name": "grass, plant",
+        "reading": "くさ"
+    },
+    {
+        "id": 157,
+        "radical": "虍",
+        "name": "tiger",
+        "reading": "とらがしら／とらかんむり"
+    },
+    {
+        "id": 158,
+        "radical": "虫",
+        "name": "worm, insect, bug",
+        "reading": "むし／むしへん"
+    },
+    {
+        "id": 159,
+        "radical": "血",
+        "name": "blood",
+        "reading": "ち"
+    },
+    {
+        "id": 160,
+        "radical": "行",
+        "name": "to go",
+        "reading": "ぎょうがまえ／ゆきがまえ"
+    },
+    {
+        "id": 161,
+        "radical": "衣",
+        "name": "clothing",
+        "reading": "ころも"
+    },
+    {
+        "id": 162,
+        "radical": "衤",
+        "name": "clothing",
+        "reading": "ころもへん"
+    },
+    {
+        "id": 163,
+        "radical": "覀",
+        "name": "cover, west",
+        "reading": "にし／あがしら"
+    },
+    {
+        "id": 164,
+        "radical": "見",
+        "name": "to see",
+        "reading": "みる"
+    },
+    {
+        "id": 165,
+        "radical": "角",
+        "name": "horn, corner",
+        "reading": "つの／つのへん"
+    },
+    {
+        "id": 166,
+        "radical": "言",
+        "name": "words, to speak, say",
+        "reading": "ごんべん／げん"
+    },
+    {
+        "id": 167,
+        "radical": "谷",
+        "name": "valley",
+        "reading": "たに／たにへん"
+    },
+    {
+        "id": 168,
+        "radical": "豆",
+        "name": "bean",
+        "reading": "まめ／まめへん"
+    },
+    {
+        "id": 169,
+        "radical": "豕",
+        "name": "pig",
+        "reading": "いのこ／いのこへん"
+    },
+    {
+        "id": 170,
+        "radical": "豸",
+        "name": "badger, reptile",
+        "reading": "むじなへん"
+    },
+    {
+        "id": 171,
+        "radical": "貝",
+        "name": "shell, property, wealth",
+        "reading": "かい／かいへん"
+    },
+    {
+        "id": 172,
+        "radical": "赤",
+        "name": "red",
+        "reading": "あか"
+    },
+    {
+        "id": 173,
+        "radical": "走",
+        "name": "to run",
+        "reading": "はしる／そうにょう"
+    },
+    {
+        "id": 174,
+        "radical": "足 𧾷",
+        "name": "foot, leg",
+        "reading": "あし／あしへん"
+    },
+    {
+        "id": 175,
+        "radical": "身",
+        "name": "body",
+        "reading": "み／みへん"
+    },
+    {
+        "id": 176,
+        "radical": "車",
+        "name": "vehicle, wheel, car",
+        "reading": "くるま／くるまへん"
+    },
+    {
+        "id": 177,
+        "radical": "辛",
+        "name": "bitter",
+        "reading": "からい／しん"
+    },
+    {
+        "id": 178,
+        "radical": "辰",
+        "name": "dragon",
+        "reading": "しんのたつ"
+    },
+    {
+        "id": 180,
+        "radical": "邑",
+        "name": "community",
+        "reading": "むら"
+    },
+    {
+        "id": 181,
+        "radical": "酉",
+        "name": "sake jar, bird",
+        "reading": "ひよみのとり／とりへん"
+    },
+    {
+        "id": 182,
+        "radical": "釆",
+        "name": "to separate",
+        "reading": "のごめへん"
+    },
+    {
+        "id": 183,
+        "radical": "里",
+        "name": "village, (3.93 km)",
+        "reading": "さと／さとへん"
+    },
+    {
+        "id": 184,
+        "radical": "金",
+        "name": "metal, gold, mineral",
+        "reading": "かね／かねへん"
+    },
+    {
+        "id": 185,
+        "radical": "長",
+        "name": "long",
+        "reading": "ながい"
+    },
+    {
+        "id": 186,
+        "radical": "門",
+        "name": "gate, door",
+        "reading": "もんがまえ"
+    },
+    {
+        "id": 187,
+        "radical": "阜",
+        "name": "hill",
+        "reading": "こざと／おか"
+    },
+    {
+        "id": 188,
+        "radical": "隶",
+        "name": "to capture",
+        "reading": "れいづくり"
+    },
+    {
+        "id": 189,
+        "radical": "隹",
+        "name": "small bird",
+        "reading": "ふるとり"
+    },
+    {
+        "id": 190,
+        "radical": "雨",
+        "name": "rain",
+        "reading": "あめ／あめかんむり"
+    },
+    {
+        "id": 191,
+        "radical": "青",
+        "name": "blue, green",
+        "reading": "あお"
+    },
+    {
+        "id": 192,
+        "radical": "非",
+        "name": "wrong, non-",
+        "reading": "あらず"
+    },
+    {
+        "id": 193,
+        "radical": "面",
+        "name": "face, surface",
+        "reading": "めん"
+    },
+    {
+        "id": 194,
+        "radical": "革",
+        "name": "leather",
+        "reading": "つくりがわ／かくのかわ"
+    },
+    {
+        "id": 195,
+        "radical": "韋",
+        "name": "leather",
+        "reading": "なめしがわ"
+    },
+    {
+        "id": 196,
+        "radical": "韭",
+        "name": "leek",
+        "reading": "にら"
+    },
+    {
+        "id": 197,
+        "radical": "音",
+        "name": "sound, noise",
+        "reading": "おと"
+    },
+    {
+        "id": 198,
+        "radical": "頁",
+        "name": "head, page",
+        "reading": "おおがい"
+    },
+    {
+        "id": 199,
+        "radical": "風",
+        "name": "wind",
+        "reading": "かぜ"
+    },
+    {
+        "id": 200,
+        "radical": "飛",
+        "name": "to fly",
+        "reading": "とぶ"
+    },
+    {
+        "id": 201,
+        "radical": "食 飠",
+        "name": "food, to eat",
+        "reading": "しょく／しょくへん"
+    },
+    {
+        "id": 202,
+        "radical": "首",
+        "name": "head",
+        "reading": "くび"
+    },
+    {
+        "id": 203,
+        "radical": "香",
+        "name": "scent",
+        "reading": "かおり"
+    },
+    {
+        "id": 204,
+        "radical": "馬",
+        "name": "horse",
+        "reading": "うま／うまへん"
+    },
+    {
+        "id": 205,
+        "radical": "骨",
+        "name": "bone",
+        "reading": "ほね／ほねへん"
+    },
+    {
+        "id": 206,
+        "radical": "高",
+        "name": "high",
+        "reading": "たかい"
+    },
+    {
+        "id": 207,
+        "radical": "髟",
+        "name": "long hair",
+        "reading": "かみかんむり／かみがしら"
+    },
+    {
+        "id": 208,
+        "radical": "鬥",
+        "name": "fighting",
+        "reading": "たたかいがまえ／とうがまえ"
+    },
+    {
+        "id": 209,
+        "radical": "鬯",
+        "name": "herbs",
+        "reading": "においざけ／ちょう"
+    },
+    {
+        "id": 210,
+        "radical": "鬲",
+        "name": "tripod",
+        "reading": "れき／かなえ"
+    },
+    {
+        "id": 211,
+        "radical": "鬼",
+        "name": "demon",
+        "reading": "おに／きにょう"
+    },
+    {
+        "id": 212,
+        "radical": "魚",
+        "name": "fish",
+        "reading": "うお／うおへん／さかなへん"
+    },
+    {
+        "id": 213,
+        "radical": "鳥",
+        "name": "bird",
+        "reading": "とり／とりづくり"
+    },
+    {
+        "id": 214,
+        "radical": "鹵",
+        "name": "salt",
+        "reading": "しお"
+    },
+    {
+        "id": 215,
+        "radical": "鹿",
+        "name": "deer",
+        "reading": "しか"
+    },
+    {
+        "id": 216,
+        "radical": "麦",
+        "name": "wheat",
+        "reading": "むぎ／ばくにょう"
+    },
+    {
+        "id": 217,
+        "radical": "麻",
+        "name": "hemp",
+        "reading": "あさ／あさかんむり"
+    },
+    {
+        "id": 218,
+        "radical": "黄",
+        "name": "yellow",
+        "reading": "き"
+    },
+    {
+        "id": 219,
+        "radical": "黍",
+        "name": "millet",
+        "reading": "きび"
+    },
+    {
+        "id": 220,
+        "radical": "黒",
+        "name": "black",
+        "reading": "くろ"
+    },
+    {
+        "id": 221,
+        "radical": "黹",
+        "name": "embroider",
+        "reading": "ぬいとり"
+    },
+    {
+        "id": 222,
+        "radical": "黽",
+        "name": "frog",
+        "reading": "かえる／べんあし"
+    },
+    {
+        "id": 223,
+        "radical": "鼎",
+        "name": "tripod",
+        "reading": "かなえ"
+    },
+    {
+        "id": 224,
+        "radical": "鼓",
+        "name": "drum",
+        "reading": "つづみ"
+    },
+    {
+        "id": 225,
+        "radical": "鼠",
+        "name": "rat, mouse",
+        "reading": "ねずみ"
+    },
+    {
+        "id": 226,
+        "radical": "鼻",
+        "name": "nose",
+        "reading": "はな"
+    },
+    {
+        "id": 227,
+        "radical": "齊 斉",
+        "name": "alike",
+        "reading": "せい"
+    },
+    {
+        "id": 228,
+        "radical": "歯",
+        "name": "tooth",
+        "reading": "は"
+    },
+    {
+        "id": 229,
+        "radical": "龍",
+        "name": "dragon",
+        "reading": "りゅう"
+    },
+    {
+        "id": 230,
+        "radical": "亀",
+        "name": "turtle",
+        "reading": "かめ"
+    },
+    {
+        "id": 231,
+        "radical": "龠",
+        "name": "flute",
+        "reading": "やく"
+    }
+]

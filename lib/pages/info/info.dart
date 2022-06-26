@@ -82,7 +82,7 @@ class InfoPage extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           SelectableText(
-            L10n.of(context)!.radicals,
+            L10n.of(context)!.radicalsName,
             style: headerStyle,
           ),
           const SizedBox(height: 12),

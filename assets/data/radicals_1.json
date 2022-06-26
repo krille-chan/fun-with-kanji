@@ -1,0 +1,692 @@
+[
+    {
+        "id": 0,
+        "radical": "丶",
+        "name": "dot",
+        "reading": "てん"
+    },
+    {
+        "id": 1,
+        "radical": "丿",
+        "name": "diagonal sweeping stroke",
+        "reading": "の／のかんむり"
+    },
+    {
+        "id": 2,
+        "radical": "乙 乚",
+        "name": "the second",
+        "reading": "おつ"
+    },
+    {
+        "id": 3,
+        "radical": "亅",
+        "name": "Vertical stroke with a hook",
+        "reading": "はねぼう"
+    },
+    {
+        "id": 4,
+        "radical": "二",
+        "name": "two",
+        "reading": "に"
+    },
+    {
+        "id": 5,
+        "radical": "亠",
+        "name": "lid, top",
+        "reading": "なべぶた／けいさんかんむり"
+    },
+    {
+        "id": 6,
+        "radical": "人",
+        "name": "person",
+        "reading": "ひと"
+    },
+    {
+        "id": 7,
+        "radical": "亻",
+        "name": "person",
+        "reading": "にんべん"
+    },
+    {
+        "id": 8,
+        "radical": "𠆢",
+        "name": "person",
+        "reading": "ひとやね／ひとがしら"
+    },
+    {
+        "id": 9,
+        "radical": "儿",
+        "name": "human legs",
+        "reading": "ひとあし／にんにょう"
+    },
+    {
+        "id": 10,
+        "radical": "入",
+        "name": "to enter",
+        "reading": "いる／いりがしら"
+    },
+    {
+        "id": 11,
+        "radical": "八",
+        "name": "eight",
+        "reading": "はち／はちがしら"
+    },
+    {
+        "id": 12,
+        "radical": "冂",
+        "name": "to enclose",
+        "reading": "けいがまえ／まきがまえ"
+    },
+    {
+        "id": 13,
+        "radical": "冖",
+        "name": "cover, crown",
+        "reading": "わかんむり"
+    },
+    {
+        "id": 14,
+        "radical": "冫",
+        "name": "ice",
+        "reading": "にすい"
+    },
+    {
+        "id": 15,
+        "radical": "几",
+        "name": "table",
+        "reading": "きにょう／つくえ"
+    },
+    {
+        "id": 16,
+        "radical": "𠘨",
+        "name": "wind",
+        "reading": "かぜ／かぜかんむり"
+    },
+    {
+        "id": 17,
+        "radical": "凵",
+        "name": "container, open box",
+        "reading": "かんにょう／うけばこ"
+    },
+    {
+        "id": 18,
+        "radical": "刀",
+        "name": "knife, sword",
+        "reading": "かたな"
+    },
+    {
+        "id": 19,
+        "radical": "刂",
+        "name": "knife, sword",
+        "reading": "りっとう"
+    },
+    {
+        "id": 20,
+        "radical": "力",
+        "name": "power",
+        "reading": "ちから／りきづくり"
+    },
+    {
+        "id": 21,
+        "radical": "勹",
+        "name": "to wrap",
+        "reading": "つつみがまえ"
+    },
+    {
+        "id": 22,
+        "radical": "匕",
+        "name": "spoon",
+        "reading": "さじ／ひ"
+    },
+    {
+        "id": 23,
+        "radical": "匚",
+        "name": "box",
+        "reading": "はこがまえ"
+    },
+    {
+        "id": 24,
+        "radical": "匸",
+        "name": "to conceal, hide",
+        "reading": "かくしがまえ"
+    },
+    {
+        "id": 25,
+        "radical": "十",
+        "name": "ten",
+        "reading": "じゅう"
+    },
+    {
+        "id": 26,
+        "radical": "卜",
+        "name": "oracle",
+        "reading": "ぼく"
+    },
+    {
+        "id": 27,
+        "radical": "卩",
+        "name": "stamp, seal",
+        "reading": "ふしづくり／わりふ"
+    },
+    {
+        "id": 28,
+        "radical": "厂",
+        "name": "cliff",
+        "reading": "がんだれ"
+    },
+    {
+        "id": 29,
+        "radical": "厶",
+        "name": "private, Katakana Mu",
+        "reading": "む"
+    },
+    {
+        "id": 30,
+        "radical": "又",
+        "name": "again, right hand",
+        "reading": "また"
+    },
+    {
+        "id": 31,
+        "radical": "囗 口",
+        "name": "mouth",
+        "reading": "くち／くちへん"
+    },
+    {
+        "id": 32,
+        "radical": "囗",
+        "name": "border, territorial boundaries",
+        "reading": "くにがまえ"
+    },
+    {
+        "id": 33,
+        "radical": "土",
+        "name": "earth",
+        "reading": "つち／つちへん"
+    },
+    {
+        "id": 34,
+        "radical": "士",
+        "name": "man, scholar, samurai",
+        "reading": "さむらい／さむらいかんむり"
+    },
+    {
+        "id": 35,
+        "radical": "夂",
+        "name": "to follow",
+        "reading": "のまた／のまたかんむり"
+    },
+    {
+        "id": 36,
+        "radical": "夊",
+        "name": "to go slowly",
+        "reading": "なつあし／すいにょう"
+    },
+    {
+        "id": 37,
+        "radical": "夕",
+        "name": "evening",
+        "reading": "ゆうべ／ゆう"
+    },
+    {
+        "id": 38,
+        "radical": "大",
+        "name": "large, big",
+        "reading": "だい／だいがしら"
+    },
+    {
+        "id": 39,
+        "radical": "女",
+        "name": "woman",
+        "reading": "おんな／おんなへん"
+    },
+    {
+        "id": 40,
+        "radical": "子",
+        "name": "child, son",
+        "reading": "こ／こへん"
+    },
+    {
+        "id": 41,
+        "radical": "宀",
+        "name": "roof, house",
+        "reading": "うかんむり"
+    },
+    {
+        "id": 42,
+        "radical": "寸",
+        "name": "inch, (2.25 cm)",
+        "reading": "すん／すんづくり"
+    },
+    {
+        "id": 43,
+        "radical": "小",
+        "name": "small",
+        "reading": "しょう／しょうかんむり"
+    },
+    {
+        "id": 44,
+        "radical": "尢",
+        "name": "lame leg",
+        "reading": "だいのまげあし"
+    },
+    {
+        "id": 45,
+        "radical": "尸",
+        "name": "corpse, awning",
+        "reading": "しかばね／しかばねかんむり"
+    },
+    {
+        "id": 46,
+        "radical": "屮",
+        "name": "sprout",
+        "reading": "くさのめ／てつ"
+    },
+    {
+        "id": 47,
+        "radical": "山",
+        "name": "mountain",
+        "reading": "やま／やまへん／やまかんむり"
+    },
+    {
+        "id": 48,
+        "radical": "巛",
+        "name": "winding river",
+        "reading": "まがりがわ"
+    },
+    {
+        "id": 49,
+        "radical": "川",
+        "name": "river",
+        "reading": "さんぼんがわ"
+    },
+    {
+        "id": 50,
+        "radical": "工",
+        "name": "work, carpenter, skill",
+        "reading": "たくみ／たくみへん／こう"
+    },
+    {
+        "id": 51,
+        "radical": "己",
+        "name": "self",
+        "reading": "おのれ"
+    },
+    {
+        "id": 52,
+        "radical": "巾",
+        "name": "cloth",
+        "reading": "はば／はばへん"
+    },
+    {
+        "id": 53,
+        "radical": "干",
+        "name": "to dry, shield",
+        "reading": "かん／いちじゅう"
+    },
+    {
+        "id": 54,
+        "radical": "幺",
+        "name": "young, slight",
+        "reading": "いとがしら／よう"
+    },
+    {
+        "id": 55,
+        "radical": "广",
+        "name": "slanting roof",
+        "reading": "まだれ"
+    },
+    {
+        "id": 56,
+        "radical": "廴",
+        "name": "to move, stretch",
+        "reading": "えんにょう／いんにょう"
+    },
+    {
+        "id": 57,
+        "radical": "廾",
+        "name": "folded hands",
+        "reading": "にじゅうあし／きょう"
+    },
+    {
+        "id": 58,
+        "radical": "弋",
+        "name": "javelin",
+        "reading": "いぐるみ／しきがまえ"
+    },
+    {
+        "id": 59,
+        "radical": "弓",
+        "name": "bow (in archery)",
+        "reading": "ゆみ／ゆみへん"
+    },
+    {
+        "id": 60,
+        "radical": "彐 ⺕ 彑",
+        "name": "pig head",
+        "reading": "けい／けいがしら"
+    },
+    {
+        "id": 61,
+        "radical": "彡",
+        "name": "hair-style, light rays",
+        "reading": "さんづくり／けかざり"
+    },
+    {
+        "id": 62,
+        "radical": "彳",
+        "name": "step, stride, street, to go",
+        "reading": "ぎょうにんべん"
+    },
+    {
+        "id": 63,
+        "radical": "艹",
+        "name": "grass",
+        "reading": "くさかんむり／そうこう"
+    },
+    {
+        "id": 64,
+        "radical": "辶",
+        "name": "road, walk, to advance, move ahead",
+        "reading": "しんにょう／しんにゅう"
+    },
+    {
+        "id": 66,
+        "radical": "阝",
+        "name": "village, country, city, hill, mound",
+        "reading": "おおざと／こざとへん"
+    },
+    {
+        "id": 67,
+        "radical": "心",
+        "name": "heart, mind, spirit",
+        "reading": "こころ"
+    },
+    {
+        "id": 68,
+        "radical": "忄",
+        "name": "heart, mind, spirit",
+        "reading": "りっしんべん"
+    },
+    {
+        "id": 69,
+        "radical": "㣺",
+        "name": "heart, mind, spirit",
+        "reading": "したごころ"
+    },
+    {
+        "id": 70,
+        "radical": "戈",
+        "name": "spear, weapon",
+        "reading": "ほこ／ほこがまえ"
+    },
+    {
+        "id": 71,
+        "radical": "戸",
+        "name": "door",
+        "reading": "と／とだれ／とかんむり"
+    },
+    {
+        "id": 72,
+        "radical": "手 扌",
+        "name": "hand",
+        "reading": "て／てへん"
+    },
+    {
+        "id": 73,
+        "radical": "支",
+        "name": "branch",
+        "reading": "しにょう／えだにょう"
+    },
+    {
+        "id": 74,
+        "radical": "攵",
+        "name": "activity, to strike, hit",
+        "reading": "ぼくづくり／ぼくにょう"
+    },
+    {
+        "id": 75,
+        "radical": "文",
+        "name": "literature, letters",
+        "reading": "ぶん／ぶんにょう"
+    },
+    {
+        "id": 76,
+        "radical": "斗",
+        "name": "big dipper, ladle, 18.039 liters",
+        "reading": "ますづくり／とます"
+    },
+    {
+        "id": 77,
+        "radical": "斤",
+        "name": "ax",
+        "reading": "おのづくり"
+    },
+    {
+        "id": 78,
+        "radical": "方",
+        "name": "direction, flag",
+        "reading": "ほう／ほうへん／かたへん"
+    },
+    {
+        "id": 79,
+        "radical": "旡",
+        "name": "not",
+        "reading": "む／むにょう／なし"
+    },
+    {
+        "id": 80,
+        "radical": "日",
+        "name": "sun, day, time",
+        "reading": "ひ／ひへん／にちへん"
+    },
+    {
+        "id": 81,
+        "radical": "曰",
+        "name": "to say",
+        "reading": "ひらび／いわく"
+    },
+    {
+        "id": 82,
+        "radical": "月",
+        "name": "moon, month, period, meat, flesh",
+        "reading": "つき／つきへん"
+    },
+    {
+        "id": 84,
+        "radical": "木",
+        "name": "tree, wood",
+        "reading": "き／きへん"
+    },
+    {
+        "id": 85,
+        "radical": "欠",
+        "name": "to lack, yawn",
+        "reading": "あくび／けんづくり"
+    },
+    {
+        "id": 86,
+        "radical": "止",
+        "name": "to stop",
+        "reading": "とめる"
+    },
+    {
+        "id": 87,
+        "radical": "歹",
+        "name": "death & dying, to decompose",
+        "reading": "がつ／がつへん／かばねへん"
+    },
+    {
+        "id": 88,
+        "radical": "殳",
+        "name": "lance shaft, action",
+        "reading": "るまた／ほこづくり"
+    },
+    {
+        "id": 89,
+        "radical": "毋",
+        "name": "not, mother",
+        "reading": "なかれ／ははのかん"
+    },
+    {
+        "id": 90,
+        "radical": "比",
+        "name": "to compare",
+        "reading": "くらべる／ならびひ"
+    },
+    {
+        "id": 91,
+        "radical": "毛",
+        "name": "hair",
+        "reading": "け"
+    },
+    {
+        "id": 92,
+        "radical": "氏",
+        "name": "family, clan",
+        "reading": "うじ"
+    },
+    {
+        "id": 93,
+        "radical": "气",
+        "name": "steam, air",
+        "reading": "きがまえ"
+    },
+    {
+        "id": 94,
+        "radical": "水",
+        "name": "water",
+        "reading": "みず"
+    },
+    {
+        "id": 95,
+        "radical": "氵",
+        "name": "water",
+        "reading": "さんずい"
+    },
+    {
+        "id": 96,
+        "radical": "氺",
+        "name": "water",
+        "reading": "したみず"
+    },
+    {
+        "id": 97,
+        "radical": "火",
+        "name": "fire",
+        "reading": "ひ／ひへん"
+    },
+    {
+        "id": 98,
+        "radical": "灬",
+        "name": "fire",
+        "reading": "れっか／れんが"
+    },
+    {
+        "id": 99,
+        "radical": "爪",
+        "name": "claw, nail",
+        "reading": "つめ／そうにょう"
+    },
+    {
+        "id": 100,
+        "radical": "爫 爫",
+        "name": "claw, nail",
+        "reading": "つめかんむり／つめがしら"
+    },
+    {
+        "id": 101,
+        "radical": "父",
+        "name": "father",
+        "reading": "ちち"
+    },
+    {
+        "id": 102,
+        "radical": "爻",
+        "name": "to mix",
+        "reading": "こう"
+    },
+    {
+        "id": 103,
+        "radical": "爿",
+        "name": "split wood",
+        "reading": "しょうへん"
+    },
+    {
+        "id": 104,
+        "radical": "片",
+        "name": "split wood",
+        "reading": "かた／かたへん"
+    },
+    {
+        "id": 105,
+        "radical": "牙",
+        "name": "fang, canine tooth",
+        "reading": "きば／きばへん"
+    },
+    {
+        "id": 106,
+        "radical": "牛",
+        "name": "cow",
+        "reading": "うし／うしへん"
+    },
+    {
+        "id": 107,
+        "radical": "犬",
+        "name": "dog",
+        "reading": "いぬ"
+    },
+    {
+        "id": 108,
+        "radical": "犭",
+        "name": "beast",
+        "reading": "けものへん"
+    },
+    {
+        "id": 109,
+        "radical": "玄",
+        "name": "darkness",
+        "reading": "げん"
+    },
+    {
+        "id": 110,
+        "radical": "玉",
+        "name": "jewelry",
+        "reading": "たま"
+    },
+    {
+        "id": 111,
+        "radical": "王",
+        "name": "jewelry, jeweled king",
+        "reading": "おうへん／たまへん"
+    },
+    {
+        "id": 112,
+        "radical": "瓜",
+        "name": "melon",
+        "reading": "うり"
+    },
+    {
+        "id": 113,
+        "radical": "瓦",
+        "name": "tile",
+        "reading": "かわら"
+    },
+    {
+        "id": 114,
+        "radical": "甘",
+        "name": "sweet",
+        "reading": "あまい／かん"
+    },
+    {
+        "id": 115,
+        "radical": "生",
+        "name": "birth, to be born, live",
+        "reading": "うまれる／せい"
+    },
+    {
+        "id": 116,
+        "radical": "用",
+        "name": "to use",
+        "reading": "もちいる／よう"
+    }
+]

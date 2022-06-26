@@ -72,10 +72,15 @@ class OverviewController extends State<OverviewPage> {
     result.addAll(katakana.where(kanaTest));
     katakana.clear();
 
-    final radicals = await ScriptLoader.loadRadicals(context);
+    final radicals1 = await ScriptLoader.loadRadicals(context, 1);
     if (!searchLoading) return;
-    result.addAll(radicals.where(radicalTest));
-    radicals.clear();
+    result.addAll(radicals1.where(radicalTest));
+    radicals1.clear();
+
+    final radicals2 = await ScriptLoader.loadRadicals(context, 2);
+    if (!searchLoading) return;
+    result.addAll(radicals2.where(radicalTest));
+    radicals2.clear();
 
     for (var i = 1; i <= 8; i++) {
       final kanji = await ScriptLoader.loadKanji(i, context);
@@ -112,9 +117,14 @@ class OverviewController extends State<OverviewPage> {
           builder: (_) => const KatakanaViewer(),
         ));
         break;
-      case WritingSystem.radicals:
+      case WritingSystem.radicals1:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => const RadicalsViewer(),
+          builder: (_) => const RadicalsViewer(level: 1),
+        ));
+        break;
+      case WritingSystem.radicals2:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (_) => const RadicalsViewer(level: 2),
         ));
         break;
       case WritingSystem.kanji1:

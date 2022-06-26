@@ -47,8 +47,11 @@ class LearningController extends State<LearningPage> {
           case WritingSystem.katakana:
             characterSet = await ScriptLoader.loadKatakana();
             break;
-          case WritingSystem.radicals:
-            characterSet = await ScriptLoader.loadRadicals(context);
+          case WritingSystem.radicals1:
+            characterSet = await ScriptLoader.loadRadicals(context, 1);
+            break;
+          case WritingSystem.radicals2:
+            characterSet = await ScriptLoader.loadRadicals(context, 2);
             break;
           case WritingSystem.kanji1:
             characterSet = await ScriptLoader.loadKanji(1, context);

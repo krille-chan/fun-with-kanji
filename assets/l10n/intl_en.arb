@@ -5,7 +5,13 @@
     "settings": "Settings",
     "hiragana": "Hiragana",
     "katakana": "Katakana",
-    "radicals": "Radicals",
+    "radicalsName": "Radicals",
+    "radicals": "Radicals level {level}",
+    "@radicals": {
+        "placeholders": {
+            "level": {}
+        }
+    },
     "kanji": "Kanji",
     "kanjiLevel": "Kanji level {level}",
     "@kanjiLevel": {
