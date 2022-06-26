@@ -29,9 +29,10 @@ abstract class ScriptLoader {
 
   static Future<List<Kanji>> loadKanji(int level, BuildContext context) async {
     final language = L10n.of(context)!.langPrefix;
-    if (level < 1 || level > 9) throw ('Level must be one of 1-8');
-    final jsonString = await rootBundle
-        .loadString('assets/data/kanji_level_$level$language.json');
+
+    if (level < 1 || level > 17) throw ('Level must be one of 1-6');
+    final jsonString = await rootBundle.loadString(
+        'assets/data/kanji${language.isEmpty ? '' : '_$language'}_level_$level.json');
     return await compute(_convertToKanji, jsonString);
   }
 
