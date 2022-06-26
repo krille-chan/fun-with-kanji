@@ -77,6 +77,30 @@ class LearningController extends State<LearningPage> {
           case WritingSystem.kanji8:
             characterSet = await ScriptLoader.loadKanji(8, context);
             break;
+          case WritingSystem.kanji9:
+            characterSet = await ScriptLoader.loadKanji(9, context);
+            break;
+          case WritingSystem.kanji10:
+            characterSet = await ScriptLoader.loadKanji(10, context);
+            break;
+          case WritingSystem.kanji11:
+            characterSet = await ScriptLoader.loadKanji(11, context);
+            break;
+          case WritingSystem.kanji12:
+            characterSet = await ScriptLoader.loadKanji(12, context);
+            break;
+          case WritingSystem.kanji13:
+            characterSet = await ScriptLoader.loadKanji(13, context);
+            break;
+          case WritingSystem.kanji14:
+            characterSet = await ScriptLoader.loadKanji(14, context);
+            break;
+          case WritingSystem.kanji15:
+            characterSet = await ScriptLoader.loadKanji(15, context);
+            break;
+          case WritingSystem.kanji16:
+            characterSet = await ScriptLoader.loadKanji(16, context);
+            break;
         }
       }
 

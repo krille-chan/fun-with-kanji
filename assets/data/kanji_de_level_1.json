@@ -1,0 +1,2785 @@
+[
+    {
+        "id": 0,
+        "kanji": "一",
+        "meanings": [
+            "Eins",
+            "ein radikal (Nr. 1)"
+        ],
+        "readings_on": [
+            "いち",
+            "いつ"
+        ],
+        "readings_kun": [
+            "ひと-",
+            "ひと.つ"
+        ],
+        "radicals": [
+            "Ground"
+        ]
+    },
+    {
+        "id": 1,
+        "kanji": "二",
+        "meanings": [
+            "Zwei",
+            "zwei radikal (Nr. 7)"
+        ],
+        "readings_on": [
+            "に",
+            "じ"
+        ],
+        "readings_kun": [
+            "ふた",
+            "ふた.つ",
+            "ふたたび"
+        ],
+        "radicals": [
+            "Two"
+        ]
+    },
+    {
+        "id": 2,
+        "kanji": "九",
+        "meanings": [
+            "Neun"
+        ],
+        "readings_on": [
+            "きゅう",
+            "く"
+        ],
+        "readings_kun": [
+            "ここの",
+            "ここの.つ"
+        ],
+        "radicals": [
+            "Nine"
+        ]
+    },
+    {
+        "id": 3,
+        "kanji": "七",
+        "meanings": [
+            "Sieben"
+        ],
+        "readings_on": [
+            "しち"
+        ],
+        "readings_kun": [
+            "なな",
+            "なな.つ",
+            "なの"
+        ],
+        "radicals": [
+            "Seven"
+        ]
+    },
+    {
+        "id": 4,
+        "kanji": "人",
+        "meanings": [
+            "Person"
+        ],
+        "readings_on": [
+            "じん",
+            "にん"
+        ],
+        "readings_kun": [
+            "ひと",
+            "-り",
+            "-と"
+        ],
+        "radicals": [
+            "Person"
+        ]
+    },
+    {
+        "id": 5,
+        "kanji": "入",
+        "meanings": [
+            "Geben Sie ein",
+            "einfügen"
+        ],
+        "readings_on": [
+            "にゅう",
+            "じゅ"
+        ],
+        "readings_kun": [
+            "い.る",
+            "-い.る",
+            "-い.り",
+            "い.れる",
+            "-い.れ",
+            "はい.る"
+        ],
+        "radicals": [
+            "Enter"
+        ]
+    },
+    {
+        "id": 6,
+        "kanji": "八",
+        "meanings": [
+            "Acht",
+            "acht radikal (Nr. 12)"
+        ],
+        "readings_on": [
+            "はち"
+        ],
+        "readings_kun": [
+            "や",
+            "や.つ",
+            "やっ.つ",
+            "よう"
+        ],
+        "radicals": [
+            "Fins"
+        ]
+    },
+    {
+        "id": 7,
+        "kanji": "力",
+        "meanings": [
+            "Kraft",
+            "Stärke",
+            "stark",
+            "abdämmen",
+            "tragen",
+            "ausüben"
+        ],
+        "readings_on": [
+            "りょく",
+            "りき",
+            "りい"
+        ],
+        "readings_kun": [
+            "ちから"
+        ],
+        "radicals": [
+            "Power"
+        ]
+    },
+    {
+        "id": 8,
+        "kanji": "十",
+        "meanings": [
+            "Zehn"
+        ],
+        "readings_on": [
+            "じゅう",
+            "じっ",
+            "じゅっ"
+        ],
+        "readings_kun": [
+            "とお",
+            "と"
+        ],
+        "radicals": [
+            "Cross"
+        ]
+    },
+    {
+        "id": 9,
+        "kanji": "三",
+        "meanings": [
+            "Drei"
+        ],
+        "readings_on": [
+            "さん",
+            "ぞう"
+        ],
+        "readings_kun": [
+            "み",
+            "み.つ",
+            "みっ.つ"
+        ],
+        "radicals": [
+            "Ground",
+            "Two"
+        ]
+    },
+    {
+        "id": 10,
+        "kanji": "上",
+        "meanings": [
+            "Oben oben"
+        ],
+        "readings_on": [
+            "じょう",
+            "しょう",
+            "しゃん"
+        ],
+        "readings_kun": [
+            "うえ",
+            "-うえ",
+            "うわ-",
+            "かみ",
+            "あ.げる",
+            "-あ.げる",
+            "あ.がる",
+            "-あ.がる",
+            "あ.がり",
+            "-あ.がり",
+            "のぼ.る",
+            "のぼ.り",
+            "のぼ.せる",
+            "のぼ.す",
+            "たてまつ.る"
+        ],
+        "radicals": [
+            "Toe",
+            "Ground"
+        ]
+    },
+    {
+        "id": 11,
+        "kanji": "下",
+        "meanings": [
+            "Unten",
+            "unten",
+            "absteigen",
+            "geben",
+            "niedrig",
+            "minderwertig"
+        ],
+        "readings_on": [
+            "か",
+            "げ"
+        ],
+        "readings_kun": [
+            "した",
+            "しも",
+            "もと",
+            "さ.げる",
+            "さ.がる",
+            "くだ.る",
+            "くだ.り",
+            "くだ.す",
+            "-くだ.す",
+            "くだ.さる",
+            "お.ろす",
+            "お.りる"
+        ],
+        "radicals": [
+            "Ground",
+            "Toe"
+        ]
+    },
+    {
+        "id": 12,
+        "kanji": "口",
+        "meanings": [
+            "Mund"
+        ],
+        "readings_on": [
+            "こう",
+            "く"
+        ],
+        "readings_kun": [
+            "くち"
+        ],
+        "radicals": [
+            "Mouth"
+        ]
+    },
+    {
+        "id": 13,
+        "kanji": "大",
+        "meanings": [
+            "Groß"
+        ],
+        "readings_on": [
+            "だい",
+            "たい"
+        ],
+        "readings_kun": [
+            "おお-",
+            "おお.きい",
+            "-おお.いに"
+        ],
+        "radicals": [
+            "Big"
+        ]
+    },
+    {
+        "id": 14,
+        "kanji": "女",
+        "meanings": [
+            "Frau",
+            "weiblich"
+        ],
+        "readings_on": [
+            "じょ",
+            "にょ",
+            "にょう"
+        ],
+        "readings_kun": [
+            "おんな",
+            "め"
+        ],
+        "radicals": [
+            "Woman"
+        ]
+    },
+    {
+        "id": 15,
+        "kanji": "山",
+        "meanings": [
+            "Berg"
+        ],
+        "readings_on": [
+            "さん",
+            "せん"
+        ],
+        "readings_kun": [
+            "やま"
+        ],
+        "radicals": [
+            "Mountain"
+        ]
+    },
+    {
+        "id": 16,
+        "kanji": "川",
+        "meanings": [
+            "Bach",
+            "Fluss",
+            "Fluss- oder Drei-Takt-Flussradikal (Nr. 47)"
+        ],
+        "readings_on": [
+            "せん"
+        ],
+        "readings_kun": [
+            "かわ"
+        ],
+        "radicals": [
+            "River"
+        ]
+    },
+    {
+        "id": 17,
+        "kanji": "工",
+        "meanings": [
+            "Handwerk",
+            "Bau",
+            "Katakana e radikal (Nr. 48)"
+        ],
+        "readings_on": [
+            "こう",
+            "く",
+            "ぐ"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "Construction"
+        ]
+    },
+    {
+        "id": 18,
+        "kanji": "刀",
+        "meanings": [
+            "Schwert",
+            "Säbel",
+            "Messer"
+        ],
+        "readings_on": [
+            "とう"
+        ],
+        "readings_kun": [
+            "かたな",
+            "そり"
+        ],
+        "radicals": [
+            "Sword"
+        ]
+    },
+    {
+        "id": 19,
+        "kanji": "土",
+        "meanings": [
+            "Boden",
+            "Erde",
+            "Boden",
+            "Truthahn"
+        ],
+        "readings_on": [
+            "ど",
+            "と"
+        ],
+        "readings_kun": [
+            "つち"
+        ],
+        "radicals": [
+            "Dirt"
+        ]
+    },
+    {
+        "id": 20,
+        "kanji": "千",
+        "meanings": [
+            "Tausend"
+        ],
+        "readings_on": [
+            "せん"
+        ],
+        "readings_kun": [
+            "ち"
+        ],
+        "radicals": [
+            "Thousand"
+        ]
+    },
+    {
+        "id": 21,
+        "kanji": "夕",
+        "meanings": [
+            "Abend"
+        ],
+        "readings_on": [
+            "せき"
+        ],
+        "readings_kun": [
+            "ゆう"
+        ],
+        "radicals": [
+            "Evening"
+        ]
+    },
+    {
+        "id": 22,
+        "kanji": "子",
+        "meanings": [
+            "Kind",
+            "Zeichen der Ratte",
+            "23 Uhr bis 13 Uhr",
+            "erstes Zeichen des chinesischen Tierkreises"
+        ],
+        "readings_on": [
+            "し",
+            "す",
+            "つ"
+        ],
+        "readings_kun": [
+            "こ",
+            "-こ",
+            "ね"
+        ],
+        "radicals": [
+            "Child"
+        ]
+    },
+    {
+        "id": 23,
+        "kanji": "小",
+        "meanings": [
+            "Wenig",
+            "klein"
+        ],
+        "readings_on": [
+            "しょう"
+        ],
+        "readings_kun": [
+            "ちい.さい",
+            "こ-",
+            "お-",
+            "さ-"
+        ],
+        "radicals": [
+            "Small"
+        ]
+    },
+    {
+        "id": 24,
+        "kanji": "丁",
+        "meanings": [
+            "Straße",
+            "Gemeinde",
+            "Stadt",
+            "Schalter für Waffen",
+            "Werkzeuge",
+            "Blätter oder Kuchen von etwas",
+            "sogar Zahl",
+            "4. Kalenderzeichen"
+        ],
+        "readings_on": [
+            "ちょう",
+            "てい",
+            "ちん",
+            "とう",
+            "ち"
+        ],
+        "readings_kun": [
+            "ひのと"
+        ],
+        "radicals": [
+            "Street"
+        ]
+    },
+    {
+        "id": 25,
+        "kanji": "了",
+        "meanings": [
+            "Komplett",
+            "beenden"
+        ],
+        "readings_on": [
+            "りょう"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "Barb"
+        ]
+    },
+    {
+        "id": 26,
+        "kanji": "又",
+        "meanings": [
+            "Oder wieder auch",
+            "andererseits"
+        ],
+        "readings_on": [
+            "ゆう"
+        ],
+        "readings_kun": [
+            "また",
+            "また-",
+            "また.の-"
+        ],
+        "radicals": [
+            "Stool"
+        ]
+    },
+    {
+        "id": 27,
+        "kanji": "丸",
+        "meanings": [
+            "Rund",
+            "voll (Monat)",
+            "Perfektion",
+            "Schiff",
+            "Pillen",
+            "runden",
+            "rollen",
+            "zusammenrollen",
+            "verführen",
+            "erklären"
+        ],
+        "readings_on": [
+            "がん"
+        ],
+        "readings_kun": [
+            "まる",
+            "まる.める",
+            "まる.い"
+        ],
+        "radicals": [
+            "Nine",
+            "Drop"
+        ]
+    },
+    {
+        "id": 28,
+        "kanji": "才",
+        "meanings": [
+            "Genie",
+            "Jahre alt",
+            "Kubik Shaku"
+        ],
+        "readings_on": [
+            "さい"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "Cross",
+            "Slide"
+        ]
+    },
+    {
+        "id": 29,
+        "kanji": "中",
+        "meanings": [
+            "In",
+            "innen",
+            "mittlerer",
+            "gemeiner Mittelpunkt"
+        ],
+        "readings_on": [
+            "ちゅう"
+        ],
+        "readings_kun": [
+            "なか",
+            "うち",
+            "あた.る"
+        ],
+        "radicals": [
+            "Middle"
+        ]
+    },
+    {
+        "id": 30,
+        "kanji": "五",
+        "meanings": [
+            "Fünf"
+        ],
+        "readings_on": [
+            "ご"
+        ],
+        "readings_kun": [
+            "いつ",
+            "いつ.つ"
+        ],
+        "radicals": [
+            "Five"
+        ]
+    },
+    {
+        "id": 31,
+        "kanji": "六",
+        "meanings": [
+            "Sechs"
+        ],
+        "readings_on": [
+            "ろく",
+            "りく"
+        ],
+        "readings_kun": [
+            "む",
+            "む.つ",
+            "むっ.つ",
+            "むい"
+        ],
+        "radicals": [
+            "Lid",
+            "Fins"
+        ]
+    },
+    {
+        "id": 32,
+        "kanji": "円",
+        "meanings": [
+            "Kreis",
+            "Yen",
+            "rund"
+        ],
+        "readings_on": [
+            "えん"
+        ],
+        "readings_kun": [
+            "まる.い",
+            "まる",
+            "まど",
+            "まど.か",
+            "まろ.やか"
+        ],
+        "radicals": [
+            "Lid",
+            "Head"
+        ]
+    },
+    {
+        "id": 33,
+        "kanji": "天",
+        "meanings": [
+            "Himmel",
+            "Himmel",
+            "Imperial"
+        ],
+        "readings_on": [
+            "てん"
+        ],
+        "readings_kun": [
+            "あまつ",
+            "あめ",
+            "あま-"
+        ],
+        "radicals": [
+            "Heaven"
+        ]
+    },
+    {
+        "id": 34,
+        "kanji": "手",
+        "meanings": [
+            "Hand"
+        ],
+        "readings_on": [
+            "しゅ",
+            "ず"
+        ],
+        "readings_kun": [
+            "て",
+            "て-",
+            "-て",
+            "た-"
+        ],
+        "radicals": [
+            "Hand"
+        ]
+    },
+    {
+        "id": 35,
+        "kanji": "文",
+        "meanings": [
+            "Satz",
+            "Literatur",
+            "Stil",
+            "Kunst",
+            "Dekoration",
+            "Figuren",
+            "Plan",
+            "literarische radikale (Nr. 67)"
+        ],
+        "readings_on": [
+            "ぶん",
+            "もん"
+        ],
+        "readings_kun": [
+            "ふみ",
+            "あや"
+        ],
+        "radicals": [
+            "Writing"
+        ]
+    },
+    {
+        "id": 36,
+        "kanji": "日",
+        "meanings": [
+            "Tag",
+            "Sonne",
+            "Japan",
+            "Schalter für Tage"
+        ],
+        "readings_on": [
+            "にち",
+            "じつ"
+        ],
+        "readings_kun": [
+            "ひ",
+            "-び",
+            "-か"
+        ],
+        "radicals": [
+            "Sun"
+        ]
+    },
+    {
+        "id": 37,
+        "kanji": "月",
+        "meanings": [
+            "Monat",
+            "Mond"
+        ],
+        "readings_on": [
+            "げつ",
+            "がつ"
+        ],
+        "readings_kun": [
+            "つき"
+        ],
+        "radicals": [
+            "Moon"
+        ]
+    },
+    {
+        "id": 38,
+        "kanji": "木",
+        "meanings": [
+            "Baum",
+            "Holz"
+        ],
+        "readings_on": [
+            "ぼく",
+            "もく"
+        ],
+        "readings_kun": [
+            "き",
+            "こ-"
+        ],
+        "radicals": [
+            "Tree"
+        ]
+    },
+    {
+        "id": 39,
+        "kanji": "水",
+        "meanings": [
+            "Wasser"
+        ],
+        "readings_on": [
+            "すい"
+        ],
+        "readings_kun": [
+            "みず",
+            "みず-"
+        ],
+        "radicals": [
+            "Water"
+        ]
+    },
+    {
+        "id": 40,
+        "kanji": "火",
+        "meanings": [
+            "Feuer"
+        ],
+        "readings_on": [
+            "か"
+        ],
+        "readings_kun": [
+            "ひ",
+            "-び",
+            "ほ-"
+        ],
+        "radicals": [
+            "Fire"
+        ]
+    },
+    {
+        "id": 41,
+        "kanji": "犬",
+        "meanings": [
+            "Hund"
+        ],
+        "readings_on": [
+            "けん"
+        ],
+        "readings_kun": [
+            "いぬ",
+            "いぬ-"
+        ],
+        "radicals": [
+            "Dog"
+        ]
+    },
+    {
+        "id": 42,
+        "kanji": "王",
+        "meanings": [
+            "König",
+            "Regel",
+            "Magnat"
+        ],
+        "readings_on": [
+            "おう",
+            "-のう"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "King"
+        ]
+    },
+    {
+        "id": 43,
+        "kanji": "出",
+        "meanings": [
+            "Verlassen",
+            "verlassen",
+            "rausgehen",
+            "rauskommen",
+            "herausziehen",
+            "ragen"
+        ],
+        "readings_on": [
+            "しゅつ",
+            "すい"
+        ],
+        "readings_kun": [
+            "で.る",
+            "-で",
+            "だ.す",
+            "-だ.す",
+            "い.でる",
+            "い.だす"
+        ],
+        "radicals": [
+            "Mountain"
+        ]
+    },
+    {
+        "id": 44,
+        "kanji": "右",
+        "meanings": [
+            "Recht"
+        ],
+        "readings_on": [
+            "う",
+            "ゆう"
+        ],
+        "readings_kun": [
+            "みぎ"
+        ],
+        "radicals": [
+            "Narwhal",
+            "Mouth"
+        ]
+    },
+    {
+        "id": 45,
+        "kanji": "四",
+        "meanings": [
+            "Vier"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [
+            "よ",
+            "よ.つ",
+            "よっ.つ",
+            "よん"
+        ],
+        "radicals": [
+            "Mouth",
+            "Legs"
+        ]
+    },
+    {
+        "id": 46,
+        "kanji": "左",
+        "meanings": [
+            "Links"
+        ],
+        "readings_on": [
+            "さ",
+            "しゃ"
+        ],
+        "readings_kun": [
+            "ひだり"
+        ],
+        "radicals": [
+            "Narwhal",
+            "Construction"
+        ]
+    },
+    {
+        "id": 47,
+        "kanji": "本",
+        "meanings": [
+            "Buch",
+            "Gegenwart",
+            "Haupt",
+            "Herkunft",
+            "wahr",
+            "real",
+            "Gegensatz für lange zylindrische Dinge"
+        ],
+        "readings_on": [
+            "ほん"
+        ],
+        "readings_kun": [
+            "もと"
+        ],
+        "radicals": [
+            "Book"
+        ]
+    },
+    {
+        "id": 48,
+        "kanji": "正",
+        "meanings": [
+            "Richtig",
+            "Gerechtigkeit",
+            "gerecht",
+            "10 ** 40"
+        ],
+        "readings_on": [
+            "せい",
+            "しょう"
+        ],
+        "readings_kun": [
+            "ただ.しい",
+            "ただ.す",
+            "まさ",
+            "まさ.に"
+        ],
+        "radicals": [
+            "Ground",
+            "Stop"
+        ]
+    },
+    {
+        "id": 49,
+        "kanji": "玉",
+        "meanings": [
+            "Juwel",
+            "Ball"
+        ],
+        "readings_on": [
+            "ぎょく"
+        ],
+        "readings_kun": [
+            "たま",
+            "たま-",
+            "-だま"
+        ],
+        "radicals": [
+            "King",
+            "Drop"
+        ]
+    },
+    {
+        "id": 50,
+        "kanji": "田",
+        "meanings": [
+            "Reisfeld",
+            "Reispaddy"
+        ],
+        "readings_on": [
+            "でん"
+        ],
+        "readings_kun": [
+            "た"
+        ],
+        "radicals": [
+            "Rice Paddy"
+        ]
+    },
+    {
+        "id": 51,
+        "kanji": "白",
+        "meanings": [
+            "Weiß"
+        ],
+        "readings_on": [
+            "はく",
+            "びゃく"
+        ],
+        "readings_kun": [
+            "しろ",
+            "しら-",
+            "しろ.い"
+        ],
+        "radicals": [
+            "White"
+        ]
+    },
+    {
+        "id": 52,
+        "kanji": "目",
+        "meanings": [
+            "Auge",
+            "Klasse",
+            "Aussehen",
+            "Einsicht",
+            "Erfahrung",
+            "Fürsorge",
+            "Gunst"
+        ],
+        "readings_on": [
+            "もく",
+            "ぼく"
+        ],
+        "readings_kun": [
+            "め",
+            "-め",
+            "ま-"
+        ],
+        "radicals": [
+            "Eye"
+        ]
+    },
+    {
+        "id": 53,
+        "kanji": "石",
+        "meanings": [
+            "Stein"
+        ],
+        "readings_on": [
+            "せき",
+            "しゃく",
+            "こく"
+        ],
+        "readings_kun": [
+            "いし"
+        ],
+        "radicals": [
+            "Stone"
+        ]
+    },
+    {
+        "id": 54,
+        "kanji": "立",
+        "meanings": [
+            "Aufstehen",
+            "aufstehen",
+            "aufstellen",
+            "aufrecht auftreten"
+        ],
+        "readings_on": [
+            "りつ",
+            "りゅう",
+            "りっとる"
+        ],
+        "readings_kun": [
+            "た.つ",
+            "-た.つ",
+            "た.ち-",
+            "た.てる",
+            "-た.てる",
+            "た.て-",
+            "たて-",
+            "-た.て",
+            "-だ.て",
+            "-だ.てる"
+        ],
+        "radicals": [
+            "Stand"
+        ]
+    },
+    {
+        "id": 55,
+        "kanji": "万",
+        "meanings": [
+            "Zehntausend",
+            "10.000"
+        ],
+        "readings_on": [
+            "まん",
+            "ばん"
+        ],
+        "readings_kun": [
+            "よろず"
+        ],
+        "radicals": [
+            "Leaf",
+            "Sword"
+        ]
+    },
+    {
+        "id": 56,
+        "kanji": "久",
+        "meanings": [
+            "Lange Zeit",
+            "alte Geschichte"
+        ],
+        "readings_on": [
+            "きゅう",
+            "く"
+        ],
+        "readings_kun": [
+            "ひさ.しい"
+        ],
+        "radicals": [
+            "Prison",
+            "Slide"
+        ]
+    },
+    {
+        "id": 57,
+        "kanji": "今",
+        "meanings": [
+            "Jetzt"
+        ],
+        "readings_on": [
+            "こん",
+            "きん"
+        ],
+        "readings_kun": [
+            "いま"
+        ],
+        "radicals": [
+            "Now"
+        ]
+    },
+    {
+        "id": 58,
+        "kanji": "元",
+        "meanings": [
+            "Beginn",
+            "frühere Zeit",
+            "Herkunft"
+        ],
+        "readings_on": [
+            "げん",
+            "がん"
+        ],
+        "readings_kun": [
+            "もと"
+        ],
+        "radicals": [
+            "Origin"
+        ]
+    },
+    {
+        "id": 59,
+        "kanji": "公",
+        "meanings": [
+            "Öffentlichkeit",
+            "Prinz",
+            "Beamter",
+            "Regierung"
+        ],
+        "readings_on": [
+            "こう",
+            "く"
+        ],
+        "readings_kun": [
+            "おおやけ"
+        ],
+        "radicals": [
+            "Fins",
+            "Private"
+        ]
+    },
+    {
+        "id": 60,
+        "kanji": "内",
+        "meanings": [
+            "Im Inneren",
+            "innerhalb",
+            "zwischen",
+            "unter",
+            "zu Hause",
+            "zu Hause"
+        ],
+        "readings_on": [
+            "ない",
+            "だい"
+        ],
+        "readings_kun": [
+            "うち"
+        ],
+        "radicals": [
+            "Head",
+            "Person"
+        ]
+    },
+    {
+        "id": 61,
+        "kanji": "分",
+        "meanings": [
+            "Teil",
+            "Minute Zeit",
+            "Segment",
+            "Anteil",
+            "Abschluss",
+            "Los",
+            "Pflicht",
+            "Verständnis",
+            "wissen",
+            "bewerten",
+            "1%",
+            "Chancen",
+            "Shaku/100"
+        ],
+        "readings_on": [
+            "ぶん",
+            "ふん",
+            "ぶ"
+        ],
+        "readings_kun": [
+            "わ.ける",
+            "わ.け",
+            "わ.かれる",
+            "わ.かる",
+            "わ.かつ"
+        ],
+        "radicals": [
+            "Fins",
+            "Sword"
+        ]
+    },
+    {
+        "id": 62,
+        "kanji": "切",
+        "meanings": [
+            "Schneiden",
+            "schneiden",
+            "scharf seien"
+        ],
+        "readings_on": [
+            "せつ",
+            "さい"
+        ],
+        "readings_kun": [
+            "き.る",
+            "-き.る",
+            "き.り",
+            "-き.り",
+            "-ぎ.り",
+            "き.れる",
+            "-き.れる",
+            "き.れ",
+            "-き.れ",
+            "-ぎ.れ"
+        ],
+        "radicals": [
+            "Seven",
+            "Sword"
+        ]
+    },
+    {
+        "id": 63,
+        "kanji": "午",
+        "meanings": [
+            "Mittag",
+            "Zeichen des Pferdes",
+            "11 bis 13 Uhr",
+            "siebter Zeichen des chinesischen Tierkreiskernkernwechsels"
+        ],
+        "readings_on": [
+            "ご"
+        ],
+        "readings_kun": [
+            "うま"
+        ],
+        "radicals": [
+            "Slide",
+            "Dry"
+        ]
+    },
+    {
+        "id": 64,
+        "kanji": "友",
+        "meanings": [
+            "Freund"
+        ],
+        "readings_on": [
+            "ゆう"
+        ],
+        "readings_kun": [
+            "とも"
+        ],
+        "radicals": [
+            "Narwhal",
+            "Stool"
+        ]
+    },
+    {
+        "id": 65,
+        "kanji": "太",
+        "meanings": [
+            "Prall",
+            "dick",
+            "groß herum"
+        ],
+        "readings_on": [
+            "たい",
+            "た"
+        ],
+        "readings_kun": [
+            "ふと.い",
+            "ふと.る"
+        ],
+        "radicals": [
+            "Big",
+            "Drop"
+        ]
+    },
+    {
+        "id": 66,
+        "kanji": "少",
+        "meanings": [
+            "Wenige",
+            "wenig"
+        ],
+        "readings_on": [
+            "しょう"
+        ],
+        "readings_kun": [
+            "すく.ない",
+            "すこ.し"
+        ],
+        "radicals": [
+            "Small",
+            "Slide"
+        ]
+    },
+    {
+        "id": 67,
+        "kanji": "引",
+        "meanings": [
+            "Ziehen",
+            "ziehen",
+            "zu Ruck",
+            "zugeben",
+            "installieren",
+            "zitieren",
+            "sich beziehen"
+        ],
+        "readings_on": [
+            "いん"
+        ],
+        "readings_kun": [
+            "ひ.く",
+            "ひ.き",
+            "ひ.き-",
+            "-び.き",
+            "ひ.ける"
+        ],
+        "radicals": [
+            "Bow",
+            "Stick"
+        ]
+    },
+    {
+        "id": 68,
+        "kanji": "心",
+        "meanings": [
+            "Herz",
+            "Geist",
+            "Geist",
+            "Herz radikal (Nr. 61)"
+        ],
+        "readings_on": [
+            "しん"
+        ],
+        "readings_kun": [
+            "こころ",
+            "-ごころ"
+        ],
+        "radicals": [
+            "Heart"
+        ]
+    },
+    {
+        "id": 69,
+        "kanji": "戸",
+        "meanings": [
+            "Tür",
+            "Schalter für Häuser",
+            "Tür radikal (Nr. 63)"
+        ],
+        "readings_on": [
+            "こ"
+        ],
+        "readings_kun": [
+            "と"
+        ],
+        "radicals": [
+            "Door"
+        ]
+    },
+    {
+        "id": 70,
+        "kanji": "方",
+        "meanings": [
+            "Richtung",
+            "Person",
+            "Alternative"
+        ],
+        "readings_on": [
+            "ほう"
+        ],
+        "readings_kun": [
+            "かた",
+            "-かた",
+            "-がた"
+        ],
+        "radicals": [
+            "Direction"
+        ]
+    },
+    {
+        "id": 71,
+        "kanji": "牛",
+        "meanings": [
+            "Kuh"
+        ],
+        "readings_on": [
+            "ぎゅう"
+        ],
+        "readings_kun": [
+            "うし"
+        ],
+        "radicals": [
+            "Cow"
+        ]
+    },
+    {
+        "id": 72,
+        "kanji": "父",
+        "meanings": [
+            "Vater"
+        ],
+        "readings_on": [
+            "ふ"
+        ],
+        "readings_kun": [
+            "ちち"
+        ],
+        "radicals": [
+            "Father"
+        ]
+    },
+    {
+        "id": 73,
+        "kanji": "毛",
+        "meanings": [
+            "Fell",
+            "Haare",
+            "Feder",
+            "unten"
+        ],
+        "readings_on": [
+            "もう"
+        ],
+        "readings_kun": [
+            "け"
+        ],
+        "radicals": [
+            "Fur"
+        ]
+    },
+    {
+        "id": 74,
+        "kanji": "止",
+        "meanings": [
+            "Stoppen Sie",
+            "stoppen"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [
+            "と.まる",
+            "-ど.まり",
+            "と.める",
+            "-と.める",
+            "-ど.め",
+            "とど.める",
+            "とど.め",
+            "とど.まる",
+            "や.める",
+            "や.む",
+            "-や.む",
+            "よ.す",
+            "-さ.す",
+            "-さ.し"
+        ],
+        "radicals": [
+            "Stop"
+        ]
+    },
+    {
+        "id": 75,
+        "kanji": "兄",
+        "meanings": [
+            "Älterer Bruder",
+            "Big Brother"
+        ],
+        "readings_on": [
+            "けい",
+            "きょう"
+        ],
+        "readings_kun": [
+            "あに"
+        ],
+        "radicals": [
+            "Mouth",
+            "Legs"
+        ]
+    },
+    {
+        "id": 76,
+        "kanji": "冬",
+        "meanings": [
+            "Winter"
+        ],
+        "readings_on": [
+            "とう"
+        ],
+        "readings_kun": [
+            "ふゆ"
+        ],
+        "radicals": [
+            "Winter",
+            "Two"
+        ]
+    },
+    {
+        "id": 77,
+        "kanji": "北",
+        "meanings": [
+            "Norden"
+        ],
+        "readings_on": [
+            "ほく"
+        ],
+        "readings_kun": [
+            "きた"
+        ],
+        "radicals": [
+            "Fingers",
+            "Spoon"
+        ]
+    },
+    {
+        "id": 78,
+        "kanji": "半",
+        "meanings": [
+            "Halbe",
+            "mittlere",
+            "ungerade Zahl",
+            "semi-",
+            "part-"
+        ],
+        "readings_on": [
+            "はん"
+        ],
+        "readings_kun": [
+            "なか.ば"
+        ],
+        "radicals": [
+            "Triceratops",
+            "Dry"
+        ]
+    },
+    {
+        "id": 79,
+        "kanji": "古",
+        "meanings": [
+            "Alt"
+        ],
+        "readings_on": [
+            "こ"
+        ],
+        "readings_kun": [
+            "ふる.い",
+            "ふる-",
+            "-ふる.す"
+        ],
+        "radicals": [
+            "Old"
+        ]
+    },
+    {
+        "id": 80,
+        "kanji": "台",
+        "meanings": [
+            "Sockel",
+            "ein Stand",
+            "Zähler für Maschinen und Fahrzeuge"
+        ],
+        "readings_on": [
+            "だい",
+            "たい"
+        ],
+        "readings_kun": [
+            "うてな",
+            "われ",
+            "つかさ"
+        ],
+        "radicals": [
+            "Private",
+            "Mouth"
+        ]
+    },
+    {
+        "id": 81,
+        "kanji": "外",
+        "meanings": [
+            "Draußen"
+        ],
+        "readings_on": [
+            "がい",
+            "げ"
+        ],
+        "readings_kun": [
+            "そと",
+            "ほか",
+            "はず.す",
+            "はず.れる",
+            "と-"
+        ],
+        "radicals": [
+            "Evening",
+            "Toe"
+        ]
+    },
+    {
+        "id": 82,
+        "kanji": "市",
+        "meanings": [
+            "Markt",
+            "Stadt",
+            "Stadt"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [
+            "いち"
+        ],
+        "radicals": [
+            "Lid",
+            "Towel"
+        ]
+    },
+    {
+        "id": 83,
+        "kanji": "広",
+        "meanings": [
+            "Breit",
+            "breit",
+            "geräumig"
+        ],
+        "readings_on": [
+            "こう"
+        ],
+        "readings_kun": [
+            "ひろ.い",
+            "ひろ.まる",
+            "ひろ.める",
+            "ひろ.がる",
+            "ひろ.げる"
+        ],
+        "radicals": [
+            "Canopy",
+            "Private"
+        ]
+    },
+    {
+        "id": 84,
+        "kanji": "母",
+        "meanings": [
+            "Mutter"
+        ],
+        "readings_on": [
+            "ぼ"
+        ],
+        "readings_kun": [
+            "はは",
+            "も"
+        ],
+        "radicals": [
+            "Sun",
+            "Drop"
+        ]
+    },
+    {
+        "id": 85,
+        "kanji": "用",
+        "meanings": [
+            "Nutzen",
+            "Geschäft",
+            "Service",
+            "Nutzung",
+            "beschäftigen"
+        ],
+        "readings_on": [
+            "よう"
+        ],
+        "readings_kun": [
+            "もち.いる"
+        ],
+        "radicals": [
+            "Task"
+        ]
+    },
+    {
+        "id": 86,
+        "kanji": "矢",
+        "meanings": [
+            "Dart",
+            "Pfeil"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [
+            "や"
+        ],
+        "radicals": [
+            "Arrow"
+        ]
+    },
+    {
+        "id": 87,
+        "kanji": "世",
+        "meanings": [
+            "Generation",
+            "Welt",
+            "Gesellschaft",
+            "öffentlich"
+        ],
+        "readings_on": [
+            "せい",
+            "せ",
+            "そう"
+        ],
+        "readings_kun": [
+            "よ"
+        ],
+        "radicals": [
+            "World"
+        ]
+    },
+    {
+        "id": 88,
+        "kanji": "主",
+        "meanings": [
+            "Herr",
+            "Chef",
+            "Meister",
+            "Hauptsache",
+            "Schulleiter"
+        ],
+        "readings_on": [
+            "しゅ",
+            "す",
+            "しゅう"
+        ],
+        "readings_kun": [
+            "ぬし",
+            "おも",
+            "あるじ"
+        ],
+        "radicals": [
+            "Master"
+        ]
+    },
+    {
+        "id": 89,
+        "kanji": "他",
+        "meanings": [
+            "Andere",
+            "eine andere",
+            "die anderen"
+        ],
+        "readings_on": [
+            "た"
+        ],
+        "readings_kun": [
+            "ほか"
+        ],
+        "radicals": [
+            "Leader",
+            "Alligator"
+        ]
+    },
+    {
+        "id": 90,
+        "kanji": "代",
+        "meanings": [
+            "Ersetzen",
+            "ändern",
+            "konvertieren",
+            "ersetzen",
+            "Perioden",
+            "Alter",
+            "Zähler für Jahrzehnte",
+            "Epochen usw.",
+            "Erzeugung",
+            "Gebühr",
+            "Zinssatz",
+            "Gebühr"
+        ],
+        "readings_on": [
+            "だい",
+            "たい"
+        ],
+        "readings_kun": [
+            "か.わる",
+            "かわ.る",
+            "かわ.り",
+            "か.わり",
+            "-がわ.り",
+            "-が.わり",
+            "か.える",
+            "よ",
+            "しろ"
+        ],
+        "radicals": [
+            "Leader",
+            "Ceremony"
+        ]
+    },
+    {
+        "id": 91,
+        "kanji": "写",
+        "meanings": [
+            "Kopieren",
+            "fotografieren",
+            "beschreiben"
+        ],
+        "readings_on": [
+            "しゃ",
+            "じゃ"
+        ],
+        "readings_kun": [
+            "うつ.す",
+            "うつ.る",
+            "うつ-",
+            "うつ.し"
+        ],
+        "radicals": [
+            "Forehead",
+            "Ground",
+            "Beggar"
+        ]
+    },
+    {
+        "id": 92,
+        "kanji": "去",
+        "meanings": [
+            "Vergangenheit",
+            "Vergangenheit",
+            "verlassen",
+            "verlassen",
+            "verblassen",
+            "eliminieren",
+            "scheiden"
+        ],
+        "readings_on": [
+            "きょ",
+            "こ"
+        ],
+        "readings_kun": [
+            "さ.る",
+            "-さ.る"
+        ],
+        "radicals": [
+            "Dirt",
+            "Private"
+        ]
+    },
+    {
+        "id": 93,
+        "kanji": "号",
+        "meanings": [
+            "Spitzname",
+            "Nummer",
+            "Artikel",
+            "Titel",
+            "Pseudonym",
+            "Name",
+            "Anruf"
+        ],
+        "readings_on": [
+            "ごう"
+        ],
+        "readings_kun": [
+            "さけ.ぶ",
+            "よびな"
+        ],
+        "radicals": [
+            "Mouth",
+            "Ground",
+            "Prison"
+        ]
+    },
+    {
+        "id": 94,
+        "kanji": "央",
+        "meanings": [
+            "Mitte",
+            "Mitte"
+        ],
+        "readings_on": [
+            "おう"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "Big",
+            "Head"
+        ]
+    },
+    {
+        "id": 95,
+        "kanji": "平",
+        "meanings": [
+            "Sogar",
+            "flach",
+            "Frieden"
+        ],
+        "readings_on": [
+            "へい",
+            "びょう",
+            "ひょう"
+        ],
+        "readings_kun": [
+            "たい.ら",
+            "-だいら",
+            "ひら",
+            "ひら-"
+        ],
+        "radicals": [
+            "Dry",
+            "Horns"
+        ]
+    },
+    {
+        "id": 96,
+        "kanji": "打",
+        "meanings": [
+            "Streik",
+            "Schlagen",
+            "Knock",
+            "Pfund",
+            "Dutzend"
+        ],
+        "readings_on": [
+            "だ",
+            "だあす"
+        ],
+        "readings_kun": [
+            "う.つ",
+            "う.ち-",
+            "ぶ.つ"
+        ],
+        "radicals": [
+            "Fingers",
+            "Street"
+        ]
+    },
+    {
+        "id": 97,
+        "kanji": "氷",
+        "meanings": [
+            "Eiszapfen",
+            "Eis",
+            "Hagel",
+            "Einfrieren",
+            "Kongeal"
+        ],
+        "readings_on": [
+            "ひょう"
+        ],
+        "readings_kun": [
+            "こおり",
+            "ひ",
+            "こお.る"
+        ],
+        "radicals": [
+            "Water",
+            "Drop"
+        ]
+    },
+    {
+        "id": 98,
+        "kanji": "申",
+        "meanings": [
+            "Haben Sie die Ehre",
+            "das Zeichen des Affen",
+            "15 bis 17 Uhr",
+            "neuntes Zeichen des chinesischen Tierkreises"
+        ],
+        "readings_on": [
+            "しん"
+        ],
+        "readings_kun": [
+            "もう.す",
+            "もう.し-",
+            "さる"
+        ],
+        "radicals": [
+            "Cross",
+            "Mouth"
+        ]
+    },
+    {
+        "id": 99,
+        "kanji": "皮",
+        "meanings": [
+            "Fell",
+            "Haut",
+            "Versteck",
+            "Leder",
+            "Hautradikal (Nr. 107)"
+        ],
+        "readings_on": [
+            "ひ"
+        ],
+        "readings_kun": [
+            "かわ"
+        ],
+        "radicals": [
+            "Slide",
+            "Branch"
+        ]
+    },
+    {
+        "id": 100,
+        "kanji": "皿",
+        "meanings": [
+            "Gericht",
+            "eine Hilfe",
+            "Teller"
+        ],
+        "readings_on": [
+            "べい"
+        ],
+        "readings_kun": [
+            "さら"
+        ],
+        "radicals": [
+            "Plate"
+        ]
+    },
+    {
+        "id": 101,
+        "kanji": "礼",
+        "meanings": [
+            "Gruß",
+            "Bogen",
+            "Zeremonie",
+            "Danke",
+            "Vergütung"
+        ],
+        "readings_on": [
+            "れい",
+            "らい"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "Spirit",
+            "Umbrella"
+        ]
+    },
+    {
+        "id": 102,
+        "kanji": "休",
+        "meanings": [
+            "Ruhe",
+            "Tag frei",
+            "in Rente",
+            "schlafen"
+        ],
+        "readings_on": [
+            "きゅう"
+        ],
+        "readings_kun": [
+            "やす.む",
+            "やす.まる",
+            "やす.める"
+        ],
+        "radicals": [
+            "Leader",
+            "Tree"
+        ]
+    },
+    {
+        "id": 103,
+        "kanji": "先",
+        "meanings": [
+            "Vorher",
+            "vorher",
+            "Zukunft",
+            "Vorrang"
+        ],
+        "readings_on": [
+            "せん"
+        ],
+        "readings_kun": [
+            "さき",
+            "ま.ず"
+        ],
+        "radicals": [
+            "Slide",
+            "Dirt",
+            "Legs"
+        ]
+    },
+    {
+        "id": 104,
+        "kanji": "名",
+        "meanings": [
+            "Name",
+            "notiert",
+            "ausgezeichnet",
+            "Ruf"
+        ],
+        "readings_on": [
+            "めい",
+            "みょう"
+        ],
+        "readings_kun": [
+            "な",
+            "-な"
+        ],
+        "radicals": [
+            "Evening",
+            "Mouth"
+        ]
+    },
+    {
+        "id": 105,
+        "kanji": "字",
+        "meanings": [
+            "Charakter",
+            "Brief",
+            "Wort",
+            "Abschnitt des Dorfes"
+        ],
+        "readings_on": [
+            "じ"
+        ],
+        "readings_kun": [
+            "あざ",
+            "あざな",
+            "-な"
+        ],
+        "radicals": [
+            "Roof",
+            "Child"
+        ]
+    },
+    {
+        "id": 106,
+        "kanji": "年",
+        "meanings": [
+            "Jahr",
+            "Zähler seit Jahren"
+        ],
+        "readings_on": [
+            "ねん"
+        ],
+        "readings_kun": [
+            "とし"
+        ],
+        "radicals": [
+            "Gun",
+            "Cow"
+        ]
+    },
+    {
+        "id": 107,
+        "kanji": "早",
+        "meanings": [
+            "Früh",
+            "schnell"
+        ],
+        "readings_on": [
+            "そう",
+            "さっ"
+        ],
+        "readings_kun": [
+            "はや.い",
+            "はや",
+            "はや-",
+            "はや.まる",
+            "はや.める",
+            "さ-"
+        ],
+        "radicals": [
+            "Sun",
+            "Cross"
+        ]
+    },
+    {
+        "id": 108,
+        "kanji": "気",
+        "meanings": [
+            "Geist",
+            "Geist",
+            "Luft",
+            "Atmosphäre",
+            "Stimmung"
+        ],
+        "readings_on": [
+            "き",
+            "け"
+        ],
+        "readings_kun": [
+            "いき"
+        ],
+        "radicals": [
+            "Energy",
+            "Treasure"
+        ]
+    },
+    {
+        "id": 109,
+        "kanji": "百",
+        "meanings": [
+            "Hundert"
+        ],
+        "readings_on": [
+            "ひゃく",
+            "びゃく"
+        ],
+        "readings_kun": [
+            "もも"
+        ],
+        "radicals": [
+            "Leaf",
+            "Sun"
+        ]
+    },
+    {
+        "id": 110,
+        "kanji": "竹",
+        "meanings": [
+            "Bambus"
+        ],
+        "readings_on": [
+            "ちく"
+        ],
+        "readings_kun": [
+            "たけ"
+        ],
+        "radicals": [
+            "Bamboo"
+        ]
+    },
+    {
+        "id": 111,
+        "kanji": "糸",
+        "meanings": [
+            "Gewinde"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [
+            "いと"
+        ],
+        "radicals": [
+            "Thread"
+        ]
+    },
+    {
+        "id": 112,
+        "kanji": "耳",
+        "meanings": [
+            "Ohr"
+        ],
+        "readings_on": [
+            "じ"
+        ],
+        "readings_kun": [
+            "みみ"
+        ],
+        "radicals": [
+            "Ear"
+        ]
+    },
+    {
+        "id": 113,
+        "kanji": "虫",
+        "meanings": [
+            "Insekt",
+            "Käfer",
+            "Temperament"
+        ],
+        "readings_on": [
+            "ちゅう",
+            "き"
+        ],
+        "readings_kun": [
+            "むし"
+        ],
+        "radicals": [
+            "Insect"
+        ]
+    },
+    {
+        "id": 114,
+        "kanji": "村",
+        "meanings": [
+            "Dörfliches Städtchen"
+        ],
+        "readings_on": [
+            "そん"
+        ],
+        "readings_kun": [
+            "むら"
+        ],
+        "radicals": [
+            "Tree",
+            "Measurement"
+        ]
+    },
+    {
+        "id": 115,
+        "kanji": "男",
+        "meanings": [
+            "Männlich"
+        ],
+        "readings_on": [
+            "だん",
+            "なん"
+        ],
+        "readings_kun": [
+            "おとこ",
+            "お"
+        ],
+        "radicals": [
+            "Rice Paddy",
+            "Power"
+        ]
+    },
+    {
+        "id": 116,
+        "kanji": "町",
+        "meanings": [
+            "Stadt",
+            "Dorf",
+            "Block",
+            "Straße"
+        ],
+        "readings_on": [
+            "ちょう"
+        ],
+        "readings_kun": [
+            "まち"
+        ],
+        "radicals": [
+            "Rice Paddy",
+            "Street"
+        ]
+    },
+    {
+        "id": 117,
+        "kanji": "花",
+        "meanings": [
+            "Blume"
+        ],
+        "readings_on": [
+            "か",
+            "け"
+        ],
+        "readings_kun": [
+            "はな"
+        ],
+        "radicals": [
+            "Flowers",
+            "Leader",
+            "Spoon"
+        ]
+    },
+    {
+        "id": 118,
+        "kanji": "見",
+        "meanings": [
+            "Siehe",
+            "Hoffnungen",
+            "Chancen",
+            "Idee",
+            "Meinung",
+            "schauen Sie sich an",
+            "sichtbar"
+        ],
+        "readings_on": [
+            "けん"
+        ],
+        "readings_kun": [
+            "み.る",
+            "み.える",
+            "み.せる"
+        ],
+        "radicals": [
+            "See"
+        ]
+    },
+    {
+        "id": 119,
+        "kanji": "貝",
+        "meanings": [
+            "Schaltier"
+        ],
+        "readings_on": [
+            "ばい"
+        ],
+        "readings_kun": [
+            "かい"
+        ],
+        "radicals": [
+            "Shellfish"
+        ]
+    },
+    {
+        "id": 120,
+        "kanji": "赤",
+        "meanings": [
+            "Rot"
+        ],
+        "readings_on": [
+            "せき",
+            "しゃく"
+        ],
+        "readings_kun": [
+            "あか",
+            "あか-",
+            "あか.い",
+            "あか.らむ",
+            "あか.らめる"
+        ],
+        "radicals": [
+            "Red"
+        ]
+    },
+    {
+        "id": 121,
+        "kanji": "足",
+        "meanings": [
+            "Bein",
+            "Fuß",
+            "ausreichend sein",
+            "Schalter für Paar Schuhe"
+        ],
+        "readings_on": [
+            "そく"
+        ],
+        "readings_kun": [
+            "あし",
+            "た.りる",
+            "た.る",
+            "た.す"
+        ],
+        "radicals": [
+            "Foot"
+        ]
+    },
+    {
+        "id": 122,
+        "kanji": "車",
+        "meanings": [
+            "Wagen"
+        ],
+        "readings_on": [
+            "しゃ"
+        ],
+        "readings_kun": [
+            "くるま"
+        ],
+        "radicals": [
+            "Car"
+        ]
+    },
+    {
+        "id": 123,
+        "kanji": "不",
+        "meanings": [
+            "Negativ",
+            "nicht",
+            "schlecht",
+            "hässlich",
+            "ungeschickt"
+        ],
+        "readings_on": [
+            "ふ",
+            "ぶ"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "Not"
+        ]
+    },
+    {
+        "id": 124,
+        "kanji": "仕",
+        "meanings": [
+            "Besuchen",
+            "tätig",
+            "offiziell",
+            "dienen"
+        ],
+        "readings_on": [
+            "し",
+            "じ"
+        ],
+        "readings_kun": [
+            "つか.える"
+        ],
+        "radicals": [
+            "Leader",
+            "Samurai"
+        ]
+    },
+    {
+        "id": 125,
+        "kanji": "交",
+        "meanings": [
+            "Mischen",
+            "mischen",
+            "assoziieren",
+            "kommen und gehen"
+        ],
+        "readings_on": [
+            "こう"
+        ],
+        "readings_kun": [
+            "まじ.わる",
+            "まじ.える",
+            "ま.じる",
+            "まじ.る",
+            "ま.ざる",
+            "ま.ぜる",
+            "-か.う",
+            "か.わす",
+            "かわ.す",
+            "こもごも"
+        ],
+        "radicals": [
+            "Lid",
+            "Father"
+        ]
+    },
+    {
+        "id": 126,
+        "kanji": "会",
+        "meanings": [
+            "Meeting",
+            "Treffen",
+            "Party",
+            "Vereinigung",
+            "Interview",
+            "Treten bei"
+        ],
+        "readings_on": [
+            "かい",
+            "え"
+        ],
+        "readings_kun": [
+            "あ.う",
+            "あ.わせる",
+            "あつ.まる"
+        ],
+        "radicals": [
+            "Meet"
+        ]
+    },
+    {
+        "id": 127,
+        "kanji": "光",
+        "meanings": [
+            "Strahl",
+            "Licht"
+        ],
+        "readings_on": [
+            "こう"
+        ],
+        "readings_kun": [
+            "ひか.る",
+            "ひかり"
+        ],
+        "radicals": [
+            "Triceratops",
+            "Pi"
+        ]
+    },
+    {
+        "id": 128,
+        "kanji": "同",
+        "meanings": [
+            "Gleich",
+            "stimme zu",
+            "gleich"
+        ],
+        "readings_on": [
+            "どう"
+        ],
+        "readings_kun": [
+            "おな.じ"
+        ],
+        "radicals": [
+            "Mustache",
+            "Ground"
+        ]
+    },
+    {
+        "id": 129,
+        "kanji": "回",
+        "meanings": [
+            "-Times",
+            "Rund",
+            "Game",
+            "Revolve",
+            "Counter für Ereignisse"
+        ],
+        "readings_on": [
+            "かい",
+            "え"
+        ],
+        "readings_kun": [
+            "まわ.る",
+            "-まわ.る",
+            "-まわ.り",
+            "まわ.す",
+            "-まわ.す",
+            "まわ.し-",
+            "-まわ.し",
+            "もとお.る",
+            "か.える"
+        ],
+        "radicals": [
+            "Mouth"
+        ]
+    },
+    {
+        "id": 130,
+        "kanji": "多",
+        "meanings": [
+            "Viele",
+            "häufig",
+            "viel"
+        ],
+        "readings_on": [
+            "た"
+        ],
+        "readings_kun": [
+            "おお.い",
+            "まさ.に",
+            "まさ.る"
+        ],
+        "radicals": [
+            "Evening"
+        ]
+    },
+    {
+        "id": 131,
+        "kanji": "当",
+        "meanings": [
+            "Hit",
+            "richtig",
+            "angemessen",
+            "selbst"
+        ],
+        "readings_on": [
+            "とう"
+        ],
+        "readings_kun": [
+            "あ.たる",
+            "あ.たり",
+            "あ.てる",
+            "あ.て",
+            "まさ.に",
+            "まさ.にべし"
+        ],
+        "radicals": [
+            "Triceratops",
+            "Wolverine"
+        ]
+    },
+    {
+        "id": 132,
+        "kanji": "毎",
+        "meanings": [
+            "Jeder"
+        ],
+        "readings_on": [
+            "まい"
+        ],
+        "readings_kun": [
+            "ごと",
+            "-ごと.に"
+        ],
+        "radicals": [
+            "Gun",
+            "Window"
+        ]
+    },
+    {
+        "id": 133,
+        "kanji": "池",
+        "meanings": [
+            "Teich",
+            "Zisterne",
+            "Pool",
+            "Stausee"
+        ],
+        "readings_on": [
+            "ち"
+        ],
+        "readings_kun": [
+            "いけ"
+        ],
+        "radicals": [
+            "Alligator",
+            "Tsunami"
+        ]
+    }
+]
