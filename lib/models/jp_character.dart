@@ -31,4 +31,24 @@ abstract class JpCharacter {
     }
     return super.toString();
   }
+
+  Set<String> get correctAnswers {
+    if (this is Kana) {
+      return {(this as Kana).roumaji};
+    }
+    if (this is Radical) {
+      return (this as Radical)
+          .name
+          .split(', ')
+          .map((s) => s.trim().toLowerCase())
+          .toSet();
+    }
+    if (this is Kanji) {
+      return (this as Kanji)
+          .meanings
+          .map((s) => s.trim().toLowerCase())
+          .toSet();
+    }
+    return {toString()};
+  }
 }

@@ -251,41 +251,22 @@ class LearningController extends State<LearningPage> {
 
   void checkStringChoice() {
     final response = responseController.text.toLowerCase().trim();
-    final correctAnswer = currentCharacter!.description.toLowerCase().trim();
+    final correctAnswer = currentCharacter!.correctAnswers;
 
     // Only one of the comma separated values needs to be the response
-    if (correctAnswer.contains(', ') &&
-        correctAnswer.split(', ').toSet().contains(response)) {
-      _check(true);
-      return;
-    }
-
-    // For verbs just entering the verb without "to" is enough
-    if (correctAnswer.startsWith('to ') &&
-        correctAnswer.replaceFirst('to ', '') == response) {
-      _check(true);
-      return;
-    }
-
-    // Additional info in brackets don't need to be in the response
-    if (correctAnswer.split('(').first.trim() == response) {
-      _check(true);
-      return;
-    }
-
-    // Just compare
-    _check(response == correctAnswer);
+    _check(correctAnswer.contains(response.trim().toLowerCase()));
   }
 
   void checkChoice(JpCharacter answer) {
-    _check(answer.description == currentCharacter!.description);
+    final correctAnswer = currentCharacter!.correctAnswers;
+    _check(correctAnswer.contains(answer.description.trim().toLowerCase()));
   }
 
   final AudioPlayer _audioPlayer = AudioPlayer();
 
   void _check(bool isCorrect) async {
     // Display correct in text field:
-    responseController.text = currentCharacter!.description;
+    responseController.text = currentCharacter!.correctAnswers.join('/');
 
     // Display feedback:
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(

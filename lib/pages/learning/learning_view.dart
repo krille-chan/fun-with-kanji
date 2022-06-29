@@ -137,9 +137,17 @@ class LearningView extends StatelessWidget {
                     elevation: 7,
                     padding: const EdgeInsets.all(8),
                   ),
-                  child: Text(
-                    choice.description,
-                    style: const TextStyle(fontSize: 24),
+                  child: Column(
+                    children: [
+                      Text(
+                        choice.description,
+                        style: const TextStyle(fontSize: 24),
+                      ),
+                      if (choice is Kanji && choice.meanings.length > 1)
+                        Text(choice.meanings
+                            .getRange(1, choice.meanings.length)
+                            .join(', ')),
+                    ],
                   ),
                 ),
               ),
