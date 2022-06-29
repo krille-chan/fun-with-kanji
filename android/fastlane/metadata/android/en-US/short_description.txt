@@ -1,0 +1,1 @@
+Simple Flutter app to learn Japanese writing systems Hiragana, Katakana and Kanji.
