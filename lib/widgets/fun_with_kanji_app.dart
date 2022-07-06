@@ -13,14 +13,15 @@ class FunWithKanjiApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => DynamicColorBuilder(
-      builder: (light, dark) => MaterialApp(
-            debugShowCheckedModeBanner: false,
-            theme: buildTheme(light),
-            darkTheme: buildTheme(dark),
-            title: AppConstants.appName,
-            home: const HomeLayout(),
-            localizationsDelegates: L10n.localizationsDelegates,
-            supportedLocales: L10n.supportedLocales,
-            builder: FunWithKanji(isar).builder,
-          ));
+        builder: (light, dark) => MaterialApp(
+          debugShowCheckedModeBanner: false,
+          theme: buildTheme(light, true),
+          darkTheme: buildTheme(dark, false),
+          title: AppConstants.appName,
+          home: const HomeLayout(),
+          localizationsDelegates: L10n.localizationsDelegates,
+          supportedLocales: L10n.supportedLocales,
+          builder: FunWithKanji(isar).builder,
+        ),
+      );
 }

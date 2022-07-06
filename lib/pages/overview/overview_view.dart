@@ -17,11 +17,12 @@ class OverviewPageView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         titleSpacing: 12,
-        title: Center(
-          child: CupertinoSearchTextField(
-            onChanged: controller.search,
-            controller: controller.searchController,
-            placeholder: L10n.of(context)!.search,
+        title: TextField(
+          onChanged: controller.search,
+          controller: controller.searchController,
+          decoration: InputDecoration(
+            filled: true,
+            hintText: L10n.of(context)!.search,
             prefixIcon: controller.searchLoading
                 ? const CircularProgressIndicator.adaptive()
                 : const Icon(Icons.search_outlined),
