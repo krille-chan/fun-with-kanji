@@ -1,6 +1,7 @@
 import 'package:fun_with_kanji/models/kana.dart';
 import 'package:fun_with_kanji/models/kanji.dart';
 import 'package:fun_with_kanji/models/radical.dart';
+import 'package:collection/collection.dart';
 
 abstract class JpCharacter {
   const JpCharacter();
@@ -28,9 +29,9 @@ abstract class JpCharacter {
     }
     if (this is Kanji) {
       return [
-        (this as Kanji).readingsOn.first,
-        (this as Kanji).readingsKun.first,
-      ].join(', ');
+        (this as Kanji).readingsOn.firstOrNull,
+        (this as Kanji).readingsKun.firstOrNull,
+      ].where((s) => s != null).join(', ');
     }
     return super.toString();
   }

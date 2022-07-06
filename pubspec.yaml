@@ -22,6 +22,7 @@ dependencies:
   dynamic_color: ^1.4.0
   text_to_speech: ^0.2.3
   shared_preferences: ^2.0.15
+  collection: ^1.16.0
 
 dev_dependencies:
   flutter_test:
