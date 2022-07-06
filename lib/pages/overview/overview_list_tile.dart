@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
-import 'package:yaru_icons/yaru_icons.dart';
 
 class OverviewListTile extends StatelessWidget {
   final void Function() onTap;
@@ -23,7 +22,7 @@ class OverviewListTile extends StatelessWidget {
       subtitle: Text(
           L10n.of(context)!.countEntries(writingSystem.entries.toString())),
       onTap: onTap,
-      trailing: const Icon(YaruIcons.go_next),
+      trailing: const Icon(Icons.arrow_right_outlined),
     );
   }
 }

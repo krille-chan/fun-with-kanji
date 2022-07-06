@@ -13,7 +13,6 @@ import 'package:fun_with_kanji/pages/learning/learning_view.dart';
 import 'package:fun_with_kanji/utils/open_issue_dialog.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:yaru_icons/yaru_icons.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class LearningPage extends StatefulWidget {
@@ -287,7 +286,7 @@ class LearningController extends State<LearningPage> {
           ),
           const SizedBox(width: 8),
           Icon(
-            isCorrect ? YaruIcons.star_filled : YaruIcons.star,
+            isCorrect ? Icons.star : Icons.star_outlined,
             color: isCorrect ? Colors.green : Colors.blueGrey,
           ),
         ],

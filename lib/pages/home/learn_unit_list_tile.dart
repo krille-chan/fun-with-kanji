@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:yaru_icons/yaru_icons.dart';
 
 class LeanUnitListTile extends StatelessWidget {
   final int? progress;
@@ -40,7 +39,7 @@ class LeanUnitListTile extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Icon(YaruIcons.go_next),
+                  const Icon(Icons.arrow_right_outlined),
                 ],
               ),
               const SizedBox(height: 16),
@@ -63,7 +62,7 @@ class LeanUnitListTile extends StatelessWidget {
                     height: 64,
                     child: Material(
                       borderRadius: BorderRadius.circular(64),
-                      color: Theme.of(context).dividerColor,
+                      color: Theme.of(context).colorScheme.secondaryContainer,
                       child: Stack(
                         children: [
                           SizedBox(
@@ -75,7 +74,15 @@ class LeanUnitListTile extends StatelessWidget {
                             ),
                           ),
                           if (progress != null)
-                            Center(child: Text('$progress%')),
+                            Center(
+                                child: Text(
+                              '$progress%',
+                              style: TextStyle(
+                                color: Theme.of(context)
+                                    .colorScheme
+                                    .onSecondaryContainer,
+                              ),
+                            )),
                         ],
                       ),
                     ),
@@ -87,7 +94,7 @@ class LeanUnitListTile extends StatelessWidget {
                     child: Material(
                       borderRadius: BorderRadius.circular(64),
                       child: IconButton(
-                        icon: const Icon(YaruIcons.settings),
+                        icon: const Icon(Icons.settings_outlined),
                         onPressed: onSettings,
                       ),
                     ),

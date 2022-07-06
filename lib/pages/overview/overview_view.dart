@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fun_with_kanji/models/kanji.dart';
 import 'package:fun_with_kanji/pages/overview/kanji_list_tile.dart';
@@ -5,7 +6,6 @@ import 'package:fun_with_kanji/pages/overview/overview.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 import 'package:fun_with_kanji/pages/overview/overview_list_tile.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
-import 'package:yaru_icons/yaru_icons.dart';
 
 class OverviewPageView extends StatelessWidget {
   final OverviewController controller;
@@ -14,36 +14,17 @@ class OverviewPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final searchResult = controller.searchResult;
-    const inputBorder = OutlineInputBorder(
-      borderSide: BorderSide(
-        color: Colors.transparent,
-      ),
-    );
     return Scaffold(
       appBar: AppBar(
-        titleSpacing: 0,
-        title: SizedBox(
-          width: double.infinity,
-          height: 48,
-          child: Center(
-            child: TextField(
-              onChanged: controller.search,
-              controller: controller.searchController,
-              decoration: InputDecoration(
-                border: inputBorder,
-                focusedBorder: inputBorder,
-                enabledBorder: inputBorder,
-                hintText: L10n.of(context)!.search,
-                suffixIcon: controller.searchLoading
-                    ? const CircularProgressIndicator.adaptive()
-                    : searchResult == null
-                        ? const Icon(YaruIcons.search, size: 26)
-                        : IconButton(
-                            icon: const Icon(YaruIcons.window_close, size: 26),
-                            onPressed: controller.cancelSearch,
-                          ),
-              ),
-            ),
+        titleSpacing: 12,
+        title: Center(
+          child: CupertinoSearchTextField(
+            onChanged: controller.search,
+            controller: controller.searchController,
+            placeholder: L10n.of(context)!.search,
+            prefixIcon: controller.searchLoading
+                ? const CircularProgressIndicator.adaptive()
+                : const Icon(Icons.search_outlined),
           ),
         ),
       ),
@@ -54,7 +35,7 @@ class OverviewPageView extends StatelessWidget {
                   ? KanjiListTile(
                       kanji: searchResult[i] as Kanji,
                       subtitle: L10n.of(context)!.kanji,
-                      moreIcon: YaruIcons.information,
+                      moreIcon: Icons.info_outlined,
                     )
                   : ListTile(
                       leading: CircleAvatar(

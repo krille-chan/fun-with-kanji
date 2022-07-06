@@ -4,7 +4,6 @@ import 'package:fun_with_kanji/models/kanji.dart';
 import 'package:fun_with_kanji/models/radical.dart';
 import 'package:fun_with_kanji/pages/learning/learning.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
-import 'package:yaru_icons/yaru_icons.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class LearningView extends StatelessWidget {
@@ -23,7 +22,7 @@ class LearningView extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 4),
-          const Icon(YaruIcons.checkmark),
+          const Icon(Icons.check_circle_outlined),
           const SizedBox(width: 4),
         ],
       ),
@@ -45,8 +44,8 @@ class LearningView extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Icon(
                       learningProgress.stars >= i
-                          ? YaruIcons.star_filled
-                          : YaruIcons.star,
+                          ? Icons.star
+                          : Icons.star_outlined,
                       color: learningProgress.stars >= i
                           ? Colors.yellow.shade600
                           : Colors.grey,
@@ -126,17 +125,6 @@ class LearningView extends StatelessWidget {
                   onPressed: () => controller.answerCorrect != null
                       ? null
                       : controller.checkChoice(choice),
-                  style: ElevatedButton.styleFrom(
-                    primary: controller.answerCorrect != null
-                        ? choice == currentCharacter
-                            ? Colors.green.shade700
-                            : controller.answerCorrect == false
-                                ? Colors.red.shade700
-                                : Colors.blueGrey
-                        : Colors.blueGrey,
-                    elevation: 7,
-                    padding: const EdgeInsets.all(8),
-                  ),
                   child: Column(
                     children: [
                       Text(
@@ -170,19 +158,7 @@ class LearningView extends StatelessWidget {
               onPressed: controller.answerCorrect != null
                   ? () {}
                   : controller.checkStringChoice,
-              style: ElevatedButton.styleFrom(
-                primary: controller.answerCorrect != null
-                    ? controller.answerCorrect!
-                        ? Colors.green.shade700
-                        : Colors.red.shade700
-                    : Colors.blueGrey,
-                elevation: 7,
-                padding: const EdgeInsets.all(8),
-              ),
-              child: Text(
-                L10n.of(context)!.check,
-                style: const TextStyle(fontSize: 24),
-              ),
+              child: Text(L10n.of(context)!.check),
             )
           ],
           if (currentCharacter is Radical &&

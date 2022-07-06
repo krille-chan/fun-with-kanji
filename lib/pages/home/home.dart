@@ -4,7 +4,6 @@ import 'package:fun_with_kanji/pages/home/home_view.dart';
 import 'package:fun_with_kanji/pages/learning/learning.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
-import 'package:yaru_icons/yaru_icons.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -75,7 +74,7 @@ extension on WritingSystemSettingsAction {
   IconData get icon {
     switch (this) {
       case WritingSystemSettingsAction.reset:
-        return YaruIcons.trash;
+        return Icons.delete_outlined;
     }
   }
 }

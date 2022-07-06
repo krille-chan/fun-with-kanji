@@ -3,7 +3,6 @@ import 'package:fun_with_kanji/pages/home/home.dart';
 import 'package:fun_with_kanji/pages/info/info.dart';
 import 'package:fun_with_kanji/pages/overview/overview.dart';
 import 'package:fun_with_kanji/pages/settings/settings.dart';
-import 'package:yaru_icons/yaru_icons.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class HomeLayout extends StatefulWidget {
@@ -32,27 +31,26 @@ class HomeLayoutState extends State<HomeLayout> {
             return const SettingsPage();
         }
       }),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        currentIndex: currentIndex,
-        onTap: (i) => setState(() {
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: currentIndex,
+        onDestinationSelected: (i) => setState(() {
           currentIndex = i;
         }),
-        items: [
-          BottomNavigationBarItem(
-            icon: const Icon(YaruIcons.checkbox_button_checked),
+        destinations: [
+          NavigationDestination(
+            icon: const Icon(Icons.check_circle_outlined),
             label: L10n.of(context)!.learn,
           ),
-          BottomNavigationBarItem(
-            icon: const Icon(YaruIcons.search),
+          NavigationDestination(
+            icon: const Icon(Icons.search_outlined),
             label: L10n.of(context)!.overview,
           ),
-          BottomNavigationBarItem(
-            icon: const Icon(YaruIcons.information),
+          NavigationDestination(
+            icon: const Icon(Icons.info_outline),
             label: L10n.of(context)!.info,
           ),
-          BottomNavigationBarItem(
-            icon: const Icon(YaruIcons.settings),
+          NavigationDestination(
+            icon: const Icon(Icons.settings_outlined),
             label: L10n.of(context)!.settings,
           ),
         ],
