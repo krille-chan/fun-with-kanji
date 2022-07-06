@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fun_with_kanji/models/kanji.dart';
 import 'package:fun_with_kanji/pages/overview/kanji_list_tile.dart';
