@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fun_with_kanji/config/config_keys.dart';
+import 'package:fun_with_kanji/pages/settings/config_toggle.dart';
 import 'package:fun_with_kanji/pages/settings/settings.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 
@@ -12,6 +14,17 @@ class SettingsView extends StatelessWidget {
       appBar: AppBar(title: Text(L10n.of(context)!.settings)),
       body: ListView(
         children: [
+          ConfigToggle(
+            icon: Icons.record_voice_over_outlined,
+            title: L10n.of(context)!.readOutLoud,
+            configKey: ConfigKeys.readOutLoud,
+          ),
+          ConfigToggle(
+            icon: Icons.volume_up_outlined,
+            title: L10n.of(context)!.playSoundEffects,
+            configKey: ConfigKeys.playSoundEffects,
+          ),
+          const Divider(),
           ListTile(
             leading: const Icon(Icons.delete_outlined),
             title: Text(L10n.of(context)!.resetLearningProgress),

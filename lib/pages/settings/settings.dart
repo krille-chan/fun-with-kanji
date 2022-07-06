@@ -9,6 +9,7 @@ import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/pages/settings/settings_view.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 import 'package:fun_with_kanji/utils/open_issue_dialog.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -19,6 +20,14 @@ class SettingsPage extends StatefulWidget {
 }
 
 class SettingsController extends State<SettingsPage> {
+  late final Future<SharedPreferences> preferencesFuture;
+
+  @override
+  void initState() {
+    preferencesFuture = SharedPreferences.getInstance();
+    super.initState();
+  }
+
   void resetLearningProgressAction() async {
     final result = await showDialog<bool>(
       context: context,

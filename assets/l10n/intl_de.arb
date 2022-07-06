@@ -69,5 +69,7 @@
     "addHint": "Merkhilfe hinzufügen",
     "looksLikeAManWithAHat": "Sieht aus wie ein Mann mit einem Hut",
     "showHint": "Merkhilfe anzeigen",
-    "langPrefix": "_de"
+    "langPrefix": "_de",
+    "readOutLoud": "Laut vorlesen",
+    "playSoundEffects": "Soundeffekte abspielen"
 }

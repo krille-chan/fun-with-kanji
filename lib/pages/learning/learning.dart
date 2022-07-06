@@ -5,6 +5,7 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:fun_with_kanji/config/config_keys.dart';
 import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/models/jp_character.dart';
 import 'package:fun_with_kanji/models/learning_progress.dart';
@@ -14,6 +15,8 @@ import 'package:fun_with_kanji/utils/open_issue_dialog.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:text_to_speech/text_to_speech.dart';
 
 class LearningPage extends StatefulWidget {
   final WritingSystem writingSystem;
@@ -34,6 +37,8 @@ class LearningController extends State<LearningPage> {
   bool? answerCorrect;
   String? hint;
   bool showHint = false;
+
+  TextToSpeech? tts;
 
   void _loadNextCharacter() async {
     try {
@@ -261,7 +266,7 @@ class LearningController extends State<LearningPage> {
     _check(correctAnswer.contains(answer.description.trim().toLowerCase()));
   }
 
-  final AudioPlayer _audioPlayer = AudioPlayer();
+  AudioPlayer? _audioPlayer;
 
   void _check(bool isCorrect) async {
     // Display correct in text field:
@@ -297,9 +302,14 @@ class LearningController extends State<LearningPage> {
 
     // Play sound:
     if (!Platform.isLinux) {
-      await _audioPlayer.setAsset(
+      await _audioPlayer?.setAsset(
           "assets/sounds/${isCorrect ? learningProgress!.stars == 9 ? 'finished' : 'correct' : 'wrong'}.mp3");
-      _audioPlayer.play();
+      _audioPlayer?.play();
+      final tts = this.tts;
+      if (tts != null) {
+        tts.setLanguage('ja-JP');
+        tts.speak(currentCharacter!.toTtsString());
+      }
     }
     setState(() {
       if (isCorrect && learningProgress!.stars < 10) {
@@ -321,11 +331,29 @@ class LearningController extends State<LearningPage> {
 
   int finished = 0;
 
+  void _initTts() async {
+    final preferences = await SharedPreferences.getInstance();
+    if (preferences.getBool(ConfigKeys.playSoundEffects) != false) {
+      _audioPlayer = AudioPlayer();
+    }
+    if (preferences.getBool(ConfigKeys.readOutLoud) == false) {
+      return;
+    }
+
+    tts = TextToSpeech();
+
+    if ({WritingSystem.hiragana, WritingSystem.katakana}
+        .contains(widget.writingSystem)) {
+      tts?.setRate(0.5);
+    }
+  }
+
   @override
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _loadNextCharacter();
     });
+    _initTts();
     super.initState();
   }
 

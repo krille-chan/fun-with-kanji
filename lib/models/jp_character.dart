@@ -19,6 +19,22 @@ abstract class JpCharacter {
     return super.toString();
   }
 
+  String toTtsString() {
+    if (this is Kana) {
+      return (this as Kana).kana;
+    }
+    if (this is Radical) {
+      return (this as Radical).reading;
+    }
+    if (this is Kanji) {
+      return [
+        (this as Kanji).readingsOn.first,
+        (this as Kanji).readingsKun.first,
+      ].join(', ');
+    }
+    return super.toString();
+  }
+
   String get description {
     if (this is Kana) {
       return (this as Kana).roumaji;
