@@ -41,7 +41,7 @@ class KanjiListTile extends StatelessWidget {
                   subtitle: Text(kanji.readingsKun.join(', ')),
                 ),
                 ListTile(
-                  title: Text('${L10n.of(context)!.radicals}:'),
+                  title: Text('${L10n.of(context)!.radicalsName}:'),
                   subtitle: Text(kanji.radicals.join(', ')),
                 ),
               ],
