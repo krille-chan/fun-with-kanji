@@ -19,11 +19,16 @@ Fun With Kanji is open source under Mozilla Public License 2.0. Contributions an
   <img src="assets/screenshots/Simulator Screen Shot - iPhone 13 Pro - 2022-05-20 at 10.40.04.png" width="128" />
 </p>
 
-
-
 ## Install:
 
-- [Latest APK from CI](https://gitlab.com/krillefear/funny-kanji/-/jobs/artifacts/main/browse?job=build_apk)
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+     alt="Get it on F-Droid"
+     height="80">](https://f-droid.org/packages/krillefear.funwithkanji/)
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
+     alt="Get it on Google Play"
+     height="80">](https://play.google.com/store/apps/details?id=krillefear.funwithkanji)
+
+- Or download the [latest APK from CI](https://gitlab.com/krillefear/funny-kanji/-/jobs/artifacts/main/browse?job=build_apk)
 
 ## Build:
 
