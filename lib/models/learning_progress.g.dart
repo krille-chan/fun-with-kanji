@@ -6,157 +6,154 @@ part of 'learning_progress.dart';
 // IsarCollectionGenerator
 // **************************************************************************
 
-// ignore_for_file: duplicate_ignore, non_constant_identifier_names, invalid_use_of_protected_member, unnecessary_cast
+// ignore_for_file: duplicate_ignore, non_constant_identifier_names, constant_identifier_names, invalid_use_of_protected_member, unnecessary_cast, unused_local_variable
 
 extension GetLearningProgressCollection on Isar {
-  IsarCollection<LearningProgress> get learningProgresss {
-    return getCollection('LearningProgress');
-  }
+  IsarCollection<LearningProgress> get learningProgresss => getCollection();
 }
 
-final LearningProgressSchema = CollectionSchema(
+const LearningProgressSchema = CollectionSchema(
   name: 'LearningProgress',
   schema:
       '{"name":"LearningProgress","idName":"id","properties":[{"name":"characterId","type":"Long"},{"name":"stars","type":"Long"},{"name":"writingSystem","type":"String"}],"indexes":[],"links":[]}',
-  nativeAdapter: const _LearningProgressNativeAdapter(),
-  webAdapter: const _LearningProgressWebAdapter(),
   idName: 'id',
   propertyIds: {'characterId': 0, 'stars': 1, 'writingSystem': 2},
   listProperties: {},
   indexIds: {},
-  indexTypes: {},
+  indexValueTypes: {},
   linkIds: {},
-  backlinkIds: {},
-  linkedCollections: [],
-  getId: (obj) {
-    if (obj.id == Isar.autoIncrement) {
-      return null;
-    } else {
-      return obj.id;
-    }
-  },
-  setId: (obj, id) => obj.id = id,
-  getLinks: (obj) => [],
-  version: 2,
+  backlinkLinkNames: {},
+  getId: _learningProgressGetId,
+  setId: _learningProgressSetId,
+  getLinks: _learningProgressGetLinks,
+  attachLinks: _learningProgressAttachLinks,
+  serializeNative: _learningProgressSerializeNative,
+  deserializeNative: _learningProgressDeserializeNative,
+  deserializePropNative: _learningProgressDeserializePropNative,
+  serializeWeb: _learningProgressSerializeWeb,
+  deserializeWeb: _learningProgressDeserializeWeb,
+  deserializePropWeb: _learningProgressDeserializePropWeb,
+  version: 3,
 );
 
-class _LearningProgressWebAdapter extends IsarWebTypeAdapter<LearningProgress> {
-  const _LearningProgressWebAdapter();
-
-  @override
-  Object serialize(
-      IsarCollection<LearningProgress> collection, LearningProgress object) {
-    final jsObj = IsarNative.newJsObject();
-    IsarNative.jsObjectSet(jsObj, 'characterId', object.characterId);
-    IsarNative.jsObjectSet(jsObj, 'id', object.id);
-    IsarNative.jsObjectSet(jsObj, 'stars', object.stars);
-    IsarNative.jsObjectSet(jsObj, 'writingSystem', object.writingSystem);
-    return jsObj;
+int? _learningProgressGetId(LearningProgress object) {
+  if (object.id == Isar.autoIncrement) {
+    return null;
+  } else {
+    return object.id;
   }
-
-  @override
-  LearningProgress deserialize(
-      IsarCollection<LearningProgress> collection, dynamic jsObj) {
-    final object = LearningProgress();
-    object.characterId =
-        IsarNative.jsObjectGet(jsObj, 'characterId') ?? double.negativeInfinity;
-    object.id = IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity;
-    object.stars =
-        IsarNative.jsObjectGet(jsObj, 'stars') ?? double.negativeInfinity;
-    object.writingSystem = IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '';
-    return object;
-  }
-
-  @override
-  P deserializeProperty<P>(Object jsObj, String propertyName) {
-    switch (propertyName) {
-      case 'characterId':
-        return (IsarNative.jsObjectGet(jsObj, 'characterId') ??
-            double.negativeInfinity) as P;
-      case 'id':
-        return (IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity)
-            as P;
-      case 'stars':
-        return (IsarNative.jsObjectGet(jsObj, 'stars') ??
-            double.negativeInfinity) as P;
-      case 'writingSystem':
-        return (IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '') as P;
-      default:
-        throw 'Illegal propertyName';
-    }
-  }
-
-  @override
-  void attachLinks(Isar isar, int id, LearningProgress object) {}
 }
 
-class _LearningProgressNativeAdapter
-    extends IsarNativeTypeAdapter<LearningProgress> {
-  const _LearningProgressNativeAdapter();
-
-  @override
-  void serialize(
-      IsarCollection<LearningProgress> collection,
-      IsarRawObject rawObj,
-      LearningProgress object,
-      int staticSize,
-      List<int> offsets,
-      AdapterAlloc alloc) {
-    var dynamicSize = 0;
-    final value0 = object.characterId;
-    final _characterId = value0;
-    final value1 = object.stars;
-    final _stars = value1;
-    final value2 = object.writingSystem;
-    final _writingSystem = IsarBinaryWriter.utf8Encoder.convert(value2);
-    dynamicSize += (_writingSystem.length) as int;
-    final size = staticSize + dynamicSize;
-
-    rawObj.buffer = alloc(size);
-    rawObj.buffer_length = size;
-    final buffer = IsarNative.bufAsBytes(rawObj.buffer, size);
-    final writer = IsarBinaryWriter(buffer, staticSize);
-    writer.writeLong(offsets[0], _characterId);
-    writer.writeLong(offsets[1], _stars);
-    writer.writeBytes(offsets[2], _writingSystem);
-  }
-
-  @override
-  LearningProgress deserialize(IsarCollection<LearningProgress> collection,
-      int id, IsarBinaryReader reader, List<int> offsets) {
-    final object = LearningProgress();
-    object.characterId = reader.readLong(offsets[0]);
-    object.id = id;
-    object.stars = reader.readLong(offsets[1]);
-    object.writingSystem = reader.readString(offsets[2]);
-    return object;
-  }
-
-  @override
-  P deserializeProperty<P>(
-      int id, IsarBinaryReader reader, int propertyIndex, int offset) {
-    switch (propertyIndex) {
-      case -1:
-        return id as P;
-      case 0:
-        return (reader.readLong(offset)) as P;
-      case 1:
-        return (reader.readLong(offset)) as P;
-      case 2:
-        return (reader.readString(offset)) as P;
-      default:
-        throw 'Illegal propertyIndex';
-    }
-  }
-
-  @override
-  void attachLinks(Isar isar, int id, LearningProgress object) {}
+void _learningProgressSetId(LearningProgress object, int id) {
+  object.id = id;
 }
+
+List<IsarLinkBase> _learningProgressGetLinks(LearningProgress object) {
+  return [];
+}
+
+void _learningProgressSerializeNative(
+    IsarCollection<LearningProgress> collection,
+    IsarRawObject rawObj,
+    LearningProgress object,
+    int staticSize,
+    List<int> offsets,
+    AdapterAlloc alloc) {
+  var dynamicSize = 0;
+  final value0 = object.characterId;
+  final _characterId = value0;
+  final value1 = object.stars;
+  final _stars = value1;
+  final value2 = object.writingSystem;
+  final _writingSystem = IsarBinaryWriter.utf8Encoder.convert(value2);
+  dynamicSize += (_writingSystem.length) as int;
+  final size = staticSize + dynamicSize;
+
+  rawObj.buffer = alloc(size);
+  rawObj.buffer_length = size;
+  final buffer = IsarNative.bufAsBytes(rawObj.buffer, size);
+  final writer = IsarBinaryWriter(buffer, staticSize);
+  writer.writeLong(offsets[0], _characterId);
+  writer.writeLong(offsets[1], _stars);
+  writer.writeBytes(offsets[2], _writingSystem);
+}
+
+LearningProgress _learningProgressDeserializeNative(
+    IsarCollection<LearningProgress> collection,
+    int id,
+    IsarBinaryReader reader,
+    List<int> offsets) {
+  final object = LearningProgress();
+  object.characterId = reader.readLong(offsets[0]);
+  object.id = id;
+  object.stars = reader.readLong(offsets[1]);
+  object.writingSystem = reader.readString(offsets[2]);
+  return object;
+}
+
+P _learningProgressDeserializePropNative<P>(
+    int id, IsarBinaryReader reader, int propertyIndex, int offset) {
+  switch (propertyIndex) {
+    case -1:
+      return id as P;
+    case 0:
+      return (reader.readLong(offset)) as P;
+    case 1:
+      return (reader.readLong(offset)) as P;
+    case 2:
+      return (reader.readString(offset)) as P;
+    default:
+      throw 'Illegal propertyIndex';
+  }
+}
+
+dynamic _learningProgressSerializeWeb(
+    IsarCollection<LearningProgress> collection, LearningProgress object) {
+  final jsObj = IsarNative.newJsObject();
+  IsarNative.jsObjectSet(jsObj, 'characterId', object.characterId);
+  IsarNative.jsObjectSet(jsObj, 'id', object.id);
+  IsarNative.jsObjectSet(jsObj, 'stars', object.stars);
+  IsarNative.jsObjectSet(jsObj, 'writingSystem', object.writingSystem);
+  return jsObj;
+}
+
+LearningProgress _learningProgressDeserializeWeb(
+    IsarCollection<LearningProgress> collection, dynamic jsObj) {
+  final object = LearningProgress();
+  object.characterId =
+      IsarNative.jsObjectGet(jsObj, 'characterId') ?? double.negativeInfinity;
+  object.id = IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity;
+  object.stars =
+      IsarNative.jsObjectGet(jsObj, 'stars') ?? double.negativeInfinity;
+  object.writingSystem = IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '';
+  return object;
+}
+
+P _learningProgressDeserializePropWeb<P>(Object jsObj, String propertyName) {
+  switch (propertyName) {
+    case 'characterId':
+      return (IsarNative.jsObjectGet(jsObj, 'characterId') ??
+          double.negativeInfinity) as P;
+    case 'id':
+      return (IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity)
+          as P;
+    case 'stars':
+      return (IsarNative.jsObjectGet(jsObj, 'stars') ?? double.negativeInfinity)
+          as P;
+    case 'writingSystem':
+      return (IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '') as P;
+    default:
+      throw 'Illegal propertyName';
+  }
+}
+
+void _learningProgressAttachLinks(
+    IsarCollection col, int id, LearningProgress object) {}
 
 extension LearningProgressQueryWhereSort
     on QueryBuilder<LearningProgress, LearningProgress, QWhere> {
   QueryBuilder<LearningProgress, LearningProgress, QAfterWhere> anyId() {
-    return addWhereClauseInternal(const WhereClause(indexName: null));
+    return addWhereClauseInternal(const IdWhereClause.any());
   }
 }
 
@@ -164,11 +161,10 @@ extension LearningProgressQueryWhere
     on QueryBuilder<LearningProgress, LearningProgress, QWhereClause> {
   QueryBuilder<LearningProgress, LearningProgress, QAfterWhereClause> idEqualTo(
       int id) {
-    return addWhereClauseInternal(WhereClause(
-      indexName: null,
-      lower: [id],
+    return addWhereClauseInternal(IdWhereClause.between(
+      lower: id,
       includeLower: true,
-      upper: [id],
+      upper: id,
       includeUpper: true,
     ));
   }
@@ -176,50 +172,32 @@ extension LearningProgressQueryWhere
   QueryBuilder<LearningProgress, LearningProgress, QAfterWhereClause>
       idNotEqualTo(int id) {
     if (whereSortInternal == Sort.asc) {
-      return addWhereClauseInternal(WhereClause(
-        indexName: null,
-        upper: [id],
-        includeUpper: false,
-      )).addWhereClauseInternal(WhereClause(
-        indexName: null,
-        lower: [id],
-        includeLower: false,
-      ));
+      return addWhereClauseInternal(
+        IdWhereClause.lessThan(upper: id, includeUpper: false),
+      ).addWhereClauseInternal(
+        IdWhereClause.greaterThan(lower: id, includeLower: false),
+      );
     } else {
-      return addWhereClauseInternal(WhereClause(
-        indexName: null,
-        lower: [id],
-        includeLower: false,
-      )).addWhereClauseInternal(WhereClause(
-        indexName: null,
-        upper: [id],
-        includeUpper: false,
-      ));
+      return addWhereClauseInternal(
+        IdWhereClause.greaterThan(lower: id, includeLower: false),
+      ).addWhereClauseInternal(
+        IdWhereClause.lessThan(upper: id, includeUpper: false),
+      );
     }
   }
 
   QueryBuilder<LearningProgress, LearningProgress, QAfterWhereClause>
-      idGreaterThan(
-    int id, {
-    bool include = false,
-  }) {
-    return addWhereClauseInternal(WhereClause(
-      indexName: null,
-      lower: [id],
-      includeLower: include,
-    ));
+      idGreaterThan(int id, {bool include = false}) {
+    return addWhereClauseInternal(
+      IdWhereClause.greaterThan(lower: id, includeLower: include),
+    );
   }
 
   QueryBuilder<LearningProgress, LearningProgress, QAfterWhereClause>
-      idLessThan(
-    int id, {
-    bool include = false,
-  }) {
-    return addWhereClauseInternal(WhereClause(
-      indexName: null,
-      upper: [id],
-      includeUpper: include,
-    ));
+      idLessThan(int id, {bool include = false}) {
+    return addWhereClauseInternal(
+      IdWhereClause.lessThan(upper: id, includeUpper: include),
+    );
   }
 
   QueryBuilder<LearningProgress, LearningProgress, QAfterWhereClause> idBetween(
@@ -228,11 +206,10 @@ extension LearningProgressQueryWhere
     bool includeLower = true,
     bool includeUpper = true,
   }) {
-    return addWhereClauseInternal(WhereClause(
-      indexName: null,
-      lower: [lowerId],
+    return addWhereClauseInternal(IdWhereClause.between(
+      lower: lowerId,
       includeLower: includeLower,
-      upper: [upperId],
+      upper: upperId,
       includeUpper: includeUpper,
     ));
   }
