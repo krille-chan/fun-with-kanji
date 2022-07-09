@@ -1,0 +1,2 @@
+- Add the feature to select a theme and an accent color
+- Fix a bug where it was impossible to solve Radicals with multiple meanings
