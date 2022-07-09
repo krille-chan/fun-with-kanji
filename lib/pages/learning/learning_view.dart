@@ -129,6 +129,7 @@ class LearningView extends StatelessWidget {
                     children: [
                       Text(
                         choice.description,
+                        textAlign: TextAlign.center,
                         style: const TextStyle(fontSize: 24),
                       ),
                       if (choice is Kanji && choice.meanings.length > 1)

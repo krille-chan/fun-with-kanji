@@ -263,7 +263,8 @@ class LearningController extends State<LearningPage> {
 
   void checkChoice(JpCharacter answer) {
     final correctAnswer = currentCharacter!.correctAnswers;
-    _check(correctAnswer.contains(answer.description.trim().toLowerCase()));
+    _check(answer == currentCharacter ||
+        correctAnswer.contains(answer.description.trim().toLowerCase()));
   }
 
   AudioPlayer? _audioPlayer;
