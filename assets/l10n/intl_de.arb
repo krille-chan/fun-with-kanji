@@ -71,5 +71,11 @@
     "showHint": "Merkhilfe anzeigen",
     "langPrefix": "_de",
     "readOutLoud": "Laut vorlesen",
-    "playSoundEffects": "Soundeffekte abspielen"
+    "playSoundEffects": "Soundeffekte abspielen",
+    "style": "Style",
+    "color": "Farbe",
+    "system": "System",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "close": "Schließen"
 }

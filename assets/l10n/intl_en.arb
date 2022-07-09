@@ -71,5 +71,11 @@
     "showHint": "Show hint",
     "langPrefix": "",
     "readOutLoud": "Read out loud",
-    "playSoundEffects": "Play sound effects"
+    "playSoundEffects": "Play sound effects",
+    "style": "Style",
+    "color": "Color",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "close": "Close"
 }

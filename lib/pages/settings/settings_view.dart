@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:fun_with_kanji/config/app_constants.dart';
 import 'package:fun_with_kanji/config/config_keys.dart';
 import 'package:fun_with_kanji/pages/settings/config_toggle.dart';
 import 'package:fun_with_kanji/pages/settings/settings.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:fun_with_kanji/utils/theme_mode_localization.dart';
+import 'package:fun_with_kanji/widgets/theme_builder.dart';
 
 class SettingsView extends StatelessWidget {
   final SettingsController controller;
@@ -14,6 +17,25 @@ class SettingsView extends StatelessWidget {
       appBar: AppBar(title: Text(L10n.of(context)!.settings)),
       body: ListView(
         children: [
+          ListTile(
+            leading: const Icon(Icons.format_paint_outlined),
+            title: Text(L10n.of(context)!.style),
+            trailing: Text(ThemeController.of(context)
+                .themeMode
+                .toLocalizedString(context)),
+            onTap: controller.setThemeMode,
+          ),
+          ListTile(
+            leading: const Icon(Icons.colorize_outlined),
+            title: Text(L10n.of(context)!.color),
+            trailing: Icon(
+              Icons.circle,
+              color: ThemeController.of(context).primaryColor ??
+                  AppConstants.fallbackPrimaryColor,
+            ),
+            onTap: controller.setColor,
+          ),
+          const Divider(),
           ConfigToggle(
             icon: Icons.record_voice_over_outlined,
             title: L10n.of(context)!.readOutLoud,
