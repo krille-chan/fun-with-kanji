@@ -1,0 +1,2 @@
+- Add a multiple choice only mode
+- Update some dependencies
