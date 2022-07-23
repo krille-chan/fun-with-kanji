@@ -6,207 +6,191 @@ part of 'kanji_hint.dart';
 // IsarCollectionGenerator
 // **************************************************************************
 
-// ignore_for_file: duplicate_ignore, non_constant_identifier_names, invalid_use_of_protected_member, unnecessary_cast
+// ignore_for_file: duplicate_ignore, non_constant_identifier_names, constant_identifier_names, invalid_use_of_protected_member, unnecessary_cast, unused_local_variable
 
 extension GetKanjiHintCollection on Isar {
-  IsarCollection<KanjiHint> get kanjiHints {
-    return getCollection('KanjiHint');
-  }
+  IsarCollection<KanjiHint> get kanjiHints => getCollection();
 }
 
-final KanjiHintSchema = CollectionSchema(
+const KanjiHintSchema = CollectionSchema(
   name: 'KanjiHint',
   schema:
       '{"name":"KanjiHint","idName":"id","properties":[{"name":"characterId","type":"Long"},{"name":"hint","type":"String"},{"name":"writingSystem","type":"String"}],"indexes":[],"links":[]}',
-  nativeAdapter: const _KanjiHintNativeAdapter(),
-  webAdapter: const _KanjiHintWebAdapter(),
   idName: 'id',
   propertyIds: {'characterId': 0, 'hint': 1, 'writingSystem': 2},
   listProperties: {},
   indexIds: {},
-  indexTypes: {},
+  indexValueTypes: {},
   linkIds: {},
-  backlinkIds: {},
-  linkedCollections: [],
-  getId: (obj) {
-    if (obj.id == Isar.autoIncrement) {
-      return null;
-    } else {
-      return obj.id;
-    }
-  },
-  setId: (obj, id) => obj.id = id,
-  getLinks: (obj) => [],
-  version: 2,
+  backlinkLinkNames: {},
+  getId: _kanjiHintGetId,
+  setId: _kanjiHintSetId,
+  getLinks: _kanjiHintGetLinks,
+  attachLinks: _kanjiHintAttachLinks,
+  serializeNative: _kanjiHintSerializeNative,
+  deserializeNative: _kanjiHintDeserializeNative,
+  deserializePropNative: _kanjiHintDeserializePropNative,
+  serializeWeb: _kanjiHintSerializeWeb,
+  deserializeWeb: _kanjiHintDeserializeWeb,
+  deserializePropWeb: _kanjiHintDeserializePropWeb,
+  version: 3,
 );
 
-class _KanjiHintWebAdapter extends IsarWebTypeAdapter<KanjiHint> {
-  const _KanjiHintWebAdapter();
-
-  @override
-  Object serialize(IsarCollection<KanjiHint> collection, KanjiHint object) {
-    final jsObj = IsarNative.newJsObject();
-    IsarNative.jsObjectSet(jsObj, 'characterId', object.characterId);
-    IsarNative.jsObjectSet(jsObj, 'hint', object.hint);
-    IsarNative.jsObjectSet(jsObj, 'id', object.id);
-    IsarNative.jsObjectSet(jsObj, 'writingSystem', object.writingSystem);
-    return jsObj;
+int? _kanjiHintGetId(KanjiHint object) {
+  if (object.id == Isar.autoIncrement) {
+    return null;
+  } else {
+    return object.id;
   }
-
-  @override
-  KanjiHint deserialize(IsarCollection<KanjiHint> collection, dynamic jsObj) {
-    final object = KanjiHint();
-    object.characterId =
-        IsarNative.jsObjectGet(jsObj, 'characterId') ?? double.negativeInfinity;
-    object.hint = IsarNative.jsObjectGet(jsObj, 'hint') ?? '';
-    object.id = IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity;
-    object.writingSystem = IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '';
-    return object;
-  }
-
-  @override
-  P deserializeProperty<P>(Object jsObj, String propertyName) {
-    switch (propertyName) {
-      case 'characterId':
-        return (IsarNative.jsObjectGet(jsObj, 'characterId') ??
-            double.negativeInfinity) as P;
-      case 'hint':
-        return (IsarNative.jsObjectGet(jsObj, 'hint') ?? '') as P;
-      case 'id':
-        return (IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity)
-            as P;
-      case 'writingSystem':
-        return (IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '') as P;
-      default:
-        throw 'Illegal propertyName';
-    }
-  }
-
-  @override
-  void attachLinks(Isar isar, int id, KanjiHint object) {}
 }
 
-class _KanjiHintNativeAdapter extends IsarNativeTypeAdapter<KanjiHint> {
-  const _KanjiHintNativeAdapter();
-
-  @override
-  void serialize(IsarCollection<KanjiHint> collection, IsarRawObject rawObj,
-      KanjiHint object, int staticSize, List<int> offsets, AdapterAlloc alloc) {
-    var dynamicSize = 0;
-    final value0 = object.characterId;
-    final _characterId = value0;
-    final value1 = object.hint;
-    final _hint = IsarBinaryWriter.utf8Encoder.convert(value1);
-    dynamicSize += (_hint.length) as int;
-    final value2 = object.writingSystem;
-    final _writingSystem = IsarBinaryWriter.utf8Encoder.convert(value2);
-    dynamicSize += (_writingSystem.length) as int;
-    final size = staticSize + dynamicSize;
-
-    rawObj.buffer = alloc(size);
-    rawObj.buffer_length = size;
-    final buffer = IsarNative.bufAsBytes(rawObj.buffer, size);
-    final writer = IsarBinaryWriter(buffer, staticSize);
-    writer.writeLong(offsets[0], _characterId);
-    writer.writeBytes(offsets[1], _hint);
-    writer.writeBytes(offsets[2], _writingSystem);
-  }
-
-  @override
-  KanjiHint deserialize(IsarCollection<KanjiHint> collection, int id,
-      IsarBinaryReader reader, List<int> offsets) {
-    final object = KanjiHint();
-    object.characterId = reader.readLong(offsets[0]);
-    object.hint = reader.readString(offsets[1]);
-    object.id = id;
-    object.writingSystem = reader.readString(offsets[2]);
-    return object;
-  }
-
-  @override
-  P deserializeProperty<P>(
-      int id, IsarBinaryReader reader, int propertyIndex, int offset) {
-    switch (propertyIndex) {
-      case -1:
-        return id as P;
-      case 0:
-        return (reader.readLong(offset)) as P;
-      case 1:
-        return (reader.readString(offset)) as P;
-      case 2:
-        return (reader.readString(offset)) as P;
-      default:
-        throw 'Illegal propertyIndex';
-    }
-  }
-
-  @override
-  void attachLinks(Isar isar, int id, KanjiHint object) {}
+void _kanjiHintSetId(KanjiHint object, int id) {
+  object.id = id;
 }
+
+List<IsarLinkBase> _kanjiHintGetLinks(KanjiHint object) {
+  return [];
+}
+
+void _kanjiHintSerializeNative(
+    IsarCollection<KanjiHint> collection,
+    IsarRawObject rawObj,
+    KanjiHint object,
+    int staticSize,
+    List<int> offsets,
+    AdapterAlloc alloc) {
+  var dynamicSize = 0;
+  final value0 = object.characterId;
+  final _characterId = value0;
+  final value1 = object.hint;
+  final _hint = IsarBinaryWriter.utf8Encoder.convert(value1);
+  dynamicSize += (_hint.length) as int;
+  final value2 = object.writingSystem;
+  final _writingSystem = IsarBinaryWriter.utf8Encoder.convert(value2);
+  dynamicSize += (_writingSystem.length) as int;
+  final size = staticSize + dynamicSize;
+
+  rawObj.buffer = alloc(size);
+  rawObj.buffer_length = size;
+  final buffer = IsarNative.bufAsBytes(rawObj.buffer, size);
+  final writer = IsarBinaryWriter(buffer, staticSize);
+  writer.writeLong(offsets[0], _characterId);
+  writer.writeBytes(offsets[1], _hint);
+  writer.writeBytes(offsets[2], _writingSystem);
+}
+
+KanjiHint _kanjiHintDeserializeNative(IsarCollection<KanjiHint> collection,
+    int id, IsarBinaryReader reader, List<int> offsets) {
+  final object = KanjiHint();
+  object.characterId = reader.readLong(offsets[0]);
+  object.hint = reader.readString(offsets[1]);
+  object.id = id;
+  object.writingSystem = reader.readString(offsets[2]);
+  return object;
+}
+
+P _kanjiHintDeserializePropNative<P>(
+    int id, IsarBinaryReader reader, int propertyIndex, int offset) {
+  switch (propertyIndex) {
+    case -1:
+      return id as P;
+    case 0:
+      return (reader.readLong(offset)) as P;
+    case 1:
+      return (reader.readString(offset)) as P;
+    case 2:
+      return (reader.readString(offset)) as P;
+    default:
+      throw 'Illegal propertyIndex';
+  }
+}
+
+dynamic _kanjiHintSerializeWeb(
+    IsarCollection<KanjiHint> collection, KanjiHint object) {
+  final jsObj = IsarNative.newJsObject();
+  IsarNative.jsObjectSet(jsObj, 'characterId', object.characterId);
+  IsarNative.jsObjectSet(jsObj, 'hint', object.hint);
+  IsarNative.jsObjectSet(jsObj, 'id', object.id);
+  IsarNative.jsObjectSet(jsObj, 'writingSystem', object.writingSystem);
+  return jsObj;
+}
+
+KanjiHint _kanjiHintDeserializeWeb(
+    IsarCollection<KanjiHint> collection, dynamic jsObj) {
+  final object = KanjiHint();
+  object.characterId =
+      IsarNative.jsObjectGet(jsObj, 'characterId') ?? double.negativeInfinity;
+  object.hint = IsarNative.jsObjectGet(jsObj, 'hint') ?? '';
+  object.id = IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity;
+  object.writingSystem = IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '';
+  return object;
+}
+
+P _kanjiHintDeserializePropWeb<P>(Object jsObj, String propertyName) {
+  switch (propertyName) {
+    case 'characterId':
+      return (IsarNative.jsObjectGet(jsObj, 'characterId') ??
+          double.negativeInfinity) as P;
+    case 'hint':
+      return (IsarNative.jsObjectGet(jsObj, 'hint') ?? '') as P;
+    case 'id':
+      return (IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity)
+          as P;
+    case 'writingSystem':
+      return (IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '') as P;
+    default:
+      throw 'Illegal propertyName';
+  }
+}
+
+void _kanjiHintAttachLinks(IsarCollection col, int id, KanjiHint object) {}
 
 extension KanjiHintQueryWhereSort
     on QueryBuilder<KanjiHint, KanjiHint, QWhere> {
   QueryBuilder<KanjiHint, KanjiHint, QAfterWhere> anyId() {
-    return addWhereClauseInternal(const WhereClause(indexName: null));
+    return addWhereClauseInternal(const IdWhereClause.any());
   }
 }
 
 extension KanjiHintQueryWhere
     on QueryBuilder<KanjiHint, KanjiHint, QWhereClause> {
   QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idEqualTo(int id) {
-    return addWhereClauseInternal(WhereClause(
-      indexName: null,
-      lower: [id],
+    return addWhereClauseInternal(IdWhereClause.between(
+      lower: id,
       includeLower: true,
-      upper: [id],
+      upper: id,
       includeUpper: true,
     ));
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idNotEqualTo(int id) {
     if (whereSortInternal == Sort.asc) {
-      return addWhereClauseInternal(WhereClause(
-        indexName: null,
-        upper: [id],
-        includeUpper: false,
-      )).addWhereClauseInternal(WhereClause(
-        indexName: null,
-        lower: [id],
-        includeLower: false,
-      ));
+      return addWhereClauseInternal(
+        IdWhereClause.lessThan(upper: id, includeUpper: false),
+      ).addWhereClauseInternal(
+        IdWhereClause.greaterThan(lower: id, includeLower: false),
+      );
     } else {
-      return addWhereClauseInternal(WhereClause(
-        indexName: null,
-        lower: [id],
-        includeLower: false,
-      )).addWhereClauseInternal(WhereClause(
-        indexName: null,
-        upper: [id],
-        includeUpper: false,
-      ));
+      return addWhereClauseInternal(
+        IdWhereClause.greaterThan(lower: id, includeLower: false),
+      ).addWhereClauseInternal(
+        IdWhereClause.lessThan(upper: id, includeUpper: false),
+      );
     }
   }
 
-  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idGreaterThan(
-    int id, {
-    bool include = false,
-  }) {
-    return addWhereClauseInternal(WhereClause(
-      indexName: null,
-      lower: [id],
-      includeLower: include,
-    ));
+  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idGreaterThan(int id,
+      {bool include = false}) {
+    return addWhereClauseInternal(
+      IdWhereClause.greaterThan(lower: id, includeLower: include),
+    );
   }
 
-  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idLessThan(
-    int id, {
-    bool include = false,
-  }) {
-    return addWhereClauseInternal(WhereClause(
-      indexName: null,
-      upper: [id],
-      includeUpper: include,
-    ));
+  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idLessThan(int id,
+      {bool include = false}) {
+    return addWhereClauseInternal(
+      IdWhereClause.lessThan(upper: id, includeUpper: include),
+    );
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idBetween(
@@ -215,11 +199,10 @@ extension KanjiHintQueryWhere
     bool includeLower = true,
     bool includeUpper = true,
   }) {
-    return addWhereClauseInternal(WhereClause(
-      indexName: null,
-      lower: [lowerId],
+    return addWhereClauseInternal(IdWhereClause.between(
+      lower: lowerId,
       includeLower: includeLower,
-      upper: [upperId],
+      upper: upperId,
       includeUpper: includeUpper,
     ));
   }
