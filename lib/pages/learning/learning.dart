@@ -30,6 +30,7 @@ class LearningController extends State<LearningPage> {
   JpCharacter? get currentCharacter => characterSet?[_currentId];
   final TextEditingController responseController = TextEditingController();
   final FocusNode replyFocus = FocusNode();
+  late final bool enterRomaji;
   LearningProgress? learningProgress;
   int _currentId = 0;
   List<JpCharacter>? characterSet;
@@ -118,7 +119,7 @@ class LearningController extends State<LearningPage> {
         widget.writingSystem,
         _currentId,
       );
-      if (learningProgress.stars <= 5) {
+      if (learningProgress.stars <= 5 || !enterRomaji) {
         choices = [currentCharacter!];
         if (learningProgress.stars > 0) {
           // Add more choices
@@ -126,6 +127,7 @@ class LearningController extends State<LearningPage> {
             widget.writingSystem,
             learningProgress.stars - 1,
             learningProgress.characterId,
+            choicesCount: learningProgress.stars <= 5 ? 2 : 4,
           );
           choices?.addAll(
             possibleChoices.map(
@@ -340,6 +342,8 @@ class LearningController extends State<LearningPage> {
     if (preferences.getBool(ConfigKeys.readOutLoud) == false) {
       return;
     }
+
+    enterRomaji = preferences.getBool(ConfigKeys.enterRomaji) ?? true;
 
     tts = TextToSpeech();
 

@@ -66,8 +66,9 @@ class FunWithKanji {
   Future<Set<LearningProgress>> getChoices(
     WritingSystem system,
     int stars,
-    int characterId,
-  ) async {
+    int characterId, {
+    int choicesCount = 2,
+  }) async {
     var available = await isar.learningProgresss
         .filter()
         .writingSystemEqualTo(system.name)
@@ -76,7 +77,7 @@ class FunWithKanji {
         .characterIdEqualTo(characterId)
         .findAll();
     available.shuffle();
-    return available.take(2).toSet();
+    return available.take(choicesCount).toSet();
   }
 
   Future<List<LearningProgress>> getLearnInProgressCharacters(

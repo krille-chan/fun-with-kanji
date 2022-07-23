@@ -37,6 +37,12 @@ class SettingsView extends StatelessWidget {
           ),
           const Divider(),
           ConfigToggle(
+            icon: Icons.type_specimen_outlined,
+            title: L10n.of(context)!.enterRomaji,
+            configKey: ConfigKeys.enterRomaji,
+          ),
+          const Divider(),
+          ConfigToggle(
             icon: Icons.record_voice_over_outlined,
             title: L10n.of(context)!.readOutLoud,
             configKey: ConfigKeys.readOutLoud,
