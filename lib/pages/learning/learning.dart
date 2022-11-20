@@ -257,10 +257,12 @@ class LearningController extends State<LearningPage> {
 
   void checkStringChoice() {
     final response = responseController.text.toLowerCase().trim();
-    final correctAnswer = currentCharacter!.correctAnswers;
+    final correctAnswer = currentCharacter!.correctAnswers
+        .map((s) => s.trim().toLowerCase())
+        .toSet();
 
     // Only one of the comma separated values needs to be the response
-    _check(correctAnswer.contains(response.trim().toLowerCase()));
+    _check(correctAnswer.contains(response));
   }
 
   void checkChoice(JpCharacter answer) {

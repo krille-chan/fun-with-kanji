@@ -153,7 +153,7 @@ class LearningView extends StatelessWidget {
               autocorrect: false,
               enableSuggestions: false,
               textInputAction: TextInputAction.done,
-              onSubmitted: (_) => controller.checkStringChoice(),
+              // onSubmitted: (_) => controller.checkStringChoice(),
               decoration:
                   InputDecoration(hintText: L10n.of(context)!.enterRomaji),
             ),
