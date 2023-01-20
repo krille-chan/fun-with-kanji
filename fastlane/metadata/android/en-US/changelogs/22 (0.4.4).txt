@@ -1,0 +1,3 @@
+- chore: Update dependencies (Krille)
+- fix: Remove small-tsu from hiragana and katakana (Krille)
+- refactor: Add import sorter and update packages (Krille)
