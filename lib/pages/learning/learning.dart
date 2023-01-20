@@ -343,18 +343,17 @@ class LearningController extends State<LearningPage> {
     if (preferences.getBool(ConfigKeys.playSoundEffects) != false) {
       _audioPlayer = AudioPlayer();
     }
-    if (preferences.getBool(ConfigKeys.readOutLoud) == false) {
-      return;
+    if (preferences.getBool(ConfigKeys.readOutLoud) != false) {
+      tts = TextToSpeech();
+      if ({
+        WritingSystem.hiragana,
+        WritingSystem.katakana,
+      }.contains(widget.writingSystem)) {
+        tts?.setRate(0.5);
+      }
     }
 
     enterRomaji = preferences.getBool(ConfigKeys.enterRomaji) ?? true;
-
-    tts = TextToSpeech();
-
-    if ({WritingSystem.hiragana, WritingSystem.katakana}
-        .contains(widget.writingSystem)) {
-      tts?.setRate(0.5);
-    }
   }
 
   @override
