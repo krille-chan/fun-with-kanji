@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:fun_with_kanji/models/kanji.dart';
+
 import 'package:flutter_gen/gen_l10n/l10n.dart';
+
+import 'package:fun_with_kanji/models/kanji.dart';
 
 class KanjiListTile extends StatelessWidget {
   final Kanji kanji;

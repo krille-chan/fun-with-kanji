@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -18,15 +19,17 @@ void showOpenIssueDialog(
             child: Text(L10n.of(context)!.cancel),
           ),
           TextButton(
-            onPressed: () => launch(Uri(
-              scheme: 'https',
-              host: 'gitlab.com',
-              path: '/KrilleFear/funny-kanji/-/issues/new',
-              queryParameters: {
-                'issue[title]': 'Bugreport: ${error.toString()}',
-                'issue[description]': stackTrace.toString(),
-              },
-            ).toString()),
+            onPressed: () => launchUrl(
+              Uri(
+                scheme: 'https',
+                host: 'gitlab.com',
+                path: '/KrilleFear/funny-kanji/-/issues/new',
+                queryParameters: {
+                  'issue[title]': 'Bugreport: ${error.toString()}',
+                  'issue[description]': stackTrace.toString(),
+                },
+              ),
+            ),
             child: Text(L10n.of(context)!.report),
           ),
         ],

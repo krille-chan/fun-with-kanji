@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
+import 'package:flutter_gen/gen_l10n/l10n.dart';
+
 import 'package:fun_with_kanji/config/app_constants.dart';
 import 'package:fun_with_kanji/config/config_keys.dart';
 import 'package:fun_with_kanji/pages/settings/config_toggle.dart';
 import 'package:fun_with_kanji/pages/settings/settings.dart';
-import 'package:flutter_gen/gen_l10n/l10n.dart';
 import 'package:fun_with_kanji/utils/theme_mode_localization.dart';
 import 'package:fun_with_kanji/widgets/theme_builder.dart';
 

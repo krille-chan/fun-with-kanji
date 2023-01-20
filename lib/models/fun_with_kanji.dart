@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
+import 'package:isar/isar.dart';
+import 'package:provider/provider.dart';
+
 import 'package:fun_with_kanji/models/kanji_hint.dart';
 import 'package:fun_with_kanji/models/learning_progress.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
-import 'package:isar/isar.dart';
-import 'package:provider/provider.dart';
 
 class FunWithKanji {
   final Isar isar;

@@ -1,5 +1,7 @@
-import 'package:fun_with_kanji/utils/writing_system.dart';
 import 'package:isar/isar.dart';
+
+import 'package:fun_with_kanji/utils/writing_system.dart';
+
 part 'kanji_hint.g.dart';
 
 @Collection()

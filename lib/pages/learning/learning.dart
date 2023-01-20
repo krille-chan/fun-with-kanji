@@ -5,6 +5,12 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+
+import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:just_audio/just_audio.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:text_to_speech/text_to_speech.dart';
+
 import 'package:fun_with_kanji/config/config_keys.dart';
 import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/models/jp_character.dart';
@@ -13,10 +19,6 @@ import 'package:fun_with_kanji/models/script_loader.dart';
 import 'package:fun_with_kanji/pages/learning/learning_view.dart';
 import 'package:fun_with_kanji/utils/open_issue_dialog.dart';
 import 'package:fun_with_kanji/utils/writing_system.dart';
-import 'package:just_audio/just_audio.dart';
-import 'package:flutter_gen/gen_l10n/l10n.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:text_to_speech/text_to_speech.dart';
 
 class LearningPage extends StatefulWidget {
   final WritingSystem writingSystem;

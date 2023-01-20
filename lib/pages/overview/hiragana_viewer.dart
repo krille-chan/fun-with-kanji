@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
+import 'package:flutter_gen/gen_l10n/l10n.dart';
+
 import 'package:fun_with_kanji/models/kana.dart';
 import 'package:fun_with_kanji/models/script_loader.dart';
-import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class HiraganaViewer extends StatelessWidget {
   const HiraganaViewer({Key? key}) : super(key: key);

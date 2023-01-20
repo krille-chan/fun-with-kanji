@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
+import 'package:flutter_gen/gen_l10n/l10n.dart';
+
 import 'package:fun_with_kanji/pages/home/home.dart';
 import 'package:fun_with_kanji/pages/info/info.dart';
 import 'package:fun_with_kanji/pages/overview/overview.dart';
 import 'package:fun_with_kanji/pages/settings/settings.dart';
-import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class HomeLayout extends StatefulWidget {
   const HomeLayout({Key? key}) : super(key: key);

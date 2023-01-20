@@ -1,17 +1,19 @@
 import 'dart:convert';
 
-import 'package:file_picker_cross/file_picker_cross.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
+import 'package:file_picker_cross/file_picker_cross.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher_string.dart';
+
 import 'package:fun_with_kanji/config/app_constants.dart';
 import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/pages/settings/settings_view.dart';
-import 'package:flutter_gen/gen_l10n/l10n.dart';
 import 'package:fun_with_kanji/utils/open_issue_dialog.dart';
 import 'package:fun_with_kanji/utils/theme_mode_localization.dart';
 import 'package:fun_with_kanji/widgets/theme_builder.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -59,7 +61,7 @@ class SettingsController extends State<SettingsPage> {
     await FunWithKanji.of(context).resetLearningProgress();
   }
 
-  void openWebsite() => launch(AppConstants.website);
+  void openWebsite() => launchUrlString(AppConstants.website);
 
   void displayAboutDialog() => showAboutDialog(
         context: context,

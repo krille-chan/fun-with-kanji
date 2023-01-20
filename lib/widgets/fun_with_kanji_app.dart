@@ -1,12 +1,14 @@
-import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
+
+import 'package:dynamic_color/dynamic_color.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:isar/isar.dart';
+
 import 'package:fun_with_kanji/config/app_constants.dart';
 import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/pages/home/home_layout.dart';
 import 'package:fun_with_kanji/utils/theme_data_builder.dart';
 import 'package:fun_with_kanji/widgets/theme_builder.dart';
-import 'package:isar/isar.dart';
-import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 class FunWithKanjiApp extends StatelessWidget {
   final Isar isar;

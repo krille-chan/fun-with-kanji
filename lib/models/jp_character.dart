@@ -1,7 +1,8 @@
+import 'package:collection/collection.dart';
+
 import 'package:fun_with_kanji/models/kana.dart';
 import 'package:fun_with_kanji/models/kanji.dart';
 import 'package:fun_with_kanji/models/radical.dart';
-import 'package:collection/collection.dart';
 
 abstract class JpCharacter {
   const JpCharacter();

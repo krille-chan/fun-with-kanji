@@ -6,11 +6,12 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 
-import 'package:fun_with_kanji/widgets/fun_with_kanji_app.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:isar/isar.dart';
+
+import 'package:fun_with_kanji/models/fun_with_kanji.dart';
+import 'package:fun_with_kanji/widgets/fun_with_kanji_app.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

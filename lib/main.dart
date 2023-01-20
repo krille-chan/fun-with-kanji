@@ -1,12 +1,14 @@
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:fun_with_kanji/models/fun_with_kanji.dart';
-import 'package:fun_with_kanji/widgets/fun_with_kanji_app.dart';
+
 import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
-import 'dart:developer';
+
+import 'package:fun_with_kanji/models/fun_with_kanji.dart';
+import 'package:fun_with_kanji/widgets/fun_with_kanji_app.dart';
 
 void main() async {
   log('Welcome to Funny Kanji');

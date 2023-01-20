@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:fun_with_kanji/models/radical.dart';
 import 'package:fun_with_kanji/models/script_loader.dart';
 

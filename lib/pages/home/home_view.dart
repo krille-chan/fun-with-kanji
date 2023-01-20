@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:fun_with_kanji/config/app_constants.dart';
 import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/pages/home/home.dart';
