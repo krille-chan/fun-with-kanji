@@ -62,7 +62,7 @@ class KanjiListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
-        foregroundColor: Theme.of(context).textTheme.bodyText1?.color,
+        foregroundColor: Theme.of(context).textTheme.bodyLarge?.color,
         backgroundColor: Theme.of(context).secondaryHeaderColor,
         child: SizedBox(
           width: 32,

@@ -42,7 +42,7 @@ class OverviewPageView extends StatelessWidget {
                   : ListTile(
                       leading: CircleAvatar(
                         foregroundColor:
-                            Theme.of(context).textTheme.bodyText1?.color,
+                            Theme.of(context).textTheme.bodyLarge?.color,
                         backgroundColor: Theme.of(context).secondaryHeaderColor,
                         child: SizedBox(
                           width: 32,

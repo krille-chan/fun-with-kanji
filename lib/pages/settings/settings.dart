@@ -43,7 +43,7 @@ class SettingsController extends State<SettingsPage> {
             child: Text(
               L10n.of(context)!.cancel,
               style: TextStyle(
-                color: Theme.of(context).textTheme.bodyText2?.color,
+                color: Theme.of(context).textTheme.bodyMedium?.color,
               ),
             ),
           ),
