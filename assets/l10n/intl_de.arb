@@ -82,5 +82,7 @@
     "system": "System",
     "light": "Hell",
     "dark": "Dunkel",
-    "close": "Schließen"
+    "close": "Schließen",
+    "searchOnlineForSampleVocabulary": "Online nach Beispielvokabeln suchen",
+    "langPrefix": "_de"
 }

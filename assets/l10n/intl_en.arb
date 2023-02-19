@@ -82,5 +82,7 @@
     "system": "System",
     "light": "Light",
     "dark": "Dark",
-    "close": "Close"
+    "close": "Close",
+    "searchOnlineForSampleVocabulary": "Search online for sample vocabulary",
+    "langPrefix": ""
 }
