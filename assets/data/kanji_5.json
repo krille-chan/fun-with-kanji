@@ -1,0 +1,3368 @@
+[
+    {
+        "id": 665,
+        "kanji": "圧",
+        "meanings": [
+            "Pressure",
+            "Push",
+            "Overwhelm",
+            "Oppress",
+            "Dominate"
+        ],
+        "readings_on": [
+            "あつ",
+            "えん",
+            "おう"
+        ],
+        "readings_kun": [
+            "お.す",
+            "へ.す",
+            "おさ.える",
+            "お.さえる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 622,
+        "kanji": "易",
+        "meanings": [
+            "Easy",
+            "Ready To",
+            "Simple",
+            "Fortune-telling",
+            "Divination"
+        ],
+        "readings_on": [
+            "えき",
+            "い"
+        ],
+        "readings_kun": [
+            "やさ.しい",
+            "やす.い"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 926,
+        "kanji": "移",
+        "meanings": [
+            "Shift",
+            "Move",
+            "Change",
+            "Drift",
+            "Catch (cold, Fire)",
+            "Pass Into"
+        ],
+        "readings_on": [
+            "い"
+        ],
+        "readings_kun": [
+            "うつ.る",
+            "うつ.す"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 569,
+        "kanji": "因",
+        "meanings": [
+            "Cause",
+            "Factor",
+            "Be Associated With",
+            "Depend On",
+            "Be Limited To"
+        ],
+        "readings_on": [
+            "いん"
+        ],
+        "readings_kun": [
+            "よ.る",
+            "ちな.む"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 727,
+        "kanji": "営",
+        "meanings": [
+            "Occupation",
+            "Camp",
+            "Perform",
+            "Build",
+            "Conduct (business)"
+        ],
+        "readings_on": [
+            "えい"
+        ],
+        "readings_kun": [
+            "いとな.む",
+            "いとな.み"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1043,
+        "kanji": "永",
+        "meanings": [
+            "Eternity",
+            "Long",
+            "Lengthy"
+        ],
+        "readings_on": [
+            "えい"
+        ],
+        "readings_kun": [
+            "なが.い"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1049,
+        "kanji": "衛",
+        "meanings": [
+            "Defense",
+            "Protection"
+        ],
+        "readings_on": [
+            "えい",
+            "え"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 1044,
+        "kanji": "液",
+        "meanings": [
+            "Fluid",
+            "Liquid",
+            "Juice",
+            "Sap",
+            "Secretion"
+        ],
+        "readings_on": [
+            "えき"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 925,
+        "kanji": "益",
+        "meanings": [
+            "Benefit",
+            "Gain",
+            "Profit",
+            "Advantage"
+        ],
+        "readings_on": [
+            "えき",
+            "やく"
+        ],
+        "readings_kun": [
+            "ま.す"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 755,
+        "kanji": "演",
+        "meanings": [
+            "Performance",
+            "Act",
+            "Play",
+            "Render",
+            "Stage"
+        ],
+        "readings_on": [
+            "えん"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 844,
+        "kanji": "往",
+        "meanings": [
+            "Journey",
+            "Travel",
+            "Chase Away",
+            "Let Go",
+            "Going",
+            "Before",
+            "Formerly"
+        ],
+        "readings_on": [
+            "おう"
+        ],
+        "readings_kun": [
+            "い.く",
+            "いにしえ",
+            "さき.に",
+            "ゆ.く"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 739,
+        "kanji": "応",
+        "meanings": [
+            "Apply",
+            "Answer",
+            "Yes",
+            "Ok",
+            "Reply",
+            "Accept"
+        ],
+        "readings_on": [
+            "おう",
+            "よう",
+            "-のう"
+        ],
+        "readings_kun": [
+            "あた.る",
+            "まさに",
+            "こた.える"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1040,
+        "kanji": "恩",
+        "meanings": [
+            "Grace",
+            "Kindness",
+            "Goodness",
+            "Favor",
+            "Mercy",
+            "Blessing",
+            "Benefit"
+        ],
+        "readings_on": [
+            "おん"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 299,
+        "kanji": "仮",
+        "meanings": [
+            "Sham",
+            "Temporary",
+            "Interim",
+            "Assumed (name)",
+            "Informal"
+        ],
+        "readings_on": [
+            "か",
+            "け"
+        ],
+        "readings_kun": [
+            "かり",
+            "かり-"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 725,
+        "kanji": "価",
+        "meanings": [
+            "Value",
+            "Price"
+        ],
+        "readings_on": [
+            "か",
+            "け"
+        ],
+        "readings_kun": [
+            "あたい"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 608,
+        "kanji": "可",
+        "meanings": [
+            "Can",
+            "Passable",
+            "Mustn't",
+            "Should Not",
+            "Do Not"
+        ],
+        "readings_on": [
+            "か",
+            "こく"
+        ],
+        "readings_kun": [
+            "-べ.き",
+            "-べ.し"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 864,
+        "kanji": "河",
+        "meanings": [
+            "River"
+        ],
+        "readings_on": [
+            "か"
+        ],
+        "readings_kun": [
+            "かわ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 717,
+        "kanji": "過",
+        "meanings": [
+            "Overdo",
+            "Exceed",
+            "Go Beyond",
+            "Error"
+        ],
+        "readings_on": [
+            "か"
+        ],
+        "readings_kun": [
+            "す.ぎる",
+            "-す.ぎる",
+            "-す.ぎ",
+            "す.ごす",
+            "あやま.つ",
+            "あやま.ち",
+            "よ.ぎる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 744,
+        "kanji": "賀",
+        "meanings": [
+            "Congratulations",
+            "Joy"
+        ],
+        "readings_on": [
+            "が"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 709,
+        "kanji": "解",
+        "meanings": [
+            "Unravel",
+            "Notes",
+            "Key",
+            "Explanation",
+            "Understanding",
+            "Untie",
+            "Undo",
+            "Solve",
+            "Answer",
+            "Cancel",
+            "Absolve",
+            "Explain",
+            "Minute"
+        ],
+        "readings_on": [
+            "かい",
+            "げ"
+        ],
+        "readings_kun": [
+            "と.く",
+            "と.かす",
+            "と.ける",
+            "ほど.く",
+            "ほど.ける",
+            "わか.る",
+            "さと.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 978,
+        "kanji": "快",
+        "meanings": [
+            "Cheerful",
+            "Pleasant",
+            "Agreeable",
+            "Comfortable"
+        ],
+        "readings_on": [
+            "かい"
+        ],
+        "readings_kun": [
+            "こころよ.い"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 479,
+        "kanji": "格",
+        "meanings": [
+            "Status",
+            "Rank",
+            "Capacity",
+            "Character",
+            "Case (law, Grammar)"
+        ],
+        "readings_on": [
+            "かく",
+            "こう",
+            "きゃく",
+            "ごう"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 662,
+        "kanji": "確",
+        "meanings": [
+            "Assurance",
+            "Firm",
+            "Tight",
+            "Hard",
+            "Solid",
+            "Confirm",
+            "Clear",
+            "Evident"
+        ],
+        "readings_on": [
+            "かく",
+            "こう"
+        ],
+        "readings_kun": [
+            "たし.か",
+            "たし.かめる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 776,
+        "kanji": "額",
+        "meanings": [
+            "Forehead",
+            "Tablet",
+            "Plaque",
+            "Framed Picture",
+            "Sum",
+            "Amount",
+            "Volume"
+        ],
+        "readings_on": [
+            "がく"
+        ],
+        "readings_kun": [
+            "ひたい"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1238,
+        "kanji": "刊",
+        "meanings": [
+            "Publish",
+            "Carve",
+            "Engrave"
+        ],
+        "readings_on": [
+            "かん"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 763,
+        "kanji": "幹",
+        "meanings": [
+            "Tree Trunk",
+            "Main Part",
+            "Talent",
+            "Capability"
+        ],
+        "readings_on": [
+            "かん"
+        ],
+        "readings_kun": [
+            "みき"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 827,
+        "kanji": "慣",
+        "meanings": [
+            "Accustomed",
+            "Get Used To",
+            "Become Experienced"
+        ],
+        "readings_on": [
+            "かん"
+        ],
+        "readings_kun": [
+            "な.れる",
+            "な.らす"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1045,
+        "kanji": "眼",
+        "meanings": [
+            "Eyeball"
+        ],
+        "readings_on": [
+            "がん",
+            "げん"
+        ],
+        "readings_kun": [
+            "まなこ",
+            "め"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 476,
+        "kanji": "基",
+        "meanings": [
+            "Fundamentals",
+            "Radical (chem)",
+            "Counter For Machines",
+            "Foundation"
+        ],
+        "readings_on": [
+            "き"
+        ],
+        "readings_kun": [
+            "もと",
+            "もとい"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 956,
+        "kanji": "寄",
+        "meanings": [
+            "Draw Near",
+            "Stop In",
+            "Bring Near",
+            "Gather",
+            "Collect",
+            "Send",
+            "Forward"
+        ],
+        "readings_on": [
+            "き"
+        ],
+        "readings_kun": [
+            "よ.る",
+            "-よ.り",
+            "よ.せる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 750,
+        "kanji": "規",
+        "meanings": [
+            "Standard",
+            "Measure"
+        ],
+        "readings_on": [
+            "き"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 478,
+        "kanji": "技",
+        "meanings": [
+            "Skill",
+            "Art",
+            "Craft",
+            "Ability",
+            "Feat",
+            "Performance",
+            "Vocation",
+            "Arts"
+        ],
+        "readings_on": [
+            "ぎ"
+        ],
+        "readings_kun": [
+            "わざ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 713,
+        "kanji": "義",
+        "meanings": [
+            "Righteousness",
+            "Justice",
+            "Morality",
+            "Honor",
+            "Loyalty",
+            "Meaning"
+        ],
+        "readings_on": [
+            "ぎ"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 904,
+        "kanji": "逆",
+        "meanings": [
+            "Inverted",
+            "Reverse",
+            "Opposite",
+            "Wicked"
+        ],
+        "readings_on": [
+            "ぎゃく",
+            "げき"
+        ],
+        "readings_kun": [
+            "さか",
+            "さか.さ",
+            "さか.らう"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 56,
+        "kanji": "久",
+        "meanings": [
+            "Long Time",
+            "Old Story"
+        ],
+        "readings_on": [
+            "きゅう",
+            "く"
+        ],
+        "readings_kun": [
+            "ひさ.しい"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1166,
+        "kanji": "旧",
+        "meanings": [
+            "Old Times",
+            "Old Things",
+            "Old Friend",
+            "Former",
+            "Ex-"
+        ],
+        "readings_on": [
+            "きゅう"
+        ],
+        "readings_kun": [
+            "ふる.い",
+            "もと"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 838,
+        "kanji": "居",
+        "meanings": [
+            "Reside",
+            "To Be",
+            "Exist",
+            "Live With"
+        ],
+        "readings_on": [
+            "きょ",
+            "こ"
+        ],
+        "readings_kun": [
+            "い.る",
+            "-い",
+            "お.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 609,
+        "kanji": "許",
+        "meanings": [
+            "Permit",
+            "Approve"
+        ],
+        "readings_on": [
+            "きょ"
+        ],
+        "readings_kun": [
+            "ゆる.す",
+            "もと"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 797,
+        "kanji": "境",
+        "meanings": [
+            "Boundary",
+            "Border",
+            "Region"
+        ],
+        "readings_on": [
+            "きょう",
+            "けい"
+        ],
+        "readings_kun": [
+            "さかい"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1048,
+        "kanji": "興",
+        "meanings": [
+            "Entertain",
+            "Revive",
+            "Retrieve",
+            "Interest",
+            "Pleasure"
+        ],
+        "readings_on": [
+            "こう",
+            "きょう"
+        ],
+        "readings_kun": [
+            "おこ.る",
+            "おこ.す"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1031,
+        "kanji": "均",
+        "meanings": [
+            "Level",
+            "Average"
+        ],
+        "readings_on": [
+            "きん"
+        ],
+        "readings_kun": [
+            "なら.す"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 613,
+        "kanji": "禁",
+        "meanings": [
+            "Prohibition",
+            "Ban",
+            "Forbid"
+        ],
+        "readings_on": [
+            "きん"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 612,
+        "kanji": "句",
+        "meanings": [
+            "Phrase",
+            "Clause",
+            "Sentence",
+            "Passage",
+            "Paragraph",
+            "Counter For Haiku"
+        ],
+        "readings_on": [
+            "く"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 1274,
+        "kanji": "群",
+        "meanings": [
+            "Flock",
+            "Group",
+            "Crowd",
+            "Herd",
+            "Swarm",
+            "Cluster"
+        ],
+        "readings_on": [
+            "ぐん"
+        ],
+        "readings_kun": [
+            "む.れる",
+            "む.れ",
+            "むら",
+            "むら.がる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 679,
+        "kanji": "経",
+        "meanings": [
+            "Sutra",
+            "Longitude",
+            "Pass Thru",
+            "Expire",
+            "Warp"
+        ],
+        "readings_on": [
+            "けい",
+            "きょう",
+            "きん"
+        ],
+        "readings_kun": [
+            "へ.る",
+            "た.つ",
+            "たていと",
+            "はか.る",
+            "のり"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 915,
+        "kanji": "潔",
+        "meanings": [
+            "Undefiled",
+            "Pure",
+            "Clean",
+            "Righteous",
+            "Gallant"
+        ],
+        "readings_on": [
+            "けつ"
+        ],
+        "readings_kun": [
+            "いさぎよ.い"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 694,
+        "kanji": "件",
+        "meanings": [
+            "Affair",
+            "Case",
+            "Matter",
+            "Item"
+        ],
+        "readings_on": [
+            "けん"
+        ],
+        "readings_kun": [
+            "くだん"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 919,
+        "kanji": "券",
+        "meanings": [
+            "Ticket"
+        ],
+        "readings_on": [
+            "けん"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 702,
+        "kanji": "検",
+        "meanings": [
+            "Examination",
+            "Investigate"
+        ],
+        "readings_on": [
+            "けん"
+        ],
+        "readings_kun": [
+            "しら.べる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 547,
+        "kanji": "険",
+        "meanings": [
+            "Precipitous",
+            "Inaccessible Place",
+            "Impregnable Position",
+            "Steep Place",
+            "Sharp Eyes"
+        ],
+        "readings_on": [
+            "けん"
+        ],
+        "readings_kun": [
+            "けわ.しい"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 618,
+        "kanji": "減",
+        "meanings": [
+            "Dwindle",
+            "Decrease",
+            "Reduce",
+            "Decline",
+            "Curtail",
+            "Get Hungry"
+        ],
+        "readings_on": [
+            "げん"
+        ],
+        "readings_kun": [
+            "へ.る",
+            "へ.らす"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 769,
+        "kanji": "現",
+        "meanings": [
+            "Present",
+            "Existing",
+            "Actual"
+        ],
+        "readings_on": [
+            "げん"
+        ],
+        "readings_kun": [
+            "あらわ.れる",
+            "あらわ.す",
+            "うつつ",
+            "うつ.つ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 806,
+        "kanji": "限",
+        "meanings": [
+            "Limit",
+            "Restrict",
+            "To Best Of Ability"
+        ],
+        "readings_on": [
+            "げん"
+        ],
+        "readings_kun": [
+            "かぎ.る",
+            "かぎ.り",
+            "-かぎ.り"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 664,
+        "kanji": "個",
+        "meanings": [
+            "Individual",
+            "Counter For Articles"
+        ],
+        "readings_on": [
+            "こ",
+            "か"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 849,
+        "kanji": "故",
+        "meanings": [
+            "Happenstance",
+            "Especially",
+            "Intentionally",
+            "Reason",
+            "Cause",
+            "Circumstances",
+            "The Late",
+            "Therefore",
+            "Consequently"
+        ],
+        "readings_on": [
+            "こ"
+        ],
+        "readings_kun": [
+            "ゆえ",
+            "ふる.い",
+            "もと"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 751,
+        "kanji": "護",
+        "meanings": [
+            "Safeguard",
+            "Protect"
+        ],
+        "readings_on": [
+            "ご"
+        ],
+        "readings_kun": [
+            "まも.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 825,
+        "kanji": "効",
+        "meanings": [
+            "Merit",
+            "Efficacy",
+            "Efficiency",
+            "Benefit"
+        ],
+        "readings_on": [
+            "こう"
+        ],
+        "readings_kun": [
+            "き.く",
+            "ききめ",
+            "なら.う"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 671,
+        "kanji": "厚",
+        "meanings": [
+            "Thick",
+            "Heavy",
+            "Rich",
+            "Kind",
+            "Cordial",
+            "Brazen",
+            "Shameless"
+        ],
+        "readings_on": [
+            "こう"
+        ],
+        "readings_kun": [
+            "あつ.い",
+            "あか"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 821,
+        "kanji": "構",
+        "meanings": [
+            "Posture",
+            "Build",
+            "Pretend"
+        ],
+        "readings_on": [
+            "こう"
+        ],
+        "readings_kun": [
+            "かま.える",
+            "かま.う"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1671,
+        "kanji": "耕",
+        "meanings": [
+            "Till",
+            "Plow",
+            "Cultivate"
+        ],
+        "readings_on": [
+            "こう"
+        ],
+        "readings_kun": [
+            "たがや.す"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1141,
+        "kanji": "講",
+        "meanings": [
+            "Lecture",
+            "Club",
+            "Association"
+        ],
+        "readings_on": [
+            "こう"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 1351,
+        "kanji": "鉱",
+        "meanings": [
+            "Mineral",
+            "Ore"
+        ],
+        "readings_on": [
+            "こう"
+        ],
+        "readings_kun": [
+            "あらがね"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 637,
+        "kanji": "混",
+        "meanings": [
+            "Mix",
+            "Blend",
+            "Confuse"
+        ],
+        "readings_on": [
+            "こん"
+        ],
+        "readings_kun": [
+            "ま.じる",
+            "-ま.じり",
+            "ま.ざる",
+            "ま.ぜる",
+            "こ.む"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 689,
+        "kanji": "査",
+        "meanings": [
+            "Investigate"
+        ],
+        "readings_on": [
+            "さ"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 868,
+        "kanji": "再",
+        "meanings": [
+            "Again",
+            "Twice",
+            "Second Time"
+        ],
+        "readings_on": [
+            "さい",
+            "さ"
+        ],
+        "readings_kun": [
+            "ふたた.び"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 672,
+        "kanji": "妻",
+        "meanings": [
+            "Wife",
+            "Spouse"
+        ],
+        "readings_on": [
+            "さい"
+        ],
+        "readings_kun": [
+            "つま"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1041,
+        "kanji": "採",
+        "meanings": [
+            "Pick",
+            "Take",
+            "Fetch",
+            "Take Up"
+        ],
+        "readings_on": [
+            "さい"
+        ],
+        "readings_kun": [
+            "と.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 648,
+        "kanji": "災",
+        "meanings": [
+            "Disaster",
+            "Calamity",
+            "Woe",
+            "Curse",
+            "Evil"
+        ],
+        "readings_on": [
+            "さい"
+        ],
+        "readings_kun": [
+            "わざわ.い"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 710,
+        "kanji": "際",
+        "meanings": [
+            "Occasion",
+            "Side",
+            "Edge",
+            "Verge",
+            "Dangerous",
+            "Adventurous",
+            "Indecent",
+            "Time",
+            "When"
+        ],
+        "readings_on": [
+            "さい"
+        ],
+        "readings_kun": [
+            "きわ",
+            "-ぎわ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 666,
+        "kanji": "在",
+        "meanings": [
+            "Exist",
+            "Outskirts",
+            "Suburbs",
+            "Located In"
+        ],
+        "readings_on": [
+            "ざい"
+        ],
+        "readings_kun": [
+            "あ.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 675,
+        "kanji": "罪",
+        "meanings": [
+            "Guilt",
+            "Sin",
+            "Crime",
+            "Fault",
+            "Blame",
+            "Offense"
+        ],
+        "readings_on": [
+            "ざい"
+        ],
+        "readings_kun": [
+            "つみ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 623,
+        "kanji": "財",
+        "meanings": [
+            "Property",
+            "Money",
+            "Wealth",
+            "Assets"
+        ],
+        "readings_on": [
+            "ざい",
+            "さい",
+            "ぞく"
+        ],
+        "readings_kun": [
+            "たから"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1042,
+        "kanji": "桜",
+        "meanings": [
+            "Cherry"
+        ],
+        "readings_on": [
+            "おう",
+            "よう"
+        ],
+        "readings_kun": [
+            "さくら"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1051,
+        "kanji": "雑",
+        "meanings": [
+            "Miscellaneous"
+        ],
+        "readings_on": [
+            "ざつ",
+            "ぞう"
+        ],
+        "readings_kun": [
+            "まじ.える",
+            "まじ.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1052,
+        "kanji": "賛",
+        "meanings": [
+            "Approve",
+            "Praise",
+            "Title Or Inscription On Picture",
+            "Assist",
+            "Agree With"
+        ],
+        "readings_on": [
+            "さん"
+        ],
+        "readings_kun": [
+            "たす.ける",
+            "たた.える"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1053,
+        "kanji": "酸",
+        "meanings": [
+            "Acid",
+            "Bitterness",
+            "Sour",
+            "Tart"
+        ],
+        "readings_on": [
+            "さん"
+        ],
+        "readings_kun": [
+            "す.い"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 757,
+        "kanji": "師",
+        "meanings": [
+            "Expert",
+            "Teacher",
+            "Master",
+            "Model",
+            "Exemplar",
+            "Army (incl. Counter)",
+            "War"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [
+            "いくさ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1039,
+        "kanji": "志",
+        "meanings": [
+            "Intention",
+            "Plan",
+            "Resolve",
+            "Aspire",
+            "Motive",
+            "Hopes",
+            "Shilling"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [
+            "シリング",
+            "こころざ.す",
+            "こころざし"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 238,
+        "kanji": "支",
+        "meanings": [
+            "Branch",
+            "Support",
+            "Sustain",
+            "Branch Radical (no. 65)"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [
+            "ささ.える",
+            "つか.える",
+            "か.う"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1131,
+        "kanji": "枝",
+        "meanings": [
+            "Bough",
+            "Branch",
+            "Twig",
+            "Limb",
+            "Counter For Branches"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [
+            "えだ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 692,
+        "kanji": "資",
+        "meanings": [
+            "Assets",
+            "Resources",
+            "Capital",
+            "Funds",
+            "Data",
+            "Be Conducive To",
+            "Contribute To"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 1055,
+        "kanji": "飼",
+        "meanings": [
+            "Domesticate",
+            "Raise",
+            "Keep",
+            "Feed"
+        ],
+        "readings_on": [
+            "し"
+        ],
+        "readings_kun": [
+            "か.う"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1030,
+        "kanji": "似",
+        "meanings": [
+            "Becoming",
+            "Resemble",
+            "Counterfeit",
+            "Imitate",
+            "Suitable"
+        ],
+        "readings_on": [
+            "じ"
+        ],
+        "readings_kun": [
+            "に.る",
+            "ひ.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 728,
+        "kanji": "示",
+        "meanings": [
+            "Show",
+            "Indicate",
+            "Point Out",
+            "Express",
+            "Display"
+        ],
+        "readings_on": [
+            "じ",
+            "し"
+        ],
+        "readings_kun": [
+            "しめ.す"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 571,
+        "kanji": "識",
+        "meanings": [
+            "Discriminating",
+            "Know",
+            "Write"
+        ],
+        "readings_on": [
+            "しき"
+        ],
+        "readings_kun": [
+            "し.る",
+            "しる.す"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 800,
+        "kanji": "質",
+        "meanings": [
+            "Substance",
+            "Quality",
+            "Matter",
+            "Temperament"
+        ],
+        "readings_on": [
+            "しつ",
+            "しち",
+            "ち"
+        ],
+        "readings_kun": [
+            "たち",
+            "ただ.す",
+            "もと",
+            "わりふ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1140,
+        "kanji": "舎",
+        "meanings": [
+            "Cottage",
+            "Inn",
+            "Hut",
+            "House",
+            "Mansion"
+        ],
+        "readings_on": [
+            "しゃ",
+            "せき"
+        ],
+        "readings_kun": [
+            "やど.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 451,
+        "kanji": "謝",
+        "meanings": [
+            "Apologize",
+            "Thank",
+            "Refuse"
+        ],
+        "readings_on": [
+            "しゃ"
+        ],
+        "readings_kun": [
+            "あやま.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 840,
+        "kanji": "授",
+        "meanings": [
+            "Impart",
+            "Instruct",
+            "Grant",
+            "Confer"
+        ],
+        "readings_on": [
+            "じゅ"
+        ],
+        "readings_kun": [
+            "さず.ける",
+            "さず.かる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 918,
+        "kanji": "修",
+        "meanings": [
+            "Discipline",
+            "Conduct Oneself Well",
+            "Study",
+            "Master"
+        ],
+        "readings_on": [
+            "しゅう",
+            "しゅ"
+        ],
+        "readings_kun": [
+            "おさ.める",
+            "おさ.まる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 481,
+        "kanji": "術",
+        "meanings": [
+            "Art",
+            "Technique",
+            "Skill",
+            "Means",
+            "Trick",
+            "Resources",
+            "Magic"
+        ],
+        "readings_on": [
+            "じゅつ"
+        ],
+        "readings_kun": [
+            "すべ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 801,
+        "kanji": "述",
+        "meanings": [
+            "Mention",
+            "State",
+            "Speak",
+            "Relate"
+        ],
+        "readings_on": [
+            "じゅつ"
+        ],
+        "readings_kun": [
+            "の.べる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 759,
+        "kanji": "準",
+        "meanings": [
+            "Semi-",
+            "Correspond To",
+            "Proportionate To",
+            "Conform",
+            "Imitate"
+        ],
+        "readings_on": [
+            "じゅん"
+        ],
+        "readings_kun": [
+            "じゅん.じる",
+            "じゅん.ずる",
+            "なぞら.える",
+            "のり",
+            "ひと.しい",
+            "みずもり"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1037,
+        "kanji": "序",
+        "meanings": [
+            "Preface",
+            "Beginning",
+            "Order",
+            "Precedence",
+            "Occasion",
+            "Chance",
+            "Incidentally"
+        ],
+        "readings_on": [
+            "じょ"
+        ],
+        "readings_kun": [
+            "つい.で",
+            "ついで"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1129,
+        "kanji": "承",
+        "meanings": [
+            "Acquiesce",
+            "Hear",
+            "Listen To",
+            "Be Informed",
+            "Receive"
+        ],
+        "readings_on": [
+            "しょう",
+            "じょう"
+        ],
+        "readings_kun": [
+            "うけたまわ.る",
+            "う.ける"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 872,
+        "kanji": "招",
+        "meanings": [
+            "Beckon",
+            "Invite",
+            "Summon",
+            "Engage"
+        ],
+        "readings_on": [
+            "しょう"
+        ],
+        "readings_kun": [
+            "まね.く"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 546,
+        "kanji": "証",
+        "meanings": [
+            "Evidence",
+            "Proof",
+            "Certificate"
+        ],
+        "readings_on": [
+            "しょう"
+        ],
+        "readings_kun": [
+            "あかし"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 570,
+        "kanji": "常",
+        "meanings": [
+            "Usual",
+            "Ordinary",
+            "Normal",
+            "Common",
+            "Regular",
+            "Continually",
+            "Always",
+            "Long-lasting"
+        ],
+        "readings_on": [
+            "じょう"
+        ],
+        "readings_kun": [
+            "つね",
+            "とこ-"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 450,
+        "kanji": "情",
+        "meanings": [
+            "Feelings",
+            "Emotion",
+            "Passion",
+            "Sympathy",
+            "Circumstances",
+            "Facts"
+        ],
+        "readings_on": [
+            "じょう",
+            "せい"
+        ],
+        "readings_kun": [
+            "なさ.け"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 704,
+        "kanji": "条",
+        "meanings": [
+            "Article",
+            "Clause",
+            "Item",
+            "Stripe",
+            "Streak"
+        ],
+        "readings_on": [
+            "じょう",
+            "ちょう",
+            "でき"
+        ],
+        "readings_kun": [
+            "えだ",
+            "すじ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 742,
+        "kanji": "状",
+        "meanings": [
+            "Status Quo",
+            "Conditions",
+            "Circumstances",
+            "Form",
+            "Appearance"
+        ],
+        "readings_on": [
+            "じょう"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 881,
+        "kanji": "織",
+        "meanings": [
+            "Weave",
+            "Fabric"
+        ],
+        "readings_on": [
+            "しょく",
+            "しき"
+        ],
+        "readings_kun": [
+            "お.る",
+            "お.り",
+            "おり",
+            "-おり",
+            "-お.り"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 748,
+        "kanji": "職",
+        "meanings": [
+            "Post",
+            "Employment",
+            "Work"
+        ],
+        "readings_on": [
+            "しょく",
+            "そく"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 687,
+        "kanji": "制",
+        "meanings": [
+            "System",
+            "Law",
+            "Rule"
+        ],
+        "readings_on": [
+            "せい"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 726,
+        "kanji": "勢",
+        "meanings": [
+            "Forces",
+            "Energy",
+            "Military Strength"
+        ],
+        "readings_on": [
+            "せい",
+            "ぜい"
+        ],
+        "readings_kun": [
+            "いきお.い",
+            "はずみ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 477,
+        "kanji": "性",
+        "meanings": [
+            "Sex",
+            "Gender",
+            "Nature"
+        ],
+        "readings_on": [
+            "せい",
+            "しょう"
+        ],
+        "readings_kun": [
+            "さが"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 544,
+        "kanji": "政",
+        "meanings": [
+            "Politics",
+            "Government"
+        ],
+        "readings_on": [
+            "せい",
+            "しょう"
+        ],
+        "readings_kun": [
+            "まつりごと",
+            "まん"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 928,
+        "kanji": "精",
+        "meanings": [
+            "Refined",
+            "Ghost",
+            "Fairy",
+            "Energy",
+            "Vitality",
+            "Semen",
+            "Excellence",
+            "Purity",
+            "Skill"
+        ],
+        "readings_on": [
+            "せい",
+            "しょう"
+        ],
+        "readings_kun": [
+            "しら.げる",
+            "くわ.しい"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 777,
+        "kanji": "製",
+        "meanings": [
+            "Made In...",
+            "Manufacture"
+        ],
+        "readings_on": [
+            "せい"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 708,
+        "kanji": "税",
+        "meanings": [
+            "Tax",
+            "Duty"
+        ],
+        "readings_on": [
+            "ぜい"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 1047,
+        "kanji": "績",
+        "meanings": [
+            "Exploits",
+            "Achievements",
+            "Unreeling Cocoons"
+        ],
+        "readings_on": [
+            "せき"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 705,
+        "kanji": "責",
+        "meanings": [
+            "Blame",
+            "Condemn",
+            "Censure"
+        ],
+        "readings_on": [
+            "せき"
+        ],
+        "readings_kun": [
+            "せ.める"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 869,
+        "kanji": "接",
+        "meanings": [
+            "Touch",
+            "Contact",
+            "Adjoin",
+            "Piece Together"
+        ],
+        "readings_on": [
+            "せつ",
+            "しょう"
+        ],
+        "readings_kun": [
+            "つ.ぐ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 691,
+        "kanji": "設",
+        "meanings": [
+            "Establishment",
+            "Provision",
+            "Prepare"
+        ],
+        "readings_on": [
+            "せつ"
+        ],
+        "readings_kun": [
+            "もう.ける"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 929,
+        "kanji": "絶",
+        "meanings": [
+            "Discontinue",
+            "Sever",
+            "Cut Off",
+            "Abstain",
+            "Interrupt",
+            "Suppress",
+            "Be Beyond",
+            "Without Match",
+            "Peerless",
+            "Unparalleled"
+        ],
+        "readings_on": [
+            "ぜつ"
+        ],
+        "readings_kun": [
+            "た.える",
+            "た.やす",
+            "た.つ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 629,
+        "kanji": "舌",
+        "meanings": [
+            "Tongue",
+            "Reed",
+            "Clapper"
+        ],
+        "readings_on": [
+            "ぜつ"
+        ],
+        "readings_kun": [
+            "した"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1054,
+        "kanji": "銭",
+        "meanings": [
+            "Coin",
+            ".01 Yen",
+            "Money"
+        ],
+        "readings_on": [
+            "せん",
+            "ぜん"
+        ],
+        "readings_kun": [
+            "ぜに",
+            "すき"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1046,
+        "kanji": "祖",
+        "meanings": [
+            "Ancestor",
+            "Pioneer",
+            "Founder"
+        ],
+        "readings_on": [
+            "そ"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 697,
+        "kanji": "素",
+        "meanings": [
+            "Elementary",
+            "Principle",
+            "Naked",
+            "Uncovered"
+        ],
+        "readings_on": [
+            "そ",
+            "す"
+        ],
+        "readings_kun": [
+            "もと"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 690,
+        "kanji": "総",
+        "meanings": [
+            "General",
+            "Whole",
+            "All",
+            "Full",
+            "Total"
+        ],
+        "readings_on": [
+            "そう"
+        ],
+        "readings_kun": [
+            "す.べて",
+            "すべ.て",
+            "ふさ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 449,
+        "kanji": "像",
+        "meanings": [
+            "Statue",
+            "Picture",
+            "Image",
+            "Figure",
+            "Portrait"
+        ],
+        "readings_on": [
+            "ぞう"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 707,
+        "kanji": "増",
+        "meanings": [
+            "Increase",
+            "Add",
+            "Augment",
+            "Gain",
+            "Promote"
+        ],
+        "readings_on": [
+            "ぞう"
+        ],
+        "readings_kun": [
+            "ま.す",
+            "ま.し",
+            "ふ.える",
+            "ふ.やす"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 839,
+        "kanji": "造",
+        "meanings": [
+            "Create",
+            "Make",
+            "Structure",
+            "Physique"
+        ],
+        "readings_on": [
+            "ぞう"
+        ],
+        "readings_kun": [
+            "つく.る",
+            "つく.り",
+            "-づく.り"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 760,
+        "kanji": "則",
+        "meanings": [
+            "Rule",
+            "Follow",
+            "Based On",
+            "Model After"
+        ],
+        "readings_on": [
+            "そく"
+        ],
+        "readings_kun": [
+            "のっと.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1138,
+        "kanji": "測",
+        "meanings": [
+            "Fathom",
+            "Plan",
+            "Scheme",
+            "Measure"
+        ],
+        "readings_on": [
+            "そく"
+        ],
+        "readings_kun": [
+            "はか.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 826,
+        "kanji": "属",
+        "meanings": [
+            "Belong",
+            "Genus",
+            "Subordinate Official",
+            "Affiliated"
+        ],
+        "readings_on": [
+            "ぞく",
+            "しょく"
+        ],
+        "readings_kun": [
+            "さかん",
+            "つく",
+            "やから"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1130,
+        "kanji": "損",
+        "meanings": [
+            "Damage",
+            "Loss",
+            "Disadvantage",
+            "Hurt",
+            "Injure"
+        ],
+        "readings_on": [
+            "そん"
+        ],
+        "readings_kun": [
+            "そこ.なう",
+            "そこな.う",
+            "-そこ.なう",
+            "そこ.ねる",
+            "-そこ.ねる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 743,
+        "kanji": "態",
+        "meanings": [
+            "Attitude",
+            "Condition",
+            "Figure",
+            "Appearance",
+            "Voice (of Verbs)"
+        ],
+        "readings_on": [
+            "たい"
+        ],
+        "readings_kun": [
+            "わざ.と"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 882,
+        "kanji": "貸",
+        "meanings": [
+            "Lend"
+        ],
+        "readings_on": [
+            "たい"
+        ],
+        "readings_kun": [
+            "か.す",
+            "か.し-",
+            "かし-"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 877,
+        "kanji": "退",
+        "meanings": [
+            "Retreat",
+            "Withdraw",
+            "Retire",
+            "Resign",
+            "Repel",
+            "Expel",
+            "Reject"
+        ],
+        "readings_on": [
+            "たい"
+        ],
+        "readings_kun": [
+            "しりぞ.く",
+            "しりぞ.ける",
+            "ひ.く",
+            "の.く",
+            "の.ける",
+            "ど.く"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 635,
+        "kanji": "団",
+        "meanings": [
+            "Group",
+            "Association"
+        ],
+        "readings_on": [
+            "だん",
+            "とん"
+        ],
+        "readings_kun": [
+            "かたまり",
+            "まる.い"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 698,
+        "kanji": "断",
+        "meanings": [
+            "Severance",
+            "Decline",
+            "Refuse",
+            "Apologize",
+            "Warn",
+            "Dismiss",
+            "Prohibit",
+            "Decision",
+            "Judgement",
+            "Cutting"
+        ],
+        "readings_on": [
+            "だん"
+        ],
+        "readings_kun": [
+            "た.つ",
+            "ことわ.る",
+            "さだ.める"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 516,
+        "kanji": "築",
+        "meanings": [
+            "Fabricate",
+            "Build",
+            "Construct"
+        ],
+        "readings_on": [
+            "ちく"
+        ],
+        "readings_kun": [
+            "きず.く"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 764,
+        "kanji": "張",
+        "meanings": [
+            "Lengthen",
+            "Counter For Bows & Stringed Instruments",
+            "Stretch",
+            "Spread",
+            "Put Up (tent)"
+        ],
+        "readings_on": [
+            "ちょう"
+        ],
+        "readings_kun": [
+            "は.る",
+            "-は.り",
+            "-ば.り"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 740,
+        "kanji": "提",
+        "meanings": [
+            "Propose",
+            "Take Along",
+            "Carry In Hand"
+        ],
+        "readings_on": [
+            "てい",
+            "ちょう",
+            "だい"
+        ],
+        "readings_kun": [
+            "さ.げる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 927,
+        "kanji": "程",
+        "meanings": [
+            "Extent",
+            "Degree",
+            "Law",
+            "Formula",
+            "Distance",
+            "Limits",
+            "Amount"
+        ],
+        "readings_on": [
+            "てい"
+        ],
+        "readings_kun": [
+            "ほど",
+            "-ほど"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 682,
+        "kanji": "敵",
+        "meanings": [
+            "Enemy",
+            "Foe",
+            "Opponent"
+        ],
+        "readings_on": [
+            "てき"
+        ],
+        "readings_kun": [
+            "かたき",
+            "あだ",
+            "かな.う"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 982,
+        "kanji": "適",
+        "meanings": [
+            "Suitable",
+            "Occasional",
+            "Rare",
+            "Qualified",
+            "Capable"
+        ],
+        "readings_on": [
+            "てき"
+        ],
+        "readings_kun": [
+            "かな.う"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 729,
+        "kanji": "統",
+        "meanings": [
+            "Overall",
+            "Relationship",
+            "Ruling",
+            "Governing"
+        ],
+        "readings_on": [
+            "とう"
+        ],
+        "readings_kun": [
+            "す.べる",
+            "ほび.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 762,
+        "kanji": "導",
+        "meanings": [
+            "Guidance",
+            "Leading",
+            "Conduct",
+            "Usher"
+        ],
+        "readings_on": [
+            "どう"
+        ],
+        "readings_kun": [
+            "みちび.く"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1163,
+        "kanji": "銅",
+        "meanings": [
+            "Copper"
+        ],
+        "readings_on": [
+            "どう"
+        ],
+        "readings_kun": [
+            "あかがね"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1034,
+        "kanji": "徳",
+        "meanings": [
+            "Benevolence",
+            "Virtue",
+            "Goodness",
+            "Commanding Respect"
+        ],
+        "readings_on": [
+            "とく"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 870,
+        "kanji": "独",
+        "meanings": [
+            "Single",
+            "Alone",
+            "Spontaneously",
+            "Germany"
+        ],
+        "readings_on": [
+            "どく",
+            "とく"
+        ],
+        "readings_kun": [
+            "ひと.り"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 701,
+        "kanji": "任",
+        "meanings": [
+            "Responsibility",
+            "Duty",
+            "Term",
+            "Entrust To",
+            "Appoint"
+        ],
+        "readings_on": [
+            "にん"
+        ],
+        "readings_kun": [
+            "まか.せる",
+            "まか.す"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 780,
+        "kanji": "燃",
+        "meanings": [
+            "Burn",
+            "Blaze",
+            "Glow"
+        ],
+        "readings_on": [
+            "ねん"
+        ],
+        "readings_kun": [
+            "も.える",
+            "も.やす",
+            "も.す"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 480,
+        "kanji": "能",
+        "meanings": [
+            "Ability",
+            "Talent",
+            "Skill",
+            "Capacity"
+        ],
+        "readings_on": [
+            "のう"
+        ],
+        "readings_kun": [
+            "よ.く"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1139,
+        "kanji": "破",
+        "meanings": [
+            "Rend",
+            "Rip",
+            "Tear",
+            "Break",
+            "Destroy",
+            "Defeat",
+            "Frustrate"
+        ],
+        "readings_on": [
+            "は"
+        ],
+        "readings_kun": [
+            "やぶ.る",
+            "やぶ.れる",
+            "わ.れる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 686,
+        "kanji": "判",
+        "meanings": [
+            "Judgement",
+            "Signature",
+            "Stamp",
+            "Seal"
+        ],
+        "readings_on": [
+            "はん",
+            "ばん"
+        ],
+        "readings_kun": [
+            "わか.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 979,
+        "kanji": "版",
+        "meanings": [
+            "Printing Block",
+            "Printing Plate",
+            "Edition",
+            "Impression",
+            "Label"
+        ],
+        "readings_on": [
+            "はん"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 674,
+        "kanji": "犯",
+        "meanings": [
+            "Crime",
+            "Sin",
+            "Offense"
+        ],
+        "readings_on": [
+            "はん",
+            "ぼん"
+        ],
+        "readings_kun": [
+            "おか.す"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 647,
+        "kanji": "比",
+        "meanings": [
+            "Compare",
+            "Race",
+            "Ratio",
+            "Philippines"
+        ],
+        "readings_on": [
+            "ひ"
+        ],
+        "readings_kun": [
+            "くら.べる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 830,
+        "kanji": "肥",
+        "meanings": [
+            "Fertilizer",
+            "Get Fat",
+            "Fertile",
+            "Manure",
+            "Pamper"
+        ],
+        "readings_on": [
+            "ひ"
+        ],
+        "readings_kun": [
+            "こ.える",
+            "こえ",
+            "こ.やす",
+            "こ.やし",
+            "ふと.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 572,
+        "kanji": "非",
+        "meanings": [
+            "Un-",
+            "Mistake",
+            "Negative",
+            "Injustice",
+            "Non-"
+        ],
+        "readings_on": [
+            "ひ"
+        ],
+        "readings_kun": [
+            "あら.ず"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 761,
+        "kanji": "備",
+        "meanings": [
+            "Equip",
+            "Provision",
+            "Preparation"
+        ],
+        "readings_on": [
+            "び"
+        ],
+        "readings_kun": [
+            "そな.える",
+            "そな.わる",
+            "つぶさ.に"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1521,
+        "kanji": "俵",
+        "meanings": [
+            "Bag",
+            "Bale",
+            "Sack",
+            "Counter For Bags"
+        ],
+        "readings_on": [
+            "ひょう"
+        ],
+        "readings_kun": [
+            "たわら"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 699,
+        "kanji": "評",
+        "meanings": [
+            "Evaluate",
+            "Criticism",
+            "Comment"
+        ],
+        "readings_on": [
+            "ひょう"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 980,
+        "kanji": "貧",
+        "meanings": [
+            "Poverty",
+            "Poor"
+        ],
+        "readings_on": [
+            "ひん",
+            "びん"
+        ],
+        "readings_kun": [
+            "まず.しい"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 920,
+        "kanji": "婦",
+        "meanings": [
+            "Lady",
+            "Woman",
+            "Wife",
+            "Bride"
+        ],
+        "readings_on": [
+            "ふ"
+        ],
+        "readings_kun": [
+            "よめ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1033,
+        "kanji": "富",
+        "meanings": [
+            "Wealth",
+            "Enrich",
+            "Abundant"
+        ],
+        "readings_on": [
+            "ふ",
+            "ふう"
+        ],
+        "readings_kun": [
+            "と.む",
+            "とみ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 621,
+        "kanji": "布",
+        "meanings": [
+            "Linen",
+            "Cloth",
+            "Spread",
+            "Distribute"
+        ],
+        "readings_on": [
+            "ふ"
+        ],
+        "readings_kun": [
+            "ぬの"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 799,
+        "kanji": "武",
+        "meanings": [
+            "Warrior",
+            "Military",
+            "Chivalry",
+            "Arms"
+        ],
+        "readings_on": [
+            "ぶ",
+            "む"
+        ],
+        "readings_kun": [
+            "たけ",
+            "たけ.し"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 843,
+        "kanji": "復",
+        "meanings": [
+            "Restore",
+            "Return To",
+            "Revert",
+            "Resume"
+        ],
+        "readings_on": [
+            "ふく"
+        ],
+        "readings_kun": [
+            "また"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1050,
+        "kanji": "複",
+        "meanings": [
+            "Duplicate",
+            "Double",
+            "Compound",
+            "Multiple"
+        ],
+        "readings_on": [
+            "ふく"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 515,
+        "kanji": "仏",
+        "meanings": [
+            "Buddha",
+            "The Dead",
+            "France"
+        ],
+        "readings_on": [
+            "ぶつ",
+            "ふつ"
+        ],
+        "readings_kun": [
+            "ほとけ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1003,
+        "kanji": "編",
+        "meanings": [
+            "Compilation",
+            "Knit",
+            "Plait",
+            "Braid",
+            "Twist",
+            "Editing",
+            "Completed Poem",
+            "Part Of A Book"
+        ],
+        "readings_on": [
+            "へん"
+        ],
+        "readings_kun": [
+            "あ.む",
+            "-あ.み"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 543,
+        "kanji": "弁",
+        "meanings": [
+            "Valve",
+            "Petal",
+            "Braid",
+            "Speech",
+            "Dialect",
+            "Discrimination",
+            "Dispose Of",
+            "Distinguish",
+            "Conical Cap"
+        ],
+        "readings_on": [
+            "べん",
+            "へん"
+        ],
+        "readings_kun": [
+            "かんむり",
+            "わきま.える",
+            "わ.ける",
+            "はなびら",
+            "あらそ.う"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 542,
+        "kanji": "保",
+        "meanings": [
+            "Protect",
+            "Guarantee",
+            "Keep",
+            "Preserve",
+            "Sustain",
+            "Support"
+        ],
+        "readings_on": [
+            "ほ",
+            "ほう"
+        ],
+        "readings_kun": [
+            "たも.つ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1032,
+        "kanji": "墓",
+        "meanings": [
+            "Grave",
+            "Tomb"
+        ],
+        "readings_on": [
+            "ぼ"
+        ],
+        "readings_kun": [
+            "はか"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 594,
+        "kanji": "報",
+        "meanings": [
+            "Report",
+            "News",
+            "Reward",
+            "Retribution"
+        ],
+        "readings_on": [
+            "ほう"
+        ],
+        "readings_kun": [
+            "むく.いる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 828,
+        "kanji": "豊",
+        "meanings": [
+            "Bountiful",
+            "Excellent",
+            "Rich"
+        ],
+        "readings_on": [
+            "ほう",
+            "ぶ"
+        ],
+        "readings_kun": [
+            "ゆた.か",
+            "とよ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 636,
+        "kanji": "暴",
+        "meanings": [
+            "Outburst",
+            "Rave",
+            "Fret",
+            "Force",
+            "Violence",
+            "Cruelty",
+            "Outrage"
+        ],
+        "readings_on": [
+            "ぼう",
+            "ばく"
+        ],
+        "readings_kun": [
+            "あば.く",
+            "あば.れる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1168,
+        "kanji": "貿",
+        "meanings": [
+            "Trade",
+            "Exchange"
+        ],
+        "readings_on": [
+            "ぼう"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 676,
+        "kanji": "防",
+        "meanings": [
+            "Ward Off",
+            "Defend",
+            "Protect",
+            "Resist"
+        ],
+        "readings_on": [
+            "ぼう"
+        ],
+        "readings_kun": [
+            "ふせ.ぐ"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 688,
+        "kanji": "務",
+        "meanings": [
+            "Task",
+            "Duties"
+        ],
+        "readings_on": [
+            "む"
+        ],
+        "readings_kun": [
+            "つと.める"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 667,
+        "kanji": "夢",
+        "meanings": [
+            "Dream",
+            "Vision",
+            "Illusion"
+        ],
+        "readings_on": [
+            "む",
+            "ぼう"
+        ],
+        "readings_kun": [
+            "ゆめ",
+            "ゆめ.みる",
+            "くら.い"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 883,
+        "kanji": "迷",
+        "meanings": [
+            "Astray",
+            "Be Perplexed",
+            "In Doubt",
+            "Lost",
+            "Err",
+            "Illusion"
+        ],
+        "readings_on": [
+            "めい"
+        ],
+        "readings_kun": [
+            "まよ.う"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 1522,
+        "kanji": "綿",
+        "meanings": [
+            "Cotton"
+        ],
+        "readings_on": [
+            "めん"
+        ],
+        "readings_kun": [
+            "わた"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 779,
+        "kanji": "輸",
+        "meanings": [
+            "Transport",
+            "Send",
+            "Be Inferior"
+        ],
+        "readings_on": [
+            "ゆ",
+            "しゅ"
+        ],
+        "readings_kun": [],
+        "radicals": []
+    },
+    {
+        "id": 653,
+        "kanji": "余",
+        "meanings": [
+            "Too Much",
+            "Myself",
+            "Surplus",
+            "Other",
+            "Remainder"
+        ],
+        "readings_on": [
+            "よ"
+        ],
+        "readings_kun": [
+            "あま.る",
+            "あま.り",
+            "あま.す",
+            "あんま.り"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 983,
+        "kanji": "預",
+        "meanings": [
+            "Deposit",
+            "Custody",
+            "Leave With",
+            "Entrust To"
+        ],
+        "readings_on": [
+            "よ"
+        ],
+        "readings_kun": [
+            "あず.ける",
+            "あず.かる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 620,
+        "kanji": "容",
+        "meanings": [
+            "Contain",
+            "Form",
+            "Looks"
+        ],
+        "readings_on": [
+            "よう"
+        ],
+        "readings_kun": [
+            "い.れる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 650,
+        "kanji": "率",
+        "meanings": [
+            "Ratio",
+            "Rate",
+            "Proportion",
+            "%",
+            "Factor",
+            "Lead",
+            "Spearhead",
+            "Command"
+        ],
+        "readings_on": [
+            "そつ",
+            "りつ",
+            "しゅつ"
+        ],
+        "readings_kun": [
+            "ひき.いる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 954,
+        "kanji": "略",
+        "meanings": [
+            "Abbreviation",
+            "Omission",
+            "Outline",
+            "Shorten",
+            "Capture",
+            "Plunder"
+        ],
+        "readings_on": [
+            "りゃく"
+        ],
+        "readings_kun": [
+            "ほぼ",
+            "はぶ.く",
+            "おか.す",
+            "おさ.める",
+            "はかりごと",
+            "はか.る"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 545,
+        "kanji": "留",
+        "meanings": [
+            "Detain",
+            "Fasten",
+            "Halt",
+            "Stop"
+        ],
+        "readings_on": [
+            "りゅう",
+            "る"
+        ],
+        "readings_kun": [
+            "と.める",
+            "と.まる",
+            "とど.める",
+            "とど.まる",
+            "るうぶる"
+        ],
+        "radicals": []
+    },
+    {
+        "id": 730,
+        "kanji": "領",
+        "meanings": [
+            "Jurisdiction",
+            "Dominion",
+            "Territory",
+            "Fief",
+            "Reign"
+        ],
+        "readings_on": [
+            "りょう"
+        ],
+        "readings_kun": [
+            "えり"
+        ],
+        "radicals": []
+    }
+]

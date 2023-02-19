@@ -173,41 +173,6 @@ class OverviewController extends State<OverviewPage> {
           builder: (_) => const KanjiViewer(level: 9),
         ));
         break;
-      case WritingSystem.kanji10:
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => const KanjiViewer(level: 10),
-        ));
-        break;
-      case WritingSystem.kanji11:
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => const KanjiViewer(level: 11),
-        ));
-        break;
-      case WritingSystem.kanji12:
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => const KanjiViewer(level: 12),
-        ));
-        break;
-      case WritingSystem.kanji13:
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => const KanjiViewer(level: 13),
-        ));
-        break;
-      case WritingSystem.kanji14:
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => const KanjiViewer(level: 14),
-        ));
-        break;
-      case WritingSystem.kanji15:
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => const KanjiViewer(level: 15),
-        ));
-        break;
-      case WritingSystem.kanji16:
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => const KanjiViewer(level: 16),
-        ));
-        break;
     }
   }
 

@@ -4,8 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
-import 'package:flutter_gen/gen_l10n/l10n.dart';
-
 import 'package:fun_with_kanji/models/kana.dart';
 import 'package:fun_with_kanji/models/kanji.dart';
 import 'package:fun_with_kanji/models/radical.dart';
@@ -23,18 +21,15 @@ abstract class ScriptLoader {
 
   static Future<List<Radical>> loadRadicals(
       BuildContext context, int level) async {
-    final language = L10n.of(context)!.langPrefix;
-    final jsonString = await rootBundle
-        .loadString('assets/data/radicals${language}_$level.json');
+    final jsonString =
+        await rootBundle.loadString('assets/data/radicals_$level.json');
     return await compute(_convertToRadicals, jsonString);
   }
 
   static Future<List<Kanji>> loadKanji(int level, BuildContext context) async {
-    final language = L10n.of(context)!.langPrefix;
-
-    if (level < 1 || level > 17) throw ('Level must be one of 1-6');
-    final jsonString = await rootBundle
-        .loadString('assets/data/kanji${language}_level_$level.json');
+    if (level < 1 || level > 10) throw ('Level must be one of 1-9');
+    final jsonString =
+        await rootBundle.loadString('assets/data/kanji_$level.json');
     return await compute(_convertToKanji, jsonString);
   }
 

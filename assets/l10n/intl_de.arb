@@ -13,7 +13,13 @@
         }
     },
     "kanji": "Kanji",
-    "kanjiLevel": "Kanji Level {level}",
+    "kanjiPrimarySchoolClass": "Kanji Grundschule Klasse {level}",
+    "@kanjiLevel": {
+        "placeholders": {
+            "level": {}
+        }
+    },
+    "kanjiMiddleSchoolClass": "Kanji Mittelschule Level {level}",
     "@kanjiLevel": {
         "placeholders": {
             "level": {}
@@ -69,7 +75,6 @@
     "addHint": "Merkhilfe hinzufügen",
     "looksLikeAManWithAHat": "Sieht aus wie ein Mann mit einem Hut",
     "showHint": "Merkhilfe anzeigen",
-    "langPrefix": "_de",
     "readOutLoud": "Laut vorlesen",
     "playSoundEffects": "Soundeffekte abspielen",
     "style": "Style",

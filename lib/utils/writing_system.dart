@@ -5,8 +5,6 @@ import 'package:flutter_gen/gen_l10n/l10n.dart';
 enum WritingSystem {
   hiragana,
   katakana,
-  radicals1,
-  radicals2,
   kanji1,
   kanji2,
   kanji3,
@@ -16,13 +14,8 @@ enum WritingSystem {
   kanji7,
   kanji8,
   kanji9,
-  kanji10,
-  kanji11,
-  kanji12,
-  kanji13,
-  kanji14,
-  kanji15,
-  kanji16,
+  radicals1,
+  radicals2,
 }
 
 extension WritingSystemSymbol on WritingSystem {
@@ -39,35 +32,21 @@ extension WritingSystemSymbol on WritingSystem {
       case WritingSystem.kanji1:
         return '一';
       case WritingSystem.kanji2:
-        return '米';
+        return '引';
       case WritingSystem.kanji3:
-        return '所';
+        return '悪';
       case WritingSystem.kanji4:
-        return '歯';
+        return '愛';
       case WritingSystem.kanji5:
-        return '典';
+        return '圧';
       case WritingSystem.kanji6:
-        return '産';
+        return '異';
       case WritingSystem.kanji7:
-        return '述';
+        return '亜';
       case WritingSystem.kanji8:
-        return '撃';
+        return '撮';
       case WritingSystem.kanji9:
-        return '訳';
-      case WritingSystem.kanji10:
-        return '刑';
-      case WritingSystem.kanji11:
-        return '儀';
-      case WritingSystem.kanji12:
-        return '井';
-      case WritingSystem.kanji13:
-        return '拘';
-      case WritingSystem.kanji14:
-        return '錦';
-      case WritingSystem.kanji15:
-        return '窃';
-      case WritingSystem.kanji16:
-        return '股';
+        return '迭';
     }
   }
 
@@ -82,37 +61,23 @@ extension WritingSystemSymbol on WritingSystem {
       case WritingSystem.radicals2:
         return L10n.of(context)!.radicals(2);
       case WritingSystem.kanji1:
-        return L10n.of(context)!.kanjiLevel(1);
+        return L10n.of(context)!.kanjiPrimarySchoolClass(1);
       case WritingSystem.kanji2:
-        return L10n.of(context)!.kanjiLevel(2);
+        return L10n.of(context)!.kanjiPrimarySchoolClass(2);
       case WritingSystem.kanji3:
-        return L10n.of(context)!.kanjiLevel(3);
+        return L10n.of(context)!.kanjiPrimarySchoolClass(3);
       case WritingSystem.kanji4:
-        return L10n.of(context)!.kanjiLevel(4);
+        return L10n.of(context)!.kanjiPrimarySchoolClass(4);
       case WritingSystem.kanji5:
-        return L10n.of(context)!.kanjiLevel(5);
+        return L10n.of(context)!.kanjiPrimarySchoolClass(5);
       case WritingSystem.kanji6:
-        return L10n.of(context)!.kanjiLevel(6);
+        return L10n.of(context)!.kanjiPrimarySchoolClass(6);
       case WritingSystem.kanji7:
-        return L10n.of(context)!.kanjiLevel(7);
+        return L10n.of(context)!.kanjiMiddleSchoolClass(1);
       case WritingSystem.kanji8:
-        return L10n.of(context)!.kanjiLevel(8);
+        return L10n.of(context)!.kanjiMiddleSchoolClass(2);
       case WritingSystem.kanji9:
-        return L10n.of(context)!.kanjiLevel(9);
-      case WritingSystem.kanji10:
-        return L10n.of(context)!.kanjiLevel(10);
-      case WritingSystem.kanji11:
-        return L10n.of(context)!.kanjiLevel(11);
-      case WritingSystem.kanji12:
-        return L10n.of(context)!.kanjiLevel(12);
-      case WritingSystem.kanji13:
-        return L10n.of(context)!.kanjiLevel(13);
-      case WritingSystem.kanji14:
-        return L10n.of(context)!.kanjiLevel(14);
-      case WritingSystem.kanji15:
-        return L10n.of(context)!.kanjiLevel(15);
-      case WritingSystem.kanji16:
-        return L10n.of(context)!.kanjiLevel(16);
+        return L10n.of(context)!.kanjiMiddleSchoolClass(3);
     }
   }
 
@@ -123,41 +88,27 @@ extension WritingSystemSymbol on WritingSystem {
       case WritingSystem.katakana:
         return 104;
       case WritingSystem.radicals1:
-        return 114;
+        return 115;
       case WritingSystem.radicals2:
         return 114;
       case WritingSystem.kanji1:
-        return 134;
+        return 80;
       case WritingSystem.kanji2:
-        return 133;
+        return 160;
       case WritingSystem.kanji3:
-        return 134;
+        return 200;
       case WritingSystem.kanji4:
-        return 133;
+        return 200;
       case WritingSystem.kanji5:
-        return 134;
+        return 185;
       case WritingSystem.kanji6:
-        return 133;
+        return 181;
       case WritingSystem.kanji7:
-        return 134;
+        return 313;
       case WritingSystem.kanji8:
-        return 133;
+        return 309;
       case WritingSystem.kanji9:
-        return 134;
-      case WritingSystem.kanji10:
-        return 133;
-      case WritingSystem.kanji11:
-        return 134;
-      case WritingSystem.kanji12:
-        return 133;
-      case WritingSystem.kanji13:
-        return 134;
-      case WritingSystem.kanji14:
-        return 133;
-      case WritingSystem.kanji15:
-        return 134;
-      case WritingSystem.kanji16:
-        return 133;
+        return 312;
     }
   }
 }
