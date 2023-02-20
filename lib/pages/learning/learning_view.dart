@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_gen/gen_l10n/l10n.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import 'package:fun_with_kanji/models/kana.dart';
 import 'package:fun_with_kanji/models/kanji.dart';
@@ -191,21 +190,6 @@ class LearningView extends StatelessWidget {
               style: const TextStyle(fontSize: 16),
             ),
             const Divider(),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: TextButton.icon(
-                onPressed: () => launchUrl(
-                  Uri(
-                    host: 'www.kanshudo.com',
-                    scheme: 'https',
-                    path: 'searchq',
-                    queryParameters: {'q': currentCharacter.kanji},
-                  ),
-                ),
-                icon: const Icon(Icons.open_in_new_outlined),
-                label: Text(L10n.of(context)!.searchOnlineForSampleVocabulary),
-              ),
-            ),
           ]
         ]);
       }),
