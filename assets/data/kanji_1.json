@@ -14,7 +14,9 @@
             "ひと-",
             "ひと.つ"
         ],
-        "radicals": []
+        "radicals": [
+            "Ground"
+        ]
     },
     {
         "id": 44,
@@ -29,7 +31,10 @@
         "readings_kun": [
             "みぎ"
         ],
-        "radicals": []
+        "radicals": [
+            "Narwhal",
+            "Mouth"
+        ]
     },
     {
         "id": 163,
@@ -45,7 +50,9 @@
             "あま-",
             "-さめ"
         ],
-        "radicals": []
+        "radicals": [
+            "Rain"
+        ]
     },
     {
         "id": 32,
@@ -65,7 +72,10 @@
             "まど.か",
             "まろ.やか"
         ],
-        "radicals": []
+        "radicals": [
+            "Lid",
+            "Head"
+        ]
     },
     {
         "id": 42,
@@ -80,7 +90,9 @@
             "-のう"
         ],
         "readings_kun": [],
-        "radicals": []
+        "radicals": [
+            "King"
+        ]
     },
     {
         "id": 166,
@@ -98,7 +110,10 @@
             "おと",
             "ね"
         ],
-        "radicals": []
+        "radicals": [
+            "Stand",
+            "Sun"
+        ]
     },
     {
         "id": 11,
@@ -129,7 +144,10 @@
             "お.ろす",
             "お.りる"
         ],
-        "radicals": []
+        "radicals": [
+            "Ground",
+            "Toe"
+        ]
     },
     {
         "id": 40,
@@ -145,7 +163,9 @@
             "-び",
             "ほ-"
         ],
-        "radicals": []
+        "radicals": [
+            "Fire"
+        ]
     },
     {
         "id": 117,
@@ -160,7 +180,11 @@
         "readings_kun": [
             "はな"
         ],
-        "radicals": []
+        "radicals": [
+            "Flowers",
+            "Leader",
+            "Spoon"
+        ]
     },
     {
         "id": 119,
@@ -174,7 +198,9 @@
         "readings_kun": [
             "かい"
         ],
-        "radicals": []
+        "radicals": [
+            "Shellfish"
+        ]
     },
     {
         "id": 159,
@@ -190,7 +216,10 @@
         "readings_kun": [
             "まな.ぶ"
         ],
-        "radicals": []
+        "radicals": [
+            "Viking",
+            "Child"
+        ]
     },
     {
         "id": 108,
@@ -209,7 +238,10 @@
         "readings_kun": [
             "いき"
         ],
-        "radicals": []
+        "radicals": [
+            "Energy",
+            "Treasure"
+        ]
     },
     {
         "id": 102,
@@ -228,7 +260,10 @@
             "やす.まる",
             "やす.める"
         ],
-        "radicals": []
+        "radicals": [
+            "Leader",
+            "Tree"
+        ]
     },
     {
         "id": 49,
@@ -245,7 +280,10 @@
             "たま-",
             "-だま"
         ],
-        "radicals": []
+        "radicals": [
+            "King",
+            "Drop"
+        ]
     },
     {
         "id": 162,
@@ -263,7 +301,9 @@
             "かな-",
             "-がね"
         ],
-        "radicals": []
+        "radicals": [
+            "Gold"
+        ]
     },
     {
         "id": 2,
@@ -279,7 +319,9 @@
             "ここの",
             "ここの.つ"
         ],
-        "radicals": []
+        "radicals": [
+            "Nine"
+        ]
     },
     {
         "id": 161,
@@ -304,7 +346,11 @@
             "す.かす",
             "むな.しい"
         ],
-        "radicals": []
+        "radicals": [
+            "Roof",
+            "Legs",
+            "Construction"
+        ]
     },
     {
         "id": 37,
@@ -320,7 +366,9 @@
         "readings_kun": [
             "つき"
         ],
-        "radicals": []
+        "radicals": [
+            "Moon"
+        ]
     },
     {
         "id": 41,
@@ -335,7 +383,9 @@
             "いぬ",
             "いぬ-"
         ],
-        "radicals": []
+        "radicals": [
+            "Dog"
+        ]
     },
     {
         "id": 118,
@@ -357,7 +407,9 @@
             "み.える",
             "み.せる"
         ],
-        "radicals": []
+        "radicals": [
+            "See"
+        ]
     },
     {
         "id": 30,
@@ -372,7 +424,9 @@
             "いつ",
             "いつ.つ"
         ],
-        "radicals": []
+        "radicals": [
+            "Five"
+        ]
     },
     {
         "id": 12,
@@ -387,7 +441,9 @@
         "readings_kun": [
             "くち"
         ],
-        "radicals": []
+        "radicals": [
+            "Mouth"
+        ]
     },
     {
         "id": 218,
@@ -404,7 +460,11 @@
             "きょう"
         ],
         "readings_kun": [],
-        "radicals": []
+        "radicals": [
+            "Tree",
+            "Lid",
+            "Father"
+        ]
     },
     {
         "id": 46,
@@ -419,7 +479,10 @@
         "readings_kun": [
             "ひだり"
         ],
-        "radicals": []
+        "radicals": [
+            "Narwhal",
+            "Construction"
+        ]
     },
     {
         "id": 9,
@@ -436,7 +499,10 @@
             "み.つ",
             "みっ.つ"
         ],
-        "radicals": []
+        "radicals": [
+            "Ground",
+            "Two"
+        ]
     },
     {
         "id": 15,
@@ -451,7 +517,9 @@
         "readings_kun": [
             "やま"
         ],
-        "radicals": []
+        "radicals": [
+            "Mountain"
+        ]
     },
     {
         "id": 45,
@@ -468,7 +536,10 @@
             "よっ.つ",
             "よん"
         ],
-        "radicals": []
+        "radicals": [
+            "Mouth",
+            "Legs"
+        ]
     },
     {
         "id": 22,
@@ -489,7 +560,9 @@
             "-こ",
             "ね"
         ],
-        "radicals": []
+        "radicals": [
+            "Child"
+        ]
     },
     {
         "id": 111,
@@ -503,7 +576,9 @@
         "readings_kun": [
             "いと"
         ],
-        "radicals": []
+        "radicals": [
+            "Thread"
+        ]
     },
     {
         "id": 105,
@@ -522,7 +597,10 @@
             "あざな",
             "-な"
         ],
-        "radicals": []
+        "radicals": [
+            "Roof",
+            "Child"
+        ]
     },
     {
         "id": 112,
@@ -536,7 +614,9 @@
         "readings_kun": [
             "みみ"
         ],
-        "radicals": []
+        "radicals": [
+            "Ear"
+        ]
     },
     {
         "id": 3,
@@ -552,7 +632,9 @@
             "なな.つ",
             "なの"
         ],
-        "radicals": []
+        "radicals": [
+            "Seven"
+        ]
     },
     {
         "id": 122,
@@ -566,7 +648,9 @@
         "readings_kun": [
             "くるま"
         ],
-        "radicals": []
+        "radicals": [
+            "Car"
+        ]
     },
     {
         "id": 34,
@@ -584,7 +668,9 @@
             "-て",
             "た-"
         ],
-        "radicals": []
+        "radicals": [
+            "Hand"
+        ]
     },
     {
         "id": 8,
@@ -601,7 +687,9 @@
             "とお",
             "と"
         ],
-        "radicals": []
+        "radicals": [
+            "Cross"
+        ]
     },
     {
         "id": 43,
@@ -626,7 +714,9 @@
             "い.でる",
             "い.だす"
         ],
-        "radicals": []
+        "radicals": [
+            "Mountain"
+        ]
     },
     {
         "id": 14,
@@ -644,7 +734,9 @@
             "おんな",
             "め"
         ],
-        "radicals": []
+        "radicals": [
+            "Woman"
+        ]
     },
     {
         "id": 23,
@@ -662,7 +754,9 @@
             "お-",
             "さ-"
         ],
-        "radicals": []
+        "radicals": [
+            "Small"
+        ]
     },
     {
         "id": 10,
@@ -693,7 +787,10 @@
             "のぼ.す",
             "たてまつ.る"
         ],
-        "radicals": []
+        "radicals": [
+            "Toe",
+            "Ground"
+        ]
     },
     {
         "id": 253,
@@ -708,7 +805,9 @@
         "readings_kun": [
             "もり"
         ],
-        "radicals": []
+        "radicals": [
+            "Tree"
+        ]
     },
     {
         "id": 4,
@@ -725,7 +824,9 @@
             "-り",
             "-と"
         ],
-        "radicals": []
+        "radicals": [
+            "Person"
+        ]
     },
     {
         "id": 39,
@@ -740,7 +841,9 @@
             "みず",
             "みず-"
         ],
-        "radicals": []
+        "radicals": [
+            "Water"
+        ]
     },
     {
         "id": 48,
@@ -761,7 +864,10 @@
             "まさ",
             "まさ.に"
         ],
-        "radicals": []
+        "radicals": [
+            "Ground",
+            "Stop"
+        ]
     },
     {
         "id": 410,
@@ -795,7 +901,9 @@
             "む.す",
             "-う"
         ],
-        "radicals": []
+        "radicals": [
+            "Life"
+        ]
     },
     {
         "id": 164,
@@ -813,7 +921,9 @@
             "あお-",
             "あお.い"
         ],
-        "radicals": []
+        "radicals": [
+            "Blue"
+        ]
     },
     {
         "id": 53,
@@ -829,7 +939,9 @@
         "readings_kun": [
             "いし"
         ],
-        "radicals": []
+        "radicals": [
+            "Stone"
+        ]
     },
     {
         "id": 120,
@@ -848,7 +960,9 @@
             "あか.らむ",
             "あか.らめる"
         ],
-        "radicals": []
+        "radicals": [
+            "Red"
+        ]
     },
     {
         "id": 103,
@@ -867,7 +981,11 @@
             "さき",
             "ま.ず"
         ],
-        "radicals": []
+        "radicals": [
+            "Slide",
+            "Dirt",
+            "Legs"
+        ]
     },
     {
         "id": 20,
@@ -881,7 +999,9 @@
         "readings_kun": [
             "ち"
         ],
-        "radicals": []
+        "radicals": [
+            "Thousand"
+        ]
     },
     {
         "id": 16,
@@ -897,7 +1017,9 @@
         "readings_kun": [
             "かわ"
         ],
-        "radicals": []
+        "radicals": [
+            "River"
+        ]
     },
     {
         "id": 107,
@@ -918,7 +1040,10 @@
             "はや.める",
             "さ-"
         ],
-        "radicals": []
+        "radicals": [
+            "Sun",
+            "Cross"
+        ]
     },
     {
         "id": 165,
@@ -939,7 +1064,11 @@
             "くさ-",
             "-ぐさ"
         ],
-        "radicals": []
+        "radicals": [
+            "Flowers",
+            "Sun",
+            "Cross"
+        ]
     },
     {
         "id": 121,
@@ -959,7 +1088,9 @@
             "た.る",
             "た.す"
         ],
-        "radicals": []
+        "radicals": [
+            "Foot"
+        ]
     },
     {
         "id": 114,
@@ -974,7 +1105,10 @@
         "readings_kun": [
             "むら"
         ],
-        "radicals": []
+        "radicals": [
+            "Tree",
+            "Measurement"
+        ]
     },
     {
         "id": 13,
@@ -992,7 +1126,9 @@
             "おお.きい",
             "-おお.いに"
         ],
-        "radicals": []
+        "radicals": [
+            "Big"
+        ]
     },
     {
         "id": 115,
@@ -1008,7 +1144,10 @@
             "おとこ",
             "お"
         ],
-        "radicals": []
+        "radicals": [
+            "Rice Paddy",
+            "Power"
+        ]
     },
     {
         "id": 110,
@@ -1022,7 +1161,9 @@
         "readings_kun": [
             "たけ"
         ],
-        "radicals": []
+        "radicals": [
+            "Bamboo"
+        ]
     },
     {
         "id": 29,
@@ -1042,7 +1183,9 @@
             "うち",
             "あた.る"
         ],
-        "radicals": []
+        "radicals": [
+            "Middle"
+        ]
     },
     {
         "id": 113,
@@ -1059,7 +1202,9 @@
         "readings_kun": [
             "むし"
         ],
-        "radicals": []
+        "radicals": [
+            "Insect"
+        ]
     },
     {
         "id": 116,
@@ -1076,7 +1221,10 @@
         "readings_kun": [
             "まち"
         ],
-        "radicals": []
+        "radicals": [
+            "Rice Paddy",
+            "Street"
+        ]
     },
     {
         "id": 33,
@@ -1094,7 +1242,9 @@
             "あめ",
             "あま-"
         ],
-        "radicals": []
+        "radicals": [
+            "Heaven"
+        ]
     },
     {
         "id": 50,
@@ -1109,7 +1259,9 @@
         "readings_kun": [
             "た"
         ],
-        "radicals": []
+        "radicals": [
+            "Rice Paddy"
+        ]
     },
     {
         "id": 19,
@@ -1127,7 +1279,9 @@
         "readings_kun": [
             "つち"
         ],
-        "radicals": []
+        "radicals": [
+            "Dirt"
+        ]
     },
     {
         "id": 1,
@@ -1145,7 +1299,9 @@
             "ふた.つ",
             "ふたたび"
         ],
-        "radicals": []
+        "radicals": [
+            "Two"
+        ]
     },
     {
         "id": 36,
@@ -1165,7 +1321,9 @@
             "-び",
             "-か"
         ],
-        "radicals": []
+        "radicals": [
+            "Sun"
+        ]
     },
     {
         "id": 5,
@@ -1186,7 +1344,9 @@
             "-い.れ",
             "はい.る"
         ],
-        "radicals": []
+        "radicals": [
+            "Enter"
+        ]
     },
     {
         "id": 106,
@@ -1201,7 +1361,10 @@
         "readings_kun": [
             "とし"
         ],
-        "radicals": []
+        "radicals": [
+            "Gun",
+            "Cow"
+        ]
     },
     {
         "id": 51,
@@ -1218,7 +1381,9 @@
             "しら-",
             "しろ.い"
         ],
-        "radicals": []
+        "radicals": [
+            "White"
+        ]
     },
     {
         "id": 6,
@@ -1236,7 +1401,9 @@
             "やっ.つ",
             "よう"
         ],
-        "radicals": []
+        "radicals": [
+            "Fins"
+        ]
     },
     {
         "id": 109,
@@ -1251,7 +1418,10 @@
         "readings_kun": [
             "もも"
         ],
-        "radicals": []
+        "radicals": [
+            "Leaf",
+            "Sun"
+        ]
     },
     {
         "id": 35,
@@ -1274,7 +1444,9 @@
             "ふみ",
             "あや"
         ],
-        "radicals": []
+        "radicals": [
+            "Writing"
+        ]
     },
     {
         "id": 47,
@@ -1294,7 +1466,9 @@
         "readings_kun": [
             "もと"
         ],
-        "radicals": []
+        "radicals": [
+            "Book"
+        ]
     },
     {
         "id": 104,
@@ -1313,7 +1487,10 @@
             "な",
             "-な"
         ],
-        "radicals": []
+        "radicals": [
+            "Evening",
+            "Mouth"
+        ]
     },
     {
         "id": 38,
@@ -1330,7 +1507,9 @@
             "き",
             "こ-"
         ],
-        "radicals": []
+        "radicals": [
+            "Tree"
+        ]
     },
     {
         "id": 52,
@@ -1353,7 +1532,9 @@
             "-め",
             "ま-"
         ],
-        "radicals": []
+        "radicals": [
+            "Eye"
+        ]
     },
     {
         "id": 21,
@@ -1367,7 +1548,9 @@
         "readings_kun": [
             "ゆう"
         ],
-        "radicals": []
+        "radicals": [
+            "Evening"
+        ]
     },
     {
         "id": 54,
@@ -1395,7 +1578,9 @@
             "-だ.て",
             "-だ.てる"
         ],
-        "radicals": []
+        "radicals": [
+            "Stand"
+        ]
     },
     {
         "id": 7,
@@ -1416,7 +1601,9 @@
         "readings_kun": [
             "ちから"
         ],
-        "radicals": []
+        "radicals": [
+            "Power"
+        ]
     },
     {
         "id": 160,
@@ -1431,7 +1618,9 @@
         "readings_kun": [
             "はやし"
         ],
-        "radicals": []
+        "radicals": [
+            "Tree"
+        ]
     },
     {
         "id": 31,
@@ -1449,6 +1638,9 @@
             "むっ.つ",
             "むい"
         ],
-        "radicals": []
+        "radicals": [
+            "Lid",
+            "Fins"
+        ]
     }
 ]
