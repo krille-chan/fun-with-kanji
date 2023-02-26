@@ -84,5 +84,12 @@
     "dark": "Dunkel",
     "close": "Schließen",
     "searchOnlineForSampleVocabulary": "Online nach Beispielvokabeln suchen",
-    "langPrefix": "_de"
+    "langPrefix": "_de",
+    "nextLevelUpInHours": "Nächster Stern nach {count} Stunden",
+    "@nextLevelUpInHours": {
+        "placeholders": {
+            "count": {}
+        }
+    },
+    "learnWithSpacedRepition": "Lernen mit spaced repitition"
 }

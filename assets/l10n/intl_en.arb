@@ -84,5 +84,12 @@
     "dark": "Dark",
     "close": "Close",
     "searchOnlineForSampleVocabulary": "Search online for sample vocabulary",
-    "langPrefix": ""
+    "langPrefix": "",
+    "nextLevelUpInHours": "Next star after {count} hours",
+    "@nextLevelUpInHours": {
+        "placeholders": {
+            "count": {}
+        }
+    },
+    "learnWithSpacedRepition": "Learn with spaced repitition"
 }

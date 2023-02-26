@@ -129,6 +129,7 @@ class FunWithKanji {
           ..characterId = id
           ..writingSystem = system.name;
         progress.stars = stars;
+        progress.lastCheckedAt = DateTime.now();
         await isar.learningProgresss.put(progress);
       });
 

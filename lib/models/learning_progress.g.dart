@@ -15,9 +15,14 @@ extension GetLearningProgressCollection on Isar {
 const LearningProgressSchema = CollectionSchema(
   name: 'LearningProgress',
   schema:
-      '{"name":"LearningProgress","idName":"id","properties":[{"name":"characterId","type":"Long"},{"name":"stars","type":"Long"},{"name":"writingSystem","type":"String"}],"indexes":[],"links":[]}',
+      '{"name":"LearningProgress","idName":"id","properties":[{"name":"characterId","type":"Long"},{"name":"lastCheckedAt","type":"Long"},{"name":"stars","type":"Long"},{"name":"writingSystem","type":"String"}],"indexes":[],"links":[]}',
   idName: 'id',
-  propertyIds: {'characterId': 0, 'stars': 1, 'writingSystem': 2},
+  propertyIds: {
+    'characterId': 0,
+    'lastCheckedAt': 1,
+    'stars': 2,
+    'writingSystem': 3
+  },
   listProperties: {},
   indexIds: {},
   indexValueTypes: {},
@@ -62,10 +67,12 @@ void _learningProgressSerializeNative(
   var dynamicSize = 0;
   final value0 = object.characterId;
   final _characterId = value0;
-  final value1 = object.stars;
-  final _stars = value1;
-  final value2 = object.writingSystem;
-  final _writingSystem = IsarBinaryWriter.utf8Encoder.convert(value2);
+  final value1 = object.lastCheckedAt;
+  final _lastCheckedAt = value1;
+  final value2 = object.stars;
+  final _stars = value2;
+  final value3 = object.writingSystem;
+  final _writingSystem = IsarBinaryWriter.utf8Encoder.convert(value3);
   dynamicSize += (_writingSystem.length) as int;
   final size = staticSize + dynamicSize;
 
@@ -74,8 +81,9 @@ void _learningProgressSerializeNative(
   final buffer = IsarNative.bufAsBytes(rawObj.buffer, size);
   final writer = IsarBinaryWriter(buffer, staticSize);
   writer.writeLong(offsets[0], _characterId);
-  writer.writeLong(offsets[1], _stars);
-  writer.writeBytes(offsets[2], _writingSystem);
+  writer.writeDateTime(offsets[1], _lastCheckedAt);
+  writer.writeLong(offsets[2], _stars);
+  writer.writeBytes(offsets[3], _writingSystem);
 }
 
 LearningProgress _learningProgressDeserializeNative(
@@ -86,8 +94,9 @@ LearningProgress _learningProgressDeserializeNative(
   final object = LearningProgress();
   object.characterId = reader.readLong(offsets[0]);
   object.id = id;
-  object.stars = reader.readLong(offsets[1]);
-  object.writingSystem = reader.readString(offsets[2]);
+  object.lastCheckedAt = reader.readDateTimeOrNull(offsets[1]);
+  object.stars = reader.readLong(offsets[2]);
+  object.writingSystem = reader.readString(offsets[3]);
   return object;
 }
 
@@ -99,8 +108,10 @@ P _learningProgressDeserializePropNative<P>(
     case 0:
       return (reader.readLong(offset)) as P;
     case 1:
-      return (reader.readLong(offset)) as P;
+      return (reader.readDateTimeOrNull(offset)) as P;
     case 2:
+      return (reader.readLong(offset)) as P;
+    case 3:
       return (reader.readString(offset)) as P;
     default:
       throw 'Illegal propertyIndex';
@@ -112,6 +123,8 @@ dynamic _learningProgressSerializeWeb(
   final jsObj = IsarNative.newJsObject();
   IsarNative.jsObjectSet(jsObj, 'characterId', object.characterId);
   IsarNative.jsObjectSet(jsObj, 'id', object.id);
+  IsarNative.jsObjectSet(jsObj, 'lastCheckedAt',
+      object.lastCheckedAt?.toUtc().millisecondsSinceEpoch);
   IsarNative.jsObjectSet(jsObj, 'stars', object.stars);
   IsarNative.jsObjectSet(jsObj, 'writingSystem', object.writingSystem);
   return jsObj;
@@ -123,6 +136,12 @@ LearningProgress _learningProgressDeserializeWeb(
   object.characterId =
       IsarNative.jsObjectGet(jsObj, 'characterId') ?? double.negativeInfinity;
   object.id = IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity;
+  object.lastCheckedAt = IsarNative.jsObjectGet(jsObj, 'lastCheckedAt') != null
+      ? DateTime.fromMillisecondsSinceEpoch(
+              IsarNative.jsObjectGet(jsObj, 'lastCheckedAt'),
+              isUtc: true)
+          .toLocal()
+      : null;
   object.stars =
       IsarNative.jsObjectGet(jsObj, 'stars') ?? double.negativeInfinity;
   object.writingSystem = IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '';
@@ -137,6 +156,13 @@ P _learningProgressDeserializePropWeb<P>(Object jsObj, String propertyName) {
     case 'id':
       return (IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity)
           as P;
+    case 'lastCheckedAt':
+      return (IsarNative.jsObjectGet(jsObj, 'lastCheckedAt') != null
+          ? DateTime.fromMillisecondsSinceEpoch(
+                  IsarNative.jsObjectGet(jsObj, 'lastCheckedAt'),
+                  isUtc: true)
+              .toLocal()
+          : null) as P;
     case 'stars':
       return (IsarNative.jsObjectGet(jsObj, 'stars') ?? double.negativeInfinity)
           as P;
@@ -312,6 +338,66 @@ extension LearningProgressQueryFilter
   }) {
     return addFilterConditionInternal(FilterCondition.between(
       property: 'id',
+      lower: lower,
+      includeLower: includeLower,
+      upper: upper,
+      includeUpper: includeUpper,
+    ));
+  }
+
+  QueryBuilder<LearningProgress, LearningProgress, QAfterFilterCondition>
+      lastCheckedAtIsNull() {
+    return addFilterConditionInternal(FilterCondition(
+      type: ConditionType.isNull,
+      property: 'lastCheckedAt',
+      value: null,
+    ));
+  }
+
+  QueryBuilder<LearningProgress, LearningProgress, QAfterFilterCondition>
+      lastCheckedAtEqualTo(DateTime? value) {
+    return addFilterConditionInternal(FilterCondition(
+      type: ConditionType.eq,
+      property: 'lastCheckedAt',
+      value: value,
+    ));
+  }
+
+  QueryBuilder<LearningProgress, LearningProgress, QAfterFilterCondition>
+      lastCheckedAtGreaterThan(
+    DateTime? value, {
+    bool include = false,
+  }) {
+    return addFilterConditionInternal(FilterCondition(
+      type: ConditionType.gt,
+      include: include,
+      property: 'lastCheckedAt',
+      value: value,
+    ));
+  }
+
+  QueryBuilder<LearningProgress, LearningProgress, QAfterFilterCondition>
+      lastCheckedAtLessThan(
+    DateTime? value, {
+    bool include = false,
+  }) {
+    return addFilterConditionInternal(FilterCondition(
+      type: ConditionType.lt,
+      include: include,
+      property: 'lastCheckedAt',
+      value: value,
+    ));
+  }
+
+  QueryBuilder<LearningProgress, LearningProgress, QAfterFilterCondition>
+      lastCheckedAtBetween(
+    DateTime? lower,
+    DateTime? upper, {
+    bool includeLower = true,
+    bool includeUpper = true,
+  }) {
+    return addFilterConditionInternal(FilterCondition.between(
+      property: 'lastCheckedAt',
       lower: lower,
       includeLower: includeLower,
       upper: upper,
@@ -502,6 +588,16 @@ extension LearningProgressQueryWhereSortBy
     return addSortByInternal('id', Sort.desc);
   }
 
+  QueryBuilder<LearningProgress, LearningProgress, QAfterSortBy>
+      sortByLastCheckedAt() {
+    return addSortByInternal('lastCheckedAt', Sort.asc);
+  }
+
+  QueryBuilder<LearningProgress, LearningProgress, QAfterSortBy>
+      sortByLastCheckedAtDesc() {
+    return addSortByInternal('lastCheckedAt', Sort.desc);
+  }
+
   QueryBuilder<LearningProgress, LearningProgress, QAfterSortBy> sortByStars() {
     return addSortByInternal('stars', Sort.asc);
   }
@@ -543,6 +639,16 @@ extension LearningProgressQueryWhereSortThenBy
     return addSortByInternal('id', Sort.desc);
   }
 
+  QueryBuilder<LearningProgress, LearningProgress, QAfterSortBy>
+      thenByLastCheckedAt() {
+    return addSortByInternal('lastCheckedAt', Sort.asc);
+  }
+
+  QueryBuilder<LearningProgress, LearningProgress, QAfterSortBy>
+      thenByLastCheckedAtDesc() {
+    return addSortByInternal('lastCheckedAt', Sort.desc);
+  }
+
   QueryBuilder<LearningProgress, LearningProgress, QAfterSortBy> thenByStars() {
     return addSortByInternal('stars', Sort.asc);
   }
@@ -575,6 +681,11 @@ extension LearningProgressQueryWhereDistinct
   }
 
   QueryBuilder<LearningProgress, LearningProgress, QDistinct>
+      distinctByLastCheckedAt() {
+    return addDistinctByInternal('lastCheckedAt');
+  }
+
+  QueryBuilder<LearningProgress, LearningProgress, QDistinct>
       distinctByStars() {
     return addDistinctByInternal('stars');
   }
@@ -593,6 +704,11 @@ extension LearningProgressQueryProperty
 
   QueryBuilder<LearningProgress, int, QQueryOperations> idProperty() {
     return addPropertyNameInternal('id');
+  }
+
+  QueryBuilder<LearningProgress, DateTime?, QQueryOperations>
+      lastCheckedAtProperty() {
+    return addPropertyNameInternal('lastCheckedAt');
   }
 
   QueryBuilder<LearningProgress, int, QQueryOperations> starsProperty() {

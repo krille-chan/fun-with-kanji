@@ -33,6 +33,7 @@ class LearningController extends State<LearningPage> {
   final TextEditingController responseController = TextEditingController();
   final FocusNode replyFocus = FocusNode();
   late final bool enterRomaji;
+  late final bool learnWithSpacedRepition;
   LearningProgress? learningProgress;
   int _currentId = 0;
   List<JpCharacter>? characterSet;
@@ -188,19 +189,28 @@ class LearningController extends State<LearningPage> {
     );
   }
 
+  static const int maxNewChars = 5;
+
   Future<int> _loadNextCharacterId() async {
     try {
-      final learnInProgressChars = await FunWithKanji.of(context)
+      final allLearnInProgressChars = await FunWithKanji.of(context)
           .getLearnInProgressCharacters(widget.writingSystem);
-      final learnInProgressCharsLength = learnInProgressChars.length;
-      learnInProgressChars.removeWhere((p) => p.characterId == _currentId);
+      final canLevelUpChars = allLearnInProgressChars
+          .where((p) => learnWithSpacedRepition ? p.canLevelUp : p.stars < 10)
+          .toList();
+      canLevelUpChars.removeWhere((p) => p.characterId == _currentId);
 
       // Add new learn in progress character
-      if (learnInProgressCharsLength < 5) {
+      if (canLevelUpChars.length + 1 < maxNewChars &&
+          allLearnInProgressChars
+                  .where((p) =>
+                      p.stars <= LearningProgress.maxStarsWithoutCooldown)
+                  .length <
+              maxNewChars * 2) {
         final nextId = await FunWithKanji.of(context).getNextLearnCharacter(
           widget.writingSystem,
         );
-        if (nextId == characterSet!.length && learnInProgressChars.isEmpty) {
+        if (nextId == characterSet!.length) {
           dev.log('All characters at 10 stars. Pick random one!');
           return Random().nextInt(characterSet!.length);
         } else if (nextId < characterSet!.length) {
@@ -209,27 +219,16 @@ class LearningController extends State<LearningPage> {
         }
       }
 
-      // Every 5th character should be repeating an old one:
-      final repeatOldCharacter = Random().nextInt(4) == 0;
-
-      if (repeatOldCharacter) {
-        final learnedChars =
-            await FunWithKanji.of(context).getLearnedCharacters(
-          widget.writingSystem,
-        );
-        if (learnedChars.isNotEmpty &&
-            !(learnedChars.length == 1 &&
-                learnedChars.single.characterId == _currentId)) {
-          dev.log('Repeat one of the 10 stars characters...');
-          learnedChars.shuffle();
-          return learnedChars.first.characterId;
-        }
+      if (canLevelUpChars.isEmpty) {
+        dev.log('No character can level up. Pick random one...');
+        allLearnInProgressChars.shuffle();
+        return allLearnInProgressChars.first.characterId;
       }
 
       dev.log(
-          'Continue with one of ${learnInProgressChars.length} learn-in-progress characters...');
-      learnInProgressChars.shuffle();
-      return learnInProgressChars.first.characterId;
+          'Continue with one of ${canLevelUpChars.length} learn-in-progress characters...');
+      canLevelUpChars.shuffle();
+      return canLevelUpChars.first.characterId;
     } catch (e, s) {
       showOpenIssueDialog(context, e, s);
       rethrow;
@@ -267,7 +266,10 @@ class LearningController extends State<LearningPage> {
             isCorrect
                 ? learningProgress!.stars == 9
                     ? L10n.of(context)!.allStarsWon
-                    : '+1'
+                    : !learnWithSpacedRepition || learningProgress!.canLevelUp
+                        ? '+1'
+                        : L10n.of(context)!.nextLevelUpInHours(
+                            learningProgress!.waitingTime.inHours.toString())
                 : '-1',
             style: TextStyle(
               color: isCorrect ? Colors.green : Colors.red,
@@ -297,19 +299,22 @@ class LearningController extends State<LearningPage> {
         tts.speak(currentCharacter!.toTtsString());
       }
     }
+    final canLevelUp = learningProgress!.canLevelUp || !learnWithSpacedRepition;
     setState(() {
-      if (isCorrect && learningProgress!.stars < 10) {
+      if (isCorrect && learningProgress!.stars < 10 && canLevelUp) {
         learningProgress!.stars++;
       } else if (!isCorrect && learningProgress!.stars > 0) {
         learningProgress!.stars--;
       }
       answerCorrect = isCorrect;
     });
-    await FunWithKanji.of(context).setLearningProgress(
-      widget.writingSystem,
-      _currentId,
-      learningProgress!.stars,
-    );
+    if (canLevelUp || !isCorrect) {
+      await FunWithKanji.of(context).setLearningProgress(
+        widget.writingSystem,
+        _currentId,
+        learningProgress!.stars,
+      );
+    }
 
     await Future.delayed(Duration(milliseconds: isCorrect ? 500 : 2000));
     if (mounted) _loadNextCharacter();
@@ -334,6 +339,8 @@ class LearningController extends State<LearningPage> {
     }
 
     enterRomaji = preferences.getBool(ConfigKeys.enterRomaji) ?? true;
+    learnWithSpacedRepition =
+        preferences.getBool(ConfigKeys.learnWithSpacedRepition) ?? true;
   }
 
   @override

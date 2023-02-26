@@ -43,6 +43,11 @@ class SettingsView extends StatelessWidget {
             title: L10n.of(context)!.enterRomaji,
             configKey: ConfigKeys.enterRomaji,
           ),
+          ConfigToggle(
+            icon: Icons.repeat_outlined,
+            title: L10n.of(context)!.learnWithSpacedRepition,
+            configKey: ConfigKeys.learnWithSpacedRepition,
+          ),
           const Divider(),
           ConfigToggle(
             icon: Icons.record_voice_over_outlined,

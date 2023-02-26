@@ -22,5 +22,6 @@ void main() async {
     schemas: FunWithKanji.isarSchemas,
     directory: directory?.path,
   );
+
   runApp(FunWithKanjiApp(isar: isar));
 }
