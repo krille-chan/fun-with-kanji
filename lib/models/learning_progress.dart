@@ -20,7 +20,7 @@ class LearningProgress {
   static const int maxStarsWithoutCooldown = 3;
 
   Duration get waitingTime => Duration(
-        minutes: pow(levelUpWaitingHours, stars - maxStarsWithoutCooldown + 1)
+        hours: pow(levelUpWaitingHours, stars - maxStarsWithoutCooldown + 1)
             .round(),
       );
 
