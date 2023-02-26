@@ -1,0 +1,1 @@
+Fun with Kanji 1.0.0 features a new spaced repition mode for all kana and kanji and sorts the kanji now based on school classes.
