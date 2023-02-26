@@ -91,10 +91,6 @@ class LearningController extends State<LearningPage> {
         }
       }
 
-      // Update finished counter
-      finished =
-          await FunWithKanji.of(context).getFinishedCount(widget.writingSystem);
-
       _currentId = await _loadNextCharacterId();
       final learningProgress = this.learningProgress =
           await FunWithKanji.of(context).getLearningProgress(
@@ -199,6 +195,11 @@ class LearningController extends State<LearningPage> {
           .where((p) => learnWithSpacedRepition ? p.canLevelUp : p.stars < 10)
           .toList();
       canLevelUpChars.removeWhere((p) => p.characterId == _currentId);
+
+      // Update finished counter
+      final finished =
+          await FunWithKanji.of(context).getFinishedCount(widget.writingSystem);
+      started = finished + allLearnInProgressChars.length;
 
       // Add new learn in progress character
       if (canLevelUpChars.length + 1 < maxNewChars &&
@@ -320,7 +321,7 @@ class LearningController extends State<LearningPage> {
     if (mounted) _loadNextCharacter();
   }
 
-  int finished = 0;
+  int started = 0;
 
   void _initTts() async {
     final preferences = await SharedPreferences.getInstance();

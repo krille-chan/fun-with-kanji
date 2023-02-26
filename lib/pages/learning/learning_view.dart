@@ -20,7 +20,7 @@ class LearningView extends StatelessWidget {
         actions: [
           Center(
             child: Text(
-              L10n.of(context)!.countFinished(controller.finished),
+              L10n.of(context)!.countIntroduced(controller.started),
             ),
           ),
           const SizedBox(width: 4),

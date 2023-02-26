@@ -51,8 +51,8 @@
     "welcomeText": "Welcome to Fun With Kanji. Together we will learn all Japanese characters you need to read texts in Japanese. It will be a long journey but we will do this step by step.",
     "about": "About",
     "website": "Website",
-    "countFinished": "{count} finished",
-    "@countFinished": {
+    "countIntroduced": "{count} introduced",
+    "@countIntroduced": {
         "placeholders": {
             "count": {}
         }
