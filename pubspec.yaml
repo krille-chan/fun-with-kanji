@@ -27,7 +27,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.1
+  flutter_lints: ^2.0.2
   isar_generator: ^2.4.0
   build_runner: any
   flutter_launcher_icons: ^0.11.0
