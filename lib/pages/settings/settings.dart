@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'package:file_picker_cross/file_picker_cross.dart';
+import 'package:file_picker/file_picker.dart';
+import 'package:file_saver/file_saver.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher_string.dart';
@@ -72,11 +73,11 @@ class SettingsController extends State<SettingsPage> {
     try {
       final export = await FunWithKanji.of(context).export();
       final exportStr = await compute(jsonEncode, export);
-      final file = FilePickerCross(Uint8List.fromList(exportStr.codeUnits));
-      await file.exportToStorage(
-        fileName:
-            'fun_with_kanji_export_${DateTime.now().toIso8601String()}.json',
-        share: false,
+
+      await FileSaver.instance.saveFile(
+        name: 'fun_with_kanji_export_${DateTime.now().toIso8601String()}.json',
+        bytes: Uint8List.fromList(exportStr.codeUnits),
+        mimeType: MimeType.json,
       );
     } catch (e, s) {
       showOpenIssueDialog(context, e, s);
@@ -85,14 +86,14 @@ class SettingsController extends State<SettingsPage> {
   }
 
   void importAction() async {
-    final picked = await FilePickerCross.importFromStorage(
-      type: FileTypeCross.custom,
-      fileExtension: 'json',
+    final picked = await FilePicker.platform.pickFiles(
+      allowedExtensions: ['json'],
+      withData: true,
     );
-    final path = picked.path;
-    if (path == null) return;
+    final file = picked?.files.first;
+    if (file == null) return;
     try {
-      final jsonStr = picked.toString();
+      final jsonStr = String.fromCharCodes(file.bytes!);
       final json = await compute(jsonDecode, jsonStr);
       await FunWithKanji.of(context).import(Map<String, dynamic>.from(json));
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
