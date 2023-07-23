@@ -15,7 +15,7 @@ dependencies:
   provider: ^6.0.2
   isar: ^2.4.0
   isar_flutter_libs: ^2.4.0
-  just_audio: ^0.9.20
+  just_audio: ^0.9.34
   url_launcher: ^6.0.20
   file_picker_cross: ^4.6.0
   path_provider: ^2.0.10
