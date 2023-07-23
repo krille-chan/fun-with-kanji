@@ -19,7 +19,7 @@ dependencies:
   url_launcher: ^6.0.20
   file_picker_cross: ^4.6.0
   path_provider: ^2.0.15
-  dynamic_color: ^1.4.0
+  dynamic_color: ^1.6.6
   text_to_speech: ^0.2.3
   shared_preferences: ^2.0.15
   collection: ^1.16.0
