@@ -8,7 +8,7 @@ description: |
 
     Fun With Kanji is open source under Mozilla Public License 2.0. Contributions and new translations are always welcome <3.
 
-    Website: https://gitlab.com/KrilleFear/funny-kanji
+    Website: https://github.com/krille-chan/fun-with-kanji
 
 confinement: strict
 base: core18

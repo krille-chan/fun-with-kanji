@@ -28,8 +28,6 @@ Fun With Kanji is open source under Mozilla Public License 2.0. Contributions an
      alt="Get it on Google Play"
      height="80">](https://play.google.com/store/apps/details?id=krillefear.funwithkanji)
 
-- Or download the [latest APK from CI](https://gitlab.com/krillefear/funny-kanji/-/jobs/artifacts/main/browse?job=build_apk)
-
 ## Build:
 
 Install [Flutter](https://flutter.dev) and run with:
