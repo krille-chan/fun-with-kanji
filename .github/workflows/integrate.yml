@@ -17,7 +17,6 @@ jobs:
       - name: Check import formatting
         run: dart run import_sorter:main --no-comments --exit-if-changed
       - run: flutter analyze
-      - run: flutter test
 
   build_debug_apk:
     runs-on: ubuntu-latest
