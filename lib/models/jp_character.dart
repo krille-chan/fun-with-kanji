@@ -29,9 +29,14 @@ abstract class JpCharacter {
       return (this as Radical).reading;
     }
     if (this is Kanji) {
+      final kanji = this as Kanji;
+      final firstOnSplitted = kanji.readingsOn.firstOrNull?.split('.');
+      final firstKunSplitted = kanji.readingsKun.firstOrNull?.split('.');
+      firstOnSplitted?[0] = kanji.kanji;
+      firstKunSplitted?[0] = kanji.kanji;
       return [
-        (this as Kanji).readingsOn.firstOrNull,
-        (this as Kanji).readingsKun.firstOrNull,
+        firstOnSplitted?.join(''),
+        firstKunSplitted?.join(''),
       ].where((s) => s != null).join(', ');
     }
     return super.toString();
