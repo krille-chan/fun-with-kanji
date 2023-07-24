@@ -16,7 +16,7 @@ dependencies:
   isar: ^2.4.0
   isar_flutter_libs: ^2.4.0
   just_audio: ^0.9.34
-  url_launcher: ^6.0.20
+  url_launcher: ^6.1.11
   path_provider: ^2.0.15
   dynamic_color: ^1.4.0
   text_to_speech: ^0.2.3
