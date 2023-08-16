@@ -11,7 +11,7 @@ import 'package:fun_with_kanji/models/fun_with_kanji.dart';
 import 'package:fun_with_kanji/widgets/fun_with_kanji_app.dart';
 
 void main() async {
-  log('Welcome to Funny Kanji');
+  log('Welcome to Fun With Kanji <3');
   WidgetsFlutterBinding.ensureInitialized();
   final directory = kIsWeb
       ? null
