@@ -17,7 +17,7 @@ void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     WidgetsFlutterBinding.ensureInitialized();
     final isar = await Isar.open(
-      schemas: FunWithKanji.isarSchemas,
+      FunWithKanji.isarSchemas,
       directory: './',
     );
     await tester.pumpWidget(FunWithKanjiApp(isar: isar));

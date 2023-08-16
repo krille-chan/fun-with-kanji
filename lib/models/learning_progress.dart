@@ -8,7 +8,7 @@ part 'learning_progress.g.dart';
 
 @Collection()
 class LearningProgress {
-  int id = Isar.autoIncrement;
+  Id id = Isar.autoIncrement;
 
   String writingSystem = WritingSystem.hiragana.name;
   int characterId = 0;
@@ -19,6 +19,7 @@ class LearningProgress {
 
   static const int maxStarsWithoutCooldown = 3;
 
+  @ignore
   Duration get waitingTime => Duration(
         hours: pow(levelUpWaitingHours, stars - maxStarsWithoutCooldown + 1)
             .round(),

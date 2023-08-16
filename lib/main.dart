@@ -19,8 +19,8 @@ void main() async {
           ? await getApplicationSupportDirectory()
           : await getApplicationDocumentsDirectory();
   final isar = await Isar.open(
-    schemas: FunWithKanji.isarSchemas,
-    directory: directory?.path,
+    FunWithKanji.isarSchemas,
+    directory: directory?.path ?? './',
   );
 
   runApp(FunWithKanjiApp(isar: isar));

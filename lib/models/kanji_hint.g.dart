@@ -6,81 +6,75 @@ part of 'kanji_hint.dart';
 // IsarCollectionGenerator
 // **************************************************************************
 
-// ignore_for_file: duplicate_ignore, non_constant_identifier_names, constant_identifier_names, invalid_use_of_protected_member, unnecessary_cast, unused_local_variable
+// coverage:ignore-file
+// ignore_for_file: duplicate_ignore, non_constant_identifier_names, constant_identifier_names, invalid_use_of_protected_member, unnecessary_cast, prefer_const_constructors, lines_longer_than_80_chars, require_trailing_commas, inference_failure_on_function_invocation, unnecessary_parenthesis, unnecessary_raw_strings, unnecessary_null_checks, join_return_with_assignment, prefer_final_locals, avoid_js_rounded_ints, avoid_positional_boolean_parameters, always_specify_types
 
 extension GetKanjiHintCollection on Isar {
-  IsarCollection<KanjiHint> get kanjiHints => getCollection();
+  IsarCollection<KanjiHint> get kanjiHints => this.collection();
 }
 
 const KanjiHintSchema = CollectionSchema(
-  name: 'KanjiHint',
-  schema:
-      '{"name":"KanjiHint","idName":"id","properties":[{"name":"characterId","type":"Long"},{"name":"hint","type":"String"},{"name":"writingSystem","type":"String"}],"indexes":[],"links":[]}',
-  idName: 'id',
-  propertyIds: {'characterId': 0, 'hint': 1, 'writingSystem': 2},
-  listProperties: {},
-  indexIds: {},
-  indexValueTypes: {},
-  linkIds: {},
-  backlinkLinkNames: {},
+  name: r'KanjiHint',
+  id: 6794376897294403003,
+  properties: {
+    r'characterId': PropertySchema(
+      id: 0,
+      name: r'characterId',
+      type: IsarType.long,
+    ),
+    r'hint': PropertySchema(
+      id: 1,
+      name: r'hint',
+      type: IsarType.string,
+    ),
+    r'writingSystem': PropertySchema(
+      id: 2,
+      name: r'writingSystem',
+      type: IsarType.string,
+    )
+  },
+  estimateSize: _kanjiHintEstimateSize,
+  serialize: _kanjiHintSerialize,
+  deserialize: _kanjiHintDeserialize,
+  deserializeProp: _kanjiHintDeserializeProp,
+  idName: r'id',
+  indexes: {},
+  links: {},
+  embeddedSchemas: {},
   getId: _kanjiHintGetId,
-  setId: _kanjiHintSetId,
   getLinks: _kanjiHintGetLinks,
-  attachLinks: _kanjiHintAttachLinks,
-  serializeNative: _kanjiHintSerializeNative,
-  deserializeNative: _kanjiHintDeserializeNative,
-  deserializePropNative: _kanjiHintDeserializePropNative,
-  serializeWeb: _kanjiHintSerializeWeb,
-  deserializeWeb: _kanjiHintDeserializeWeb,
-  deserializePropWeb: _kanjiHintDeserializePropWeb,
-  version: 3,
+  attach: _kanjiHintAttach,
+  version: '3.1.0+1',
 );
 
-int? _kanjiHintGetId(KanjiHint object) {
-  if (object.id == Isar.autoIncrement) {
-    return null;
-  } else {
-    return object.id;
-  }
+int _kanjiHintEstimateSize(
+  KanjiHint object,
+  List<int> offsets,
+  Map<Type, List<int>> allOffsets,
+) {
+  var bytesCount = offsets.last;
+  bytesCount += 3 + object.hint.length * 3;
+  bytesCount += 3 + object.writingSystem.length * 3;
+  return bytesCount;
 }
 
-void _kanjiHintSetId(KanjiHint object, int id) {
-  object.id = id;
+void _kanjiHintSerialize(
+  KanjiHint object,
+  IsarWriter writer,
+  List<int> offsets,
+  Map<Type, List<int>> allOffsets,
+) {
+  writer.writeLong(offsets[0], object.characterId);
+  writer.writeString(offsets[1], object.hint);
+  writer.writeString(offsets[2], object.writingSystem);
 }
 
-List<IsarLinkBase> _kanjiHintGetLinks(KanjiHint object) {
-  return [];
-}
-
-void _kanjiHintSerializeNative(
-    IsarCollection<KanjiHint> collection,
-    IsarRawObject rawObj,
-    KanjiHint object,
-    int staticSize,
-    List<int> offsets,
-    AdapterAlloc alloc) {
-  var dynamicSize = 0;
-  final value0 = object.characterId;
-  final _characterId = value0;
-  final value1 = object.hint;
-  final _hint = IsarBinaryWriter.utf8Encoder.convert(value1);
-  dynamicSize += (_hint.length) as int;
-  final value2 = object.writingSystem;
-  final _writingSystem = IsarBinaryWriter.utf8Encoder.convert(value2);
-  dynamicSize += (_writingSystem.length) as int;
-  final size = staticSize + dynamicSize;
-
-  rawObj.buffer = alloc(size);
-  rawObj.buffer_length = size;
-  final buffer = IsarNative.bufAsBytes(rawObj.buffer, size);
-  final writer = IsarBinaryWriter(buffer, staticSize);
-  writer.writeLong(offsets[0], _characterId);
-  writer.writeBytes(offsets[1], _hint);
-  writer.writeBytes(offsets[2], _writingSystem);
-}
-
-KanjiHint _kanjiHintDeserializeNative(IsarCollection<KanjiHint> collection,
-    int id, IsarBinaryReader reader, List<int> offsets) {
+KanjiHint _kanjiHintDeserialize(
+  Id id,
+  IsarReader reader,
+  List<int> offsets,
+  Map<Type, List<int>> allOffsets,
+) {
   final object = KanjiHint();
   object.characterId = reader.readLong(offsets[0]);
   object.hint = reader.readString(offsets[1]);
@@ -89,11 +83,13 @@ KanjiHint _kanjiHintDeserializeNative(IsarCollection<KanjiHint> collection,
   return object;
 }
 
-P _kanjiHintDeserializePropNative<P>(
-    int id, IsarBinaryReader reader, int propertyIndex, int offset) {
-  switch (propertyIndex) {
-    case -1:
-      return id as P;
+P _kanjiHintDeserializeProp<P>(
+  IsarReader reader,
+  int propertyId,
+  int offset,
+  Map<Type, List<int>> allOffsets,
+) {
+  switch (propertyId) {
     case 0:
       return (reader.readLong(offset)) as P;
     case 1:
@@ -101,110 +97,96 @@ P _kanjiHintDeserializePropNative<P>(
     case 2:
       return (reader.readString(offset)) as P;
     default:
-      throw 'Illegal propertyIndex';
+      throw IsarError('Unknown property with id $propertyId');
   }
 }
 
-dynamic _kanjiHintSerializeWeb(
-    IsarCollection<KanjiHint> collection, KanjiHint object) {
-  final jsObj = IsarNative.newJsObject();
-  IsarNative.jsObjectSet(jsObj, 'characterId', object.characterId);
-  IsarNative.jsObjectSet(jsObj, 'hint', object.hint);
-  IsarNative.jsObjectSet(jsObj, 'id', object.id);
-  IsarNative.jsObjectSet(jsObj, 'writingSystem', object.writingSystem);
-  return jsObj;
+Id _kanjiHintGetId(KanjiHint object) {
+  return object.id;
 }
 
-KanjiHint _kanjiHintDeserializeWeb(
-    IsarCollection<KanjiHint> collection, dynamic jsObj) {
-  final object = KanjiHint();
-  object.characterId =
-      IsarNative.jsObjectGet(jsObj, 'characterId') ?? double.negativeInfinity;
-  object.hint = IsarNative.jsObjectGet(jsObj, 'hint') ?? '';
-  object.id = IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity;
-  object.writingSystem = IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '';
-  return object;
+List<IsarLinkBase<dynamic>> _kanjiHintGetLinks(KanjiHint object) {
+  return [];
 }
 
-P _kanjiHintDeserializePropWeb<P>(Object jsObj, String propertyName) {
-  switch (propertyName) {
-    case 'characterId':
-      return (IsarNative.jsObjectGet(jsObj, 'characterId') ??
-          double.negativeInfinity) as P;
-    case 'hint':
-      return (IsarNative.jsObjectGet(jsObj, 'hint') ?? '') as P;
-    case 'id':
-      return (IsarNative.jsObjectGet(jsObj, 'id') ?? double.negativeInfinity)
-          as P;
-    case 'writingSystem':
-      return (IsarNative.jsObjectGet(jsObj, 'writingSystem') ?? '') as P;
-    default:
-      throw 'Illegal propertyName';
-  }
+void _kanjiHintAttach(IsarCollection<dynamic> col, Id id, KanjiHint object) {
+  object.id = id;
 }
-
-void _kanjiHintAttachLinks(IsarCollection col, int id, KanjiHint object) {}
 
 extension KanjiHintQueryWhereSort
     on QueryBuilder<KanjiHint, KanjiHint, QWhere> {
   QueryBuilder<KanjiHint, KanjiHint, QAfterWhere> anyId() {
-    return addWhereClauseInternal(const IdWhereClause.any());
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(const IdWhereClause.any());
+    });
   }
 }
 
 extension KanjiHintQueryWhere
     on QueryBuilder<KanjiHint, KanjiHint, QWhereClause> {
-  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idEqualTo(int id) {
-    return addWhereClauseInternal(IdWhereClause.between(
-      lower: id,
-      includeLower: true,
-      upper: id,
-      includeUpper: true,
-    ));
+  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idEqualTo(Id id) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(IdWhereClause.between(
+        lower: id,
+        upper: id,
+      ));
+    });
   }
 
-  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idNotEqualTo(int id) {
-    if (whereSortInternal == Sort.asc) {
-      return addWhereClauseInternal(
-        IdWhereClause.lessThan(upper: id, includeUpper: false),
-      ).addWhereClauseInternal(
-        IdWhereClause.greaterThan(lower: id, includeLower: false),
-      );
-    } else {
-      return addWhereClauseInternal(
-        IdWhereClause.greaterThan(lower: id, includeLower: false),
-      ).addWhereClauseInternal(
-        IdWhereClause.lessThan(upper: id, includeUpper: false),
-      );
-    }
+  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idNotEqualTo(Id id) {
+    return QueryBuilder.apply(this, (query) {
+      if (query.whereSort == Sort.asc) {
+        return query
+            .addWhereClause(
+              IdWhereClause.lessThan(upper: id, includeUpper: false),
+            )
+            .addWhereClause(
+              IdWhereClause.greaterThan(lower: id, includeLower: false),
+            );
+      } else {
+        return query
+            .addWhereClause(
+              IdWhereClause.greaterThan(lower: id, includeLower: false),
+            )
+            .addWhereClause(
+              IdWhereClause.lessThan(upper: id, includeUpper: false),
+            );
+      }
+    });
   }
 
-  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idGreaterThan(int id,
+  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idGreaterThan(Id id,
       {bool include = false}) {
-    return addWhereClauseInternal(
-      IdWhereClause.greaterThan(lower: id, includeLower: include),
-    );
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(
+        IdWhereClause.greaterThan(lower: id, includeLower: include),
+      );
+    });
   }
 
-  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idLessThan(int id,
+  QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idLessThan(Id id,
       {bool include = false}) {
-    return addWhereClauseInternal(
-      IdWhereClause.lessThan(upper: id, includeUpper: include),
-    );
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(
+        IdWhereClause.lessThan(upper: id, includeUpper: include),
+      );
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterWhereClause> idBetween(
-    int lowerId,
-    int upperId, {
+    Id lowerId,
+    Id upperId, {
     bool includeLower = true,
     bool includeUpper = true,
   }) {
-    return addWhereClauseInternal(IdWhereClause.between(
-      lower: lowerId,
-      includeLower: includeLower,
-      upper: upperId,
-      includeUpper: includeUpper,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addWhereClause(IdWhereClause.between(
+        lower: lowerId,
+        includeLower: includeLower,
+        upper: upperId,
+        includeUpper: includeUpper,
+      ));
+    });
   }
 }
 
@@ -212,11 +194,12 @@ extension KanjiHintQueryFilter
     on QueryBuilder<KanjiHint, KanjiHint, QFilterCondition> {
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> characterIdEqualTo(
       int value) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.eq,
-      property: 'characterId',
-      value: value,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'characterId',
+        value: value,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
@@ -224,24 +207,26 @@ extension KanjiHintQueryFilter
     int value, {
     bool include = false,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.gt,
-      include: include,
-      property: 'characterId',
-      value: value,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'characterId',
+        value: value,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> characterIdLessThan(
     int value, {
     bool include = false,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.lt,
-      include: include,
-      property: 'characterId',
-      value: value,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'characterId',
+        value: value,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> characterIdBetween(
@@ -250,164 +235,198 @@ extension KanjiHintQueryFilter
     bool includeLower = true,
     bool includeUpper = true,
   }) {
-    return addFilterConditionInternal(FilterCondition.between(
-      property: 'characterId',
-      lower: lower,
-      includeLower: includeLower,
-      upper: upper,
-      includeUpper: includeUpper,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'characterId',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> hintEqualTo(
     String value, {
     bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.eq,
-      property: 'hint',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'hint',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> hintGreaterThan(
     String value, {
-    bool caseSensitive = true,
     bool include = false,
+    bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.gt,
-      include: include,
-      property: 'hint',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'hint',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> hintLessThan(
     String value, {
-    bool caseSensitive = true,
     bool include = false,
+    bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.lt,
-      include: include,
-      property: 'hint',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'hint',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> hintBetween(
     String lower,
     String upper, {
-    bool caseSensitive = true,
     bool includeLower = true,
     bool includeUpper = true,
+    bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition.between(
-      property: 'hint',
-      lower: lower,
-      includeLower: includeLower,
-      upper: upper,
-      includeUpper: includeUpper,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'hint',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> hintStartsWith(
     String value, {
     bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.startsWith,
-      property: 'hint',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'hint',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> hintEndsWith(
     String value, {
     bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.endsWith,
-      property: 'hint',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'hint',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> hintContains(
       String value,
       {bool caseSensitive = true}) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.contains,
-      property: 'hint',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'hint',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> hintMatches(
       String pattern,
       {bool caseSensitive = true}) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.matches,
-      property: 'hint',
-      value: pattern,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'hint',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> hintIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'hint',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> hintIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'hint',
+        value: '',
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> idEqualTo(
-      int value) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.eq,
-      property: 'id',
-      value: value,
-    ));
+      Id value) {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'id',
+        value: value,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> idGreaterThan(
-    int value, {
+    Id value, {
     bool include = false,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.gt,
-      include: include,
-      property: 'id',
-      value: value,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'id',
+        value: value,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> idLessThan(
-    int value, {
+    Id value, {
     bool include = false,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.lt,
-      include: include,
-      property: 'id',
-      value: value,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'id',
+        value: value,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition> idBetween(
-    int lower,
-    int upper, {
+    Id lower,
+    Id upper, {
     bool includeLower = true,
     bool includeUpper = true,
   }) {
-    return addFilterConditionInternal(FilterCondition.between(
-      property: 'id',
-      lower: lower,
-      includeLower: includeLower,
-      upper: upper,
-      includeUpper: includeUpper,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'id',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
@@ -415,60 +434,65 @@ extension KanjiHintQueryFilter
     String value, {
     bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.eq,
-      property: 'writingSystem',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'writingSystem',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
       writingSystemGreaterThan(
     String value, {
-    bool caseSensitive = true,
     bool include = false,
+    bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.gt,
-      include: include,
-      property: 'writingSystem',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        include: include,
+        property: r'writingSystem',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
       writingSystemLessThan(
     String value, {
-    bool caseSensitive = true,
     bool include = false,
+    bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.lt,
-      include: include,
-      property: 'writingSystem',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.lessThan(
+        include: include,
+        property: r'writingSystem',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
       writingSystemBetween(
     String lower,
     String upper, {
-    bool caseSensitive = true,
     bool includeLower = true,
     bool includeUpper = true,
+    bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition.between(
-      property: 'writingSystem',
-      lower: lower,
-      includeLower: includeLower,
-      upper: upper,
-      includeUpper: includeUpper,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.between(
+        property: r'writingSystem',
+        lower: lower,
+        includeLower: includeLower,
+        upper: upper,
+        includeUpper: includeUpper,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
@@ -476,12 +500,13 @@ extension KanjiHintQueryFilter
     String value, {
     bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.startsWith,
-      property: 'writingSystem',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.startsWith(
+        property: r'writingSystem',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
@@ -489,144 +514,200 @@ extension KanjiHintQueryFilter
     String value, {
     bool caseSensitive = true,
   }) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.endsWith,
-      property: 'writingSystem',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.endsWith(
+        property: r'writingSystem',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
       writingSystemContains(String value, {bool caseSensitive = true}) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.contains,
-      property: 'writingSystem',
-      value: value,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.contains(
+        property: r'writingSystem',
+        value: value,
+        caseSensitive: caseSensitive,
+      ));
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
       writingSystemMatches(String pattern, {bool caseSensitive = true}) {
-    return addFilterConditionInternal(FilterCondition(
-      type: ConditionType.matches,
-      property: 'writingSystem',
-      value: pattern,
-      caseSensitive: caseSensitive,
-    ));
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.matches(
+        property: r'writingSystem',
+        wildcard: pattern,
+        caseSensitive: caseSensitive,
+      ));
+    });
+  }
+
+  QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
+      writingSystemIsEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.equalTo(
+        property: r'writingSystem',
+        value: '',
+      ));
+    });
+  }
+
+  QueryBuilder<KanjiHint, KanjiHint, QAfterFilterCondition>
+      writingSystemIsNotEmpty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addFilterCondition(FilterCondition.greaterThan(
+        property: r'writingSystem',
+        value: '',
+      ));
+    });
   }
 }
+
+extension KanjiHintQueryObject
+    on QueryBuilder<KanjiHint, KanjiHint, QFilterCondition> {}
 
 extension KanjiHintQueryLinks
     on QueryBuilder<KanjiHint, KanjiHint, QFilterCondition> {}
 
-extension KanjiHintQueryWhereSortBy
-    on QueryBuilder<KanjiHint, KanjiHint, QSortBy> {
+extension KanjiHintQuerySortBy on QueryBuilder<KanjiHint, KanjiHint, QSortBy> {
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> sortByCharacterId() {
-    return addSortByInternal('characterId', Sort.asc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'characterId', Sort.asc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> sortByCharacterIdDesc() {
-    return addSortByInternal('characterId', Sort.desc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'characterId', Sort.desc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> sortByHint() {
-    return addSortByInternal('hint', Sort.asc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'hint', Sort.asc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> sortByHintDesc() {
-    return addSortByInternal('hint', Sort.desc);
-  }
-
-  QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> sortById() {
-    return addSortByInternal('id', Sort.asc);
-  }
-
-  QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> sortByIdDesc() {
-    return addSortByInternal('id', Sort.desc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'hint', Sort.desc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> sortByWritingSystem() {
-    return addSortByInternal('writingSystem', Sort.asc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'writingSystem', Sort.asc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> sortByWritingSystemDesc() {
-    return addSortByInternal('writingSystem', Sort.desc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'writingSystem', Sort.desc);
+    });
   }
 }
 
-extension KanjiHintQueryWhereSortThenBy
+extension KanjiHintQuerySortThenBy
     on QueryBuilder<KanjiHint, KanjiHint, QSortThenBy> {
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> thenByCharacterId() {
-    return addSortByInternal('characterId', Sort.asc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'characterId', Sort.asc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> thenByCharacterIdDesc() {
-    return addSortByInternal('characterId', Sort.desc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'characterId', Sort.desc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> thenByHint() {
-    return addSortByInternal('hint', Sort.asc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'hint', Sort.asc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> thenByHintDesc() {
-    return addSortByInternal('hint', Sort.desc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'hint', Sort.desc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> thenById() {
-    return addSortByInternal('id', Sort.asc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'id', Sort.asc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> thenByIdDesc() {
-    return addSortByInternal('id', Sort.desc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'id', Sort.desc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> thenByWritingSystem() {
-    return addSortByInternal('writingSystem', Sort.asc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'writingSystem', Sort.asc);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QAfterSortBy> thenByWritingSystemDesc() {
-    return addSortByInternal('writingSystem', Sort.desc);
+    return QueryBuilder.apply(this, (query) {
+      return query.addSortBy(r'writingSystem', Sort.desc);
+    });
   }
 }
 
 extension KanjiHintQueryWhereDistinct
     on QueryBuilder<KanjiHint, KanjiHint, QDistinct> {
   QueryBuilder<KanjiHint, KanjiHint, QDistinct> distinctByCharacterId() {
-    return addDistinctByInternal('characterId');
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'characterId');
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QDistinct> distinctByHint(
       {bool caseSensitive = true}) {
-    return addDistinctByInternal('hint', caseSensitive: caseSensitive);
-  }
-
-  QueryBuilder<KanjiHint, KanjiHint, QDistinct> distinctById() {
-    return addDistinctByInternal('id');
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'hint', caseSensitive: caseSensitive);
+    });
   }
 
   QueryBuilder<KanjiHint, KanjiHint, QDistinct> distinctByWritingSystem(
       {bool caseSensitive = true}) {
-    return addDistinctByInternal('writingSystem', caseSensitive: caseSensitive);
+    return QueryBuilder.apply(this, (query) {
+      return query.addDistinctBy(r'writingSystem',
+          caseSensitive: caseSensitive);
+    });
   }
 }
 
 extension KanjiHintQueryProperty
     on QueryBuilder<KanjiHint, KanjiHint, QQueryProperty> {
+  QueryBuilder<KanjiHint, int, QQueryOperations> idProperty() {
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'id');
+    });
+  }
+
   QueryBuilder<KanjiHint, int, QQueryOperations> characterIdProperty() {
-    return addPropertyNameInternal('characterId');
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'characterId');
+    });
   }
 
   QueryBuilder<KanjiHint, String, QQueryOperations> hintProperty() {
-    return addPropertyNameInternal('hint');
-  }
-
-  QueryBuilder<KanjiHint, int, QQueryOperations> idProperty() {
-    return addPropertyNameInternal('id');
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'hint');
+    });
   }
 
   QueryBuilder<KanjiHint, String, QQueryOperations> writingSystemProperty() {
-    return addPropertyNameInternal('writingSystem');
+    return QueryBuilder.apply(this, (query) {
+      return query.addPropertyName(r'writingSystem');
+    });
   }
 }

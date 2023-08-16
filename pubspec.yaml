@@ -13,8 +13,8 @@ dependencies:
   intl: any
   cupertino_icons: ^1.0.2
   provider: ^6.0.2
-  isar: ^2.4.0
-  isar_flutter_libs: ^2.4.0
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
   just_audio: ^0.9.34
   url_launcher: ^6.0.20
   path_provider: ^2.0.15
@@ -22,17 +22,16 @@ dependencies:
   text_to_speech: ^0.2.3
   shared_preferences: ^2.0.15
   collection: ^1.16.0
-  file_picker: ^4.6.1
-  file_saver: ^0.2.6
+  file_picker: ^5.3.3
+  flutter_file_saver: any
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.2
-  isar_generator: ^2.4.0
+  isar_generator: ^3.1.0+1
   build_runner: any
   flutter_launcher_icons: ^0.13.1
-  translator: ^0.1.7
   import_sorter: ^4.6.0
 
 flutter:

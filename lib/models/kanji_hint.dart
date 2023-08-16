@@ -6,7 +6,7 @@ part 'kanji_hint.g.dart';
 
 @Collection()
 class KanjiHint {
-  int id = Isar.autoIncrement;
+  Id id = Isar.autoIncrement;
 
   String writingSystem = WritingSystem.hiragana.name;
   int characterId = 0;

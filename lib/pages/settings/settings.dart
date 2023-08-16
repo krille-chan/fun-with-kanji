@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'package:file_picker/file_picker.dart';
-import 'package:file_saver/file_saver.dart';
+import 'package:flutter_file_saver/flutter_file_saver.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher_string.dart';
@@ -73,11 +73,12 @@ class SettingsController extends State<SettingsPage> {
     try {
       final export = await FunWithKanji.of(context).export();
       final exportStr = await compute(jsonEncode, export);
+      final name =
+          'fun_with_kanji_export_${DateTime.now().toIso8601String()}.json';
 
-      await FileSaver.instance.saveFile(
-        name: 'fun_with_kanji_export_${DateTime.now().toIso8601String()}.json',
-        bytes: Uint8List.fromList(exportStr.codeUnits),
-        mimeType: MimeType.json,
+      FlutterFileSaver().writeFileAsString(
+        fileName: name,
+        data: exportStr,
       );
     } catch (e, s) {
       showOpenIssueDialog(context, e, s);
@@ -89,6 +90,7 @@ class SettingsController extends State<SettingsPage> {
     final picked = await FilePicker.platform.pickFiles(
       allowedExtensions: ['json'],
       withData: true,
+      type: FileType.custom,
     );
     final file = picked?.files.first;
     if (file == null) return;
