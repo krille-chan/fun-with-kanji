@@ -6,10 +6,13 @@ class ConfigToggle extends StatefulWidget {
   final String configKey;
   final String title;
   final IconData icon;
+  final bool defaultValue;
+
   const ConfigToggle({
     required this.configKey,
     required this.title,
     required this.icon,
+    this.defaultValue = true,
     Key? key,
   }) : super(key: key);
 
@@ -30,7 +33,8 @@ class _ConfigToggleState extends State<ConfigToggle> {
           secondary: Icon(widget.icon),
           controlAffinity: ListTileControlAffinity.trailing,
           title: Text(widget.title),
-          value: snapshot.data?.getBool(widget.configKey) ?? true,
+          value:
+              snapshot.data?.getBool(widget.configKey) ?? widget.defaultValue,
           onChanged:
               snapshot.hasData ? (b) => _toggle(snapshot.data!, b) : null,
         ),

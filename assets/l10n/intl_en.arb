@@ -91,5 +91,7 @@
             "count": {}
         }
     },
-    "learnWithSpacedRepition": "Learn with spaced repitition"
+    "learnWithSpacedRepition": "Learn with spaced repitition",
+    "enterKanjiAndKana": "Enter kanji and kana",
+    "enterKanji": "Enter kanji"
 }

@@ -44,6 +44,12 @@ class SettingsView extends StatelessWidget {
             configKey: ConfigKeys.enterRomaji,
           ),
           ConfigToggle(
+            icon: Icons.language_outlined,
+            title: L10n.of(context)!.enterKanjiAndKana,
+            configKey: ConfigKeys.enterKanjiKana,
+            defaultValue: false,
+          ),
+          ConfigToggle(
             icon: Icons.repeat_outlined,
             title: L10n.of(context)!.learnWithSpacedRepition,
             configKey: ConfigKeys.learnWithSpacedRepition,

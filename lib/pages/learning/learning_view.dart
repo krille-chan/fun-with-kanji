@@ -77,13 +77,34 @@ class LearningView extends StatelessWidget {
                           : Colors.red.shade700,
                 ),
                 alignment: Alignment.bottomCenter,
+                padding: const EdgeInsets.only(bottom: 32),
                 child: controller.answerCorrect != null
                     ? null
-                    : Text(
-                        currentCharacter.toString(),
-                        style: const TextStyle(
-                          fontSize: 86,
-                          color: Colors.black,
+                    : ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          maxWidth: 128,
+                          maxHeight: 64,
+                        ),
+                        child: Material(
+                          color: Colors.white,
+                          child: FittedBox(
+                            fit: BoxFit.fitHeight,
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  currentCharacter is Kanji &&
+                                          controller.enterKanjiKana
+                                      ? currentCharacter.description
+                                      : currentCharacter.toString(),
+                                  style: const TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 32,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ),
                       ),
               ),
@@ -96,12 +117,21 @@ class LearningView extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ],
+          if (currentCharacter is Kanji && controller.enterKanjiKana) ...[
+            const SizedBox(height: 16),
+            Text(
+              currentCharacter.meanings.join(', '),
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontWeight: FontWeight.w500),
+            ),
+          ],
           if (currentCharacter is Kanji &&
               controller.learningProgress!.stars < 8) ...[
             const SizedBox(height: 16),
             Text(
               '${L10n.of(context)!.radicalsName}: ${currentCharacter.radicals.join(', ')}',
               textAlign: TextAlign.center,
+              style: const TextStyle(fontStyle: FontStyle.italic),
             ),
           ],
           const SizedBox(height: 16),
@@ -130,11 +160,15 @@ class LearningView extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        choice.description,
+                        choice is Kanji && controller.enterKanjiKana
+                            ? choice.kanji
+                            : choice.description,
                         textAlign: TextAlign.center,
                         style: const TextStyle(fontSize: 24),
                       ),
-                      if (choice is Kanji && choice.meanings.length > 1)
+                      if (choice is Kanji &&
+                          !controller.enterKanjiKana &&
+                          choice.meanings.length > 1)
                         Text(
                           choice.meanings
                               .getRange(1, choice.meanings.length)
@@ -155,9 +189,13 @@ class LearningView extends StatelessWidget {
               autocorrect: false,
               enableSuggestions: false,
               textInputAction: TextInputAction.done,
+
               // onSubmitted: (_) => controller.checkStringChoice(),
-              decoration:
-                  InputDecoration(hintText: L10n.of(context)!.enterRomaji),
+              decoration: InputDecoration(
+                  hintText:
+                      currentCharacter is Kanji && controller.enterKanjiKana
+                          ? L10n.of(context)!.enterKanji
+                          : L10n.of(context)!.enterRomaji),
             ),
             const SizedBox(height: 16),
             ElevatedButton(

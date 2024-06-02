@@ -33,6 +33,7 @@ class LearningController extends State<LearningPage> {
   final TextEditingController responseController = TextEditingController();
   final FocusNode replyFocus = FocusNode();
   late final bool enterRomaji;
+  late final bool enterKanjiKana;
   late final bool learnWithSpacedRepition;
   LearningProgress? learningProgress;
   int _currentId = 0;
@@ -340,6 +341,7 @@ class LearningController extends State<LearningPage> {
     }
 
     enterRomaji = preferences.getBool(ConfigKeys.enterRomaji) ?? true;
+    enterKanjiKana = preferences.getBool(ConfigKeys.enterKanjiKana) ?? false;
     learnWithSpacedRepition =
         preferences.getBool(ConfigKeys.learnWithSpacedRepition) ?? true;
   }
