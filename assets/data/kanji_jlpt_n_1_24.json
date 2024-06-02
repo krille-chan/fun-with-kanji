@@ -1,0 +1,778 @@
+[
+    {
+        "id": 2106,
+        "kanji": "冶",
+        "meanings": [
+            "melting",
+            "smelting"
+        ],
+        "readings_on": [
+            "ヤ"
+        ],
+        "readings_kun": [
+            "い.る"
+        ],
+        "radicals": [
+            "口",
+            "冫",
+            "厶"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2107,
+        "kanji": "塡",
+        "meanings": [
+            "fill in",
+            "fill up",
+            "make good"
+        ],
+        "readings_on": [
+            "テン、チン"
+        ],
+        "readings_kun": [
+            "はま.る、うず.める、は.める、ふさ.ぐ"
+        ],
+        "radicals": [],
+        "vocabs": []
+    },
+    {
+        "id": 2108,
+        "kanji": "瞭",
+        "meanings": [
+            "clear"
+        ],
+        "readings_on": [
+            "リョウ"
+        ],
+        "readings_kun": [
+            "あきらか"
+        ],
+        "radicals": [
+            "小",
+            "日",
+            "并",
+            "目",
+            "大"
+        ],
+        "vocabs": [
+            {
+                "word": "明瞭",
+                "furigana": "めいりょう",
+                "translation": [
+                    "clear",
+                    "plain",
+                    "distinct",
+                    "obvious",
+                    "evident",
+                    "articulate"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2109,
+        "kanji": "璃",
+        "meanings": [
+            "glassy",
+            "lapis lazuli"
+        ],
+        "readings_on": [
+            "リ"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "王",
+            "亠",
+            "凵",
+            "禹"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2110,
+        "kanji": "沃",
+        "meanings": [
+            "fertility"
+        ],
+        "readings_on": [
+            "ヨウ、ヨク、オク"
+        ],
+        "readings_kun": [
+            "そそ.ぐ"
+        ],
+        "radicals": [
+            "ノ",
+            "汁",
+            "大"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2111,
+        "kanji": "濫",
+        "meanings": [
+            "excessive",
+            "overflow",
+            "spread out"
+        ],
+        "readings_on": [
+            "ラン"
+        ],
+        "readings_kun": [
+            "みだ.りに、みだ.りがましい"
+        ],
+        "radicals": [
+            "ノ",
+            "皿",
+            "汁",
+            "臣",
+            "二",
+            "乞"
+        ],
+        "vocabs": [
+            {
+                "word": "氾濫",
+                "furigana": "はんらん",
+                "translation": [
+                    "overflowing",
+                    "flood",
+                    "inundation",
+                    "deluge",
+                    "oversupply",
+                    "plethora"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2112,
+        "kanji": "侶",
+        "meanings": [
+            "companion",
+            "follower"
+        ],
+        "readings_on": [
+            "リョ、ロ"
+        ],
+        "readings_kun": [
+            "とも"
+        ],
+        "radicals": [
+            "化",
+            "口",
+            "ノ"
+        ],
+        "vocabs": [
+            {
+                "word": "僧侶",
+                "furigana": "そうりょ",
+                "translation": [
+                    "priest",
+                    "monk",
+                    "bonze"
+                ]
+            },
+            {
+                "word": "伴侶",
+                "furigana": "はんりょ",
+                "translation": [
+                    "companion",
+                    "partner",
+                    "spouse"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2113,
+        "kanji": "丙",
+        "meanings": [
+            "third class",
+            "3rd",
+            "3rd calendar sign"
+        ],
+        "readings_on": [
+            "ヘイ"
+        ],
+        "readings_kun": [
+            "ひのえ"
+        ],
+        "radicals": [
+            "一",
+            "人",
+            "冂"
+        ],
+        "vocabs": [
+            {
+                "word": "丙",
+                "furigana": "へい",
+                "translation": [
+                    "third rank",
+                    "third class",
+                    "third person (in a contract",
+                    "etc.)",
+                    "third sign of the Chinese calendar"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2114,
+        "kanji": "喩",
+        "meanings": [
+            "metaphor",
+            "compare"
+        ],
+        "readings_on": [
+            "ユ"
+        ],
+        "readings_kun": [
+            "たと.える、さと.す"
+        ],
+        "radicals": [
+            "刈",
+            "月",
+            "口",
+            "个",
+            "一"
+        ],
+        "vocabs": [
+            {
+                "word": "比喩",
+                "furigana": "ひゆ",
+                "translation": [
+                    "simile",
+                    "metaphor",
+                    "allegory",
+                    "parable"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2115,
+        "kanji": "璽",
+        "meanings": [
+            "emperor's seal"
+        ],
+        "readings_on": [
+            "ジ"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "｜",
+            "一",
+            "王",
+            "ハ",
+            "冂",
+            "爻"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2116,
+        "kanji": "苛",
+        "meanings": [
+            "torment",
+            "scold",
+            "chastise"
+        ],
+        "readings_on": [
+            "カ"
+        ],
+        "readings_kun": [
+            "いじ.める、さいな.む、いらだ.つ、からい、こまかい"
+        ],
+        "radicals": [
+            "一",
+            "口",
+            "亅",
+            "艾"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2117,
+        "kanji": "吏",
+        "meanings": [
+            "officer",
+            "an official"
+        ],
+        "readings_on": [
+            "リ"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "ノ",
+            "一",
+            "口",
+            "丶"
+        ],
+        "vocabs": [
+            {
+                "word": "官吏",
+                "furigana": "かんり",
+                "translation": [
+                    "government official",
+                    "public servant",
+                    "civil servant"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2118,
+        "kanji": "弐",
+        "meanings": [
+            "II",
+            "two",
+            "second"
+        ],
+        "readings_on": [
+            "ニ、ジ"
+        ],
+        "readings_kun": [
+            "ふた.つ、そえ"
+        ],
+        "radicals": [
+            "一",
+            "弋",
+            "二"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2119,
+        "kanji": "醒",
+        "meanings": [
+            "awake",
+            "be disillusioned",
+            "sober up"
+        ],
+        "readings_on": [
+            "セイ"
+        ],
+        "readings_kun": [
+            "さ.ます、さ.める"
+        ],
+        "radicals": [
+            "生",
+            "酉",
+            "日"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2120,
+        "kanji": "妬",
+        "meanings": [
+            "jealous",
+            "envy"
+        ],
+        "readings_on": [
+            "ト、ツ"
+        ],
+        "readings_kun": [
+            "ねた.む、そね.む、つも.る、ふさ.ぐ"
+        ],
+        "radicals": [
+            "口",
+            "女",
+            "石"
+        ],
+        "vocabs": [
+            {
+                "word": "嫉妬",
+                "furigana": "しっと",
+                "translation": [
+                    "jealousy",
+                    "envy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2121,
+        "kanji": "曖",
+        "meanings": [
+            "dark",
+            "not clear"
+        ],
+        "readings_on": [
+            "アイ"
+        ],
+        "readings_kun": [
+            "くら.い"
+        ],
+        "radicals": [
+            "心",
+            "爪",
+            "日",
+            "冖",
+            "夂"
+        ],
+        "vocabs": [
+            {
+                "word": "曖昧",
+                "furigana": "あいまい",
+                "translation": [
+                    "vague",
+                    "ambiguous",
+                    "unclear",
+                    "shady",
+                    "disreputable",
+                    "fuzzy"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2122,
+        "kanji": "璧",
+        "meanings": [
+            "sphere",
+            "ball"
+        ],
+        "readings_on": [
+            "ヘキ"
+        ],
+        "readings_kun": [
+            "たま"
+        ],
+        "radicals": [
+            "王",
+            "口",
+            "十",
+            "辛",
+            "立",
+            "尸"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2123,
+        "kanji": "痘",
+        "meanings": [
+            "pox",
+            "smallpox"
+        ],
+        "readings_on": [
+            "トウ"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "口",
+            "豆",
+            "并",
+            "疔"
+        ],
+        "vocabs": [
+            {
+                "word": "種痘",
+                "furigana": "しゅとう",
+                "translation": [
+                    "smallpox vaccination",
+                    "inoculation against smallpox"
+                ]
+            },
+            {
+                "word": "天然痘",
+                "furigana": "てんねんとう",
+                "translation": [
+                    "smallpox",
+                    "variola"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2124,
+        "kanji": "嘲",
+        "meanings": [
+            "ridicule",
+            "insult"
+        ],
+        "readings_on": [
+            "チョウ、トウ"
+        ],
+        "readings_kun": [
+            "あざけ.る"
+        ],
+        "radicals": [
+            "月",
+            "口",
+            "十",
+            "日"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2125,
+        "kanji": "僅",
+        "meanings": [
+            "a wee bit"
+        ],
+        "readings_on": [
+            "キン、ゴン"
+        ],
+        "readings_kun": [
+            "わず.か"
+        ],
+        "radicals": [
+            "化",
+            "土",
+            "艾",
+            "口",
+            "二",
+            "一"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2126,
+        "kanji": "顎",
+        "meanings": [
+            "jaw",
+            "chin",
+            "gill"
+        ],
+        "readings_on": [
+            "ガク"
+        ],
+        "readings_kun": [
+            "あご、あぎと"
+        ],
+        "radicals": [
+            "貝",
+            "目",
+            "ハ",
+            "口",
+            "頁",
+            "二",
+            "勹"
+        ],
+        "vocabs": [
+            {
+                "word": "顎",
+                "furigana": "あご",
+                "translation": [
+                    "jaw",
+                    "chin",
+                    "barb (of a fishhook)"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2127,
+        "kanji": "宛",
+        "meanings": [
+            "address",
+            "just like",
+            "fortunately"
+        ],
+        "readings_on": [
+            "エン"
+        ],
+        "readings_kun": [
+            "あ.てる、-あて、-づつ、あたか.も"
+        ],
+        "radicals": [
+            "夕",
+            "卩",
+            "宀"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2128,
+        "kanji": "痩",
+        "meanings": [
+            "get thin"
+        ],
+        "readings_on": [
+            "ソウ、チュウ、シュウ、シュ"
+        ],
+        "readings_kun": [
+            "や.せる"
+        ],
+        "radicals": [
+            "又",
+            "疔"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2129,
+        "kanji": "憬",
+        "meanings": [
+            "yearn for",
+            "aspire to",
+            "admire"
+        ],
+        "readings_on": [
+            "ケイ"
+        ],
+        "readings_kun": [
+            "あこが.れる"
+        ],
+        "radicals": [
+            "口",
+            "小",
+            "日",
+            "忙",
+            "亠"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2130,
+        "kanji": "旦",
+        "meanings": [
+            "daybreak",
+            "dawn",
+            "morning"
+        ],
+        "readings_on": [
+            "タン、ダン"
+        ],
+        "readings_kun": [
+            "あき.らか、あきら、ただし、あさ、あした"
+        ],
+        "radicals": [
+            "一",
+            "日"
+        ],
+        "vocabs": [
+            {
+                "word": "旦那",
+                "furigana": "だんな",
+                "translation": [
+                    "master (of a house",
+                    "shop",
+                    "etc.)",
+                    "husband",
+                    "sir",
+                    "boss",
+                    "master",
+                    "governor",
+                    "patron of a mistress",
+                    "geisha",
+                    "bar or nightclub hostess",
+                    "sugar daddy",
+                    "alms",
+                    "almsgiving",
+                    "almsgiver"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2131,
+        "kanji": "酎",
+        "meanings": [
+            "sake"
+        ],
+        "readings_on": [
+            "チュウ、チュ"
+        ],
+        "readings_kun": [
+            "かも.す"
+        ],
+        "radicals": [
+            "寸",
+            "酉"
+        ],
+        "vocabs": [
+            {
+                "word": "焼酎",
+                "furigana": "しょうちゅう",
+                "translation": [
+                    "shōchū",
+                    "Japanese spirit distilled from sweet potatoes",
+                    "rice",
+                    "etc."
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2132,
+        "kanji": "且",
+        "meanings": [
+            "moreover",
+            "also",
+            "furthermore"
+        ],
+        "readings_on": [
+            "ショ、ソ、ショウ"
+        ],
+        "readings_kun": [
+            "か.つ"
+        ],
+        "radicals": [
+            "一",
+            "目"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2133,
+        "kanji": "朕",
+        "meanings": [
+            "majestic plural",
+            "imperial we"
+        ],
+        "readings_on": [
+            "チン"
+        ],
+        "readings_kun": [],
+        "radicals": [
+            "月",
+            "人",
+            "大",
+            "一",
+            "并"
+        ],
+        "vocabs": []
+    },
+    {
+        "id": 2134,
+        "kanji": "頰",
+        "meanings": [
+            "cheeks",
+            "jaw"
+        ],
+        "readings_on": [
+            "キョウ"
+        ],
+        "readings_kun": [
+            "ほお、ほほ"
+        ],
+        "radicals": [],
+        "vocabs": []
+    },
+    {
+        "id": 2135,
+        "kanji": "淫",
+        "meanings": [
+            "lewdness",
+            "licentiousness"
+        ],
+        "readings_on": [
+            "イン"
+        ],
+        "readings_kun": [
+            "ひた.す、ほしいまま、みだ.ら、みだ.れる、みだり"
+        ],
+        "radicals": [
+            "ノ",
+            "士",
+            "汁",
+            "爪",
+            "王"
+        ],
+        "vocabs": []
+    }
+]
