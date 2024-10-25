@@ -190,7 +190,7 @@ class LearningView extends StatelessWidget {
               enableSuggestions: false,
               textInputAction: TextInputAction.done,
 
-              // onSubmitted: (_) => controller.checkStringChoice(),
+              onSubmitted: (_) => controller.checkStringChoice(),
               decoration: InputDecoration(
                   hintText:
                       currentCharacter is Kanji && controller.enterKanjiKana
