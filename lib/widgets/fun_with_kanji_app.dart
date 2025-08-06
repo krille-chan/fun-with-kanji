@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:dynamic_color/dynamic_color.dart';
-import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:fun_with_kanji/generated/l10n.dart';
 import 'package:isar/isar.dart';
 
 import 'package:fun_with_kanji/config/app_constants.dart';

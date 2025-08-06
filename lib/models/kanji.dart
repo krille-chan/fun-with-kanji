@@ -26,7 +26,7 @@ class Kanji extends JpCharacter {
         readingsOn: List<String>.from(json['readings_on']),
         readingsKun: List<String>.from(json['readings_kun']),
         radicals: List<String>.from(json['radicals'] ?? []),
-        vocabs: ((json['vocabs'] ?? []) as List<Map<String, dynamic>>)
+        vocabs: ((json['vocabs'] as List<Map<String, dynamic>>?) ?? [])
             .map((json) => KanjiVocab.fromJson(json))
             .toList(),
       );

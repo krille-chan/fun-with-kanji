@@ -1,5 +1,6 @@
 arb-dir: assets/l10n
 template-arb-file: intl_en.arb
 output-localization-file: l10n.dart
+output-dir: lib/generated
 output-class: L10n
 preferred-supported-locales: ["en"]

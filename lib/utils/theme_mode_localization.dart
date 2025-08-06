@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:fun_with_kanji/generated/l10n.dart';
 
 extension ThemeModeToString on ThemeMode {
   String toLocalizedString(BuildContext context) {

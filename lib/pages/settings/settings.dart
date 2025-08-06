@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter_file_saver/flutter_file_saver.dart';
-import 'package:flutter_gen/gen_l10n/l10n.dart';
+import 'package:fun_with_kanji/generated/l10n.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
